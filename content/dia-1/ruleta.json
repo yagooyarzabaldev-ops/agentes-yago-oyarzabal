@@ -1,0 +1,54 @@
+{
+  "options": [
+    {
+      "label": "Ventas",
+      "category": "buena",
+      "probability": 12.5,
+      "action": "Sector amarillo: aparece una consulta ficticia de ventas y se marca el objetivo de respuesta."
+    },
+    {
+      "label": "Reservas",
+      "category": "buena",
+      "probability": 12.5,
+      "action": "Sector blanco: se muestra una solicitud ficticia y se destaca la fecha a confirmar."
+    },
+    {
+      "label": "Soporte",
+      "category": "neutra",
+      "probability": 12.5,
+      "action": "Sector amarillo: aparece una pregunta ficticia de soporte y se señala qué dato falta."
+    },
+    {
+      "label": "Contenido",
+      "category": "neutra",
+      "probability": 12.5,
+      "action": "Sector blanco: se ve un pedido breve de contenido y una idea de ejemplo."
+    },
+    {
+      "label": "Onboarding",
+      "category": "neutra",
+      "probability": 12.5,
+      "action": "Sector amarillo: se muestra el primer paso de bienvenida para un usuario ficticio."
+    },
+    {
+      "label": "Cobranzas",
+      "category": "picante",
+      "probability": 12.5,
+      "action": "Sector blanco: aparece un recordatorio de pago ficticio y se resalta el tono respetuoso."
+    },
+    {
+      "label": "Reclamos",
+      "category": "picante",
+      "probability": 12.5,
+      "action": "Sector amarillo: se muestra un reclamo ficticio y se marca la derivación a una persona."
+    },
+    {
+      "label": "Analista",
+      "category": "extrema",
+      "probability": 12.5,
+      "action": "Sector blanco: aparece una tabla ficticia y se destaca una pregunta para analizar, sin mostrar datos reales."
+    }
+  ],
+  "selection": "Giro aleatorio real al grabar; resultado todavía pendiente.",
+  "recording_note": "Conservar el giro completo y usar el resultado que salga. La animación con --winner del render no es un sorteo."
+}

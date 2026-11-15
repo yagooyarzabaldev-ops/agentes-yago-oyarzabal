@@ -1,0 +1,96 @@
+{
+  "method": "image_gen built-in",
+  "style_references": [
+    "content/referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+    "content/referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+    "content/referencias/diseno-ia/imagenes/pin-1128433250395037066.jpg",
+    "content/referencias/diseno-ia/imagenes/pin-1057008975072047609.jpg"
+  ],
+  "new_assets": [
+    {
+      "id": "silos",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: An overhead oblique macro of a real dark work desk with four disconnected transparent software workspaces, a small calendar, a document and an editing timeline, physically separated by narrow dark gaps. Coral and copper light, real glass and brushed metal, a fine luminous route broken between them. A visual metaphor for fragmented manual work, no floating paper. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-a1f3349c-f42e-4309-a916-187f270839d5.png",
+      "file": "content/construccion/assets-v10/silos.png",
+      "sha256": "46b6f3bfd72e86ba777e73663a744e516b0c6f464b9b9690c916b636720ee816"
+    },
+    {
+      "id": "architecture",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A dramatic exploded architectural cutaway of a compact AI business system: three black glass floors containing processing, memory and tools, physically stacked with emerald and gold data conduits visibly linking the layers. Low angle, deep perspective, intricate realistic components, one coherent architecture rather than random circuits. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-b8baeabd-282d-4723-9b42-84aa31299c5c.png",
+      "file": "content/construccion/assets-v10/architecture.png",
+      "sha256": "c9109ab198d0505b4232d5bd19a35e770b0d4d7835869f1f4c69bf23edd1bb5a"
+    },
+    {
+      "id": "community",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A cinematic isometric creative workspace with three adult silhouettes sharing an illuminated knowledge mesh over a long black table; connected amber nodes are passing from one person's tablet to another. Lavender and peach rim lighting, believable human scale and materials, sophisticated editorial rendering. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-c0210ba7-f015-4cf2-8277-17c7c07f8086.png",
+      "file": "content/construccion/assets-v10/community.png",
+      "sha256": "c776a23b332578118f17736f6d6942a4bd72069b2356d70af0d0a61eedf9896e"
+    },
+    {
+      "id": "learning",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: Extreme macro close-up of adult hands using a dark keyboard beside a digital notebook and a small violet holographic branching experiment on a glass monitor. Warm daylight mixed with purple highlights, tactile keys, shallow focus, human learning through practice; no face, no readable text. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-26e36bc5-15a2-4394-ae89-96e74aaa3827.png",
+      "file": "content/construccion/assets-v10/learning.png",
+      "sha256": "3b3b3ca50fdd40d85382f6a06ee744f41950408242cf0c717f09f5ab300ef901"
+    },
+    {
+      "id": "foundation",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A monumental low-angle view of precision black ceramic data blocks stacked into a stable foundation, with transparent amber internal channels and one emerald processing layer. Architectural engineering detail, dramatic warm side light, rich shadow depth. No humanoid, no letters. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-9ac2da27-714f-4222-b895-507fbd5cdbac.png",
+      "file": "content/construccion/assets-v10/foundation.png",
+      "sha256": "34e03f16b60e866d1e9619472c382003219b3766f9633b1344ad2b10687358d1"
+    },
+    {
+      "id": "idea",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A single glowing orange hand-drawn branching sketch on a smoked glass workbench resolving into detailed physical miniature processing components along the same lines, left side sketch and right side engineered system in one continuous scene. Macro perspective, coral and violet highlights, no paper or captions. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-757897c8-1fa1-4bc0-8f79-190d7591fd81.png",
+      "file": "content/construccion/assets-v10/idea.png",
+      "sha256": "d6bba2db276534bc8a87e8423e5270534c7314744fc3193bc739a07c9f3e174c"
+    },
+    {
+      "id": "fit",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A close low-angle view of a modular business architecture made of black glass and copper compartments, one precisely shaped emerald module aligns with a unique opening. Cinematic exploded view conveying adapting a system to a particular business, highly detailed joints and connections, no toy blocks. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-32789a7e-705e-422d-9be4-5c9879a72c14.png",
+      "file": "content/construccion/assets-v10/fit.png",
+      "sha256": "5677b6e3b111e3e79da1cc0f0e4b350dbb6451edf6cdb64b08eea5c9c39e9ba4"
+    },
+    {
+      "id": "bottleneck",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: Oblique macro of an organized luminous data route with a visible narrow bottleneck: many coral particles queued before a gate and an alternate emerald route curving around it. Dark reflective glass, physically modeled conduits and deep perspective. Clear cause and effect, no financial charts. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-80d2ef95-b26b-4260-92bc-b1b05bb82f56.png",
+      "file": "content/construccion/assets-v10/bottleneck.png",
+      "sha256": "941a621cf0149a147ad51e0b16e7571c8b180d7de0e95b32ec032440a367ee81"
+    },
+    {
+      "id": "production",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A dramatic cinematic creator studio close-up: compact professional camera in the foreground, a vertical portrait video preview and purple audio waveform on a monitor behind it, warm amber practical lights, realistic cables and glass, deep layered focus. No people, text or brand logos. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-d702af7b-94ae-4e00-bbed-4197a776fd8b.png",
+      "file": "content/construccion/assets-v10/production.png",
+      "sha256": "9327fbdb41361e3be52c43359fdd44756d2c34a7eb494f3fff236dbd1152f3f9"
+    },
+    {
+      "id": "review",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: Top-down oblique view of two adult hands reviewing an orange creative storyboard on a black glass tablet, a violet stylus marking one item and emerald approval lights connecting neighboring stages. Detailed realistic creative work, rich shadows, no legible text or giant check marks. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-7f2fb0d0-6ffc-4ea3-97f7-4504a9a3d0f6.png",
+      "file": "content/construccion/assets-v10/review.png",
+      "sha256": "fd32718a0c14b23b958a8387ce1eec6b3ce50bd62b5e1d126a4b6526d1e7ee96"
+    },
+    {
+      "id": "automation",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A sweeping cinematic view through a black glass landscape of connected workflow stations, small amber data packets travel from a document station to a processing tower to a finished vertical media screen. Lime and coral route lights, strong near-far depth, physically coherent architecture. No financial chart. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-43022fa1-7571-49c3-a29f-04f54e78c11a.png",
+      "file": "content/construccion/assets-v10/automation.png",
+      "sha256": "5555a86f17e1ebc0285035f378fb90da58e170409724b7b3ed6d9ecd16a91816"
+    },
+    {
+      "id": "time",
+      "prompt": "Use case: stylized-concept. Asset type: a NEW original cinematic image for an AI systems marketing reel, portrait 2:3, high resolution. Style references are only the previously viewed luminous macro screens, holographic networks and isometric workspace: use that visual language with original subjects and composition. Primary request: A calm cinematic real desk at warm sunrise after work is complete: closed dark notebook, a compact mechanical clock with visible inner gears, neatly docked pen and an amber completed workflow on a small glass display. Cream sunlight and charcoal shadows with subtle green accents. A concrete metaphor of time recovered, no hourglass, no text. Main subject in central 65%, full bleed, useful detail across frame for crops and animated camera motion. Premium technical cinematography, realistic glass and metal, no blue-dominant wash. Avoid repeated brain/head, giant AI letters, blank white panels, paper cards, cartoon clay, watermark, logos and readable text. No title or subtitles. One single image, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-16e50b33-1a93-4340-bda6-b2b3a038f77b.png",
+      "file": "content/construccion/assets-v10/time.png",
+      "sha256": "2b44afa3d551aab2c32ce2044fba10df2805f529244765d0d47b164ebee12bd4"
+    }
+  ],
+  "note": "References inspected locally; original concepts generated from their visual language. Images are illustrative, not a recording of deployed systems."
+}

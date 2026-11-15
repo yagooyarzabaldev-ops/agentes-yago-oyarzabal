@@ -1,0 +1,62 @@
+{
+  "recorded_at": "2026-11-15T00:43:00.478931+00:00",
+  "sources": [
+    {
+      "id": "gallery-dl",
+      "kind": "tool",
+      "url": "https://github.com/mikf/gallery-dl",
+      "official_docs": "https://gdl-org.github.io/docs/",
+      "observed_active_development": "https://codeberg.org/mikf/gallery-dl",
+      "installed_version": "1.32.20",
+      "local_environment": "runtime/references-env"
+    },
+    {
+      "id": "pinterest-search",
+      "kind": "search",
+      "url": "https://ar.pinterest.com/search/pins/?q=claude%20code%20design&rs=ac&len=11&source_id=ac_oc26Y5PD&eq=claude%20code&etslf=17722",
+      "query": "claude code design",
+      "sample_limit": 12,
+      "selection": "Primeros 12 resultados devueltos por gallery-dl, sin seleccionar por calidad; la búsqueda es dinámica."
+    },
+    {
+      "id": "rawpixel-17121933",
+      "kind": "video",
+      "url": "https://www.rawpixel.com/video/17121933?ts=1748235347599",
+      "title": "Close-up, top-down angle of a glowing AI chip on a circuit board",
+      "creator_display": "Teddy",
+      "observed_on_page": {
+        "duration": "0:08",
+        "fps": 30,
+        "codec": "H.264",
+        "premium": true,
+        "ai_generated": true,
+        "original_formats": [
+          "2160x3840 MOV",
+          "480x854 MP4",
+          "270x480 GIF"
+        ]
+      },
+      "acquisition": "Póster público de vista previa mediante el navegador; no se adquirió el video Premium."
+    },
+    {
+      "id": "pin-1128433250395037066",
+      "kind": "pin",
+      "url": "https://ar.pinterest.com/pin/1128433250395037066/"
+    },
+    {
+      "id": "pin-1057008975072047609",
+      "kind": "pin",
+      "url": "https://ar.pinterest.com/pin/1057008975072047609/"
+    },
+    {
+      "id": "pin-1035898351811759640",
+      "kind": "pin",
+      "url": "https://ar.pinterest.com/pin/1035898351811759640/"
+    },
+    {
+      "id": "pin-944770828097507675",
+      "kind": "pin",
+      "url": "https://ar.pinterest.com/pin/944770828097507675/"
+    }
+  ]
+}

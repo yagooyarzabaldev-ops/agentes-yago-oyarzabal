@@ -1,0 +1,17 @@
+¿Cómo pasamos de una idea a este agente de marketing? Lo construimos por etapas, y así funciona.
+
+Primero definimos la marca: a quién le hablamos, qué tono usamos y cómo cerramos cada contenido. Esa base acompaña a los agentes.
+
+Después dividimos el trabajo. Un agente propone enfoques; otro escribe el guion. El sistema coordina las etapas y guarda cada avance.
+
+Antes de producir, hay una pausa: revisar y aprobar el guion. Si pedís cambios, la versión anterior deja de estar aprobada.
+
+Con el texto aprobado, siguen la ruleta, la dirección visual, la voz y las opciones de portada y copy.
+
+La base está hecha en Python. SQLite conserva el estado, y FFmpeg arma el video vertical con subtítulos y efectos.
+
+También agregamos pruebas: respuestas incompletas, cambios de versión y errores de publicación. Si algo se interrumpe, el flujo puede retomar etapas ya guardadas.
+
+El envío tiene otra revisión: video, texto y cuenta de destino. Las conexiones con YouTube e Instagram requieren configuración y una prueba real.
+
+Así quedó: un proceso por etapas, con revisión humana. Si querés ver cómo funciona por dentro, seguí esta serie.

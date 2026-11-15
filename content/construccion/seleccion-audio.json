@@ -1,0 +1,13 @@
+{
+  "selected_option": "chicago-sin-bajo-02",
+  "status": "chosen_by_user",
+  "confirmation": "sii",
+  "approval_scope": "music selection",
+  "bpm": 122,
+  "bass_line": false,
+  "instrumental": "entregas/chicago-sin-bajo-02/House_Chicago_sin_bajo_02.wav",
+  "video": "entregas/chicago-sin-bajo-02/Sistemas_con_IA_Yago_Chicago_sin_bajo_02.mp4",
+  "visual_edit": "construccion-v10",
+  "audio_review": "entregas/chicago-sin-bajo-02/procedencia-y-revision.json",
+  "picture_verification": "entregas/chicago-sin-bajo-02/revision-imagen-identica.json"
+}

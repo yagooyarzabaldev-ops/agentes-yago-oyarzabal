@@ -5,8 +5,9 @@
   "nicho": "Escala tu negocio con IA",
   "ubicacion": "Villa Constitución, Santa Fe, Argentina",
   "tono": "Argentino, directo, canchero, voseo, sin muletillas",
-  "colores": { "primario": "#FFFFFF", "acento": "#FFD500", "fondo": "#000000" },
-  "fuente_subs": "Bold, blanca con borde negro, keyword amarilla",
-  "cta": "Comentá RULETA",
-  "formato": "1080x1920, 9:16, 35-55s"
+  "colores": { "ambar": "#ffb35e", "violeta": "#c99bff", "verde": "#91e2c0", "coral": "#ff937e", "fondo": "#0a0b10" },
+  "fuente_subs": "Bold legible con contraste, keyword según acento de escena; sin marco blanco de cámara",
+  "cta": "Según objetivo y contenido; sin frase obligatoria",
+  "formato": "1080x1920, 9:16, 30fps, 60-90s",
+  "estilo_canonico": "config/video-style.json"
 }

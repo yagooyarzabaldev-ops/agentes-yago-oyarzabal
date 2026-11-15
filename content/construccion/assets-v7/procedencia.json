@@ -1,0 +1,117 @@
+{
+  "selected_count": 8,
+  "assets": [
+    {
+      "id": "neural",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-1128433250395037066.jpg",
+      "prompt": "Use case: stylized-concept. Generate a new original cinematic 3D illustration for a vertical 9:16 reel about changing systems with AI. Input is a style reference ONLY for dimensional wire connections and depth, not an edit target. A sculptural abstract translucent human profile composed of warm amber luminous filaments and small cream nodes, floating above a few dark plum architectural blocks. Deep aubergine charcoal environment, subtle magenta rim light, warm gold key light, absolutely no blue/cyan dominant lighting. Hero sculpture occupies middle band between 30% and 68% of the portrait, generous dark plum negative space in top 28% and bottom 28% for separately animated typography. Beautiful reflective surfaces, atmospheric soft haze, crisp filaments, strong foreground/background separation, premium product photography quality. No words, letters, logos, watermarks, charts or anatomical gore. Original composition, slightly left three-quarter view, restrained luxury warm technology.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-0f87cccb-4860-4e80-9dd4-ca55db7c273e.png",
+      "file": "neural.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "chip",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/rawpixel-17121933-poster.jpg",
+      "prompt": "Use case: stylized-concept. Create a new original cinematic macro product visualization, portrait 9:16, using the supplied reference ONLY for the sense of macro depth, oblique camera and tiny luminous pathways. Not an edit of the source. One sculptural pale ceramic processor suspended slightly above a dark copper and charcoal board. Processor face has a single minimalist raised abstract infinity loop, not letters. Orange amber light flowing along tiny channels, soft mint reflections only at the edges, refined metal and glass details, strong focal depth, warm bokeh. No blue scene, no navy, no glowing blue letters. Main chip occupies middle 45% of image; top 25% and bottom 25% are quiet dark brown-to-charcoal with sparse out-of-focus lights for motion titles. Luxurious cinematic practical material realism. No text, logos, watermark, numbers, stock-market graphics, or split panels.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-b1305e78-eb5a-44f3-a108-b85f523efdb4.png",
+      "file": "chip.png",
+      "method": "image_gen built-in",
+      "used_in_v7": false
+    },
+    {
+      "id": "studio",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+      "prompt": "Use case: stylized-concept. New original isometric miniature studio illustration for a vertical 9:16 marketing AI reel, using the reference ONLY for the elevated camera and spatial team coordination. Depict a tactile creative workbench on an ivory architectural platform: three elegant small neutral human figurines coordinating with translucent mint and lilac panels, a stack of cream idea cards at left, a coral curved channel linking workstations, and a portrait display at right showing a blank abstract cream/coral video composition. One person clearly reviewing a paper with a simple large checkmark. No finance graphs, numbers, letters, logos or blue lighting. Rich soft daylight and warm shadows, dimensional clay/ceramic miniatures, brass accents, pale sage backdrop, polished editorial art direction. Hero arrangement mainly in middle 50% of frame, generous empty pale sage top 25% and bottom 25% for titles and subtitles. One coherent realistic miniature photographed with tilt-shift depth, no panels or collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-d7a480ab-fee8-4070-899b-8e7589774c88.png",
+      "file": "studio.png",
+      "method": "image_gen built-in",
+      "used_in_v7": false
+    },
+    {
+      "id": "manual",
+      "prompt": "Use case: stylized-concept. Original vertical 9:16 premium cinematic 3D editorial illustration for a reel about moving from manual tasks to an integrated AI system. A dramatic suspended spiral of ivory paper sheets, terracotta task cards, a single small brass paperclip and one dark plum notebook exploding upward from a warm peach desktop, physical sheets in clearly separated near and far layers, beautifully curling paper edges, realistic shadows and depth of field, a near paper corner blurred at bottom left. Main composition in middle 50% of image. Upper 25% and bottom 25% relatively quiet warm cream background for separately animated titles. Strong side sunlight, tactile fibers, rich ochre peach and burgundy palette, no blue. No text, handwriting, letters, numbers, logos, charts, watermarks or UI screenshots. One coherent dimensional still, not a collage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-f3e1cb2f-b966-4173-aca8-2607c96fc7d7.png",
+      "file": "manual.png",
+      "method": "image_gen built-in",
+      "used_in_v7": false
+    },
+    {
+      "id": "brief",
+      "prompt": "Use case: stylized-concept. Original portrait 9:16 sculptural product photograph for a marketing AI reel. A luminous small pale warm-gold sphere floats just above a thick cream paper card held upright by a tiny polished brass plinth, inside a large freestanding coral oval portal on a clay terracotta stage. The card is completely blank, subtly tilted in three-quarter perspective. A single coral ribbon curves from the empty card toward the right edge, suggesting an idea about to become a process. Strong elegant studio shadows, realistic paper, satin ceramic and brass materials. Tonal coral, terracotta, ivory and warm gold only, no blue. Hero objects middle 50% of frame, upper and bottom 25% quiet coral space for text overlays. Sophisticated editorial image with cinematic physical depth, no people, text, letters, lightbulbs, logos, watermark or computer screens.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-a60fbcff-d59a-4aa0-942e-6270b6203369.png",
+      "file": "brief.png",
+      "method": "image_gen built-in",
+      "used_in_v7": false
+    },
+    {
+      "id": "context",
+      "prompt": "Use case: stylized-concept. Create an original 9:16 portrait premium miniature architectural product image for a reel about adapting AI to a business. An elegant warm ivory architectural floor plan floats in exploded layers above a sage green desk: two ivory walls, a curved lilac translucent divider, small terracotta doors and three separate rounded glass blocks in pale mint, pale lilac and warm amber that align precisely with corresponding slots in the floor plan. It should suggest fitting a system to its actual environment. Macro perspective from a low elevated oblique angle, sharp hero structure and creamy shallow-focus background, warm daylight, realistic glass caustics and tactile ceramic. Composition mainly middle 50% of frame, upper and bottom 25% uncluttered pale sage background for titles. No words, letters, numbers, charts, logos, watermarks, miniature humans, cables, blue or sci-fi grids.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-fd0a6656-5bba-4c43-bca1-29bbfc94e128.png",
+      "file": "context.png",
+      "method": "image_gen built-in",
+      "used_in_v7": false
+    },
+    {
+      "id": "launch",
+      "prompt": "Use case: stylized-concept. Original 9:16 portrait cinematic 3D product photograph, expressive and playful but premium. A large round coral mechanical push button rising from an ivory ceramic circular pedestal, with a small embossed charcoal triangular play icon on its top, a thin warm brass rim and a few concentric physical rings around its base. Button on a dark plum studio floor, lit by a soft warm orange key light and pale lilac rim light, rich velvety shadows, subtle volumetric haze. Low angled camera creates strong solid depth; hero button occupies middle 45% of frame, ample quiet dark aubergine space in upper and lower quarters for motion typography. Polished ceramic and satin metal, no blue illumination, no text, letters, numbers, logo, watermark, hands or unrelated objects.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-eb9122ad-9045-4151-8f67-d447a8a6565a.png",
+      "file": "launch.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "time",
+      "prompt": "Use case: stylized-concept. Original vertical 9:16 cinematic editorial product visualization for a reel about recovering time through better systems. A sculptural oversized analog desk clock of brushed brass with a warm ivory dial and simple charcoal hour markers, no digits or text, suspended inside two elegant open lilac and terracotta orbital rings above a pale butter-yellow plinth. Several small blank ivory task cards flow in a curved trail behind the clock, implying work moving smoothly. Deep realistic cast shadows, warm sunshine, near-far separation, exquisite metallic reflections, playful precision with physical materials. Background pale butter yellow, clay peach accents, no blue. Hero clock in center middle 50% of portrait, upper and bottom 25% calm for titles/subtitles. No people, readable words, logos, watermarks, numerical savings, surreal extra clock hands or montage.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-a4834ee0-3f38-492f-a663-8d2b48fae6ec.png",
+      "file": "time.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "chip_ref",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/rawpixel-17121933-poster.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original visual for a vertical 9:16 reel. The attached image is the direct STYLE REFERENCE: match its cinematic technical detail, high contrast, spatial depth and composition language closely. Do not turn this into a clay, paper craft, toy or pastel miniature scene. An oblique extreme close-up of a real-looking dark graphite microprocessor with tiny etched circuitry and luminous amber pathways running across a complex black printed circuit board. Processor has two embossed metallic letters IA. Match the reference's extraordinary macro detail, bokeh, precise light points and cinematic diagonal angle. Replace the dominant blue with amber/copper and subtle violet edge light; allow only tiny cool-white reflections. Strong depth of field. Chip centered in middle 50% of portrait, quieter dark charcoal top 25% and lower 25% for later titles. No brand names, watermarks or additional readable text. Rich sophisticated high-tech image, not ceramic.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-147bf6a5-e432-47b6-8b5a-378f3748b764.png",
+      "file": "chip_ref.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "hub_ref",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-1057008975072047609.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original visual for a vertical 9:16 reel. The attached image is the direct STYLE REFERENCE: match its cinematic technical detail, high contrast, spatial depth and composition language closely. Do not turn this into a clay, paper craft, toy or pastel miniature scene. A dense luminous wireframe brain suspended above precise concentric holographic rings, connected by thin technical traces to six transparent glass interface plates and two holographic book-like data modules. Closely retain the reference's cybernetic holographic visual language and detailed connection architecture. Different original arrangement with depth and a slight camera angle. Main light violet, magenta and warm white against near-black plum, sparse mint highlights; avoid a monochromatic blue scene. Brain and modules mainly in central 50% of portrait. Top 25% and bottom 25% dark negative space for animated text. No readable text, logos, watermark, physical clay or human face.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-5101a5c1-5eab-4530-843e-86bae2cf4ac1.png",
+      "file": "hub_ref.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "studio_ref",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original visual for a vertical 9:16 reel. The attached image is the direct STYLE REFERENCE: match its cinematic technical detail, high contrast, spatial depth and composition language closely. Do not turn this into a clay, paper craft, toy or pastel miniature scene. A cinematic high-detail isometric scene of a small human team around a dark modern worktable with translucent holographic panels, elevated data pipelines and content cards floating behind them. Precisely the reference's dark architectural technology atmosphere, volumetric light, realistic human silhouettes at miniature scale and deep elevated perspective. Reinterpret the context as coordinating a marketing AI workflow: blank brief cards, a blank portrait video panel and a luminous checkmark at the reviewer station. No financial candlestick chart. Lighting is emerald green and amber with warm white panels on a charcoal-black floor; no dominant blue. Main group centered between 34% and 68% height, quiet charcoal above and below for headings. No readable words, numbers, logos, watermarks; no clay, ivory toy people or paper craft.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-11772262-46d2-4c18-9ec7-5adc4cd09b5b.png",
+      "file": "studio_ref.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "flow_ref",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original visual for a vertical 9:16 reel. The attached image is the direct STYLE REFERENCE: match its cinematic technical detail, high contrast, spatial depth and composition language closely. Do not turn this into a clay, paper craft, toy or pastel miniature scene. A dramatic diagonal macro view across a layered glass digital workflow screen with rows of fine task tiles, dotted connection paths, vertical activity bars and small glowing status indicators. Preserve the reference's tight photographic framing, dense screen detail, black background, strong diagonal sweep, selective focus and orange/cyan contrast. Change financial trading content into an abstract software production workflow; no financial candlesticks or currency numbers. Main accent vivid coral orange and acid-lime green, sparse turquoise reflections only. Sharp content in middle 50% of portrait, dark defocused upper and bottom 25% for typography. No legible words, brands or watermark. Cinematic technical screen image, not a simplified flat dashboard or pastel illustration.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-11bc777b-5cc7-462a-bc61-4e590d206b9d.png",
+      "file": "flow_ref.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    },
+    {
+      "id": "manual_ref",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/search-05.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original visual for a vertical 9:16 reel. The attached image is the direct STYLE REFERENCE: match its cinematic technical detail, high contrast, spatial depth and composition language closely. Do not turn this into a clay, paper craft, toy or pastel miniature scene. A striking orange editorial 3D composition of nine floating rectangular cards, some cream and some near-black, scattered at different depths and rotations as if an orderly orbit has broken apart. Each card has a single bold simple black or cream geometric icon (circle, triangle, arch, plus, check) and no words. Closely match the supplied reference's vivid orange background, bold graphic geometry, realistic soft card shadows, strong perspective and premium motion-design poster art direction. Cards occupy middle 50% of frame, top 25% and bottom 25% pure orange with a very subtle grain for separately animated typography. No external brands, no logos, no existing title copy, no watermarks. This is graphic 3D motion-design, not paper craft or a physical office photograph.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-14c53916-3320-41d0-9bff-941b9eabadf0.png",
+      "file": "manual_ref.png",
+      "method": "image_gen built-in",
+      "used_in_v7": true
+    }
+  ]
+}

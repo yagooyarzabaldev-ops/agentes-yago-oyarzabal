@@ -1,0 +1,103 @@
+{
+  "job_id": "46199eb8fb89",
+  "script_sha256": "0f4972dbf1de66b0d76649ae3c719a66320068aac3b213f58d35b55310707c3a",
+  "approval": {
+    "hash": "0f4972dbf1de66b0d76649ae3c719a66320068aac3b213f58d35b55310707c3a",
+    "at": "2026-11-14T19:36:20.474995+00:00",
+    "actor": "usuario:aprobacion-en-chat",
+    "claims_reviewed": true
+  },
+  "script": {
+    "title": "Ruleta de agentes: una demo paso a paso",
+    "hook": "¿Qué agente prototipo si dejo que decida la ruleta?",
+    "segments": [
+      {
+        "spoken": "¿Qué agente prototipo si dejo que decida la ruleta?",
+        "screen": "¿QUÉ AGENTE SALE?",
+        "seconds": 3
+      },
+      {
+        "spoken": "Ocho opciones, una tarea concreta y una demo; nada de magia.",
+        "screen": "8 SECTORES IGUALES · 12,5% CADA UNO",
+        "seconds": 3
+      },
+      {
+        "spoken": "Hacemos un giro real para elegir el tema, no para prometer resultados.",
+        "screen": "BUENA: Ventas · Reservas",
+        "seconds": 3
+      },
+      {
+        "spoken": "La tarea que salga define el ejemplo que vamos a trabajar.",
+        "screen": "NEUTRA: Soporte · Contenido · Onboarding",
+        "seconds": 3
+      },
+      {
+        "spoken": "La ruleta elige la tarea, no garantiza que el agente ya funcione.",
+        "screen": "PICANTE: Cobranzas · Reclamos",
+        "seconds": 3
+      },
+      {
+        "spoken": "Primero definimos qué debería resolver.",
+        "screen": "EXTREMA: Analista",
+        "seconds": 3
+      },
+      {
+        "spoken": "Y también qué queda afuera.",
+        "screen": "OBJETIVO CLARO",
+        "seconds": 3
+      },
+      {
+        "spoken": "Así el alcance queda claro antes de armar la demo.",
+        "screen": "DEFINÍ LOS LÍMITES",
+        "seconds": 3
+      },
+      {
+        "spoken": "Después escribimos una instrucción concreta.",
+        "screen": "INSTRUCCIÓN CLARA",
+        "seconds": 3
+      },
+      {
+        "spoken": "Y la probamos con un caso ficticio, sin datos de clientes.",
+        "screen": "CASO FICTICIO",
+        "seconds": 3
+      },
+      {
+        "spoken": "Revisamos si la respuesta sirve para esa tarea.",
+        "screen": "REVISÁ LA RESPUESTA",
+        "seconds": 3
+      },
+      {
+        "spoken": "¿Respeta los límites que definimos?",
+        "screen": "¿RESPETA LOS LÍMITES?",
+        "seconds": 3
+      },
+      {
+        "spoken": "Si falta contexto, ajustamos la instrucción.",
+        "screen": "AJUSTAR Y PROBAR",
+        "seconds": 3
+      },
+      {
+        "spoken": "Y si el caso es sensible, lo derivamos a una persona.",
+        "screen": "DERIVACIÓN HUMANA",
+        "seconds": 3
+      },
+      {
+        "spoken": "Comentá RULETA y te lo mando.",
+        "screen": "COMENTÁ RULETA",
+        "seconds": 3
+      }
+    ],
+    "alternative_hooks": [
+      "Una ruleta, ocho tareas de negocio: hoy armamos una demo.",
+      "Dejo que la ruleta elija el agente y te muestro el proceso.",
+      "Giro la ruleta y prototipo el agente que salga, paso a paso."
+    ],
+    "claims_to_verify": [
+      "Antes de grabar, confirmá que la ruleta tenga ocho sectores iguales y que cada uno represente 12,5%.",
+      "Mostrá un giro real y verificá que el ejemplo corresponda al sector que salga.",
+      "Comprobá que la herramienta y la respuesta que aparezcan en pantalla funcionen como se describen; no presentes una demo como lista para producción.",
+      "Usá un caso ficticio o datos anonimizados y confirmá que no se exponga información personal.",
+      "Usá solo audio original o sonidos para los que tengas derechos."
+    ]
+  }
+}

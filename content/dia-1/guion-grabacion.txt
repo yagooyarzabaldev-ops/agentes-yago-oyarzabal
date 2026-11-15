@@ -1,0 +1,29 @@
+¿Qué agente prototipo si dejo que decida la ruleta?
+
+Ocho opciones, una tarea concreta y una demo; nada de magia.
+
+Hacemos un giro real para elegir el tema, no para prometer resultados.
+
+La tarea que salga define el ejemplo que vamos a trabajar.
+
+La ruleta elige la tarea, no garantiza que el agente ya funcione.
+
+Primero definimos qué debería resolver.
+
+Y también qué queda afuera.
+
+Así el alcance queda claro antes de armar la demo.
+
+Después escribimos una instrucción concreta.
+
+Y la probamos con un caso ficticio, sin datos de clientes.
+
+Revisamos si la respuesta sirve para esa tarea.
+
+¿Respeta los límites que definimos?
+
+Si falta contexto, ajustamos la instrucción.
+
+Y si el caso es sensible, lo derivamos a una persona.
+
+Comentá RULETA y te lo mando.

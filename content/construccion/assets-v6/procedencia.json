@@ -1,0 +1,34 @@
+{
+  "assets": [
+    {
+      "name": "manual",
+      "file": "manual.png",
+      "prompt": "Use case: photoreal editorial. Asset: full-bleed vertical 9:16 still for a lively Argentine creator reel about replacing fragmented manual work with an integrated AI system. A warm top-down angled photograph of a real creative desk covered in separate cream sheets, coral and lilac sticky notes, a mint green folder, a few loose paperclips, pencil and a small keyboard edge. The papers are scattered in different directions with empty outlined checkboxes and abstract simple pencil marks but absolutely no readable words. Rich tactile recycled-paper texture, warm afternoon daylight, honest creative mess, energetic diagonal composition. Palette cream, apricot, mint, plum, warm coral; NO blue or navy surfaces or lighting. Important objects occupy middle 65%, bottom 25% relatively simple to hold captions. No people, no faces, no brand logos, no charts, no watermark, no electrical objects. One beautiful coherent candid photograph, not a collage or panels. Portrait 9:16.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-67c1557b-9414-433f-925b-4c703a6fd43a.png",
+      "used_in_v6": true,
+      "illustrative": true
+    },
+    {
+      "name": "flujo",
+      "file": "flujo.png",
+      "prompt": "Use case: stylized-concept rendered as high-end miniature product photography. Asset: full-bleed vertical 9:16 B-roll for an expressive reel about a marketing AI workflow. A tangible miniature creative production line on a pale peach studio tabletop: on the left a small stack of cream note cards, at center translucent mint and soft lilac modular glass frames guide an elegant coral ribbon through the scene, beside the middle frame an ordinary graphite pencil lies across a cream approval sheet with one simple checkmark, on the right a small upright black-edged portrait screen displays an abstract coral and cream layout without text. The picture communicates idea, processing, human review, and a video artifact using physical objects, not electric cables or futuristic machinery. Strong playful perspective, realistic material depth, paper fibers, polished translucent glass, warm sunlight, soft crisp shadows, tasteful editorial art direction. Palette pale peach, ivory, mint, lilac, coral and charcoal; NO blue or navy. Center all key objects within middle 60% of height, quiet warm margins at top and bottom for motion typography. No people, no robots, no words, no numerical results, no logos, no watermarks, no split panels. Portrait 9:16.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-e99a8753-2adc-4cf0-a02b-fad22421bc5f.png",
+      "used_in_v6": true,
+      "illustrative": true
+    }
+  ],
+  "reused_assets": [
+    {
+      "name": "tiempo",
+      "file": "../assets-v4/tiempo.png",
+      "prompt": "Use case: photorealistic editorial. Asset: vertical 9:16 B-roll metaphor for freeing time by improving a workflow, for an upbeat Argentine AI creator reel. Close-up of a small retro orange analog kitchen timer on a quiet sunlit pale desk beside a folded pair of headphones, in the softly defocused background an open window and a green plant, late afternoon natural light. The timer has a clear simple dial with ticks but no readable text or digits. Realistic tactile material, candid warm photographic style, shallow focus, airy relaxed mood, cobalt blue shadow accents. Timer centered in middle half of composition, uncluttered lower quarter for subtitles. One single beautiful photograph, no person, no laptop, no logos, no overlay text, no watermarks. No charts or claims of time saved.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-382ee735-e39d-494c-bbca-6cf51f1bd0d3.png",
+      "illustrative": true,
+      "used_in_v6": true,
+      "reused_from": "V4"
+    }
+  ]
+}

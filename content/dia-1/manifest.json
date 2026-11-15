@@ -1,0 +1,76 @@
+{
+  "job_id": "46199eb8fb89",
+  "edition": "v4",
+  "state": "awaiting_revision_review",
+  "voice": "user_recorded",
+  "actual_seconds": 38.102,
+  "shots": 20,
+  "screen_seconds": 28.0666667,
+  "camera_seconds": 10,
+  "final_video": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1-v4\\Dia_1_Ventas_v4.mp4",
+  "preview": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1-v4\\Avance_v4_13s.mp4",
+  "video_sha256": "e10225f8ef026680569d56cdb739cfe4214aa6c638d6cad7b7911238b4fa5f96",
+  "technical_verification_passed": true,
+  "subtitle_status": "spoken_phrases_only_synced",
+  "prior_script_approval_applies": false,
+  "previous_editions": [
+    {
+      "job_id": "46199eb8fb89",
+      "script_sha256": "0f4972dbf1de66b0d76649ae3c719a66320068aac3b213f58d35b55310707c3a",
+      "voice": "user_recorded",
+      "planned_seconds": 45,
+      "subtitle_status": "aligned_local_transcription",
+      "state": "rejected_by_user",
+      "roulette_result": "Soporte",
+      "pending_assets": [],
+      "final_video": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1\\Dia_1_Ruleta_Soporte_v1.mp4",
+      "edition": "v1",
+      "actual_seconds": 54.124,
+      "pending_actions": [
+        "Revisión del montaje por el usuario"
+      ],
+      "published": false,
+      "video_sha256": "a2d27473cc82d0c77d7c31f191286f4174310ba4d3ef6db621b75b94affe225e"
+    },
+    {
+      "job_id": "46199eb8fb89",
+      "edition": "v2",
+      "state": "superseded_by_v3",
+      "voice": "user_recorded",
+      "actual_seconds": 35.9,
+      "final_video": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1-v2\\Dia_1_Ventas_v2.mp4",
+      "preview": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1-v2\\Avance_v2_12s.mp4",
+      "video_sha256": "606e6fa97c9770e09a183854030f51e31f194aa789b6b9415c102806be8483b0",
+      "technical_verification_passed": true,
+      "subtitle_status": "spoken_phrases_only_synced",
+      "agent_selection": "Ventas — selección editorial, no sorteo",
+      "prior_script_approval_applies": false,
+      "pending_actions": [
+        "Revisión creativa del montaje V2 y de su audio por el usuario"
+      ],
+      "published": false
+    },
+    {
+      "job_id": "46199eb8fb89",
+      "edition": "v3",
+      "state": "superseded_by_v4",
+      "voice": "user_recorded",
+      "actual_seconds": 35.776667,
+      "final_video": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1-v3\\Dia_1_Ventas_v3.mp4",
+      "preview": "D:\\Antigravity\\Infinite Process\\agente-marketing\\entregas\\dia-1-v3\\Avance_v3_12s.mp4",
+      "video_sha256": "7fbd080b2fce56e1df022fd8a0fb7aef6625df11833944109f06b8114c84dcbc",
+      "technical_verification_passed": true,
+      "subtitle_status": "spoken_phrases_only_synced",
+      "agent_selection": "Ventas — selección editorial, no sorteo",
+      "prior_script_approval_applies": false,
+      "pending_actions": [
+        "Revisión del montaje V3 y de su audio por el usuario"
+      ],
+      "published": false
+    }
+  ],
+  "pending_actions": [
+    "Revisión del montaje V4 y de su audio por el usuario"
+  ],
+  "published": false
+}

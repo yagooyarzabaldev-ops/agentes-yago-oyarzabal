@@ -1,0 +1,31 @@
+{
+  "assets": [
+    {
+      "name": "tunel",
+      "file": "tunel.png",
+      "prompt": "Use case: stylized-concept, photoreal miniature special effects. Asset: vertical 9:16 full-bleed visual for an inventive Argentine creator reel about AI infrastructure. A dramatic camera-inside-the-system view: a deep tunnel formed from hundreds of neatly insulated cobalt blue and warm orange electrical cables, coiling in concentric organic loops around a rectangular bright ivory doorway far in the center. The tunnel seems architectural and physical, like a surreal inside view behind an ordinary wall socket. Strong near-to-far perspective, cables large in the foreground, intricate shadow detail, warm light from the center, beautiful tactile insulation, editorial practical-effects photography. No exposed wires, no sparks, no people, no sci-fi holograms, no UI or lettering, no logos. Central vanishing point at 50% width 48% height. Leave bottom 22% mostly dark for subtitles. Deep navy, cobalt, warm orange, ivory. Single coherent picture, not panels or collage.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-e6f143c0-8a96-4e3a-bec0-cf535c0a74c4.png",
+      "illustrative": true,
+      "used_in_v5": false
+    },
+    {
+      "name": "idea",
+      "file": "idea.png",
+      "prompt": "Use case: stylized-concept, tactile photographic surrealism. Asset: vertical 9:16 full-bleed image for a bold motion design reel. An impossible glowing lightbulb made entirely of folded ivory paper, levitating above a tiny torn sheet of notebook paper on a deep cobalt-blue studio floor. The bulb's upper half is opening into six large elegant folded-paper wings and fragments, suggesting an idea taking flight. Intricate realistic paper fibers, creased folds, warm amber light shining softly from within the paper, beautiful grounded shadow on the floor, shot like high-end practical miniature photography. Dynamic diagonal sculptural composition, focal object within central 60% of frame. The lower 24% and upper 15% have simple clean blue space for editorial overlays. No actual words or markings, no typography, no logos, no watermark, no people, no desks, no generic circuit icons. Strong depth, one striking physical object, playful and sophisticated.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-a0b6964d-3d26-4a32-9b7d-3a300498f3a5.png",
+      "illustrative": true,
+      "used_in_v5": false
+    },
+    {
+      "name": "tiempo",
+      "file": "tiempo.png",
+      "prompt": "Use case: stylized-concept, photoreal editorial metaphor. Asset: vertical 9:16 visual for an inventive reel about using AI to improve processes and recover time. A large pristine glass hourglass floating slightly above a dark terracotta surface, the upper chamber holds a complex tiny tangle of cobalt-blue ribbon-like cables, which become a single elegant warm-orange thread passing through the narrow center and settling into a simple calm spiral in the lower glass chamber. Physically surreal but rendered as an exquisite tangible practical object, sharp realistic glass reflections and caustics, dark navy background, sidelight cobalt and warm gold, elegant negative space. Strong object centered between 22% and 72% height, bottom quarter quiet and dark for captions. No sand flying outside, no people, no numbers, no writing, no clocks with numbers, no logos, no charts, no claims of measured savings. Single coherent photograph, no collage.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-04dba927-3db1-4e9c-bff6-094201042219.png",
+      "illustrative": true,
+      "used_in_v5": true
+    }
+  ]
+}

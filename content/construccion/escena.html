@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es" data-duration="78">
+<meta charset="utf-8">
+<title>Así construimos el agente de marketing · Infinite Process</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:1080px;height:1920px;overflow:hidden;font-family:'Segoe UI',sans-serif;color:#fff3e8}
+#stage{position:absolute;inset:0;background:#0b1830;overflow:hidden}#grid{position:absolute;inset:-80px;background-image:linear-gradient(#8ba6db0a 1px,transparent 1px),linear-gradient(90deg,#8ba6db0a 1px,transparent 1px);background-size:80px 80px}
+#glow{position:absolute;width:1050px;height:1050px;border-radius:50%;right:-520px;top:200px;background:radial-gradient(circle,#345db450,transparent 68%)}
+.header{position:absolute;left:76px;right:146px;top:150px;display:flex;align-items:center;justify-content:space-between;font-size:23px;letter-spacing:3px;font-weight:700;color:#a7b6d0}.brand{display:flex;align-items:center;gap:17px}.mark{color:#ffb46c;font-size:51px;line-height:30px;letter-spacing:-6px;transform:translateY(-4px)}
+.chapter{position:absolute;left:78px;top:258px;color:#ffb46c;font-size:25px;letter-spacing:4px;font-weight:650;display:flex;gap:20px;align-items:center}.chapter:before{content:'';width:37px;height:2px;background:currentColor}
+h1{position:absolute;left:72px;top:310px;margin:0;width:870px;font-size:96px;line-height:1.045;letter-spacing:-4.7px;font-weight:720}h1 em{font-style:normal;color:#ffb46c}h1.long{font-size:86px;line-height:1.07}
+.scene{position:absolute;inset:0}.art{position:absolute;left:76px;top:620px;width:862px;height:690px;transform-origin:center center}
+.card{background:linear-gradient(140deg,#223b65,#152947);border:1.5px solid #8da5c947;border-radius:28px;box-shadow:0 26px 60px #0004}.label{font-size:23px;font-weight:650;letter-spacing:3px;color:#adbbd2}.small{font-size:28px;color:#acbdd6;line-height:1.45}.big{font-size:48px;line-height:1.15;font-weight:650;letter-spacing:-1.2px}.accent{color:#ffb46c}.mint{color:#a1e2c6}.mono{font-family:Consolas,monospace}.pill{border:1px solid #b3c6eb4a;padding:14px 22px;border-radius:99px;font-size:24px;display:inline-block;color:#c6d5ec;line-height:1}.tag{display:inline-block;font-size:22px;font-weight:650;letter-spacing:1px;color:#0b1830;background:#ffb46c;padding:12px 20px;border-radius:12px}.line{position:absolute;background:#637faa;transform-origin:left center}.dot{position:absolute;width:14px;height:14px;border-radius:50%;background:#ffb46c;box-shadow:0 0 26px #ffb46c88}
+.code{background:#091425;border:1px solid #54719b;border-radius:20px;padding:30px 34px;font-family:Consolas,monospace;font-size:29px;line-height:1.6;color:#a8bfdf;box-shadow:0 20px 35px #0003}.code .key{color:#ffb46c}.code .ok{color:#a1e2c6}.code-head{font-family:'Segoe UI',sans-serif;font-size:22px;color:#849bbb;letter-spacing:1px;border-bottom:1px solid #ffffff1c;padding-bottom:15px;margin-bottom:16px}
+.row{display:flex;align-items:center;gap:22px}.num{font-size:30px;font-weight:650;color:#ffb46c;border:1px solid #ffb46c55;width:62px;height:62px;border-radius:16px;display:flex;justify-content:center;align-items:center;flex-shrink:0}
+#subs{position:absolute;left:74px;top:1395px;width:862px;min-height:140px;display:flex;align-items:center;justify-content:center;text-align:center;font-weight:650;font-size:58px;line-height:1.17;letter-spacing:-1.3px;text-shadow:0 4px 18px #0008}#subs span{display:inline-block;margin:0 6px}#subs .on{color:#ffb46c}
+#provenance{position:absolute;left:78px;top:1580px;width:860px;color:#8398b8;font-size:23px;line-height:1.4;letter-spacing:.3px}
+.footer{position:absolute;left:78px;right:146px;top:1710px;display:flex;align-items:center;justify-content:space-between;font-size:24px;color:#a5b5cd}.footer strong{font-weight:600;color:#f2e7dc}.track{position:absolute;left:78px;top:1674px;width:856px;height:3px;background:#bed4ff22}.track div{height:3px;background:#ffb46c;transform-origin:left center}
+.light{background:#f2eadf!important;color:#102242}.light #grid{opacity:.4;background-image:linear-gradient(#1022420b 1px,transparent 1px),linear-gradient(90deg,#1022420b 1px,transparent 1px)}.light #glow{opacity:.2}.light h1{color:#102242}.light h1 em,.light .chapter{color:#a95d37}.light .header,.light .footer,.light #provenance{color:#596b83}.light .footer strong{color:#102242}.light #subs{color:#102242;text-shadow:none}.light #subs .on{color:#a95d37}.light .track{background:#10224222}.light .track div{background:#a95d37}
+.light .card{background:linear-gradient(140deg,#fffaf1,#e9dfd1);border-color:#b3a89d88;box-shadow:0 22px 50px #10224212}.light .label,.light .small{color:#64738a}.light .accent{color:#a95d37}.light .pill{color:#4e637f;border-color:#8391a955}.light .num{color:#a95d37;border-color:#b9805f55}
+.check{width:45px;height:45px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;background:#a1e2c61a;color:#a1e2c6;font-size:30px;font-weight:700;margin-right:18px}.phone{width:270px;height:475px;border:2px solid #9badd373;border-radius:38px;background:#091425;box-shadow:0 30px 65px #0006;overflow:hidden;position:absolute}.phone:before{content:'';position:absolute;top:17px;left:90px;width:90px;height:9px;background:#a3b4cf33;border-radius:9px}
+.orbit{position:absolute;border:1px solid #5b7fb955;border-radius:50%}.node{position:absolute;text-align:center}.reveal{will-change:transform,opacity}
+</style>
+<div id="stage">
+ <div id="grid"></div><div id="glow"></div>
+ <div class="header"><div class="brand"><span class="mark">∞</span> INFINITE PROCESS</div><span id="count">01 / 09</span></div>
+
+ <section class="scene" data-i="0">
+  <div class="chapter">DETRÁS DEL PROYECTO</div><h1>De una idea<br>a un <em>sistema.</em></h1>
+  <div class="art">
+   <div class="orbit" style="width:650px;height:650px;left:105px;top:-15px"></div><div class="orbit" style="width:450px;height:450px;left:205px;top:85px"></div>
+   <svg width="862" height="690" style="position:absolute"><path d="M165 155 Q440 80 430 310 Q430 555 710 520" stroke="#6b88b9" stroke-width="2" fill="none" stroke-dasharray="7 12"/></svg>
+   <div class="card node reveal" data-at="0" style="left:0;top:65px;width:290px;padding:30px;text-align:left"><div class="label">EL PUNTO DE PARTIDA</div><div class="big" style="margin-top:16px">Una idea<span class="accent">.</span></div></div>
+   <div class="card node reveal" data-at=".6" style="left:235px;top:232px;width:390px;padding:37px 28px;background:linear-gradient(140deg,#3c63a6,#203e70)"><div class="label" style="color:#bcd2f2">AGENTE DE</div><div class="big" style="font-size:57px;margin-top:9px">marketing</div><div style="margin-top:24px;color:#ffb46c;font-size:27px">idea → guion → video</div></div>
+   <div class="card node reveal" data-at="1.5" style="left:555px;top:486px;width:280px;padding:27px;text-align:left"><div class="label">CON UNA CLAVE</div><div class="big" style="font-size:38px;margin-top:12px">Vos revisás.</div></div>
+   <div class="dot" data-path="intro"></div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="1">
+  <div class="chapter">01 · DEFINIR LA BASE</div><h1>Primero,<br>la <em>identidad.</em></h1>
+  <div class="art">
+   <div class="card reveal" data-at="0" style="padding:34px 36px;height:180px;transform:rotate(-2deg)"><div class="label">A QUIÉN LE HABLAMOS</div><div class="big" style="margin-top:20px">Negocios que exploran IA</div></div>
+   <div class="card reveal" data-at="1.5" style="position:absolute;top:205px;width:862px;padding:34px 36px;height:180px"><div class="label">CÓMO SONAMOS</div><div class="big" style="margin-top:20px">Argentino. Directo. Con voseo.</div></div>
+   <div class="card reveal" data-at="3.6" style="position:absolute;top:410px;width:862px;padding:34px 36px;height:180px"><div class="label">QUÉ MANTENEMOS</div><div class="big" style="margin-top:20px">Un cierre consistente<span class="accent">.</span></div></div>
+   <div class="pill mono reveal" data-at="5" style="position:absolute;top:625px;left:0">config/brand-guidelines.json</div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="2">
+  <div class="chapter">02 · REPARTIR EL TRABAJO</div><h1>Cada tarea,<br><em>un rol.</em></h1>
+  <div class="art">
+   <div class="card reveal" data-at="0" style="position:absolute;left:125px;top:0;width:612px;padding:35px;text-align:center"><div class="label">EL CÓDIGO COORDINA</div><div class="big" style="margin-top:14px">Flujo de trabajo</div></div>
+   <svg width="862" height="690" style="position:absolute;inset:0;pointer-events:none"><path d="M431 168 V230 H205 V280 M431 230 H657 V280 M205 440 V510 H657 V440 M431 510 V575" stroke="#607fac" stroke-width="2" fill="none"/></svg>
+   <div class="card reveal" data-at="1.8" style="position:absolute;left:0;top:280px;width:410px;height:160px;padding:29px"><div class="label">AGENTE 01</div><div class="big" style="margin-top:14px">Enfoques</div></div>
+   <div class="card reveal" data-at="3.5" style="position:absolute;left:452px;top:280px;width:410px;height:160px;padding:29px"><div class="label">AGENTE 02</div><div class="big" style="margin-top:14px">Guion</div></div>
+   <div class="tag reveal" data-at="5.5" style="position:absolute;top:575px;left:212px;padding:22px 30px;font-size:29px">Cada avance queda guardado</div>
+   <div class="dot" data-path="roles"></div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="3">
+  <div class="chapter">03 · REVISAR ANTES DE PRODUCIR</div><h1 class="long">Tu aprobación<br><em>abre el paso.</em></h1>
+  <div class="art">
+   <div class="card" style="padding:32px 36px;height:235px"><div style="display:flex;justify-content:space-between"><div class="label">VERSIÓN DEL GUION</div><span class="tag" id="version">V1</span></div><div class="big" style="margin-top:25px" id="approveStatus">Pendiente de revisión</div><div style="height:8px;background:#a7bad127;width:88%;margin-top:26px;border-radius:5px"></div><div style="height:8px;background:#a7bad127;width:65%;margin-top:16px;border-radius:5px"></div></div>
+   <div class="row" style="margin-top:30px;gap:22px"><div class="pill" id="changeBtn" style="width:420px;text-align:center;padding:22px">PEDIR CAMBIOS</div><div class="pill" id="approveBtn" style="width:420px;text-align:center;padding:22px">APROBAR VERSIÓN</div></div>
+   <div class="code reveal" data-at="2.4" style="position:absolute;top:365px;width:862px;font-size:27px"><div class="code-head">marketing/agents.py · revisión del guion</div>job['feedback'].append(feedback)<br>job.update(state=<span class="ok">'brief'</span>,<br>&nbsp;&nbsp;approval=<span class="key">None</span>, video=<span class="key">None</span>, agents={})</div>
+   <div class="small reveal" data-at="5.5" style="position:absolute;top:675px;font-size:26px">Un cambio invalida la aprobación anterior.</div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="4">
+  <div class="chapter">04 · PREPARAR LA PRODUCCIÓN</div><h1 class="long">El guion se vuelve<br><em>producción.</em></h1>
+  <div class="art">
+   <div class="phone" style="left:0;top:45px"><div style="position:absolute;top:65px;left:24px;font-size:17px;letter-spacing:2px;color:#9baecb">PIEZA VERTICAL</div><div style="position:absolute;top:110px;left:25px;font-size:36px;line-height:1.1;font-weight:700">Una idea.<br>Una historia.</div><div id="wheel" style="position:absolute;top:220px;left:58px;width:150px;height:150px;border-radius:50%;background:conic-gradient(#ffb46c 0deg 45deg,#3e61a0 45deg 90deg,#9cb6df 90deg 135deg,#355386 135deg 180deg,#d48c69 180deg 225deg,#274a7d 225deg 270deg,#809ac7 270deg 315deg,#183761 315deg);border:6px solid #d6e4fc55;box-shadow:0 0 40px #345cab77"><div style="position:absolute;inset:53px;background:#091425;border-radius:50%"></div></div><div style="position:absolute;bottom:35px;left:27px;font-size:21px;font-weight:600;color:#ffb46c">guion + voz + visuales</div></div>
+   <div style="position:absolute;left:310px;top:20px;width:552px" id="productionRows">
+    <div class="row card reveal" data-at=".1" style="padding:18px 24px;margin-bottom:18px"><span class="num">01</span><span class="big" style="font-size:38px">Ruleta</span></div>
+    <div class="row card reveal" data-at="1.2" style="padding:18px 24px;margin-bottom:18px"><span class="num">02</span><span class="big" style="font-size:38px">Dirección visual</span></div>
+    <div class="row card reveal" data-at="2.1" style="padding:18px 24px;margin-bottom:18px"><span class="num">03</span><span class="big" style="font-size:38px">Voz</span></div>
+    <div class="row card reveal" data-at="3.2" style="padding:18px 24px;margin-bottom:18px"><span class="num">04</span><span class="big" style="font-size:38px">Portada + copy</span></div>
+   </div>
+   <div style="position:absolute;top:565px;left:0;width:862px"><div class="label">PAQUETE PARA EDITAR Y REVISAR</div><div class="row" style="margin-top:22px;gap:8px" id="timelineBars"></div></div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="5">
+  <div class="chapter">05 · CONECTAR LAS PIEZAS</div><h1>Tres piezas.<br><em>Un flujo.</em></h1>
+  <div class="art">
+   <div class="card row reveal" data-at="0" style="height:158px;padding:30px 34px;margin-bottom:22px"><div class="num mono" style="width:96px;height:96px;font-size:41px">Py</div><div><div class="big">Python</div><div class="small" style="margin-top:9px">Coordina las etapas</div></div><div class="mono" style="margin-left:auto;color:#8d9ab0;font-size:38px">01</div></div>
+   <div class="card row reveal" data-at="1.6" style="height:158px;padding:30px 34px;margin-bottom:22px"><div class="num" style="width:96px;height:96px;font-size:38px">DB</div><div><div class="big">SQLite</div><div class="small" style="margin-top:9px">Conserva el estado</div></div><div class="mono" style="margin-left:auto;color:#8d9ab0;font-size:38px">02</div></div>
+   <div class="card row reveal" data-at="3.8" style="height:158px;padding:30px 34px"><div class="num" style="width:96px;height:96px;font-size:45px">▶</div><div><div class="big">FFmpeg</div><div class="small" style="margin-top:9px">Compone video y audio</div></div><div class="mono" style="margin-left:auto;color:#8d9ab0;font-size:38px">03</div></div>
+   <div class="pill reveal" data-at="5.6" style="position:absolute;top:582px;left:0">1080 × 1920</div><div class="pill reveal" data-at="5.8" style="position:absolute;top:582px;left:248px">Subtítulos</div><div class="pill reveal" data-at="6" style="position:absolute;top:582px;left:455px">Efectos</div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="6">
+  <div class="chapter">06 · PROBAR LOS LÍMITES</div><h1 class="long">También probamos<br><em>lo que puede fallar.</em></h1>
+  <div class="art" style="top:610px">
+   <div style="display:flex;align-items:center;gap:32px"><div style="font-size:185px;font-weight:650;letter-spacing:-10px;line-height:1;color:#ffb46c" id="testCount">40</div><div><div class="big" style="font-size:44px">pruebas locales</div><div class="small" style="margin-top:12px">Ejecutadas · 14 NOV 2026</div></div></div>
+   <div class="card" style="margin-top:35px;padding:30px 34px">
+    <div class="row reveal" data-at="1.2" style="margin-bottom:28px"><span class="check">✓</span><span style="font-size:34px">Respuestas incompletas</span></div>
+    <div class="row reveal" data-at="2.8" style="margin-bottom:28px"><span class="check">✓</span><span style="font-size:34px">Versiones y aprobaciones</span></div>
+    <div class="row reveal" data-at="4.1"><span class="check">✓</span><span style="font-size:34px">Errores de publicación</span></div>
+   </div>
+   <div class="code reveal" data-at="5.6" style="margin-top:24px;padding:20px 30px;font-size:27px"><span class="ok">OK</span> · Ran 40 tests</div>
+   <div class="small reveal" data-at="6.2" style="margin-top:22px;font-size:25px">Pruebas con dobles de red.<br>La validación de cuentas reales es otra etapa.</div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="7">
+  <div class="chapter">07 · REVISIÓN ANTES DEL ENVÍO</div><h1>Publicar también<br><em>se revisa.</em></h1>
+  <div class="art">
+   <div class="card" style="padding:30px 34px;height:264px"><div class="label">PAQUETE FINAL</div><div class="row" style="gap:16px;margin-top:30px"><div class="pill reveal" data-at=".6">Video</div><div class="pill reveal" data-at="1.1">Texto</div><div class="pill reveal" data-at="1.6">Cuenta</div></div><div class="row" style="margin-top:29px;font-size:29px"><span style="width:12px;height:12px;background:#ffb46c;border-radius:50%"></span>Revisión humana antes del envío</div></div>
+   <div style="position:absolute;top:310px;left:0;width:862px;display:flex;gap:24px">
+    <div class="card reveal" data-at="3.3" style="width:419px;padding:36px 28px"><div style="width:68px;height:46px;background:#cd6551;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:24px">▶</div><div class="big" style="font-size:42px;margin-top:25px">YouTube</div><div class="small" style="font-size:25px;margin-top:14px">Adaptador implementado</div></div>
+    <div class="card reveal" data-at="3.8" style="width:419px;padding:36px 28px"><div style="width:52px;height:52px;border:4px solid #d09cb8;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:40px;color:#d09cb8">○</div><div class="big" style="font-size:42px;margin-top:19px">Instagram</div><div class="small" style="font-size:25px;margin-top:14px">Adaptador implementado</div></div>
+   </div>
+   <div class="tag reveal" data-at="5.7" style="position:absolute;top:610px;font-size:25px">Requieren configuración + prueba real</div>
+  </div>
+ </section>
+
+ <section class="scene" data-i="8">
+  <div class="chapter">ASÍ QUEDÓ CONSTRUIDO</div><h1>Un proceso.<br><em>Tu criterio.</em></h1>
+  <div class="art">
+   <div class="card reveal" data-at="0" style="padding:39px 38px"><div class="label">DE PRINCIPIO A FIN</div><div class="big" style="font-size:47px;margin-top:25px">Idea <span class="accent">→</span> Guion <span class="accent">→</span> Video</div><div class="small" style="margin-top:25px">Con revisión humana en el camino.</div></div>
+   <div class="reveal" data-at="2.7" style="position:absolute;top:330px;width:862px;border-top:1px solid #b8cbe733;padding-top:36px"><div class="label">PRÓXIMO PASO</div><div style="font-size:66px;font-weight:680;line-height:1.08;letter-spacing:-2px;margin-top:22px">Seguí la<br><span class="accent">construcción.</span></div><div style="margin-top:26px;font-size:30px;color:#bfcee4">@yago.oyarzabal</div></div>
+  </div>
+ </section>
+
+ <div id="subs"></div><div id="provenance">Visualización del proyecto · voz en off generada con IA</div>
+ <div class="track"><div id="progress"></div></div><div class="footer"><strong>@yago.oyarzabal</strong><span>IA PARTNER · PROCESO DE CONSTRUCCIÓN</span></div>
+</div>
+<script src="file:///C:/Users/oyarz/.agents/skills/motion-graphics-reels/templates/runtime.js"></script>
+<script>
+const P=MG.params, scenes=[...document.querySelectorAll('.scene')], stage=document.getElementById('stage');
+const paras=P.paragraphs||[], words=P.words||[], captions=P.captions||[];
+document.getElementById('timelineBars').innerHTML=Array.from({length:12},(_,i)=>`<div style="height:${42+(i%3)*12}px;flex:${i%3+1};background:${i%2?'#7b9bc8':'#ffb46c'};opacity:.8;border-radius:7px"></div>`).join('');
+const esc=MG.esc, clip=x=>Math.max(0,Math.min(1,x));
+MG.onFrame(t=>{
+ let idx=paras.findIndex((p,i)=>t>=p.start&&(i===paras.length-1||t<paras[i+1].start));if(idx<0)idx=0;
+ const p=paras[idx]||{start:0,end:8}, u=t-p.start;
+ stage.classList.toggle('light',idx===1||idx===5);
+ for(let i=0;i<scenes.length;i++)scenes[i].style.display=i===idx?'block':'none';
+ const scene=scenes[idx];
+ const entry=1-Math.pow(1-clip(u/.45),3);
+ scene.querySelector('h1').style.transform=`translateY(${(1-entry)*25}px)`;
+ scene.querySelector('h1').style.opacity=.35+.65*entry;
+ const art=scene.querySelector('.art');art.style.transform=`translateY(${(1-entry)*20}px) scale(${1+Math.sin(Math.max(0,u)*.34)*.008})`;
+ for(const el of scene.querySelectorAll('.reveal')){const q=1-Math.pow(1-clip((u-Number(el.dataset.at))/.5),3);el.style.opacity=q;el.style.transform=`translateY(${(1-q)*27}px)`;}
+ document.getElementById('count').textContent=`${String(idx+1).padStart(2,'0')} / 09`;
+ document.getElementById('progress').style.transform=`scaleX(${clip(t/MG.duration)})`;
+ document.getElementById('grid').style.transform=`translate(${Math.sin(t*.12)*15}px,${(t*1.3)%80}px)`;
+ document.getElementById('glow').style.transform=`translate(${Math.sin(t*.18)*85}px,${Math.cos(t*.12)*80}px)`;
+ const cap=captions.find(c=>t>=c[0].start-.03&&t<=c[c.length-1].end+.10);
+ document.getElementById('subs').innerHTML=cap?'<div>'+cap.map(w=>`<span class="${t>=w.start-.02&&t<w.end+.02?'on':''}">${esc(w.w)}</span>`).join(' ')+'</div>':'';
+ if(idx===0){const d=scene.querySelector('.dot'),q=(u*.19)%1;d.style.left=(150+q*560)+'px';d.style.top=(145+q*370)+'px';d.style.opacity=Math.sin(q*Math.PI);}
+ if(idx===2){const d=scene.querySelector('.dot'),q=(u*.26)%1;d.style.left=(q<.5?198:650)+'px';d.style.top=(175+((q*2)%1)*330)+'px';}
+ if(idx===3){const changed=u>4.8;document.getElementById('version').textContent=changed?'V2':'V1';document.getElementById('approveStatus').textContent=changed?'Nueva versión: revisar otra vez':'Pendiente de revisión';document.getElementById('approveStatus').style.fontSize=changed?'41px':'48px';document.getElementById('changeBtn').style.borderColor=changed?'#ffb46c':'#b3c6eb4a';}
+ if(idx===4)document.getElementById('wheel').style.transform=`rotate(${u*65}deg)`;
+ if(idx===6)document.getElementById('testCount').textContent=Math.round(40*clip(u/.65));
+});
+MG.ready();
+</script>
+</html>

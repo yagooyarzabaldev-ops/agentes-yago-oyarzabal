@@ -1,0 +1,51 @@
+{
+  "id": "sistemas-ia-v10-chicago-02",
+  "approved_on": "2026-11-15",
+  "approved_by": "Yago Oyarzabal",
+  "approval_quote": "ya quedo como version base de como me gustaria se construyan todos los proximos videos",
+  "scope": "estilo audiovisual y flujo de producción; no publicación en redes",
+  "local_artifact": "entregas/chicago-sin-bajo-02/Sistemas_con_IA_Yago_Chicago_sin_bajo_02.mp4",
+  "file_sha256": "37d88d240b95b09d7f765b4bd7a4932e1102773d0716d9634b433968eb29d4bd",
+  "bytes": 45294969,
+  "duration_seconds": 67.1,
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "video_codec": "h264",
+  "audio_codec": "aac",
+  "camera_seconds": 32.36666666666667,
+  "camera_fraction": 0.4823646299056136,
+  "bw_ranges": [
+    [
+      18.5,
+      21.2
+    ],
+    [
+      37.5,
+      39.733333333333334
+    ],
+    [
+      47.8,
+      48.733333333333334
+    ]
+  ],
+  "scenes": 35,
+  "unique_image_scenes": 14,
+  "native_animation_scenes": 21,
+  "music": {
+    "version": "chicago-sin-bajo-02",
+    "bpm": 122,
+    "bass_line": false,
+    "third_party_samples": false
+  },
+  "audio_metrics": {
+    "lufs": -14.38,
+    "true_peak": -3.44,
+    "lra": 3.4
+  },
+  "params": "production/baseline-params.json",
+  "template": "content/construccion/escena_v10.html",
+  "motion": "content/construccion/v10-motion.js",
+  "score": "content/construccion/audio_chicago_sin_bajo_02.py",
+  "note": "Las mediciones son evidencia técnica. La aprobación de estilo proviene del usuario. Archivos personales y export de video permanecen locales."
+}

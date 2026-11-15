@@ -1,0 +1,57 @@
+{
+  "id": "infinite-process-editorial-v1",
+  "version": 1,
+  "approved_on": "2026-11-15",
+  "approval_scope": "Base de estilo y flujo para todos los próximos videos; no autoriza publicar en redes",
+  "reference": "production/baseline.json",
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": [60, 90]},
+  "story": {
+    "tone": "Español argentino con voseo, cercano, concreto y natural; conservar el acento de Yago",
+    "focus": "Mostrar cómo cambia un sistema de trabajo con IA, usando problemas y procesos concretos",
+    "structure": ["gancho en los primeros 3 segundos", "problema reconocible", "cambio de sistema explicado visualmente", "resultado o aprendizaje honesto", "cierre ligado a la idea"],
+    "cta": "Elegir según el objetivo; no imponer RULETA ni promesas numéricas",
+    "avoid": ["tono corporativo o solemne", "metáforas de electricidad como tema central", "datos inventados", "promesas de viralidad", "imágenes decorativas sin relación con lo hablado"]
+  },
+  "camera": {
+    "fraction_range": [0.4, 0.55],
+    "target_fraction": 0.5,
+    "layout": "Cuando aparece Yago: cámara arriba, imágenes o animaciones abajo, sin marco blanco; el resto a pantalla completa",
+    "split_y": 960,
+    "asides": "Blanco y negro y acercamiento breve solo cuando una aclaración lo justifica; no inventar aclaraciones para cumplir una cuota"
+  },
+  "visuals": {
+    "palette": {"amber": "#ffb35e", "lime": "#d8ec85", "violet": "#c99bff", "emerald": "#91e2c0", "coral": "#ff937e", "ink": "#0a0b10", "text": "#fff6ed"},
+    "references": "content/referencias/diseno-ia/README.md",
+    "language": ["macros técnicos luminosos", "espacios isométricos", "redes holográficas", "vidrio y metal", "tipografía cinética", "capas con profundidad"],
+    "shot_seconds": [1.5, 2.5],
+    "max_static_seconds": 3,
+    "minimum_unique_visual_fraction": 0.8,
+    "minimum_palette_families": 3,
+    "minimum_motion_families": 4,
+    "minimum_transition_families": 4,
+    "motion": ["parallax", "push", "truck", "orbit", "assembly", "particles", "kinetic-type"],
+    "transitions": ["cut", "portal", "fold", "match", "particles", "slit", "trace"],
+    "avoid": ["todo azul", "marco blanco alrededor de la cámara", "tres imágenes recicladas durante todo el reel", "zoom como única animación", "la misma transición en cada corte"]
+  },
+  "voice": {
+    "source": "micrófono real aportado por Yago",
+    "edit": "Quitar yyy, titubeos y repeticiones por error; conservar pausas útiles, sentido, respiración natural y sincronía labial",
+    "speed": 1.0,
+    "synthetic_default": false,
+    "privacy": "Grabaciones, voces, credenciales y exports personales fuera de Git; no enviar a servicios externos sin autorización"
+  },
+  "music": {
+    "reference": "content/construccion/audio_chicago_sin_bajo_02.py",
+    "genre": "Chicago house minimal, sutil y con swing",
+    "bpm": 122,
+    "bass_line": false,
+    "sustained_subbass": false,
+    "instruments": ["bombo corto", "órgano percusivo", "rim", "woodblock", "clap", "hi-hats con swing"],
+    "mix": "Voz al frente, ducking bajo el habla, huecos de percusión en aclaraciones; acentos ligados a la narración y a cambios visuales",
+    "master_target_lufs": -14,
+    "master_true_peak_ceiling_dbtp": -2,
+    "variation": "Mantener identidad y sutileza, crear arreglos y patrones nuevos según el relato; no pegar siempre el mismo loop"
+  },
+  "delivery": ["MP4 final", "subtítulos", "portada", "copy", "plan de escenas", "procedencia de recursos", "informe de revisión"],
+  "qa": ["escuchar cortes y mezcla", "ver sincronía labial", "revisar el archivo exportado completo", "probar textos y transiciones a tamaño móvil", "comprobar duración, codecs, fps, LUFS y pico", "diferenciar mediciones técnicas de revisión perceptual"]
+}

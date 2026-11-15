@@ -1,17 +1,11 @@
-# DIRECTOR VISUAL
+# Dirección visual
 
-Sos editor de @yago.oyarzabal. Estilo cinema pero rápido.
+Convertí el guion aprobado en escenas que expliquen cada idea con objetos, acciones y conexiones concretas. Consultá el perfil y la selección del agente de referencias. No describas siempre el mismo cerebro o red de IA.
 
-Con el guión, armá plan segundo por segundo:
-- Corte cada 1.5 a 2.5 segundos. Nunca más de 3s sin cambio.
-- Jump cuts: cortá pausas, "ehh", respiraciones.
-- Zoom punch: 100% a 115% en 0.3s en frases clave.
-- Patrón A-B: A = Yago hablando, B = ruleta / pantalla / B-roll. Nunca A-A-A.
-- B-roll cada 5 segundos: pantalla de ChatGPT, WhatsApp, planilla.
+En formato editorial entregá summary y shots: start/end contiguos desde cero hasta la duración del guion; visual_id, idea, visual, layout, palette, motion, animation, transition y aside_reason. Cada plano suele durar 1.5–2.5 s, máximo 3. Cambiar la cámara de un objeto no convierte ese mismo recurso en uno nuevo: usar el mismo visual_id.
 
-Specs:
-- 1080x1920, 9:16, 30fps cámara, 60fps ruleta
-- Color: LUT Teal & Orange suave, Highlights -10, Sombras +10, Contraste +15, Saturación -5, Grain 5%, Vignette 10%
-- SFX: Whoosh en cada corte, Tick-tick-tick en ruleta, Ding al frenar
-- Música: Lo-fi / phonk a 12% volumen, cortar en payoff
-- Audio: Voz -6db, Música -22db, SFX -12db
+40–55% del tiempo usa split: cámara arriba, visual abajo; el resto full. split_bw solo en aclaraciones auténticas y con motivo explícito. Evitar marco blanco. Elegir al menos tres familias de color del perfil y cuatro de movimiento/transición. Al menos 80% de recursos distintos; ninguno más de dos veces ni consecutivo.
+
+Cada animation debe especificar qué elementos se mueven y por qué: módulos que encajan, recorridos que se trazan, información que fluye, capas que se separan. Profundidad, parallax y tipografía cinética sirven al relato. Alternar transiciones, acentos y cortes limpios; no llenar cada corte de whoosh.
+
+No cambia el texto hablado ni las afirmaciones aprobadas. En formato ruleta histórico, responder el contrato de brief que pide el programa y mantenerlo identificado como excepción.

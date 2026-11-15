@@ -1,0 +1,59 @@
+1
+00:00:00,000 --> 00:00:03,000
+¿Qué agente prototipo si dejo que decida la ruleta?
+
+2
+00:00:03,000 --> 00:00:06,000
+Ocho opciones, una tarea concreta y una demo; nada de magia.
+
+3
+00:00:06,000 --> 00:00:09,000
+Hacemos un giro real para elegir el tema, no para prometer resultados.
+
+4
+00:00:09,000 --> 00:00:12,000
+La tarea que salga define el ejemplo que vamos a trabajar.
+
+5
+00:00:12,000 --> 00:00:15,000
+La ruleta elige la tarea, no garantiza que el agente ya funcione.
+
+6
+00:00:15,000 --> 00:00:18,000
+Primero definimos qué debería resolver.
+
+7
+00:00:18,000 --> 00:00:21,000
+Y también qué queda afuera.
+
+8
+00:00:21,000 --> 00:00:24,000
+Así el alcance queda claro antes de armar la demo.
+
+9
+00:00:24,000 --> 00:00:27,000
+Después escribimos una instrucción concreta.
+
+10
+00:00:27,000 --> 00:00:30,000
+Y la probamos con un caso ficticio, sin datos de clientes.
+
+11
+00:00:30,000 --> 00:00:33,000
+Revisamos si la respuesta sirve para esa tarea.
+
+12
+00:00:33,000 --> 00:00:36,000
+¿Respeta los límites que definimos?
+
+13
+00:00:36,000 --> 00:00:39,000
+Si falta contexto, ajustamos la instrucción.
+
+14
+00:00:39,000 --> 00:00:42,000
+Y si el caso es sensible, lo derivamos a una persona.
+
+15
+00:00:42,000 --> 00:00:45,000
+Comentá RULETA y te lo mando.

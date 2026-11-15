@@ -1,0 +1,9 @@
+[project]
+name = "agente-marketing"
+version = "0.1.0"
+description = "Producción y publicación supervisada de Shorts y Reels"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+agente-marketing = "marketing.cli:main"

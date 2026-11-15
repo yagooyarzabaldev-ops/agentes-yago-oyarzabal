@@ -1,0 +1,3934 @@
+{
+  "duration": 67.1,
+  "voice_end": 65.30000000000001,
+  "paragraphs": [
+    {
+      "i": 0,
+      "label": "enchufe",
+      "start": 0,
+      "end": 7.333333333333333,
+      "text": "una cosa es cambiar enchufes y teclas para prender y apagar la luz y otra cosa es cambiar todo el cableado"
+    },
+    {
+      "i": 1,
+      "label": "experiencia",
+      "start": 7.333333333333333,
+      "end": 13.2,
+      "text": "la idea sería poder compartir un poco de inteligencia artificial, un poco de mi experiencia"
+    },
+    {
+      "i": 2,
+      "label": "comunidad",
+      "start": 13.2,
+      "end": 17.1,
+      "text": "poder sumar a la comunidad, mis conocimientos, mis habilidades"
+    },
+    {
+      "i": 3,
+      "label": "aprendizaje",
+      "start": 17.1,
+      "end": 29.4,
+      "text": "cómo por ahí una persona que alguna vez creyó saber hoy está aprendiendo nuevas habilidades, pero también tiene bases sólidas para poder trabajar con infraestructura,"
+    },
+    {
+      "i": 4,
+      "label": "implementar",
+      "start": 29.4,
+      "end": 40.0,
+      "text": "porque siempre la idea está rápida, está buena, pero después cuando tenemos que implementar o desarrollar eso, según la estructura del negocio no siempre se puede implementar."
+    },
+    {
+      "i": 5,
+      "label": "resultado",
+      "start": 40.0,
+      "end": 48.80000000000001,
+      "text": "Obviamente hay soluciones rápidas y la idea siempre es que el usuario tenga resultado desde el primer momento, eso sería lo ideal."
+    },
+    {
+      "i": 6,
+      "label": "mejorar",
+      "start": 48.80000000000001,
+      "end": 64.30000000000001,
+      "text": "eso sería como el sistema que se podría automatizar o agregar algunas mejoras para que justamente ese desarrollo con inteligencia artificial podamos resolver esos puntos de dolor o ese ahorro del tiempo o costos,"
+    },
+    {
+      "i": 7,
+      "label": "cierre",
+      "start": 64.30000000000001,
+      "end": 65.30000000000001,
+      "text": "sería lo ideal."
+    }
+  ],
+  "words": [
+    {
+      "source_index": 132,
+      "w": "una",
+      "start": 0.0,
+      "end": 0.13,
+      "chapter": 0
+    },
+    {
+      "source_index": 133,
+      "w": "cosa",
+      "start": 0.13,
+      "end": 0.49,
+      "chapter": 0
+    },
+    {
+      "source_index": 134,
+      "w": "es",
+      "start": 0.49,
+      "end": 0.91,
+      "chapter": 0
+    },
+    {
+      "source_index": 135,
+      "w": "cambiar",
+      "start": 0.91,
+      "end": 1.2644,
+      "chapter": 0
+    },
+    {
+      "source_index": 136,
+      "w": "enchufes",
+      "start": 1.2644,
+      "end": 2.1944,
+      "chapter": 0
+    },
+    {
+      "source_index": 138,
+      "w": "y",
+      "start": 2.2144,
+      "end": 2.3544,
+      "chapter": 0
+    },
+    {
+      "source_index": 139,
+      "w": "teclas",
+      "start": 2.4067,
+      "end": 2.9967,
+      "chapter": 0
+    },
+    {
+      "source_index": 140,
+      "w": "para",
+      "start": 3.0567,
+      "end": 3.293,
+      "chapter": 0
+    },
+    {
+      "source_index": 141,
+      "w": "prender",
+      "start": 3.293,
+      "end": 3.633,
+      "chapter": 0
+    },
+    {
+      "source_index": 142,
+      "w": "y",
+      "start": 3.633,
+      "end": 3.813,
+      "chapter": 0
+    },
+    {
+      "source_index": 143,
+      "w": "apagar",
+      "start": 3.813,
+      "end": 4.053,
+      "chapter": 0
+    },
+    {
+      "source_index": 144,
+      "w": "la",
+      "start": 4.053,
+      "end": 4.233,
+      "chapter": 0
+    },
+    {
+      "source_index": 145,
+      "w": "luz",
+      "start": 4.233,
+      "end": 4.473,
+      "chapter": 0
+    },
+    {
+      "source_index": 146,
+      "w": "y",
+      "start": 4.473,
+      "end": 4.7459,
+      "chapter": 0
+    },
+    {
+      "source_index": 147,
+      "w": "otra",
+      "start": 4.7459,
+      "end": 4.9859,
+      "chapter": 0
+    },
+    {
+      "source_index": 148,
+      "w": "cosa",
+      "start": 4.9859,
+      "end": 5.4059,
+      "chapter": 0
+    },
+    {
+      "source_index": 149,
+      "w": "es",
+      "start": 5.4059,
+      "end": 5.7259,
+      "chapter": 0
+    },
+    {
+      "source_index": 150,
+      "w": "cambiar",
+      "start": 5.7259,
+      "end": 6.0259,
+      "chapter": 0
+    },
+    {
+      "source_index": 151,
+      "w": "todo",
+      "start": 6.0259,
+      "end": 6.5059,
+      "chapter": 0
+    },
+    {
+      "source_index": 152,
+      "w": "el",
+      "start": 6.5059,
+      "end": 6.7859,
+      "chapter": 0
+    },
+    {
+      "source_index": 153,
+      "w": "cableado",
+      "start": 6.7859,
+      "end": 7.3259,
+      "chapter": 0
+    },
+    {
+      "source_index": 2,
+      "w": "la",
+      "start": 7.3333,
+      "end": 7.6733,
+      "chapter": 1
+    },
+    {
+      "source_index": 3,
+      "w": "idea",
+      "start": 7.6733,
+      "end": 7.8333,
+      "chapter": 1
+    },
+    {
+      "source_index": 4,
+      "w": "sería",
+      "start": 7.8333,
+      "end": 8.1733,
+      "chapter": 1
+    },
+    {
+      "source_index": 5,
+      "w": "poder",
+      "start": 8.1733,
+      "end": 8.8978,
+      "chapter": 1
+    },
+    {
+      "source_index": 6,
+      "w": "compartir",
+      "start": 8.8978,
+      "end": 9.4778,
+      "chapter": 1
+    },
+    {
+      "source_index": 7,
+      "w": "un",
+      "start": 9.4778,
+      "end": 9.7978,
+      "chapter": 1
+    },
+    {
+      "source_index": 8,
+      "w": "poco",
+      "start": 9.7978,
+      "end": 9.9978,
+      "chapter": 1
+    },
+    {
+      "source_index": 9,
+      "w": "de",
+      "start": 9.9978,
+      "end": 10.1978,
+      "chapter": 1
+    },
+    {
+      "source_index": 10,
+      "w": "inteligencia",
+      "start": 10.1978,
+      "end": 10.7378,
+      "chapter": 1
+    },
+    {
+      "source_index": 11,
+      "w": "artificial,",
+      "start": 10.7378,
+      "end": 11.2778,
+      "chapter": 1
+    },
+    {
+      "source_index": 12,
+      "w": "un",
+      "start": 11.5333,
+      "end": 12.0101,
+      "chapter": 1
+    },
+    {
+      "source_index": 13,
+      "w": "poco",
+      "start": 12.0101,
+      "end": 12.1701,
+      "chapter": 1
+    },
+    {
+      "source_index": 14,
+      "w": "de",
+      "start": 12.1701,
+      "end": 12.3901,
+      "chapter": 1
+    },
+    {
+      "source_index": 15,
+      "w": "mi",
+      "start": 12.3901,
+      "end": 12.5101,
+      "chapter": 1
+    },
+    {
+      "source_index": 16,
+      "w": "experiencia",
+      "start": 12.5101,
+      "end": 13.0901,
+      "chapter": 1
+    },
+    {
+      "source_index": 19,
+      "w": "poder",
+      "start": 13.2,
+      "end": 13.53,
+      "chapter": 2
+    },
+    {
+      "source_index": 20,
+      "w": "sumar",
+      "start": 13.53,
+      "end": 13.99,
+      "chapter": 2
+    },
+    {
+      "source_index": 21,
+      "w": "a",
+      "start": 13.99,
+      "end": 14.15,
+      "chapter": 2
+    },
+    {
+      "source_index": 22,
+      "w": "la",
+      "start": 14.15,
+      "end": 14.25,
+      "chapter": 2
+    },
+    {
+      "source_index": 23,
+      "w": "comunidad,",
+      "start": 14.25,
+      "end": 14.85,
+      "chapter": 2
+    },
+    {
+      "source_index": 24,
+      "w": "mis",
+      "start": 15.0667,
+      "end": 15.2634,
+      "chapter": 2
+    },
+    {
+      "source_index": 25,
+      "w": "conocimientos,",
+      "start": 15.2634,
+      "end": 16.1034,
+      "chapter": 2
+    },
+    {
+      "source_index": 26,
+      "w": "mis",
+      "start": 16.2634,
+      "end": 16.3834,
+      "chapter": 2
+    },
+    {
+      "source_index": 27,
+      "w": "habilidades",
+      "start": 16.3834,
+      "end": 17.1,
+      "chapter": 2
+    },
+    {
+      "source_index": 29,
+      "w": "cómo",
+      "start": 17.1,
+      "end": 17.38,
+      "chapter": 3
+    },
+    {
+      "source_index": 30,
+      "w": "por",
+      "start": 17.38,
+      "end": 17.68,
+      "chapter": 3
+    },
+    {
+      "source_index": 31,
+      "w": "ahí",
+      "start": 17.68,
+      "end": 17.98,
+      "chapter": 3
+    },
+    {
+      "source_index": 32,
+      "w": "una",
+      "start": 17.98,
+      "end": 18.34,
+      "chapter": 3
+    },
+    {
+      "source_index": 33,
+      "w": "persona",
+      "start": 18.34,
+      "end": 18.9,
+      "chapter": 3
+    },
+    {
+      "source_index": 34,
+      "w": "que",
+      "start": 18.9,
+      "end": 19.3078,
+      "chapter": 3
+    },
+    {
+      "source_index": 35,
+      "w": "alguna",
+      "start": 19.3078,
+      "end": 19.5878,
+      "chapter": 3
+    },
+    {
+      "source_index": 36,
+      "w": "vez",
+      "start": 19.5878,
+      "end": 20.0678,
+      "chapter": 3
+    },
+    {
+      "source_index": 37,
+      "w": "creyó",
+      "start": 20.0678,
+      "end": 20.9478,
+      "chapter": 3
+    },
+    {
+      "source_index": 38,
+      "w": "saber",
+      "start": 20.9478,
+      "end": 21.6256,
+      "chapter": 3
+    },
+    {
+      "source_index": 39,
+      "w": "hoy",
+      "start": 21.6256,
+      "end": 22.0114,
+      "chapter": 3
+    },
+    {
+      "source_index": 40,
+      "w": "está",
+      "start": 22.0114,
+      "end": 22.2114,
+      "chapter": 3
+    },
+    {
+      "source_index": 41,
+      "w": "aprendiendo",
+      "start": 22.2114,
+      "end": 22.5314,
+      "chapter": 3
+    },
+    {
+      "source_index": 42,
+      "w": "nuevas",
+      "start": 22.5314,
+      "end": 22.8514,
+      "chapter": 3
+    },
+    {
+      "source_index": 43,
+      "w": "habilidades,",
+      "start": 22.8514,
+      "end": 23.5314,
+      "chapter": 3
+    },
+    {
+      "source_index": 44,
+      "w": "pero",
+      "start": 23.5314,
+      "end": 23.9464,
+      "chapter": 3
+    },
+    {
+      "source_index": 45,
+      "w": "también",
+      "start": 23.9464,
+      "end": 24.4864,
+      "chapter": 3
+    },
+    {
+      "source_index": 46,
+      "w": "tiene",
+      "start": 24.4864,
+      "end": 25.3464,
+      "chapter": 3
+    },
+    {
+      "source_index": 47,
+      "w": "bases",
+      "start": 25.3464,
+      "end": 25.7864,
+      "chapter": 3
+    },
+    {
+      "source_index": 48,
+      "w": "sólidas",
+      "start": 25.7864,
+      "end": 26.7464,
+      "chapter": 3
+    },
+    {
+      "source_index": 49,
+      "w": "para",
+      "start": 26.7464,
+      "end": 27.2063,
+      "chapter": 3
+    },
+    {
+      "source_index": 50,
+      "w": "poder",
+      "start": 27.2063,
+      "end": 27.5663,
+      "chapter": 3
+    },
+    {
+      "source_index": 51,
+      "w": "trabajar",
+      "start": 27.5663,
+      "end": 27.9663,
+      "chapter": 3
+    },
+    {
+      "source_index": 52,
+      "w": "con",
+      "start": 27.9663,
+      "end": 28.2863,
+      "chapter": 3
+    },
+    {
+      "source_index": 53,
+      "w": "infraestructura,",
+      "start": 28.2863,
+      "end": 29.3463,
+      "chapter": 3
+    },
+    {
+      "source_index": 76,
+      "w": "porque",
+      "start": 29.4,
+      "end": 29.9723,
+      "chapter": 4
+    },
+    {
+      "source_index": 77,
+      "w": "siempre",
+      "start": 29.9723,
+      "end": 30.4123,
+      "chapter": 4
+    },
+    {
+      "source_index": 78,
+      "w": "la",
+      "start": 30.4123,
+      "end": 30.7523,
+      "chapter": 4
+    },
+    {
+      "source_index": 79,
+      "w": "idea",
+      "start": 30.7523,
+      "end": 30.8923,
+      "chapter": 4
+    },
+    {
+      "source_index": 80,
+      "w": "está",
+      "start": 30.8923,
+      "end": 31.1123,
+      "chapter": 4
+    },
+    {
+      "source_index": 81,
+      "w": "rápida,",
+      "start": 31.1123,
+      "end": 31.6123,
+      "chapter": 4
+    },
+    {
+      "source_index": 82,
+      "w": "está",
+      "start": 31.7723,
+      "end": 31.8123,
+      "chapter": 4
+    },
+    {
+      "source_index": 83,
+      "w": "buena,",
+      "start": 31.8123,
+      "end": 32.0923,
+      "chapter": 4
+    },
+    {
+      "source_index": 84,
+      "w": "pero",
+      "start": 32.3333,
+      "end": 32.5363,
+      "chapter": 4
+    },
+    {
+      "source_index": 85,
+      "w": "después",
+      "start": 32.5363,
+      "end": 32.7963,
+      "chapter": 4
+    },
+    {
+      "source_index": 86,
+      "w": "cuando",
+      "start": 32.7963,
+      "end": 33.0563,
+      "chapter": 4
+    },
+    {
+      "source_index": 87,
+      "w": "tenemos",
+      "start": 33.0563,
+      "end": 33.4563,
+      "chapter": 4
+    },
+    {
+      "source_index": 88,
+      "w": "que",
+      "start": 33.4563,
+      "end": 33.7763,
+      "chapter": 4
+    },
+    {
+      "source_index": 89,
+      "w": "implementar",
+      "start": 33.86,
+      "end": 34.69,
+      "chapter": 4
+    },
+    {
+      "source_index": 90,
+      "w": "o",
+      "start": 34.7667,
+      "end": 34.9437,
+      "chapter": 4
+    },
+    {
+      "source_index": 91,
+      "w": "desarrollar",
+      "start": 34.9437,
+      "end": 35.5837,
+      "chapter": 4
+    },
+    {
+      "source_index": 92,
+      "w": "eso,",
+      "start": 35.5837,
+      "end": 35.9237,
+      "chapter": 4
+    },
+    {
+      "source_index": 93,
+      "w": "según",
+      "start": 36.23,
+      "end": 36.61,
+      "chapter": 4
+    },
+    {
+      "source_index": 94,
+      "w": "la",
+      "start": 36.61,
+      "end": 36.79,
+      "chapter": 4
+    },
+    {
+      "source_index": 95,
+      "w": "estructura",
+      "start": 36.79,
+      "end": 37.49,
+      "chapter": 4
+    },
+    {
+      "source_index": 96,
+      "w": "del",
+      "start": 37.49,
+      "end": 37.71,
+      "chapter": 4
+    },
+    {
+      "source_index": 97,
+      "w": "negocio",
+      "start": 37.71,
+      "end": 38.31,
+      "chapter": 4
+    },
+    {
+      "source_index": 98,
+      "w": "no",
+      "start": 38.31,
+      "end": 38.67,
+      "chapter": 4
+    },
+    {
+      "source_index": 99,
+      "w": "siempre",
+      "start": 38.67,
+      "end": 39.03,
+      "chapter": 4
+    },
+    {
+      "source_index": 100,
+      "w": "se",
+      "start": 39.03,
+      "end": 39.21,
+      "chapter": 4
+    },
+    {
+      "source_index": 101,
+      "w": "puede",
+      "start": 39.21,
+      "end": 39.39,
+      "chapter": 4
+    },
+    {
+      "source_index": 102,
+      "w": "implementar.",
+      "start": 39.39,
+      "end": 39.73,
+      "chapter": 4
+    },
+    {
+      "source_index": 103,
+      "w": "Obviamente",
+      "start": 40.04,
+      "end": 40.72,
+      "chapter": 5
+    },
+    {
+      "source_index": 104,
+      "w": "hay",
+      "start": 40.72,
+      "end": 41.04,
+      "chapter": 5
+    },
+    {
+      "source_index": 105,
+      "w": "soluciones",
+      "start": 41.04,
+      "end": 41.54,
+      "chapter": 5
+    },
+    {
+      "source_index": 106,
+      "w": "rápidas",
+      "start": 41.54,
+      "end": 42.32,
+      "chapter": 5
+    },
+    {
+      "source_index": 107,
+      "w": "y",
+      "start": 42.32,
+      "end": 42.7194,
+      "chapter": 5
+    },
+    {
+      "source_index": 108,
+      "w": "la",
+      "start": 42.7194,
+      "end": 42.8594,
+      "chapter": 5
+    },
+    {
+      "source_index": 109,
+      "w": "idea",
+      "start": 42.8594,
+      "end": 42.9994,
+      "chapter": 5
+    },
+    {
+      "source_index": 110,
+      "w": "siempre",
+      "start": 42.9994,
+      "end": 43.4194,
+      "chapter": 5
+    },
+    {
+      "source_index": 111,
+      "w": "es",
+      "start": 43.4194,
+      "end": 43.7594,
+      "chapter": 5
+    },
+    {
+      "source_index": 112,
+      "w": "que",
+      "start": 43.7594,
+      "end": 43.9194,
+      "chapter": 5
+    },
+    {
+      "source_index": 113,
+      "w": "el",
+      "start": 43.9194,
+      "end": 44.0794,
+      "chapter": 5
+    },
+    {
+      "source_index": 114,
+      "w": "usuario",
+      "start": 44.0794,
+      "end": 44.8661,
+      "chapter": 5
+    },
+    {
+      "source_index": 115,
+      "w": "tenga",
+      "start": 44.8661,
+      "end": 45.3861,
+      "chapter": 5
+    },
+    {
+      "source_index": 116,
+      "w": "resultado",
+      "start": 45.3861,
+      "end": 46.1889,
+      "chapter": 5
+    },
+    {
+      "source_index": 117,
+      "w": "desde",
+      "start": 46.2433,
+      "end": 46.6733,
+      "chapter": 5
+    },
+    {
+      "source_index": 118,
+      "w": "el",
+      "start": 46.6733,
+      "end": 46.8733,
+      "chapter": 5
+    },
+    {
+      "source_index": 119,
+      "w": "primer",
+      "start": 46.8733,
+      "end": 47.0733,
+      "chapter": 5
+    },
+    {
+      "source_index": 120,
+      "w": "momento,",
+      "start": 47.0733,
+      "end": 47.5333,
+      "chapter": 5
+    },
+    {
+      "source_index": 121,
+      "w": "eso",
+      "start": 47.8733,
+      "end": 48.1133,
+      "chapter": 5
+    },
+    {
+      "source_index": 122,
+      "w": "sería",
+      "start": 48.1133,
+      "end": 48.3133,
+      "chapter": 5
+    },
+    {
+      "source_index": 123,
+      "w": "lo",
+      "start": 48.3133,
+      "end": 48.4733,
+      "chapter": 5
+    },
+    {
+      "source_index": 124,
+      "w": "ideal.",
+      "start": 48.4733,
+      "end": 48.7133,
+      "chapter": 5
+    },
+    {
+      "source_index": 156,
+      "w": "eso",
+      "start": 48.85,
+      "end": 49.03,
+      "chapter": 6
+    },
+    {
+      "source_index": 157,
+      "w": "sería",
+      "start": 49.03,
+      "end": 49.79,
+      "chapter": 6
+    },
+    {
+      "source_index": 158,
+      "w": "como",
+      "start": 49.79,
+      "end": 49.99,
+      "chapter": 6
+    },
+    {
+      "source_index": 159,
+      "w": "el",
+      "start": 49.99,
+      "end": 50.11,
+      "chapter": 6
+    },
+    {
+      "source_index": 160,
+      "w": "sistema",
+      "start": 50.11,
+      "end": 50.69,
+      "chapter": 6
+    },
+    {
+      "source_index": 161,
+      "w": "que",
+      "start": 50.69,
+      "end": 51.0669,
+      "chapter": 6
+    },
+    {
+      "source_index": 162,
+      "w": "se",
+      "start": 51.0669,
+      "end": 51.1869,
+      "chapter": 6
+    },
+    {
+      "source_index": 163,
+      "w": "podría",
+      "start": 51.1869,
+      "end": 51.5469,
+      "chapter": 6
+    },
+    {
+      "source_index": 164,
+      "w": "automatizar",
+      "start": 51.5469,
+      "end": 52.4269,
+      "chapter": 6
+    },
+    {
+      "source_index": 165,
+      "w": "o",
+      "start": 52.7467,
+      "end": 52.9267,
+      "chapter": 6
+    },
+    {
+      "source_index": 166,
+      "w": "agregar",
+      "start": 52.9733,
+      "end": 53.3733,
+      "chapter": 6
+    },
+    {
+      "source_index": 167,
+      "w": "algunas",
+      "start": 53.3433,
+      "end": 53.6033,
+      "chapter": 6
+    },
+    {
+      "source_index": 168,
+      "w": "mejoras",
+      "start": 53.6033,
+      "end": 54.1633,
+      "chapter": 6
+    },
+    {
+      "source_index": 169,
+      "w": "para",
+      "start": 54.1633,
+      "end": 54.3833,
+      "chapter": 6
+    },
+    {
+      "source_index": 170,
+      "w": "que",
+      "start": 54.3833,
+      "end": 54.5233,
+      "chapter": 6
+    },
+    {
+      "source_index": 171,
+      "w": "justamente",
+      "start": 54.5233,
+      "end": 54.9033,
+      "chapter": 6
+    },
+    {
+      "source_index": 172,
+      "w": "ese",
+      "start": 54.9033,
+      "end": 55.6019,
+      "chapter": 6
+    },
+    {
+      "source_index": 173,
+      "w": "desarrollo",
+      "start": 55.6019,
+      "end": 56.1619,
+      "chapter": 6
+    },
+    {
+      "source_index": 174,
+      "w": "con",
+      "start": 56.1619,
+      "end": 56.7367,
+      "chapter": 6
+    },
+    {
+      "source_index": 175,
+      "w": "inteligencia",
+      "start": 56.7367,
+      "end": 57.3167,
+      "chapter": 6
+    },
+    {
+      "source_index": 176,
+      "w": "artificial",
+      "start": 57.3167,
+      "end": 57.9567,
+      "chapter": 6
+    },
+    {
+      "source_index": 177,
+      "w": "podamos",
+      "start": 57.9567,
+      "end": 58.7778,
+      "chapter": 6
+    },
+    {
+      "source_index": 178,
+      "w": "resolver",
+      "start": 58.7778,
+      "end": 59.3578,
+      "chapter": 6
+    },
+    {
+      "source_index": 179,
+      "w": "esos",
+      "start": 59.3578,
+      "end": 59.7178,
+      "chapter": 6
+    },
+    {
+      "source_index": 180,
+      "w": "puntos",
+      "start": 59.7178,
+      "end": 60.0578,
+      "chapter": 6
+    },
+    {
+      "source_index": 181,
+      "w": "de",
+      "start": 60.0578,
+      "end": 60.1978,
+      "chapter": 6
+    },
+    {
+      "source_index": 182,
+      "w": "dolor",
+      "start": 60.1978,
+      "end": 60.6378,
+      "chapter": 6
+    },
+    {
+      "source_index": 183,
+      "w": "o",
+      "start": 60.6378,
+      "end": 60.8178,
+      "chapter": 6
+    },
+    {
+      "source_index": 184,
+      "w": "ese",
+      "start": 60.8178,
+      "end": 61.7378,
+      "chapter": 6
+    },
+    {
+      "source_index": 185,
+      "w": "ahorro",
+      "start": 61.7378,
+      "end": 62.6378,
+      "chapter": 6
+    },
+    {
+      "source_index": 186,
+      "w": "del",
+      "start": 62.6378,
+      "end": 62.7978,
+      "chapter": 6
+    },
+    {
+      "source_index": 187,
+      "w": "tiempo",
+      "start": 62.7978,
+      "end": 63.3578,
+      "chapter": 6
+    },
+    {
+      "source_index": 188,
+      "w": "o",
+      "start": 63.3578,
+      "end": 63.6778,
+      "chapter": 6
+    },
+    {
+      "source_index": 189,
+      "w": "costos,",
+      "start": 63.6778,
+      "end": 64.3,
+      "chapter": 6
+    },
+    {
+      "source_index": 190,
+      "w": "sería",
+      "start": 64.3,
+      "end": 64.73,
+      "chapter": 7
+    },
+    {
+      "source_index": 191,
+      "w": "lo",
+      "start": 64.73,
+      "end": 64.93,
+      "chapter": 7
+    },
+    {
+      "source_index": 192,
+      "w": "ideal.",
+      "start": 64.93,
+      "end": 65.13,
+      "chapter": 7
+    }
+  ],
+  "captions": [
+    [
+      {
+        "source_index": 132,
+        "w": "una",
+        "start": 0.0,
+        "end": 0.13,
+        "chapter": 0
+      },
+      {
+        "source_index": 133,
+        "w": "cosa",
+        "start": 0.13,
+        "end": 0.49,
+        "chapter": 0
+      },
+      {
+        "source_index": 134,
+        "w": "es",
+        "start": 0.49,
+        "end": 0.91,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 135,
+        "w": "cambiar",
+        "start": 0.91,
+        "end": 1.2644,
+        "chapter": 0
+      },
+      {
+        "source_index": 136,
+        "w": "enchufes",
+        "start": 1.2644,
+        "end": 2.1944,
+        "chapter": 0
+      },
+      {
+        "source_index": 138,
+        "w": "y",
+        "start": 2.2144,
+        "end": 2.3544,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 139,
+        "w": "teclas",
+        "start": 2.4067,
+        "end": 2.9967,
+        "chapter": 0
+      },
+      {
+        "source_index": 140,
+        "w": "para",
+        "start": 3.0567,
+        "end": 3.293,
+        "chapter": 0
+      },
+      {
+        "source_index": 141,
+        "w": "prender",
+        "start": 3.293,
+        "end": 3.633,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 142,
+        "w": "y",
+        "start": 3.633,
+        "end": 3.813,
+        "chapter": 0
+      },
+      {
+        "source_index": 143,
+        "w": "apagar",
+        "start": 3.813,
+        "end": 4.053,
+        "chapter": 0
+      },
+      {
+        "source_index": 144,
+        "w": "la",
+        "start": 4.053,
+        "end": 4.233,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 145,
+        "w": "luz",
+        "start": 4.233,
+        "end": 4.473,
+        "chapter": 0
+      },
+      {
+        "source_index": 146,
+        "w": "y",
+        "start": 4.473,
+        "end": 4.7459,
+        "chapter": 0
+      },
+      {
+        "source_index": 147,
+        "w": "otra",
+        "start": 4.7459,
+        "end": 4.9859,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 148,
+        "w": "cosa",
+        "start": 4.9859,
+        "end": 5.4059,
+        "chapter": 0
+      },
+      {
+        "source_index": 149,
+        "w": "es",
+        "start": 5.4059,
+        "end": 5.7259,
+        "chapter": 0
+      },
+      {
+        "source_index": 150,
+        "w": "cambiar",
+        "start": 5.7259,
+        "end": 6.0259,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 151,
+        "w": "todo",
+        "start": 6.0259,
+        "end": 6.5059,
+        "chapter": 0
+      },
+      {
+        "source_index": 152,
+        "w": "el",
+        "start": 6.5059,
+        "end": 6.7859,
+        "chapter": 0
+      },
+      {
+        "source_index": 153,
+        "w": "cableado",
+        "start": 6.7859,
+        "end": 7.3259,
+        "chapter": 0
+      }
+    ],
+    [
+      {
+        "source_index": 2,
+        "w": "la",
+        "start": 7.3333,
+        "end": 7.6733,
+        "chapter": 1
+      },
+      {
+        "source_index": 3,
+        "w": "idea",
+        "start": 7.6733,
+        "end": 7.8333,
+        "chapter": 1
+      },
+      {
+        "source_index": 4,
+        "w": "sería",
+        "start": 7.8333,
+        "end": 8.1733,
+        "chapter": 1
+      }
+    ],
+    [
+      {
+        "source_index": 5,
+        "w": "poder",
+        "start": 8.1733,
+        "end": 8.8978,
+        "chapter": 1
+      },
+      {
+        "source_index": 6,
+        "w": "compartir",
+        "start": 8.8978,
+        "end": 9.4778,
+        "chapter": 1
+      },
+      {
+        "source_index": 7,
+        "w": "un",
+        "start": 9.4778,
+        "end": 9.7978,
+        "chapter": 1
+      }
+    ],
+    [
+      {
+        "source_index": 8,
+        "w": "poco",
+        "start": 9.7978,
+        "end": 9.9978,
+        "chapter": 1
+      },
+      {
+        "source_index": 9,
+        "w": "de",
+        "start": 9.9978,
+        "end": 10.1978,
+        "chapter": 1
+      },
+      {
+        "source_index": 10,
+        "w": "inteligencia",
+        "start": 10.1978,
+        "end": 10.7378,
+        "chapter": 1
+      }
+    ],
+    [
+      {
+        "source_index": 11,
+        "w": "artificial,",
+        "start": 10.7378,
+        "end": 11.2778,
+        "chapter": 1
+      },
+      {
+        "source_index": 12,
+        "w": "un",
+        "start": 11.5333,
+        "end": 12.0101,
+        "chapter": 1
+      },
+      {
+        "source_index": 13,
+        "w": "poco",
+        "start": 12.0101,
+        "end": 12.1701,
+        "chapter": 1
+      }
+    ],
+    [
+      {
+        "source_index": 14,
+        "w": "de",
+        "start": 12.1701,
+        "end": 12.3901,
+        "chapter": 1
+      },
+      {
+        "source_index": 15,
+        "w": "mi",
+        "start": 12.3901,
+        "end": 12.5101,
+        "chapter": 1
+      },
+      {
+        "source_index": 16,
+        "w": "experiencia",
+        "start": 12.5101,
+        "end": 13.0901,
+        "chapter": 1
+      }
+    ],
+    [
+      {
+        "source_index": 19,
+        "w": "poder",
+        "start": 13.2,
+        "end": 13.53,
+        "chapter": 2
+      },
+      {
+        "source_index": 20,
+        "w": "sumar",
+        "start": 13.53,
+        "end": 13.99,
+        "chapter": 2
+      },
+      {
+        "source_index": 21,
+        "w": "a",
+        "start": 13.99,
+        "end": 14.15,
+        "chapter": 2
+      }
+    ],
+    [
+      {
+        "source_index": 22,
+        "w": "la",
+        "start": 14.15,
+        "end": 14.25,
+        "chapter": 2
+      },
+      {
+        "source_index": 23,
+        "w": "comunidad,",
+        "start": 14.25,
+        "end": 14.85,
+        "chapter": 2
+      },
+      {
+        "source_index": 24,
+        "w": "mis",
+        "start": 15.0667,
+        "end": 15.2634,
+        "chapter": 2
+      }
+    ],
+    [
+      {
+        "source_index": 25,
+        "w": "conocimientos,",
+        "start": 15.2634,
+        "end": 16.1034,
+        "chapter": 2
+      },
+      {
+        "source_index": 26,
+        "w": "mis",
+        "start": 16.2634,
+        "end": 16.3834,
+        "chapter": 2
+      }
+    ],
+    [
+      {
+        "source_index": 27,
+        "w": "habilidades",
+        "start": 16.3834,
+        "end": 17.1,
+        "chapter": 2
+      }
+    ],
+    [
+      {
+        "source_index": 29,
+        "w": "cómo",
+        "start": 17.1,
+        "end": 17.38,
+        "chapter": 3
+      },
+      {
+        "source_index": 30,
+        "w": "por",
+        "start": 17.38,
+        "end": 17.68,
+        "chapter": 3
+      },
+      {
+        "source_index": 31,
+        "w": "ahí",
+        "start": 17.68,
+        "end": 17.98,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 32,
+        "w": "una",
+        "start": 17.98,
+        "end": 18.34,
+        "chapter": 3
+      },
+      {
+        "source_index": 33,
+        "w": "persona",
+        "start": 18.34,
+        "end": 18.9,
+        "chapter": 3
+      },
+      {
+        "source_index": 34,
+        "w": "que",
+        "start": 18.9,
+        "end": 19.3078,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 35,
+        "w": "alguna",
+        "start": 19.3078,
+        "end": 19.5878,
+        "chapter": 3
+      },
+      {
+        "source_index": 36,
+        "w": "vez",
+        "start": 19.5878,
+        "end": 20.0678,
+        "chapter": 3
+      },
+      {
+        "source_index": 37,
+        "w": "creyó",
+        "start": 20.0678,
+        "end": 20.9478,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 38,
+        "w": "saber",
+        "start": 20.9478,
+        "end": 21.6256,
+        "chapter": 3
+      },
+      {
+        "source_index": 39,
+        "w": "hoy",
+        "start": 21.6256,
+        "end": 22.0114,
+        "chapter": 3
+      },
+      {
+        "source_index": 40,
+        "w": "está",
+        "start": 22.0114,
+        "end": 22.2114,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 41,
+        "w": "aprendiendo",
+        "start": 22.2114,
+        "end": 22.5314,
+        "chapter": 3
+      },
+      {
+        "source_index": 42,
+        "w": "nuevas",
+        "start": 22.5314,
+        "end": 22.8514,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 43,
+        "w": "habilidades,",
+        "start": 22.8514,
+        "end": 23.5314,
+        "chapter": 3
+      },
+      {
+        "source_index": 44,
+        "w": "pero",
+        "start": 23.5314,
+        "end": 23.9464,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 45,
+        "w": "también",
+        "start": 23.9464,
+        "end": 24.4864,
+        "chapter": 3
+      },
+      {
+        "source_index": 46,
+        "w": "tiene",
+        "start": 24.4864,
+        "end": 25.3464,
+        "chapter": 3
+      },
+      {
+        "source_index": 47,
+        "w": "bases",
+        "start": 25.3464,
+        "end": 25.7864,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 48,
+        "w": "sólidas",
+        "start": 25.7864,
+        "end": 26.7464,
+        "chapter": 3
+      },
+      {
+        "source_index": 49,
+        "w": "para",
+        "start": 26.7464,
+        "end": 27.2063,
+        "chapter": 3
+      },
+      {
+        "source_index": 50,
+        "w": "poder",
+        "start": 27.2063,
+        "end": 27.5663,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 51,
+        "w": "trabajar",
+        "start": 27.5663,
+        "end": 27.9663,
+        "chapter": 3
+      },
+      {
+        "source_index": 52,
+        "w": "con",
+        "start": 27.9663,
+        "end": 28.2863,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 53,
+        "w": "infraestructura,",
+        "start": 28.2863,
+        "end": 29.3463,
+        "chapter": 3
+      }
+    ],
+    [
+      {
+        "source_index": 76,
+        "w": "porque",
+        "start": 29.4,
+        "end": 29.9723,
+        "chapter": 4
+      },
+      {
+        "source_index": 77,
+        "w": "siempre",
+        "start": 29.9723,
+        "end": 30.4123,
+        "chapter": 4
+      },
+      {
+        "source_index": 78,
+        "w": "la",
+        "start": 30.4123,
+        "end": 30.7523,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 79,
+        "w": "idea",
+        "start": 30.7523,
+        "end": 30.8923,
+        "chapter": 4
+      },
+      {
+        "source_index": 80,
+        "w": "está",
+        "start": 30.8923,
+        "end": 31.1123,
+        "chapter": 4
+      },
+      {
+        "source_index": 81,
+        "w": "rápida,",
+        "start": 31.1123,
+        "end": 31.6123,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 82,
+        "w": "está",
+        "start": 31.7723,
+        "end": 31.8123,
+        "chapter": 4
+      },
+      {
+        "source_index": 83,
+        "w": "buena,",
+        "start": 31.8123,
+        "end": 32.0923,
+        "chapter": 4
+      },
+      {
+        "source_index": 84,
+        "w": "pero",
+        "start": 32.3333,
+        "end": 32.5363,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 85,
+        "w": "después",
+        "start": 32.5363,
+        "end": 32.7963,
+        "chapter": 4
+      },
+      {
+        "source_index": 86,
+        "w": "cuando",
+        "start": 32.7963,
+        "end": 33.0563,
+        "chapter": 4
+      },
+      {
+        "source_index": 87,
+        "w": "tenemos",
+        "start": 33.0563,
+        "end": 33.4563,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 88,
+        "w": "que",
+        "start": 33.4563,
+        "end": 33.7763,
+        "chapter": 4
+      },
+      {
+        "source_index": 89,
+        "w": "implementar",
+        "start": 33.86,
+        "end": 34.69,
+        "chapter": 4
+      },
+      {
+        "source_index": 90,
+        "w": "o",
+        "start": 34.7667,
+        "end": 34.9437,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 91,
+        "w": "desarrollar",
+        "start": 34.9437,
+        "end": 35.5837,
+        "chapter": 4
+      },
+      {
+        "source_index": 92,
+        "w": "eso,",
+        "start": 35.5837,
+        "end": 35.9237,
+        "chapter": 4
+      },
+      {
+        "source_index": 93,
+        "w": "según",
+        "start": 36.23,
+        "end": 36.61,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 94,
+        "w": "la",
+        "start": 36.61,
+        "end": 36.79,
+        "chapter": 4
+      },
+      {
+        "source_index": 95,
+        "w": "estructura",
+        "start": 36.79,
+        "end": 37.49,
+        "chapter": 4
+      },
+      {
+        "source_index": 96,
+        "w": "del",
+        "start": 37.49,
+        "end": 37.71,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 97,
+        "w": "negocio",
+        "start": 37.71,
+        "end": 38.31,
+        "chapter": 4
+      },
+      {
+        "source_index": 98,
+        "w": "no",
+        "start": 38.31,
+        "end": 38.67,
+        "chapter": 4
+      },
+      {
+        "source_index": 99,
+        "w": "siempre",
+        "start": 38.67,
+        "end": 39.03,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 100,
+        "w": "se",
+        "start": 39.03,
+        "end": 39.21,
+        "chapter": 4
+      },
+      {
+        "source_index": 101,
+        "w": "puede",
+        "start": 39.21,
+        "end": 39.39,
+        "chapter": 4
+      },
+      {
+        "source_index": 102,
+        "w": "implementar.",
+        "start": 39.39,
+        "end": 39.73,
+        "chapter": 4
+      }
+    ],
+    [
+      {
+        "source_index": 103,
+        "w": "Obviamente",
+        "start": 40.04,
+        "end": 40.72,
+        "chapter": 5
+      },
+      {
+        "source_index": 104,
+        "w": "hay",
+        "start": 40.72,
+        "end": 41.04,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 105,
+        "w": "soluciones",
+        "start": 41.04,
+        "end": 41.54,
+        "chapter": 5
+      },
+      {
+        "source_index": 106,
+        "w": "rápidas",
+        "start": 41.54,
+        "end": 42.32,
+        "chapter": 5
+      },
+      {
+        "source_index": 107,
+        "w": "y",
+        "start": 42.32,
+        "end": 42.7194,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 108,
+        "w": "la",
+        "start": 42.7194,
+        "end": 42.8594,
+        "chapter": 5
+      },
+      {
+        "source_index": 109,
+        "w": "idea",
+        "start": 42.8594,
+        "end": 42.9994,
+        "chapter": 5
+      },
+      {
+        "source_index": 110,
+        "w": "siempre",
+        "start": 42.9994,
+        "end": 43.4194,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 111,
+        "w": "es",
+        "start": 43.4194,
+        "end": 43.7594,
+        "chapter": 5
+      },
+      {
+        "source_index": 112,
+        "w": "que",
+        "start": 43.7594,
+        "end": 43.9194,
+        "chapter": 5
+      },
+      {
+        "source_index": 113,
+        "w": "el",
+        "start": 43.9194,
+        "end": 44.0794,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 114,
+        "w": "usuario",
+        "start": 44.0794,
+        "end": 44.8661,
+        "chapter": 5
+      },
+      {
+        "source_index": 115,
+        "w": "tenga",
+        "start": 44.8661,
+        "end": 45.3861,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 116,
+        "w": "resultado",
+        "start": 45.3861,
+        "end": 46.1889,
+        "chapter": 5
+      },
+      {
+        "source_index": 117,
+        "w": "desde",
+        "start": 46.2433,
+        "end": 46.6733,
+        "chapter": 5
+      },
+      {
+        "source_index": 118,
+        "w": "el",
+        "start": 46.6733,
+        "end": 46.8733,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 119,
+        "w": "primer",
+        "start": 46.8733,
+        "end": 47.0733,
+        "chapter": 5
+      },
+      {
+        "source_index": 120,
+        "w": "momento,",
+        "start": 47.0733,
+        "end": 47.5333,
+        "chapter": 5
+      },
+      {
+        "source_index": 121,
+        "w": "eso",
+        "start": 47.8733,
+        "end": 48.1133,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 122,
+        "w": "sería",
+        "start": 48.1133,
+        "end": 48.3133,
+        "chapter": 5
+      },
+      {
+        "source_index": 123,
+        "w": "lo",
+        "start": 48.3133,
+        "end": 48.4733,
+        "chapter": 5
+      },
+      {
+        "source_index": 124,
+        "w": "ideal.",
+        "start": 48.4733,
+        "end": 48.7133,
+        "chapter": 5
+      }
+    ],
+    [
+      {
+        "source_index": 156,
+        "w": "eso",
+        "start": 48.85,
+        "end": 49.03,
+        "chapter": 6
+      },
+      {
+        "source_index": 157,
+        "w": "sería",
+        "start": 49.03,
+        "end": 49.79,
+        "chapter": 6
+      },
+      {
+        "source_index": 158,
+        "w": "como",
+        "start": 49.79,
+        "end": 49.99,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 159,
+        "w": "el",
+        "start": 49.99,
+        "end": 50.11,
+        "chapter": 6
+      },
+      {
+        "source_index": 160,
+        "w": "sistema",
+        "start": 50.11,
+        "end": 50.69,
+        "chapter": 6
+      },
+      {
+        "source_index": 161,
+        "w": "que",
+        "start": 50.69,
+        "end": 51.0669,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 162,
+        "w": "se",
+        "start": 51.0669,
+        "end": 51.1869,
+        "chapter": 6
+      },
+      {
+        "source_index": 163,
+        "w": "podría",
+        "start": 51.1869,
+        "end": 51.5469,
+        "chapter": 6
+      },
+      {
+        "source_index": 164,
+        "w": "automatizar",
+        "start": 51.5469,
+        "end": 52.4269,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 165,
+        "w": "o",
+        "start": 52.7467,
+        "end": 52.9267,
+        "chapter": 6
+      },
+      {
+        "source_index": 166,
+        "w": "agregar",
+        "start": 52.9733,
+        "end": 53.3733,
+        "chapter": 6
+      },
+      {
+        "source_index": 167,
+        "w": "algunas",
+        "start": 53.3433,
+        "end": 53.6033,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 168,
+        "w": "mejoras",
+        "start": 53.6033,
+        "end": 54.1633,
+        "chapter": 6
+      },
+      {
+        "source_index": 169,
+        "w": "para",
+        "start": 54.1633,
+        "end": 54.3833,
+        "chapter": 6
+      },
+      {
+        "source_index": 170,
+        "w": "que",
+        "start": 54.3833,
+        "end": 54.5233,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 171,
+        "w": "justamente",
+        "start": 54.5233,
+        "end": 54.9033,
+        "chapter": 6
+      },
+      {
+        "source_index": 172,
+        "w": "ese",
+        "start": 54.9033,
+        "end": 55.6019,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 173,
+        "w": "desarrollo",
+        "start": 55.6019,
+        "end": 56.1619,
+        "chapter": 6
+      },
+      {
+        "source_index": 174,
+        "w": "con",
+        "start": 56.1619,
+        "end": 56.7367,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 175,
+        "w": "inteligencia",
+        "start": 56.7367,
+        "end": 57.3167,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 176,
+        "w": "artificial",
+        "start": 57.3167,
+        "end": 57.9567,
+        "chapter": 6
+      },
+      {
+        "source_index": 177,
+        "w": "podamos",
+        "start": 57.9567,
+        "end": 58.7778,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 178,
+        "w": "resolver",
+        "start": 58.7778,
+        "end": 59.3578,
+        "chapter": 6
+      },
+      {
+        "source_index": 179,
+        "w": "esos",
+        "start": 59.3578,
+        "end": 59.7178,
+        "chapter": 6
+      },
+      {
+        "source_index": 180,
+        "w": "puntos",
+        "start": 59.7178,
+        "end": 60.0578,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 181,
+        "w": "de",
+        "start": 60.0578,
+        "end": 60.1978,
+        "chapter": 6
+      },
+      {
+        "source_index": 182,
+        "w": "dolor",
+        "start": 60.1978,
+        "end": 60.6378,
+        "chapter": 6
+      },
+      {
+        "source_index": 183,
+        "w": "o",
+        "start": 60.6378,
+        "end": 60.8178,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 184,
+        "w": "ese",
+        "start": 60.8178,
+        "end": 61.7378,
+        "chapter": 6
+      },
+      {
+        "source_index": 185,
+        "w": "ahorro",
+        "start": 61.7378,
+        "end": 62.6378,
+        "chapter": 6
+      },
+      {
+        "source_index": 186,
+        "w": "del",
+        "start": 62.6378,
+        "end": 62.7978,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 187,
+        "w": "tiempo",
+        "start": 62.7978,
+        "end": 63.3578,
+        "chapter": 6
+      },
+      {
+        "source_index": 188,
+        "w": "o",
+        "start": 63.3578,
+        "end": 63.6778,
+        "chapter": 6
+      },
+      {
+        "source_index": 189,
+        "w": "costos,",
+        "start": 63.6778,
+        "end": 64.3,
+        "chapter": 6
+      }
+    ],
+    [
+      {
+        "source_index": 190,
+        "w": "sería",
+        "start": 64.3,
+        "end": 64.73,
+        "chapter": 7
+      },
+      {
+        "source_index": 191,
+        "w": "lo",
+        "start": 64.73,
+        "end": 64.93,
+        "chapter": 7
+      },
+      {
+        "source_index": 192,
+        "w": "ideal.",
+        "start": 64.93,
+        "end": 65.13,
+        "chapter": 7
+      }
+    ]
+  ],
+  "shots": [
+    {
+      "start": 0.0,
+      "end": 1.5,
+      "view": "toggle",
+      "kind": "toggle",
+      "index": 0,
+      "title": [
+        "CAMBIAR",
+        "UN BOTÓN."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 1.5,
+      "end": 3.0,
+      "view": "silos",
+      "kind": "image",
+      "index": 1,
+      "title": [
+        "TODO",
+        "SEPARADO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 3.0,
+      "end": 4.5,
+      "view": "rewire",
+      "kind": "rewire",
+      "index": 2,
+      "title": [
+        "CONECTAR",
+        "EL SISTEMA."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 4.5,
+      "end": 6.0,
+      "view": "architecture",
+      "kind": "image",
+      "index": 3,
+      "title": [
+        "REDISEÑAR",
+        "CÓMO FUNCIONA."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 6.0,
+      "end": 7.333333333333333,
+      "view": "neural",
+      "kind": "image",
+      "index": 4,
+      "title": [
+        "IA CON",
+        "CONTEXTO."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 7.333333333333333,
+      "end": 9.5,
+      "view": "community",
+      "kind": "image",
+      "index": 5,
+      "title": [
+        "COMPARTIR",
+        "EXPERIENCIA."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 9.5,
+      "end": 11.5,
+      "view": "stream",
+      "kind": "stream",
+      "index": 6,
+      "title": [
+        "LO QUE APRENDO,",
+        "LO COMPARTO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 11.5,
+      "end": 13.2,
+      "view": "learning",
+      "kind": "image",
+      "index": 7,
+      "title": [
+        "IA EN",
+        "LA PRÁCTICA."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 13.2,
+      "end": 15.5,
+      "view": "mesh",
+      "kind": "mesh",
+      "index": 8,
+      "title": [
+        "PERSONAS.",
+        "CONOCIMIENTO."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 15.5,
+      "end": 17.1,
+      "view": "exchange",
+      "kind": "exchange",
+      "index": 9,
+      "title": [
+        "APRENDER",
+        "ENTRE TODOS."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 17.1,
+      "end": 18.5,
+      "view": "identity",
+      "kind": "identity",
+      "index": 10,
+      "title": [
+        "VOLVER",
+        "A APRENDER."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 18.5,
+      "end": 21.2,
+      "view": "aside_know",
+      "kind": "aside_know",
+      "index": 11,
+      "title": [
+        "CREER QUE",
+        "YA SABÉS…"
+      ],
+      "accent": "#e7e7e7",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 21.2,
+      "end": 23.5,
+      "view": "experiments",
+      "kind": "experiments",
+      "index": 12,
+      "title": [
+        "PROBAR.",
+        "REVISAR. AJUSTAR."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 23.5,
+      "end": 25.5,
+      "view": "foundation",
+      "kind": "image",
+      "index": 13,
+      "title": [
+        "BASES",
+        "SÓLIDAS."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 25.5,
+      "end": 27.5,
+      "view": "stack",
+      "kind": "stack",
+      "index": 14,
+      "title": [
+        "DATOS.",
+        "HERRAMIENTAS."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 27.5,
+      "end": 29.4,
+      "view": "infraestructura",
+      "kind": "image",
+      "index": 15,
+      "title": [
+        "LA BASE",
+        "DEL SISTEMA."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 29.4,
+      "end": 31.5,
+      "view": "idea",
+      "kind": "image",
+      "index": 16,
+      "title": [
+        "LA IDEA",
+        "LLEGA RÁPIDO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 31.5,
+      "end": 33.5,
+      "view": "blueprint",
+      "kind": "blueprint",
+      "index": 17,
+      "title": [
+        "IMPLEMENTAR",
+        "ES OTRO PASO."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 33.5,
+      "end": 35.5,
+      "view": "fit",
+      "kind": "image",
+      "index": 18,
+      "title": [
+        "ADAPTARLO",
+        "A TU NEGOCIO."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 35.5,
+      "end": 37.5,
+      "view": "adapt",
+      "kind": "adapt",
+      "index": 19,
+      "title": [
+        "CADA NEGOCIO,",
+        "SU ESTRUCTURA."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 37.5,
+      "end": 40.0,
+      "view": "aside_fit",
+      "kind": "aside_fit",
+      "index": 20,
+      "title": [
+        "NO TODO",
+        "ENCAJA IGUAL."
+      ],
+      "accent": "#e7e7e7",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 40.0,
+      "end": 42.0,
+      "view": "bottleneck",
+      "kind": "image",
+      "index": 21,
+      "title": [
+        "ENCONTRAR",
+        "EL BLOQUEO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 42.0,
+      "end": 44.0,
+      "view": "fastlane",
+      "kind": "fastlane",
+      "index": 22,
+      "title": [
+        "EMPEZAR",
+        "CON ALGO ÚTIL."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 44.0,
+      "end": 46.0,
+      "view": "production",
+      "kind": "image",
+      "index": 23,
+      "title": [
+        "DE LA IDEA",
+        "AL VIDEO."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 46.0,
+      "end": 47.8,
+      "view": "review",
+      "kind": "image",
+      "index": 24,
+      "title": [
+        "PROBAR",
+        "EL RESULTADO."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 47.8,
+      "end": 49.0,
+      "view": "aside_ideal",
+      "kind": "aside_ideal",
+      "index": 25,
+      "title": [
+        "ESO SERÍA",
+        "LO IDEAL."
+      ],
+      "accent": "#e7e7e7",
+      "motion": "push",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 49.0,
+      "end": 51.0,
+      "view": "automation",
+      "kind": "image",
+      "index": 26,
+      "title": [
+        "CONECTAR",
+        "LAS TAREAS."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 51.0,
+      "end": 53.0,
+      "view": "orchestration",
+      "kind": "orchestration",
+      "index": 27,
+      "title": [
+        "PERSONA",
+        "+ AGENTE."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 53.0,
+      "end": 55.0,
+      "view": "routing",
+      "kind": "routing",
+      "index": 28,
+      "title": [
+        "MENOS PASOS",
+        "MANUALES."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 55.0,
+      "end": 57.0,
+      "view": "loop",
+      "kind": "loop",
+      "index": 29,
+      "title": [
+        "REVISAR",
+        "Y MEJORAR."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 57.0,
+      "end": 59.5,
+      "view": "result",
+      "kind": "result",
+      "index": 30,
+      "title": [
+        "RESOLVER",
+        "UN PROBLEMA."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 59.5,
+      "end": 61.5,
+      "view": "time",
+      "kind": "image",
+      "index": 31,
+      "title": [
+        "RECUPERAR",
+        "TIEMPO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 61.5,
+      "end": 63.5,
+      "view": "benefits",
+      "kind": "benefits",
+      "index": 32,
+      "title": [
+        "MENOS FRICCIÓN.",
+        "MÁS FOCO."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 63.5,
+      "end": 65.3,
+      "view": "humanclose",
+      "kind": "humanclose",
+      "index": 33,
+      "title": [
+        "CAMBIAR CÓMO",
+        "TRABAJAMOS."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 65.3,
+      "end": 67.1,
+      "view": "outro",
+      "kind": "outro",
+      "index": 34,
+      "title": [
+        "CAMBIAR CÓMO",
+        "TRABAJAMOS."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    }
+  ],
+  "camera_offset": 2.3428999999999998,
+  "fps": 30,
+  "bpm": 120,
+  "waveform": [
+    0.503,
+    0.65,
+    0.628,
+    0.599,
+    0.572,
+    0.629,
+    0.696,
+    0.668,
+    1.0,
+    0.761,
+    0.527,
+    0.324,
+    0.412,
+    0.325,
+    0.212,
+    0.415,
+    0.419,
+    0.337,
+    0.37,
+    0.283,
+    0.415,
+    0.403,
+    0.514,
+    0.345,
+    0.377,
+    0.644,
+    0.428,
+    0.584,
+    0.415,
+    0.523,
+    0.687,
+    0.578,
+    0.614,
+    0.308,
+    0.595,
+    0.376,
+    0.325,
+    0.456,
+    0.306,
+    0.644,
+    0.621,
+    0.698,
+    0.65,
+    0.51,
+    0.622,
+    0.554,
+    0.544,
+    0.639,
+    0.908,
+    0.633,
+    0.47,
+    0.412,
+    0.439,
+    0.495,
+    0.512,
+    0.595,
+    0.527,
+    0.467,
+    0.574,
+    0.635,
+    0.738,
+    0.325,
+    0.517,
+    0.407,
+    0.403,
+    0.536,
+    0.536,
+    0.514,
+    0.644,
+    0.59,
+    0.426,
+    0.568,
+    0.808,
+    0.576,
+    0.504,
+    0.573,
+    0.768,
+    0.659,
+    0.132,
+    0.173,
+    0.7,
+    0.709,
+    0.389,
+    0.442
+  ],
+  "transitions": [
+    {
+      "at": 1.5,
+      "index": 1,
+      "duration": 0.0,
+      "mode": "cut",
+      "direction": -1
+    },
+    {
+      "at": 3.0,
+      "index": 2,
+      "duration": 0.33,
+      "mode": "portal",
+      "direction": 1
+    },
+    {
+      "at": 4.5,
+      "index": 3,
+      "duration": 0.37,
+      "mode": "fold",
+      "direction": -1
+    },
+    {
+      "at": 6.0,
+      "index": 4,
+      "duration": 0.3,
+      "mode": "match",
+      "direction": 1
+    },
+    {
+      "at": 7.333333333333333,
+      "index": 5,
+      "duration": 0.4,
+      "mode": "particles",
+      "direction": -1
+    },
+    {
+      "at": 9.5,
+      "index": 6,
+      "duration": 0.3,
+      "mode": "slit",
+      "direction": 1
+    },
+    {
+      "at": 11.5,
+      "index": 7,
+      "duration": 0.37,
+      "mode": "trace",
+      "direction": -1
+    },
+    {
+      "at": 13.2,
+      "index": 8,
+      "duration": 0.0,
+      "mode": "cut",
+      "direction": 1
+    },
+    {
+      "at": 15.5,
+      "index": 9,
+      "duration": 0.33,
+      "mode": "portal",
+      "direction": -1
+    },
+    {
+      "at": 17.1,
+      "index": 10,
+      "duration": 0.37,
+      "mode": "fold",
+      "direction": 1
+    },
+    {
+      "at": 18.5,
+      "index": 11,
+      "duration": 0,
+      "mode": "cut",
+      "direction": -1
+    },
+    {
+      "at": 21.2,
+      "index": 12,
+      "duration": 0,
+      "mode": "particles",
+      "direction": 1
+    },
+    {
+      "at": 23.5,
+      "index": 13,
+      "duration": 0.3,
+      "mode": "slit",
+      "direction": -1
+    },
+    {
+      "at": 25.5,
+      "index": 14,
+      "duration": 0.37,
+      "mode": "trace",
+      "direction": 1
+    },
+    {
+      "at": 27.5,
+      "index": 15,
+      "duration": 0.0,
+      "mode": "cut",
+      "direction": -1
+    },
+    {
+      "at": 29.4,
+      "index": 16,
+      "duration": 0.33,
+      "mode": "portal",
+      "direction": 1
+    },
+    {
+      "at": 31.5,
+      "index": 17,
+      "duration": 0.37,
+      "mode": "fold",
+      "direction": -1
+    },
+    {
+      "at": 33.5,
+      "index": 18,
+      "duration": 0.3,
+      "mode": "match",
+      "direction": 1
+    },
+    {
+      "at": 35.5,
+      "index": 19,
+      "duration": 0.4,
+      "mode": "particles",
+      "direction": -1
+    },
+    {
+      "at": 37.5,
+      "index": 20,
+      "duration": 0,
+      "mode": "cut",
+      "direction": 1
+    },
+    {
+      "at": 40.0,
+      "index": 21,
+      "duration": 0,
+      "mode": "trace",
+      "direction": -1
+    },
+    {
+      "at": 42.0,
+      "index": 22,
+      "duration": 0.0,
+      "mode": "cut",
+      "direction": 1
+    },
+    {
+      "at": 44.0,
+      "index": 23,
+      "duration": 0.33,
+      "mode": "portal",
+      "direction": -1
+    },
+    {
+      "at": 46.0,
+      "index": 24,
+      "duration": 0.37,
+      "mode": "fold",
+      "direction": 1
+    },
+    {
+      "at": 47.8,
+      "index": 25,
+      "duration": 0,
+      "mode": "cut",
+      "direction": -1
+    },
+    {
+      "at": 49.0,
+      "index": 26,
+      "duration": 0,
+      "mode": "particles",
+      "direction": 1
+    },
+    {
+      "at": 51.0,
+      "index": 27,
+      "duration": 0.3,
+      "mode": "slit",
+      "direction": -1
+    },
+    {
+      "at": 53.0,
+      "index": 28,
+      "duration": 0.37,
+      "mode": "trace",
+      "direction": 1
+    },
+    {
+      "at": 55.0,
+      "index": 29,
+      "duration": 0.0,
+      "mode": "cut",
+      "direction": -1
+    },
+    {
+      "at": 57.0,
+      "index": 30,
+      "duration": 0.33,
+      "mode": "portal",
+      "direction": 1
+    },
+    {
+      "at": 59.5,
+      "index": 31,
+      "duration": 0.37,
+      "mode": "fold",
+      "direction": -1
+    },
+    {
+      "at": 61.5,
+      "index": 32,
+      "duration": 0.3,
+      "mode": "match",
+      "direction": 1
+    },
+    {
+      "at": 63.5,
+      "index": 33,
+      "duration": 0.4,
+      "mode": "particles",
+      "direction": -1
+    },
+    {
+      "at": 65.3,
+      "index": 34,
+      "duration": 0.3,
+      "mode": "slit",
+      "direction": 1
+    }
+  ],
+  "sound_events": [
+    {
+      "at": 2.24,
+      "kind": "click"
+    },
+    {
+      "at": 3.293,
+      "kind": "click"
+    },
+    {
+      "at": 3.813,
+      "kind": "click"
+    },
+    {
+      "at": 4.5,
+      "kind": "open"
+    },
+    {
+      "at": 11.3,
+      "kind": "paper"
+    },
+    {
+      "at": 19.75,
+      "kind": "paper"
+    },
+    {
+      "at": 21.6256,
+      "kind": "open"
+    },
+    {
+      "at": 25.36,
+      "kind": "open"
+    },
+    {
+      "at": 29.9,
+      "kind": "type"
+    },
+    {
+      "at": 31.3,
+      "kind": "send"
+    },
+    {
+      "at": 36.9,
+      "kind": "tap"
+    },
+    {
+      "at": 38.5,
+      "kind": "tap"
+    },
+    {
+      "at": 41.15,
+      "kind": "click"
+    },
+    {
+      "at": 45.65,
+      "kind": "open"
+    },
+    {
+      "at": 48.8,
+      "kind": "send"
+    },
+    {
+      "at": 50.3,
+      "kind": "click"
+    },
+    {
+      "at": 53.05,
+      "kind": "paper"
+    },
+    {
+      "at": 59.6,
+      "kind": "open"
+    },
+    {
+      "at": 65.3,
+      "kind": "resolve"
+    }
+  ],
+  "music_breaks": [
+    [
+      3.813,
+      4.45
+    ],
+    [
+      32.26,
+      32.6
+    ],
+    [
+      38.3,
+      39.96
+    ]
+  ],
+  "assets": {
+    "silos": "assets-v10/silos.png",
+    "architecture": "assets-v10/architecture.png",
+    "community": "assets-v10/community.png",
+    "learning": "assets-v10/learning.png",
+    "foundation": "assets-v10/foundation.png",
+    "idea": "assets-v10/idea.png",
+    "fit": "assets-v10/fit.png",
+    "bottleneck": "assets-v10/bottleneck.png",
+    "production": "assets-v10/production.png",
+    "review": "assets-v10/review.png",
+    "automation": "assets-v10/automation.png",
+    "time": "assets-v10/time.png",
+    "neural": "assets-v7/neural.png",
+    "infraestructura": "assets-v8/infraestructura.png"
+  },
+  "split_y": 960,
+  "visual_chapters": [
+    {
+      "start": 0.0,
+      "end": 1.5,
+      "view": "toggle",
+      "kind": "toggle",
+      "index": 0,
+      "title": [
+        "CAMBIAR",
+        "UN BOTÓN."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 1.5,
+      "end": 3.0,
+      "view": "silos",
+      "kind": "image",
+      "index": 1,
+      "title": [
+        "TODO",
+        "SEPARADO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 3.0,
+      "end": 4.5,
+      "view": "rewire",
+      "kind": "rewire",
+      "index": 2,
+      "title": [
+        "CONECTAR",
+        "EL SISTEMA."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 4.5,
+      "end": 6.0,
+      "view": "architecture",
+      "kind": "image",
+      "index": 3,
+      "title": [
+        "REDISEÑAR",
+        "CÓMO FUNCIONA."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 6.0,
+      "end": 7.333333333333333,
+      "view": "neural",
+      "kind": "image",
+      "index": 4,
+      "title": [
+        "IA CON",
+        "CONTEXTO."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 7.333333333333333,
+      "end": 9.5,
+      "view": "community",
+      "kind": "image",
+      "index": 5,
+      "title": [
+        "COMPARTIR",
+        "EXPERIENCIA."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 9.5,
+      "end": 11.5,
+      "view": "stream",
+      "kind": "stream",
+      "index": 6,
+      "title": [
+        "LO QUE APRENDO,",
+        "LO COMPARTO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 11.5,
+      "end": 13.2,
+      "view": "learning",
+      "kind": "image",
+      "index": 7,
+      "title": [
+        "IA EN",
+        "LA PRÁCTICA."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 13.2,
+      "end": 15.5,
+      "view": "mesh",
+      "kind": "mesh",
+      "index": 8,
+      "title": [
+        "PERSONAS.",
+        "CONOCIMIENTO."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 15.5,
+      "end": 17.1,
+      "view": "exchange",
+      "kind": "exchange",
+      "index": 9,
+      "title": [
+        "APRENDER",
+        "ENTRE TODOS."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 17.1,
+      "end": 18.5,
+      "view": "identity",
+      "kind": "identity",
+      "index": 10,
+      "title": [
+        "VOLVER",
+        "A APRENDER."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 18.5,
+      "end": 21.2,
+      "view": "aside_know",
+      "kind": "aside_know",
+      "index": 11,
+      "title": [
+        "CREER QUE",
+        "YA SABÉS…"
+      ],
+      "accent": "#e7e7e7",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 21.2,
+      "end": 23.5,
+      "view": "experiments",
+      "kind": "experiments",
+      "index": 12,
+      "title": [
+        "PROBAR.",
+        "REVISAR. AJUSTAR."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 23.5,
+      "end": 25.5,
+      "view": "foundation",
+      "kind": "image",
+      "index": 13,
+      "title": [
+        "BASES",
+        "SÓLIDAS."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 25.5,
+      "end": 27.5,
+      "view": "stack",
+      "kind": "stack",
+      "index": 14,
+      "title": [
+        "DATOS.",
+        "HERRAMIENTAS."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 27.5,
+      "end": 29.4,
+      "view": "infraestructura",
+      "kind": "image",
+      "index": 15,
+      "title": [
+        "LA BASE",
+        "DEL SISTEMA."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 29.4,
+      "end": 31.5,
+      "view": "idea",
+      "kind": "image",
+      "index": 16,
+      "title": [
+        "LA IDEA",
+        "LLEGA RÁPIDO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 31.5,
+      "end": 33.5,
+      "view": "blueprint",
+      "kind": "blueprint",
+      "index": 17,
+      "title": [
+        "IMPLEMENTAR",
+        "ES OTRO PASO."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 33.5,
+      "end": 35.5,
+      "view": "fit",
+      "kind": "image",
+      "index": 18,
+      "title": [
+        "ADAPTARLO",
+        "A TU NEGOCIO."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 35.5,
+      "end": 37.5,
+      "view": "adapt",
+      "kind": "adapt",
+      "index": 19,
+      "title": [
+        "CADA NEGOCIO,",
+        "SU ESTRUCTURA."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 37.5,
+      "end": 40.0,
+      "view": "aside_fit",
+      "kind": "aside_fit",
+      "index": 20,
+      "title": [
+        "NO TODO",
+        "ENCAJA IGUAL."
+      ],
+      "accent": "#e7e7e7",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 40.0,
+      "end": 42.0,
+      "view": "bottleneck",
+      "kind": "image",
+      "index": 21,
+      "title": [
+        "ENCONTRAR",
+        "EL BLOQUEO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 42.0,
+      "end": 44.0,
+      "view": "fastlane",
+      "kind": "fastlane",
+      "index": 22,
+      "title": [
+        "EMPEZAR",
+        "CON ALGO ÚTIL."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 44.0,
+      "end": 46.0,
+      "view": "production",
+      "kind": "image",
+      "index": 23,
+      "title": [
+        "DE LA IDEA",
+        "AL VIDEO."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 46.0,
+      "end": 47.8,
+      "view": "review",
+      "kind": "image",
+      "index": 24,
+      "title": [
+        "PROBAR",
+        "EL RESULTADO."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 47.8,
+      "end": 49.0,
+      "view": "aside_ideal",
+      "kind": "aside_ideal",
+      "index": 25,
+      "title": [
+        "ESO SERÍA",
+        "LO IDEAL."
+      ],
+      "accent": "#e7e7e7",
+      "motion": "push",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 49.0,
+      "end": 51.0,
+      "view": "automation",
+      "kind": "image",
+      "index": 26,
+      "title": [
+        "CONECTAR",
+        "LAS TAREAS."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 51.0,
+      "end": 53.0,
+      "view": "orchestration",
+      "kind": "orchestration",
+      "index": 27,
+      "title": [
+        "PERSONA",
+        "+ AGENTE."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 53.0,
+      "end": 55.0,
+      "view": "routing",
+      "kind": "routing",
+      "index": 28,
+      "title": [
+        "MENOS PASOS",
+        "MANUALES."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 55.0,
+      "end": 57.0,
+      "view": "loop",
+      "kind": "loop",
+      "index": 29,
+      "title": [
+        "REVISAR",
+        "Y MEJORAR."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 57.0,
+      "end": 59.5,
+      "view": "result",
+      "kind": "result",
+      "index": 30,
+      "title": [
+        "RESOLVER",
+        "UN PROBLEMA."
+      ],
+      "accent": "#ffb35e",
+      "motion": "push",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 59.5,
+      "end": 61.5,
+      "view": "time",
+      "kind": "image",
+      "index": 31,
+      "title": [
+        "RECUPERAR",
+        "TIEMPO."
+      ],
+      "accent": "#d8ec85",
+      "motion": "truck",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 61.5,
+      "end": 63.5,
+      "view": "benefits",
+      "kind": "benefits",
+      "index": 32,
+      "title": [
+        "MENOS FRICCIÓN.",
+        "MÁS FOCO."
+      ],
+      "accent": "#c99bff",
+      "motion": "orbit",
+      "direction": 1,
+      "variant": 0
+    },
+    {
+      "start": 63.5,
+      "end": 65.3,
+      "view": "humanclose",
+      "kind": "humanclose",
+      "index": 33,
+      "title": [
+        "CAMBIAR CÓMO",
+        "TRABAJAMOS."
+      ],
+      "accent": "#91e2c0",
+      "motion": "pull",
+      "direction": -1,
+      "variant": 0
+    },
+    {
+      "start": 65.3,
+      "end": 67.1,
+      "view": "outro",
+      "kind": "outro",
+      "index": 34,
+      "title": [
+        "CAMBIAR CÓMO",
+        "TRABAJAMOS."
+      ],
+      "accent": "#ff937e",
+      "motion": "lift",
+      "direction": 1,
+      "variant": 0
+    }
+  ],
+  "camera_ranges": [
+    [
+      0.0,
+      4.5
+    ],
+    [
+      7.333333333333333,
+      13.2
+    ],
+    [
+      17.1,
+      23.5
+    ],
+    [
+      29.4,
+      33.5
+    ],
+    [
+      37.5,
+      42.0
+    ],
+    [
+      47.8,
+      49.0
+    ],
+    [
+      59.5,
+      65.3
+    ]
+  ],
+  "camera_visible_seconds": 32.36666666666667,
+  "bw_ranges": [
+    [
+      18.5,
+      21.2
+    ],
+    [
+      37.5,
+      39.733333333333334
+    ],
+    [
+      47.8,
+      48.733333333333334
+    ]
+  ],
+  "bw_seconds": 5.866666666666671,
+  "music_sections": [
+    {
+      "start": 18.5,
+      "end": 21.2,
+      "kind": "aside"
+    },
+    {
+      "start": 37.5,
+      "end": 39.733333333333334,
+      "kind": "aside"
+    },
+    {
+      "start": 47.8,
+      "end": 48.733333333333334,
+      "kind": "aside"
+    }
+  ],
+  "major_accents": [
+    4.5,
+    7.333333333,
+    13.2,
+    17.1,
+    21.2,
+    23.5,
+    29.4,
+    33.5,
+    40,
+    44,
+    49,
+    59.5,
+    65.3
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tool": "image_gen built-in",
+  "generated": true,
+  "prompts": [
+    {
+      "key": "electricidad",
+      "prompt": "Use case: stylized-concept. Asset type: cinematic photoreal editorial B-roll for a lively vertical Spanish video about AI implementation. Create a single portrait 9:16 image, no text. Close view of one simple ivory Argentine type-I electrical wall socket on a warm terracotta wall, upper middle. The wall is cut away in a wide irregular opening around and below it, revealing a fascinating dense but physically plausible network of insulated blue, orange and black cables looping through metallic conduits behind the wall. The contrast between a tiny simple socket and an intricate hidden system should be immediately understandable, playful in concept but photoreal, not cartoon. Dramatic macro lighting with cobalt blue rim light and warm golden practical light, tactile plaster, subtle dust, glossy insulated wires. Strong depth, high detail, dynamic diagonal composition. All important subject matter between 20% and 75% frame height, room at top and bottom for editorial typography. No people, no hands, no exposed live wire ends, no sparks, no lettering, no logos, no diagram or UI."
+    },
+    {
+      "key": "mesa",
+      "prompt": "Use case: stylized-concept. Asset type: cinematic photoreal B-roll for a dynamic vertical video about turning an AI idea into a working business process. A tactile miniature production line on a real creative workbench, portrait 9:16. In the foreground center an amber glowing glass lightbulb lies beside a handwritten sketch notebook with only abstract scribbles, then a curved trail of vivid cobalt blue cable leads through three small realistic metal processing stations to a small upright phone showing a beautiful blank luminous warm-white screen with simple abstract colorful blocks. Playful tangible metaphor: idea becomes finished creative work. Warm sunlight, blue-orange color contrast, 35mm photography, shallow depth, rich realistic textures, energetic low angled composition. No people, no robot humanoid, no illegible fake typography, no legible text, no logos or real app brands. Keep subject centered within middle 60% height, leave dark unobtrusive margins at top and bottom for video captions."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-15",
+  "scope": "Repository baseline and workflow integration; no social publication",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 49,
+    "failed": 0,
+    "network": "doubles; no live paid API or publication"
+  },
+  "visual_template": {
+    "ok": true,
+    "samples": 196,
+    "scenes": 35,
+    "errors": [],
+    "issues": [],
+    "scope": "visual template only; camera, voice, mix and final video not reviewed"
+  },
+  "music_smoke": {
+    "bpm": 122,
+    "duration": 12.0,
+    "seed": 1114122,
+    "bass_instrument": false,
+    "third_party_samples": false,
+    "event_counts": {
+      "kick": 25,
+      "clap": 12,
+      "hat": 57,
+      "open_hat": 15,
+      "shaker": 20,
+      "wood": 13,
+      "organ": 42,
+      "rim": 3
+    },
+    "review": "instrumental generated; listening review pending"
+  },
+  "approved_video": {
+    "format_rechecked": true,
+    "sha256": "37d88d240b95b09d7f765b4bd7a4932e1102773d0716d9634b433968eb29d4bd",
+    "modified": false
+  },
+  "limits": [
+    "No live generation API exercised in this revision",
+    "The smoke instrumental has no listening approval",
+    "The CLI prepares editorial production plans; editing and perceptual review use production tools"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "assets": [
+    {
+      "name": "comunidad",
+      "file": "comunidad.png",
+      "prompt": "Use case: photorealistic editorial. Asset: full-bleed vertical 9:16 B-roll still for an upbeat Argentine creator reel about sharing AI knowledge. Overhead candid close-up of four different adult hands collaborating around a round pale wood table, sliding cobalt-blue and warm orange paper cards into a shared irregular arrangement, laptop edge and a mate gourd subtly visible, no faces. Warm daylight, tactile real materials, casual creative workshop, authentic not corporate stock. Natural slight film grain, colorful but sophisticated. Important hands/cards within central 65% of frame, top 15% and bottom 22% quiet for overlaid captions. No written words, logos, watermarks, graphs or numerical results. One single coherent photographic scene, not a collage.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-ad481bf9-45fe-439f-a0cc-160f5fda22c7.png",
+      "illustrative": true
+    },
+    {
+      "name": "aprendizaje",
+      "file": "aprendizaje.png",
+      "prompt": "Use case: photorealistic editorial. Asset: full-bleed vertical 9:16 B-roll still for an upbeat creator reel about learning new skills. Extreme oblique macro view of a well-used open cream notebook on a cobalt blue desk, a real adult hand holding a pencil drawing a small circuit sketch with simple boxes and arrows beside previous crossed-out sketches; orange pencil shavings, worn eraser, half-seen keyboard beyond. Focus on the graphite pencil tip touching paper, beautiful shallow depth of field, warm late afternoon light, tactile analog work meeting technology. Distinct single photograph, no montage, no faces, no legible writing, no titles, no logos or watermark. Subject in central 60%; leave bottom 23% visually quiet for subtitles. Casual imperfect lived-in texture, no sterile corporate visual.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-45e7fb2b-179f-4368-8a0b-677e430c0278.png",
+      "illustrative": true
+    },
+    {
+      "name": "base",
+      "file": "base.png",
+      "prompt": "Use case: stylized-concept, realistic miniature photography. Asset: vertical 9:16 visual metaphor for solid infrastructure in a lively AI explainer reel. Low angle cutaway miniature modern workshop building: cozy creative room above ground with desk and a small lamp, underneath an unexpectedly substantial network of concrete foundations, beams and neatly routed cobalt blue cables. The building rests on a terracotta soil cross-section on a dark navy studio backdrop. Dramatic playful practical miniature photography, macro tilt-shift depth, warm top-room glow, blue side fill, rich tactile architectural model material, no people. One coherent scene, strongest subject in middle 60%, simple dark margins for caption overlay at top and bottom. No words, text, logos, charts, fake numerical outcomes, no split panels.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-838e981a-ce3c-4a55-8c37-d13294684217.png",
+      "illustrative": true
+    },
+    {
+      "name": "encaje",
+      "file": "encaje.png",
+      "prompt": "Use case: product-mockup, conceptual studio photo. Asset: vertical 9:16 B-roll metaphor for a good idea failing to fit an existing business. Extreme close-up of a large warm-orange square wooden peg held just above a round hole in a cobalt-blue wooden board, adult fingertips only visible at the upper side. The mismatch must be immediately obvious: square peg cannot fit round hole. Playful tactile physical object, slight real wood grain, cream background, sharp bold shadows with soft warm light, high-end editorial photography, simple graphic composition. Main objects centrally placed between 25% and 70% height, bottom quarter quiet for captions. No text, no logos, no other shapes, no collage, no face, no generic business icons.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-5afc1607-4876-4158-851c-b214420d79ba.png",
+      "illustrative": true
+    },
+    {
+      "name": "tiempo",
+      "file": "tiempo.png",
+      "prompt": "Use case: photorealistic editorial. Asset: vertical 9:16 B-roll metaphor for freeing time by improving a workflow, for an upbeat Argentine AI creator reel. Close-up of a small retro orange analog kitchen timer on a quiet sunlit pale desk beside a folded pair of headphones, in the softly defocused background an open window and a green plant, late afternoon natural light. The timer has a clear simple dial with ticks but no readable text or digits. Realistic tactile material, candid warm photographic style, shallow focus, airy relaxed mood, cobalt blue shadow accents. Timer centered in middle half of composition, uncluttered lower quarter for subtitles. One single beautiful photograph, no person, no laptop, no logos, no overlay text, no watermarks. No charts or claims of time saved.",
+      "method": "image_gen built-in",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-382ee735-e39d-494c-bbca-6cf51f1bd0d3.png",
+      "illustrative": true
+    }
+  ]
+}

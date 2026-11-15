@@ -1,0 +1,44 @@
+{
+  "script": {
+    "title": "¿Qué tarea delegarías?",
+    "hook": "Girá una idea para tu negocio.",
+    "segments": [
+      {"spoken": "Girá una idea para tu negocio.", "screen": "Una tarea, una idea", "seconds": 3},
+      {"spoken": "Esta ruleta muestra ocho tareas que podés explorar con inteligencia artificial.", "screen": "Ocho posibilidades", "seconds": 4},
+      {"spoken": "En este ejemplo elegimos responder consultas frecuentes de tus clientes.", "screen": "Consultas frecuentes", "seconds": 4},
+      {"spoken": "Primero, anotá las preguntas que recibís una y otra vez.", "screen": "1. Reuní las preguntas", "seconds": 4},
+      {"spoken": "Después, prepará respuestas claras con información real de tu negocio.", "screen": "2. Prepará respuestas", "seconds": 4},
+      {"spoken": "Definí cuándo el asistente tiene que pasar la conversación a una persona.", "screen": "3. Dejá una salida humana", "seconds": 4},
+      {"spoken": "Probalo con casos inventados antes de atender a un cliente real.", "screen": "Probá antes de activar", "seconds": 4},
+      {"spoken": "Revisá los errores y corregí la información que le falta.", "screen": "Revisá y corregí", "seconds": 4},
+      {"spoken": "Empezá por una tarea concreta y medí qué cambia en tu atención.", "screen": "Una tarea a la vez", "seconds": 4},
+      {"spoken": "Comentá RULETA y te lo mando.", "screen": "Comentá RULETA", "seconds": 5}
+    ],
+    "alternative_hooks": ["¿Qué pregunta respondés todos los días?", "Tu primera automatización puede empezar acá.", "Elegí una tarea para probar IA."],
+    "claims_to_verify": []
+  },
+  "agents": {
+    "03-roulette-master": {
+      "options": [
+        {"label": "Consultas", "category": "buena", "probability": 12.5, "action": "Mostrar una consulta de prueba."},
+        {"label": "Agenda", "category": "buena", "probability": 12.5, "action": "Abrir una agenda de ejemplo."},
+        {"label": "Ideas", "category": "neutra", "probability": 12.5, "action": "Escribir tres ideas."},
+        {"label": "Resumen", "category": "neutra", "probability": 12.5, "action": "Resumir un texto propio."},
+        {"label": "Lista", "category": "neutra", "probability": 12.5, "action": "Preparar una lista."},
+        {"label": "Objeción", "category": "picante", "probability": 12.5, "action": "Simular una objeción."},
+        {"label": "Reclamo", "category": "picante", "probability": 12.5, "action": "Derivar un reclamo ficticio."},
+        {"label": "Crisis", "category": "extrema", "probability": 12.5, "action": "Mostrar la derivación a una persona."}
+      ],
+      "stop_phrase": "Vamos con consultas frecuentes."
+    },
+    "06-thumbnail-copy": {
+      "youtube_title": "8 tareas para explorar IA en tu negocio",
+      "youtube_description": "Demostración ilustrativa del flujo de producción.",
+      "instagram_caption": "Una tarea concreta para empezar a explorar IA.",
+      "hashtags": ["#IA", "#Negocios", "#Argentina"],
+      "first_comment": "¿Qué tarea elegirías?",
+      "covers": ["¿Qué tarea delegarías?", "Probá una idea", "Tu primera automatización"],
+      "image_prompt": "Ruleta de ocho sectores, fondo negro, acento amarillo, texto legible."
+    }
+  }
+}

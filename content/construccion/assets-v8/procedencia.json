@@ -1,0 +1,68 @@
+{
+  "method": "image_gen built-in",
+  "new_assets": [
+    {
+      "id": "desarrollo",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original cinematic technology image for the lower half of a split-screen AI reel. The input is a STYLE REFERENCE ONLY for oblique macro camera, shallow depth of field, fine luminous screen texture and dark high contrast. Subject: extreme diagonal macro of a developer's dark code editor, richly detailed luminous abstract code lines in warm amber, lime and violet, one small elegant branching workflow diagram on the monitor. No finance charts. Near-square landscape composition, aspect ratio 9:8, fill the frame with the screen, main details in central 70%. Realistic glass pixels, precise technical surfaces, tiny reflections, strong near-far perspective. NO paper, floating cards, cream borders, miniature clay models, blue-dominant light, watermarks, logos or prominent readable text. No title or captions. Amber and charcoal dominate.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-b597a76d-571e-4349-8525-f37a1c854f78.png",
+      "file": "content/construccion/assets-v8/desarrollo.png",
+      "sha256": "bb4300de20f2791ceaa302a70e21676f1d5e746445332234f513d7aacaaa26ec"
+    },
+    {
+      "id": "infraestructura",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+      "prompt": "Use case: stylized-concept. Create a NEW original cinematic high-tech illustration, near-square landscape aspect ratio 9:8, for the bottom half of a split-screen reel about implementing AI in business systems. Input is a STYLE REFERENCE ONLY for luminous technical detail, dramatic space and dark cinematic depth. A low oblique view along a compact black server rack and sleek connected data-processing modules, fine amber and emerald light pathways linking the modules, realistic metal vents and translucent connections. One clear spatial arrangement with vivid depth, not an infographic. The entire frame is occupied by the detailed scene, no blank areas. A small warm purple rim reflection, emerald and copper dominant. No humanoid robot, paper, cream frames, flat floating cards, clay toys, blue-dominant wash, text, numbers, logo, watermark or financial chart.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-fcd41f62-148f-48ce-bddc-9315f28c0177.png",
+      "file": "content/construccion/assets-v8/infraestructura.png",
+      "sha256": "6a1511dec1d519d9417ecb7f7a55fbf243edb47c9dfcb87e4424a89ecc708075"
+    },
+    {
+      "id": "produccion",
+      "ref": "D:/Antigravity/Infinite Process/agente-marketing/content/referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+      "prompt": "Use case: stylized-concept. NEW original cinematic close-up technical image for the bottom half of a split-screen AI marketing reel. Near-square landscape 9:8. Input is a STYLE REFERENCE ONLY for macro screen cinematography, diagonal angle, precise luminous interface lines and shallow depth. Subject: a professional dark video-editing timeline on a glass display seen at an oblique angle, several stacked film strips with tiny warm images and a clean audio waveform, subtle coral and magenta playhead, blurred real keyboard edge in the foreground. Show creative video production, not finance trading. Rich detailed charcoal glass and purple/amber interface lights, strong focal depth, entire image filled with the scene. No legible words, no brand, no large lettering, no paper or floating cards, no cream backgrounds, no blue-dominant color, no cartoon/clay miniatures, no watermark.",
+      "source": "C:\\Users\\oyarz\\.codex\\generated_images\\01a1dc17-9f5a-7403-8e7d-627bed190ccc\\exec-961cb342-85bb-4e62-869d-d0a4070aafe5.png",
+      "file": "content/construccion/assets-v8/produccion.png",
+      "sha256": "47be13ca6c185ba6cc6bfe347180f0fc6a444e1aa128ec5134d5d3cf0a1f3db8"
+    }
+  ],
+  "reused_assets": [
+    {
+      "id": "neural",
+      "file": "content/construccion/assets-v7/neural.png",
+      "prompt_source": "content/construccion/assets-v7/procedencia.json",
+      "sha256": "7e202ebcb468a4438a7c8b62abc4e94ff6230e4320127096e220962b306486cf"
+    },
+    {
+      "id": "chip_ref",
+      "file": "content/construccion/assets-v7/chip_ref.png",
+      "prompt_source": "content/construccion/assets-v7/procedencia.json",
+      "sha256": "99b557974b894fe219164d701ef1ff4f7d029fddb0c2e15f498ff367ddffc486"
+    },
+    {
+      "id": "studio_ref",
+      "file": "content/construccion/assets-v7/studio_ref.png",
+      "prompt_source": "content/construccion/assets-v7/procedencia.json",
+      "sha256": "bea8ca7a8d86d33b684e953b6db93fcf0e24a9fb1f167c4879972c4e6c7a518d"
+    },
+    {
+      "id": "hub_ref",
+      "file": "content/construccion/assets-v7/hub_ref.png",
+      "prompt_source": "content/construccion/assets-v7/procedencia.json",
+      "sha256": "00f1f7ce090a2886f4c7aa2e9ef2a094df4a20d60b9449b66cc8b468e0107776"
+    },
+    {
+      "id": "flow_ref",
+      "file": "content/construccion/assets-v7/flow_ref.png",
+      "prompt_source": "content/construccion/assets-v7/procedencia.json",
+      "sha256": "d2bd0ad872ce337f245230815a136612ccf277da0b335c325d57c04daea98694"
+    },
+    {
+      "id": "tiempo",
+      "file": "content/construccion/assets-v5/tiempo.png",
+      "prompt_source": "content/construccion/assets-v5/procedencia.json",
+      "sha256": "70174ac68fff4853e5f34b062c4c5cb0390b82dfbdcbca93b3b754114c01c96d"
+    }
+  ],
+  "selected_count": 9
+}
