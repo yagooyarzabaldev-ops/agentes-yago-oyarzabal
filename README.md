@@ -4,6 +4,8 @@
 
 El estándar es voz real y tono natural; cámara cerca de la mitad del tiempo, arriba y visuales abajo; el resto a pantalla completa; imágenes variadas, profundidad, animaciones y transiciones dinámicas; paleta ámbar/violeta/verde/coral, con aclaraciones puntuales en blanco y negro. Música Chicago house minimal a 122 BPM, sin línea de bajo y con la voz al frente.
 
+**Duración base para próximos Reels y Shorts: 60–75 segundos.** El perfil v2 permite que gerencia y guion ajusten según el contenido; fuera de la base registran un motivo concreto. Las ideas puntuales pueden ser más breves y los tutoriales necesitar más desarrollo. No rellenar ni acelerar la voz para alcanzar un número.
+
 - [Reglas para el asistente y futuros chats](AGENTS.md).
 - [Estilo y flujo completo de producción](production/ESTILO-Y-FLUJO.md).
 - [Perfil operativo versionado](config/video-style.json).
@@ -41,7 +43,7 @@ El director visual entrega escenas cronometradas. Se comprueban cobertura, cáma
 python -m marketing attach-video ID "D:/mis-materiales/reel-final.mp4"
 ```
 
-Se valida 1080×1920, H.264/AAC, 35–90 segundos y hasta 100 MiB. La base editorial es 60–90 s; el rango corto conserva compatibilidad con piezas anteriores. La validación de formato no sustituye revisión visual, escucha ni sincronía. `--synthetic-voice` declara una voz sintética si fue solicitada para esa pieza; la voz real es el estándar.
+Se valida 1080×1920, H.264/AAC, 20–180 segundos y hasta 100 MiB. La base editorial es 60–75 s; el margen técnico admite ajustes según el contenido y piezas históricas. El guion registra `duration_reason` cuando sale de la base, y el plan de escenas y la música se adaptan a su duración. La validación de formato no sustituye revisión visual, escucha ni sincronía. `--synthetic-voice` declara una voz sintética si fue solicitada para esa pieza; la voz real es el estándar.
 
 Para corregir el contenido:
 

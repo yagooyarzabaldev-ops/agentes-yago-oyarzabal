@@ -9,8 +9,9 @@ Completar con lo disponible; no convertir cada campo vacío en una pregunta a Ya
 - Voz y cámara disponibles localmente:
 - Fuente de transcripción y sincronía:
 - Gancho y cierre:
-- Duración de partida: 60–90 s.
-- Perfil: infinite-process-editorial-v1.
+- Duración de partida para Reels y Shorts: 60–75 s.
+- Duración elegida y motivo del ajuste según el contenido, si sale de la base:
+- Perfil: infinite-process-editorial-v2.
 - Excepciones explícitas pedidas por Yago:
 - Recursos nuevos y referencias elegidas:
 - Entrega y destino solicitado:

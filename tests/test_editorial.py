@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from marketing.agents import Agents, BRIEF, EDITORIAL_STAGES, SHOTS, Workflow, validate
+from marketing.agents import Agents, BRIEF, EDITORIAL_STAGES, SHOTS, Workflow, validate, validate_script, duration_instructions
 from marketing.config import AppError, Config
 from marketing.media import render, verify_video
 from marketing.store import Store, digest
@@ -43,7 +43,8 @@ class EditorialAgents:
             return {'title': 'Cambiar cómo trabajamos', 'hook': '¿Dónde se traba?',
                     'segments': [{'spoken': '¿Dónde se traba?' if i == 0 else 'Probamos este cambio.',
                                   'screen': 'El sistema', 'seconds': 3} for i in range(20)],
-                    'alternative_hooks': ['Uno', 'Dos', 'Tres'], 'claims_to_verify': []}
+                    'alternative_hooks': ['Uno', 'Dos', 'Tres'], 'claims_to_verify': [],
+                    **({'duration_reason': ''} if 'duration_reason' in schema['properties'] else {})}
         if schema is SHOTS:
             return shot_plan()
         if role == '06-thumbnail-copy':
@@ -74,7 +75,8 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(result['video_format'], 'editorial')
         self.assertEqual(self.agents.calls, ['00-orquestador', '01-trend-hunter', '02-guionista'] +
                          [role for role, _ in EDITORIAL_STAGES])
-        self.assertTrue(all(c['style']['id'] == 'infinite-process-editorial-v1' for c in self.agents.contexts))
+        self.assertTrue(all(c['style']['id'] == 'infinite-process-editorial-v2' for c in self.agents.contexts))
+        self.assertTrue(all(c['style']['format']['duration_seconds'] == [60, 75] for c in self.agents.contexts))
         self.assertIsNone(result['video'])
         self.assertEqual(result['plan_review']['export_review'], 'pending')
         handoff = json.loads((self.store.artifact_dir(result) / 'handoff-produccion.json').read_text(encoding='utf-8'))
@@ -119,9 +121,13 @@ class EditorialTests(unittest.TestCase):
                 'seconds': 67.1, 'fps': 30, 'bytes': 45294969}
         with patch('marketing.media.video_info', return_value=info):
             self.assertEqual(verify_video('fixture.mp4')['seconds'], 67.1)
-            info['seconds'] = 95
-            with self.assertRaises(AppError):
-                verify_video('fixture.mp4')
+            for duration in (20, 30, 75, 120, 180):
+                info['seconds'] = duration
+                self.assertEqual(verify_video('fixture.mp4')['seconds'], duration)
+            for duration in (19, 180.1):
+                info['seconds'] = duration
+                with self.assertRaises(AppError):
+                    verify_video('fixture.mp4')
 
     def test_provider_receives_editorial_policy_and_style(self):
         class Http:
@@ -133,7 +139,8 @@ class EditorialTests(unittest.TestCase):
         Agents(Config(ROOT, env={'OPENAI_API_KEY': 'test-placeholder'}), http).run('00-orquestador', {}, BRIEF)
         data = json.loads(http.data['input'])
         self.assertFalse(data['style']['music']['bass_line'])
-        self.assertIn('60 a 90', http.data['instructions'])
+        self.assertIn('60 a 75', http.data['instructions'])
+        self.assertIn('duration_reason', http.data['instructions'])
         self.assertNotIn('El cierre dice:', http.data['instructions'])
 
     def test_bad_plans_are_blocked_before_motion_and_mix(self):
@@ -166,6 +173,75 @@ class EditorialTests(unittest.TestCase):
         report = check_shots(shot_plan(), 60, load_style(ROOT))
         self.assertEqual(report['camera_fraction'], 0.5)
         self.assertEqual(report['unique_visual_fraction'], 1)
+
+    def timed_script(self, seconds, reason=''):
+        count = 12 if seconds <= 75 else 30
+        segment_seconds, remainder = divmod(seconds - 2, count - 1)
+        durations = [2] + [segment_seconds + (1 if i < remainder else 0) for i in range(count - 1)]
+        return {'title': 'Duración por contenido', 'hook': 'Mirá este proceso.',
+                'segments': [{'spoken': 'Mirá este proceso.', 'screen': 'Un paso concreto', 'seconds': value} for value in durations],
+                'alternative_hooks': ['Uno', 'Dos', 'Tres'], 'claims_to_verify': [], 'duration_reason': reason}
+
+    def test_base_duration_needs_no_exception_reason(self):
+        for seconds in (60, 67, 75):
+            with self.subTest(seconds=seconds):
+                validate_script(self.timed_script(seconds), style=load_style(ROOT))
+
+    def test_adjustments_require_a_reason_and_stay_within_allowed_range(self):
+        for seconds in (20, 35, 45, 76, 90, 120, 180):
+            with self.subTest(seconds=seconds):
+                with self.assertRaisesRegex(AppError, 'justificar'):
+                    validate_script(self.timed_script(seconds, '  '), style=load_style(ROOT))
+                validate_script(self.timed_script(seconds, 'La cantidad de pasos del ejemplo define esta duración.'), style=load_style(ROOT))
+        for seconds in (19, 181):
+            with self.subTest(seconds=seconds), self.assertRaises(AppError):
+                validate_script(self.timed_script(seconds, 'Un motivo no habilita cualquier duración.'), style=load_style(ROOT))
+
+    def test_short_and_long_content_reach_production_with_recorded_duration(self):
+        original_run = self.agents.run
+        for seconds, reason in [(30, 'Una sola corrección de configuración y su resultado.'),
+                                (120, 'Demostrar tres pasos completos de integración con su comprobación.')]:
+            with self.subTest(seconds=seconds):
+                def run(role, context, schema):
+                    if role == '02-guionista':
+                        return self.timed_script(seconds, reason)
+                    if schema is SHOTS:
+                        plan = shot_plan()
+                        plan['shots'] = [dict(copy.deepcopy(plan['shots'][i % 30]),
+                                             start=i * 2, end=(i + 1) * 2, visual_id=f'visual-{i}')
+                                         for i in range(seconds // 2)]
+                        return plan
+                    return original_run(role, context, schema)
+                with patch.object(self.agents, 'run', side_effect=run):
+                    job = self.workflow.produce(self.approved()['id'])
+                exported = self.store.artifact_dir(job)
+                handoff = json.loads((exported / 'handoff-produccion.json').read_text(encoding='utf-8'))
+                self.assertEqual(handoff['duration_seconds'], seconds)
+                self.assertEqual(handoff['duration_reason'], reason)
+                self.assertEqual(job['agents']['04-director-visual']['shots'][-1]['end'], seconds)
+                self.assertIn(reason, (exported / 'produccion.md').read_text(encoding='utf-8'))
+
+    def test_existing_v1_work_keeps_its_duration_contract(self):
+        style = load_style(ROOT)
+        style.update(id='infinite-process-editorial-v1', version=1)
+        style['format']['duration_seconds'] = [60, 90]
+        style.pop('duration_policy')
+        script = self.timed_script(85)
+        script.pop('duration_reason')
+        job = self.store.create('Trabajo iniciado con el perfil anterior')
+        job['style'] = {'profile': style, 'sha256': digest(style)}
+        self.store.save(job)
+        original_run = self.agents.run
+        def run(role, context, schema):
+            if role == '02-guionista':
+                self.assertNotIn('duration_reason', schema['properties'])
+                self.assertIn('60 a 90', duration_instructions(context['style']))
+                return script
+            return original_run(role, context, schema)
+        with patch.object(self.agents, 'run', side_effect=run):
+            drafted = self.workflow.draft(job['id'])
+        self.assertEqual(drafted['style']['sha256'], digest(style))
+        self.assertEqual(sum(s['seconds'] for s in drafted['script']['segments']), 85)
 
 
 if __name__ == '__main__':

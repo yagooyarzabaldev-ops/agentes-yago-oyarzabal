@@ -22,6 +22,7 @@ S = {'type': 'string'}
 N = {'type': 'number'}
 SCRIPT = obj(title=S, hook=S, segments=array(obj(spoken=S, screen=S, seconds=N)),
              alternative_hooks=array(S), claims_to_verify=array(S))
+ADAPTIVE_SCRIPT = obj(**SCRIPT['properties'], duration_reason=S)
 TRENDS = obj(mode={'type': 'string', 'enum': ['evergreen']},
              formats=array(obj(hook=S, rationale=S, original_sound=S, visual_approach=S)))
 ROULETTE = obj(options=array(obj(label=S, category={'type': 'string', 'enum': ['buena', 'neutra', 'picante', 'extrema']},
@@ -62,12 +63,36 @@ def validate(value, schema, path='respuesta'):
         raise AppError(f'{path}: valor no permitido.')
 
 
-def validate_script(script, duration_range=(35, 90)):
-    validate(script, SCRIPT)
+def script_schema(style):
+    return ADAPTIVE_SCRIPT if style and 'duration_policy' in style else SCRIPT
+
+
+def duration_instructions(style):
+    low, high = style['format']['duration_seconds']
+    text = f'Formato editorial: duración base de {low} a {high} segundos para Reels y Shorts. '
+    if policy := style.get('duration_policy'):
+        minimum, maximum = policy['allowed_seconds']
+        text += (f'Podés ajustar entre {minimum} y {maximum}s según el contenido. '
+                 'El guionista entrega duration_reason: motivo concreto obligatorio fuera de la base; '
+                 'dentro de la base puede quedar vacío. No rellenar ni acelerar la voz para cumplir un número. ')
+    else:
+        text += 'Respetá ese rango del perfil fijado para este trabajo. '
+    return text
+
+
+def validate_script(script, duration_range=(35, 90), *, style=None):
+    validate(script, script_schema(style))
+    if style:
+        duration_range = style.get('duration_policy', {}).get('allowed_seconds', style['format']['duration_seconds'])
     segments = script['segments']
     low, high = duration_range
-    if not 8 <= len(segments) <= 40 or not low <= sum(s['seconds'] for s in segments) <= high:
+    duration = math.fsum(s['seconds'] for s in segments)
+    if not 8 <= len(segments) <= 40 or not low <= duration <= high:
         raise AppError(f'El guion debe tener 8 a 40 bloques y durar entre {low} y {high} segundos.')
+    if style and 'duration_policy' in style:
+        base_low, base_high = style['format']['duration_seconds']
+        if not base_low <= duration <= base_high and not script['duration_reason'].strip():
+            raise AppError(f'Fuera de la base de {base_low}–{base_high}s, el guionista debe justificar la duración según el contenido.')
     if any(not s['spoken'].strip() or not s['screen'].strip() or not 1 <= s['seconds'] <= 8 for s in segments):
         raise AppError('Cada bloque necesita voz, texto en pantalla y una duración de 1 a 8 segundos.')
     if segments[0]['seconds'] > 3 or script['hook'].strip() != segments[0]['spoken'].strip():
@@ -105,7 +130,7 @@ class Agents:
         style = context.get('style') or load_style(self.config.root)
         format_name = context.get('video_format', 'editorial')
         format_policy = (
-            'Formato editorial: guion de 60 a 90 segundos. No forzar ruleta ni CTA RULETA. '
+            duration_instructions(style) + 'No forzar ruleta ni CTA RULETA. '
             'Dirección visual: shots contiguos desde 0 hasta la suma de seconds del guion, de 1.5 a 2.5s '
             '(máximo 3s), cámara 40–55% del tiempo. Al menos 80% visual_id únicos, ninguno más de dos veces '
             'ni consecutivo. Tres colores, cuatro familias de movimiento y cuatro de transición como mínimo. '
@@ -135,7 +160,8 @@ class Agents:
                 'model': self.config.get('OPENAI_MODEL', 'gpt-6-luna'), 'store': False,
                 'instructions': prompt + '\n\nREGLAS DEL PROGRAMA (prevalecen):\n' + policy + format_policy,
                 'input': json.dumps({'brand': self.config.brand(), **context, 'style': style}, ensure_ascii=False),
-                'max_output_tokens': 12000 if schema is SHOTS else 6000,
+                'max_output_tokens': (24000 if sum(s['seconds'] for s in context.get('approved_script', {}).get('segments', [])) > 90
+                                      else 12000) if schema is SHOTS else 6000,
                 'text': {'format': {'type': 'json_schema', 'name': 'agent_result', 'strict': True, 'schema': schema}},
             })
         if response.get('status') != 'completed':
@@ -187,8 +213,9 @@ class Workflow:
                     raise AppError('Trend Hunter debe entregar cinco formatos evergreen.')
                 job['agents']['01-trend-hunter'] = trends
                 self.store.save(job)
-            script = self.agents.run('02-guionista', dict(context, trends=job['agents']['01-trend-hunter']), SCRIPT)
-            validate_script(script, (60, 90) if video_format(job) == 'editorial' else (35, 55))
+            editorial_style = style if video_format(job) == 'editorial' else None
+            script = self.agents.run('02-guionista', dict(context, trends=job['agents']['01-trend-hunter']), script_schema(editorial_style))
+            validate_script(script, (35, 55), style=editorial_style)
             job.update(script=script, state='awaiting_approval', approval=None, video=None)
             job['agents']['02-guionista'] = script
             self.store.save(job)
@@ -283,6 +310,8 @@ class Workflow:
             write_json(directory / 'revision-del-plan.json', job['plan_review'])
             write_json(directory / 'handoff-produccion.json', {
                 'job': job['id'], 'script_sha256': digest(job['script']), 'style_sha256': job['style']['sha256'],
+                'duration_seconds': sum(s['seconds'] for s in job['script']['segments']),
+                'duration_reason': job['script'].get('duration_reason', ''),
                 'status': 'plan_ready_render_pending', 'agents': job['agents'],
                 'next': ['montar voz y cámara', 'crear recursos y animaciones', 'componer música y mezcla',
                          'renderizar', 'ver y escuchar exportación', 'adjuntar MP4 para revisión'],
@@ -291,7 +320,9 @@ class Workflow:
             script = job['script']
             (directory / 'guion.txt').write_text('\n\n'.join(s['spoken'] for s in script['segments']) + '\n', encoding='utf-8')
             lines = [f"# {script['title']}", '', f"Estado: {job['state']}",
-                     f"Huella del guion: {digest(script)[:16]}", '', '## Guion', '']
+                     f"Huella del guion: {digest(script)[:16]}",
+                     f"Duración prevista: {sum(s['seconds'] for s in script['segments']):g}s",
+                     f"Motivo de duración: {script.get('duration_reason') or 'Dentro de la base del trabajo.'}", '', '## Guion', '']
             cursor = 0
             for segment in script['segments']:
                 end = cursor + segment['seconds']

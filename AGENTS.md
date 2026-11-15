@@ -8,6 +8,8 @@ Leé `config/video-style.json`, `production/ESTILO-Y-FLUJO.md` y `production/bas
 
 Conservá la voz real, el acento y el sentido. Cámara aproximadamente la mitad del tiempo, arriba y visuales abajo; el resto, desarrollo visual a pantalla completa. Cambios frecuentes, profundidad, animación real, paleta variada, aclaraciones puntuales en blanco y negro y house Chicago minimal sin línea de bajo. Replicá el lenguaje, no las mismas imágenes ni el mismo loop.
 
+Para los próximos Reels y Shorts, la duración base es **60–75 segundos** (perfil v2). Gerencia y guion pueden acortar o extender según el contenido, registrando el motivo cuando salen de la base. No pedir permiso adicional para ese ajuste editorial ya autorizado: el guion se revisa con su duración propuesta. Evitar relleno, repeticiones o acelerar la voz para alcanzar un número. Montaje, motion y música se adaptan al tiempo elegido. Las piezas en curso conservan su perfil fijado.
+
 ## Equipo y ejecución
 
 Los contratos están en `agents/`. El gerente usa especialistas según el trabajo: investigación, guion, referencias, dirección visual, voz, motion, montaje, música, control de calidad, copy y análisis. No inventar que se ejecutaron agentes, renders, escuchas o verificaciones. La CLI ejecuta las etapas de planificación con respuestas estructuradas y guarda avances; el montaje y la revisión perceptual se ejecutan con herramientas de producción.

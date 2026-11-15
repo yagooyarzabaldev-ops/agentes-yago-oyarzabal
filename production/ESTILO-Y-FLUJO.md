@@ -13,9 +13,19 @@ La base identifica un lenguaje audiovisual. Las próximas piezas necesitan ideas
 - Ámbar, violeta, verde, coral y acentos lima; materiales, luz y profundidad de las referencias. Evitar azul dominante y marco blanco.
 - Planos generalmente de 1.5–2.5 segundos, con cambios de escala, objetos y acciones. Combinar animación de elementos, parallax, tipografía y desplazamientos. Cambiar imágenes a menudo no significa cambiar sin relación con la frase.
 - House Chicago minimal a 122 BPM, sin línea de bajo ni subgrave sostenido. Bombo corto, órgano percusivo, madera, rim, clap y hats con swing. Voz protagonista; pausas y acentos vinculados al relato.
-- Formato de partida 1080×1920, 30 fps, 60–90 segundos. La pieza aprobada dura 67.1 segundos, tiene 35 escenas y cámara en el 48.24% del tiempo.
+- Formato de partida 1080×1920, 30 fps, **60–75 segundos para Reels y Shorts**. La pieza aprobada dura 67.1 segundos, tiene 35 escenas y cámara en el 48.24% del tiempo.
 
 Los números del perfil son criterios iniciales de producción, no sustituyen las decisiones de Yago ni una revisión perceptual. Cambios explícitos para una pieza se registran con su motivo; no borrar el historial de aprobación.
+
+## Duración según el contenido — perfil v2
+
+Yago pidió usar 60–75 segundos como base para las próximas piezas y que los agentes ajusten según el contenido. Gerencia propone la duración; guion la concreta y registra `duration_reason` fuera de la base. El ajuste editorial ya está autorizado: se presenta junto con el guion, sin una consulta adicional de estilo.
+
+Como orientación: 20–35s para un consejo o idea puntual; 40–60s para un problema y solución; 60–90s para desarrollar un cambio de sistema; 90–180s para un tutorial o caso cuyos pasos lo necesiten. Estos rangos no son cuotas ni garantías de rendimiento. Priorizar claridad y ritmo, sin relleno ni voz acelerada. El margen técnico del programa es 20–180s; la base habitual sigue siendo 60–75s.
+
+Dirección visual y motion ajustan la cantidad de escenas; montaje conserva pausas útiles y palabras completas; música crea un cierre para la duración elegida; calidad comprueba que el motivo y el resultado sean coherentes. Un cambio de duración que altera el guion se revisa como nueva versión del contenido.
+
+El video base y la etiqueta `video-base-v1` conservan su aprobación histórica. Los nuevos trabajos fijan el perfil v2; los existentes mantienen su perfil y duración anteriores.
 
 ## Equipo bajo la gerencia
 
@@ -58,6 +68,8 @@ Una frase como «Hagamos un reel sobre cómo cambia la atención de una barberí
 Dirección visual entrega escenas con start/end, visual_id, idea, visual, layout, palette, motion, animation, transition y aside_reason. El validador exige cobertura sin huecos ni solapes, planos de hasta tres segundos, cámara 40–55%, al menos 80% de identificadores visuales diferentes, ningún recurso consecutivo o más de dos veces, tres colores y cuatro familias de movimiento/transición. Un agente no puede ocultar un recurso repetido cambiándole el ID: el revisor debe contrastarlo con los assets.
 
 El paquete exportado contiene `estilo.json`, `plan-de-escenas.json`, `revision-del-plan.json`, `handoff-produccion.json`, guion y salidas de especialistas. `production_ready` significa **plan preparado**, no MP4 terminado. El handoff deja render y escucha pendientes. La producción audiovisual sigue requiriendo las herramientas de montaje; `attach-video` incorpora el MP4 final para revisar/publicar.
+
+El guion v2 incluye `duration_reason` (puede estar vacío dentro de 60–75s, debe justificar decisiones fuera de la base). La duración calculada y su motivo quedan visibles en `produccion.md` y `handoff-produccion.json`; el storyboard debe cubrir exactamente ese tiempo.
 
 El perfil queda fijado para no cambiar una pieza a mitad del trabajo si cambia la marca. `revise` invalida guion, audio, video y planes derivados, conserva el perfil y rehace el brief con el feedback. Para adoptar una nueva versión global, crear un trabajo nuevo; no mutar una publicación existente.
 

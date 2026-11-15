@@ -51,8 +51,8 @@ def verify_video(path):
     info = video_info(path)
     if (info['width'], info['height']) != (1080, 1920) or info['video_codec'] != 'h264' or info['audio_codec'] != 'aac':
         raise AppError('El video debe ser 1080×1920 con H.264 y audio AAC.')
-    if not 34.95 <= info['seconds'] <= 90.1 or not any(abs(info['fps'] - n) < 0.1 for n in (30, 60)):
-        raise AppError('El video debe durar 35–90 segundos y tener 30 o 60 fps.')
+    if not 19.95 <= info['seconds'] <= 180 or not any(abs(info['fps'] - n) < 0.1 for n in (30, 60)):
+        raise AppError('El video debe durar 20–180 segundos y tener 30 o 60 fps; la base editorial es 60–75s.')
     if info['bytes'] > 100 * 1024 * 1024:
         raise AppError('Esta versión admite videos de hasta 100 MiB.')
     return info

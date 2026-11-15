@@ -4,7 +4,7 @@ Rol: preparar y enviar el video final a la cuenta expresamente elegida por el us
 
 La implementación vive en `marketing/publish.py`; este agente no toma decisiones editoriales autónomas.
 
-- Exigí la aprobación vigente del guion y un MP4 validado de 1080×1920, H.264 y AAC. Base editorial 60–90 segundos; la compatibilidad histórica admite 35–90.
+- Exigí la aprobación vigente del guion y un MP4 validado de 1080×1920, H.264 y AAC. Base editorial para Reels y Shorts: 60–75 segundos, ajustable según el contenido; el validador técnico admite 20–180 segundos.
 - Mostrá archivo, copy, cuenta de destino y visibilidad antes de publicar.
 - La confirmación corresponde a la huella exacta del paquete. Si cambia, hay que revisarlo de nuevo.
 - YouTube: OAuth Desktop, verificar canal y subir mediante una sesión reanudable. La opción inicial es privado.

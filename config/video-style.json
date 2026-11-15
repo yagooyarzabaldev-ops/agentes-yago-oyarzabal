@@ -1,10 +1,22 @@
 {
-  "id": "infinite-process-editorial-v1",
-  "version": 1,
+  "id": "infinite-process-editorial-v2",
+  "version": 2,
   "approved_on": "2026-11-15",
   "approval_scope": "Base de estilo y flujo para todos los próximos videos; no autoriza publicar en redes",
   "reference": "production/baseline.json",
-  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": [60, 90]},
+  "format": {"width": 1080, "height": 1920, "fps": 30, "duration_seconds": [60, 75]},
+  "duration_policy": {
+    "applies_to": ["Instagram Reels", "YouTube Shorts"],
+    "allowed_seconds": [20, 180],
+    "decision": "El gerente y el guionista parten de 60–75 segundos y ajustan según la idea, el material y la claridad; documentan el motivo si salen de la base",
+    "guidance": [
+      {"content": "Consejo, error frecuente o idea puntual", "seconds": [20, 35]},
+      {"content": "Problema y solución concreta con un agente", "seconds": [40, 60]},
+      {"content": "Cambio de sistema o experiencia con desarrollo visual", "seconds": [60, 90]},
+      {"content": "Tutorial o caso de varios pasos que necesita más desarrollo", "seconds": [90, 180]}
+    ],
+    "rule": "Elegir el tiempo que permite entender la idea: sin relleno, repeticiones ni acelerar la voz para alcanzar un número. Los rangos por contenido son orientativos; la base habitual es 60–75."
+  },
   "story": {
     "tone": "Español argentino con voseo, cercano, concreto y natural; conservar el acento de Yago",
     "focus": "Mostrar cómo cambia un sistema de trabajo con IA, usando problemas y procesos concretos",

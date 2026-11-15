@@ -8,6 +8,6 @@
   "colores": { "ambar": "#ffb35e", "violeta": "#c99bff", "verde": "#91e2c0", "coral": "#ff937e", "fondo": "#0a0b10" },
   "fuente_subs": "Bold legible con contraste, keyword según acento de escena; sin marco blanco de cámara",
   "cta": "Según objetivo y contenido; sin frase obligatoria",
-  "formato": "1080x1920, 9:16, 30fps, 60-90s",
+  "formato": "1080x1920, 9:16, 30fps; Reels y Shorts con base 60-75s, ajustable según el contenido",
   "estilo_canonico": "config/video-style.json"
 }
