@@ -1,0 +1,60 @@
+{
+  "status": "preview_exported_waiting_for_new_recording",
+  "execution_mode": "assistant-guided production; no separate API agent calls",
+  "style": "infinite-process-editorial-v3",
+  "duration": 70,
+  "script_words": 148,
+  "scenes": 35,
+  "new_images": 14,
+  "planned_camera_seconds": 34,
+  "planned_camera_fraction": 0.4857142857142857,
+  "preview_camera_seconds": 0,
+  "voice": "new recording chosen by user; not yet supplied",
+  "script_review": "prepared for recording; exact timing pending",
+  "stages": [
+    "brief",
+    "guion",
+    "dirección visual",
+    "motion",
+    "música",
+    "previsualización",
+    "nueva toma",
+    "sincronía y montaje",
+    "revisión final"
+  ],
+  "evidence": [
+    "marketing/agents.py: planning stages and saved state",
+    "production/ESTILO-Y-FLUJO.md: production tools and review"
+  ],
+  "pending": [
+    "new microphone/camera take",
+    "word alignment",
+    "final camera composite",
+    "voice ducking and listening review"
+  ],
+  "publication_authorized": false,
+  "version": 2,
+  "new_images_this_revision": 10,
+  "distinct_images": 14,
+  "image_seconds": 46,
+  "image_fraction": 0.6571428571428571,
+  "minimum_distinct_images": 10,
+  "image_asset_sha256": {
+    "brief": "987b1ba2616b5e751f0f5a209770524b9383bdb2b551d6eb5fc82288b7d8800f",
+    "storyboard": "deb437cef24a34d4c6178890167311754859b648eb759bcbe7653c2385570998",
+    "team": "c2ebfddfadac308dec2bb095f8a6a262b3006fe41928bc155ebcbdbee79fbca3",
+    "direction": "458fd6f1187766f7faf28e9d873a1922be895a2763fbf60127210b8e8d06bb72",
+    "quality": "41707825999e520430e5a4323bea90300119eebb50ebcfd2c40db56ce1b0fe38",
+    "script": "ca9ee141f30573302d16ba122e6d5165b862432d2b207cd638ad59f5590a8c89",
+    "review": "40a68ddd75a4f8dd65a0fd9892f6c66eb6f7bf7800bbfa79cb4dfe1ad1f3041a",
+    "export": "1b10ce3884b0716d88245ea8e912605fc6e5b9751d53929a01cc0391936ee594",
+    "music": "b649984e7f7462162a51906149a060ff14ab3d10ec778ce7292dd9d26493a95a",
+    "edit": "bfaf240e28d619f6fe9fa10bde3df91c89dede5519953289838239803b4184c5",
+    "neural": "f828f00ef52dae4fc036d38073efdda71a91c6a53cd53ea7803977c44c041b3f",
+    "idea": "21855f82c6b682785f396f29fc975c7a8400349e14a169c52836da21a9ea8024",
+    "audience": "69bca51a9e07b0d10fad4f2efcdc97747013a1b02b1177a6097b829b7296aff3",
+    "microphone": "e5c72689dd37a57b460fe521ee6971ed1a70c1e969dd7ed18b7f6548147d8adf"
+  },
+  "feedback": "Minimum 10 distinct images per video, guided by the supplied references. Native graphics do not count.",
+  "preview_file": "entregas\\idea-a-video-v2\\De_una_idea_a_un_video_V2_14_IMAGENES.mp4"
+}

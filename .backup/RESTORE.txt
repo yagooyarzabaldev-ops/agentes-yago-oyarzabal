@@ -1,0 +1,7 @@
+RESPALDO 2026-11-21
+
+Clonar la rama indicada en manifest.json. Los archivos de codigo conservan los bytes de la copia revisada.
+Si el manifiesto enumera medios, descargar los adjuntos de la release draft backup-media-20261121 y extraer cada ZIP en la raiz.
+Reponer credenciales desde el almacen seguro local y reinstalar dependencias desde sus archivos de bloqueo.
+Los archivos sanitizados contienen __REDACTED_FOR_BACKUP__ y requieren configuracion antes de ejecutarse.
+Esta copia conserva trabajo pendiente; no implica una version probada, fusionada o desplegada.

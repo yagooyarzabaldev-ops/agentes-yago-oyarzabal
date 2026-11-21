@@ -38,6 +38,9 @@ SHOTS = obj(summary=S, shots=array(obj(
     motion={'type': 'string', 'enum': ['parallax', 'push', 'truck', 'orbit', 'assembly', 'particles', 'kinetic-type']},
     animation=S, transition={'type': 'string', 'enum': ['cut', 'portal', 'fold', 'match', 'particles', 'slit', 'trace']},
     aside_reason=S)))
+IMAGE_SHOTS = obj(summary=S, shots=array(obj(
+    **SHOTS['properties']['shots']['items']['properties'],
+    asset_type={'type': 'string', 'enum': ['image', 'native']}, image_id=S)))
 EDITORIAL_STAGES = [('12-referencias', BRIEF), ('05-voz', BRIEF), ('04-director-visual', SHOTS),
                     ('13-motion', BRIEF), ('09-montaje', BRIEF), ('10-musica', BRIEF),
                     ('06-thumbnail-copy', COPY), ('11-control-calidad', BRIEF)]
@@ -65,6 +68,20 @@ def validate(value, schema, path='respuesta'):
 
 def script_schema(style):
     return ADAPTIVE_SCRIPT if style and 'duration_policy' in style else SCRIPT
+
+
+def shot_schema(style):
+    return IMAGE_SHOTS if 'minimum_distinct_images' in style['visuals'] else SHOTS
+
+
+def image_instructions(style):
+    minimum = style['visuals'].get('minimum_distinct_images')
+    if minimum is None:
+        return ''
+    return (f'El plan debe incluir al menos {minimum} imágenes de origen distintas, guiadas por las referencias aportadas. '
+            'Cada shot declara asset_type image o native e image_id del recurso original (vacío en native). '
+            'Reencuadres, crops, zoom y color conservan el mismo image_id; motion y tipografía nativos no suman imágenes. '
+            'Los IDs son un plan: hay que verificar archivos y procedencia antes de confirmar el conteo del export. ')
 
 
 def duration_instructions(style):
@@ -130,7 +147,7 @@ class Agents:
         style = context.get('style') or load_style(self.config.root)
         format_name = context.get('video_format', 'editorial')
         format_policy = (
-            duration_instructions(style) + 'No forzar ruleta ni CTA RULETA. '
+            duration_instructions(style) + image_instructions(style) + 'No forzar ruleta ni CTA RULETA. '
             'Dirección visual: shots contiguos desde 0 hasta la suma de seconds del guion, de 1.5 a 2.5s '
             '(máximo 3s), cámara 40–55% del tiempo. Al menos 80% visual_id únicos, ninguno más de dos veces '
             'ni consecutivo. Tres colores, cuatro familias de movimiento y cuatro de transición como mínimo. '
@@ -161,7 +178,7 @@ class Agents:
                 'instructions': prompt + '\n\nREGLAS DEL PROGRAMA (prevalecen):\n' + policy + format_policy,
                 'input': json.dumps({'brand': self.config.brand(), **context, 'style': style}, ensure_ascii=False),
                 'max_output_tokens': (24000 if sum(s['seconds'] for s in context.get('approved_script', {}).get('segments', [])) > 90
-                                      else 12000) if schema is SHOTS else 6000,
+                                      else 12000) if schema is SHOTS or schema is IMAGE_SHOTS else 6000,
                 'text': {'format': {'type': 'json_schema', 'name': 'agent_result', 'strict': True, 'schema': schema}},
             })
         if response.get('status') != 'completed':
@@ -259,12 +276,14 @@ class Workflow:
                 ('03-roulette-master', ROULETTE), ('04-director-visual', BRIEF),
                 ('05-voz', BRIEF), ('06-thumbnail-copy', COPY)]
             for role, schema in stages:
+                if schema is SHOTS:
+                    schema = shot_schema(style)
                 if role in job['agents']:
                     continue
                 result = self.agents.run(role, {'approved_script': job['script'], 'previous_outputs': job['agents'],
                                                'style': style, 'video_format': video_format(job)}, schema)
                 validate(result, schema)
-                if schema is SHOTS:
+                if schema is SHOTS or schema is IMAGE_SHOTS:
                     job['plan_review'] = check_shots(result, sum(s['seconds'] for s in job['script']['segments']), style)
                 if role == '03-roulette-master':
                     validate_roulette(result)
@@ -277,7 +296,7 @@ class Workflow:
                 self.store.save(job)
             if video_format(job) == 'editorial':
                 plan = job['agents']['04-director-visual']
-                validate(plan, SHOTS)
+                validate(plan, shot_schema(style))
                 job['plan_review'] = check_shots(plan, sum(s['seconds'] for s in job['script']['segments']), style)
             job['state'] = 'production_ready'
             self.store.save(job)

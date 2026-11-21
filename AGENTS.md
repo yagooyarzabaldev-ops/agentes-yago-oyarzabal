@@ -8,7 +8,9 @@ Leé `config/video-style.json`, `production/ESTILO-Y-FLUJO.md` y `production/bas
 
 Conservá la voz real, el acento y el sentido. Cámara aproximadamente la mitad del tiempo, arriba y visuales abajo; el resto, desarrollo visual a pantalla completa. Cambios frecuentes, profundidad, animación real, paleta variada, aclaraciones puntuales en blanco y negro y house Chicago minimal sin línea de bajo. Replicá el lenguaje, no las mismas imágenes ni el mismo loop.
 
-Para los próximos Reels y Shorts, la duración base es **60–75 segundos** (perfil v2). Gerencia y guion pueden acortar o extender según el contenido, registrando el motivo cuando salen de la base. No pedir permiso adicional para ese ajuste editorial ya autorizado: el guion se revisa con su duración propuesta. Evitar relleno, repeticiones o acelerar la voz para alcanzar un número. Montaje, motion y música se adaptan al tiempo elegido. Las piezas en curso conservan su perfil fijado.
+Para los próximos Reels y Shorts, la duración base es **60–75 segundos** (perfil vigente v3). Gerencia y guion pueden acortar o extender según el contenido, registrando el motivo cuando salen de la base. No pedir permiso adicional para ese ajuste editorial ya autorizado: el guion se revisa con su duración propuesta. Evitar relleno, repeticiones o acelerar la voz para alcanzar un número. Montaje, motion y música se adaptan al tiempo elegido. Las piezas en curso conservan su perfil fijado.
+
+La corrección de Yago del 15/11/2026 exige **mínimo 10 imágenes distintas por video**, guiadas por sus referencias. Los gráficos nativos, títulos, crops, zoom, reencuadres y variantes de color de una misma imagen no cuentan como imágenes nuevas. Referencias y dirección visual planifican los originales con identidad estable; montaje y calidad contrastan el conteo con los archivos y el export. Un conteo de IDs en un plan no prueba que las imágenes se hayan creado ni que aparezcan en el video.
 
 ## Equipo y ejecución
 
@@ -21,3 +23,7 @@ La aprobación del estilo ya existe; no pedirla otra vez. Preparar y mostrar res
 Una pieza terminada incluye MP4 reproducible, subtítulos, portada/copy, procedencia, plan y revisión del archivo exportado. Un plan no es un video ni una aprobación de calidad. Guardar material privado en `content/material/`, `runtime/` o `entregas/`, fuera de Git. Versionar código, perfiles, contratos y referencias con su procedencia. No subir claves, tokens, grabaciones originales ni muestras de voz.
 
 Al cambiar el programa: ejecutar `python -m unittest discover -s tests -v`, comprobar `python -m marketing style` y revisar los archivos preparados para Git. No llamar APIs de pago ni publicar para probar código. Conservar trabajos y publicaciones previas; no reintentar publicaciones inciertas.
+
+## Herramientas locales
+
+El entorno audiovisual de este equipo vive en `D:\Herramientas\marketing`. Usar `iniciar.ps1` para la CLI o ejecutar `. ./scripts/activar-herramientas.ps1` antes de los comandos directos de Python, Node y FFmpeg en cada terminal. Las rutas concretas y temporales/cachés están en `runtime/herramientas-locales.json`, fuera de Git. Por pedido de Yago, las instalaciones de Python, su lanzador, Node, FFmpeg, los paquetes globales de npm, las cachés y las dos skills audiovisuales viven en D:. Las rutas anteriores de C: son enlaces de compatibilidad; no recrear instalaciones completas en C: ni borrar esos enlaces. El registro de `D:\Herramientas\marketing\migracion` identifica los binarios antiguos en uso cuya limpieza Windows ejecuta al reiniciar. No detener procesos ajenos al proyecto para forzar esa limpieza.

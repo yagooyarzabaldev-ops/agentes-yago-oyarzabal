@@ -1,0 +1,1327 @@
+{
+  "date": "2026-11-21",
+  "project": "agente-marketing",
+  "source_commit": "58b4b6c161c190a8ca8360ff928fe18a5da91db6",
+  "snapshot_branch": "codex/backup-20261121/agente-marketing",
+  "files": [
+    {
+      "path": ".env.example",
+      "size": 825,
+      "sha256": "dcf01ada8516137d0ad039886166945c83c6a25b07756443bb3ad4d23af6f259"
+    },
+    {
+      "path": ".gitignore",
+      "size": 216,
+      "sha256": "dfe20b56b7c01f7fe65c1eb79dba87fcda27bc92d7a9247b1522ace5fe5b8137"
+    },
+    {
+      "path": "AGENTS.md",
+      "size": 4751,
+      "sha256": "3fcf22d7f723394e303f7d1afa6cace4c39ff672fe39f765d28dc564dabe021b"
+    },
+    {
+      "path": "README.md",
+      "size": 15572,
+      "sha256": "d6db9fa3c7b83efbf93cbda9daef868fd83523148e6e58a39db67ad614b64527"
+    },
+    {
+      "path": "agents/00-orquestador.md",
+      "size": 2204,
+      "sha256": "188ec6c84d0c7668e1151b4abc78acc76fc1fb8dea6049b009d491e73325275d"
+    },
+    {
+      "path": "agents/01-trend-hunter.md",
+      "size": 642,
+      "sha256": "ec736284bea6869db9076595993573b802ff4550bf5017208f631544ded5076c"
+    },
+    {
+      "path": "agents/02-guionista.md",
+      "size": 1504,
+      "sha256": "b3e6f6d62a2812db076f070d013491b00767e96a67727931f76db1ff457ad927"
+    },
+    {
+      "path": "agents/03-roulette-master.md",
+      "size": 511,
+      "sha256": "4f6ff2b35ff61f0f794ea251dab9a265bef7fc196e858d0bcdd010b40a493fb8"
+    },
+    {
+      "path": "agents/04-director-visual.md",
+      "size": 2267,
+      "sha256": "6030749bcea57fd6293a4a0e6ae7267f7de791549abd13f8771253dac6f2ab1a"
+    },
+    {
+      "path": "agents/05-voz.md",
+      "size": 947,
+      "sha256": "5781f5caf5d45acf9e6c3a1f5ba605a7d9f5f602b4aded0e0621359c719624af"
+    },
+    {
+      "path": "agents/06-thumbnail-copy.md",
+      "size": 756,
+      "sha256": "380df4681c987d83b7dfdb744fa75f07ab56ebb769ed031ff5add15022f8d347"
+    },
+    {
+      "path": "agents/07-analista.md",
+      "size": 292,
+      "sha256": "7b998bede8b464b07ba9878015296dcdf394dfc806f900dce77c54d820d7b405"
+    },
+    {
+      "path": "agents/08-publicador.md",
+      "size": 1341,
+      "sha256": "1261450176a091ef2180c0090311be18bb0e9dd1aba65971400c414d96a9104a"
+    },
+    {
+      "path": "agents/09-montaje.md",
+      "size": 1713,
+      "sha256": "ee101673c6fd906294c92465da8ec08c2b3212249fe0b5a2586dda747c87b203"
+    },
+    {
+      "path": "agents/10-musica.md",
+      "size": 1308,
+      "sha256": "9a79db312a498852eea121b13072b5b0d6c3d1e8b139ba8c722a0e9e97ba51f4"
+    },
+    {
+      "path": "agents/11-control-calidad.md",
+      "size": 2045,
+      "sha256": "8056c3e175c78c1ef226f14403ccde4fe392d5d24dd553378f54237331c9d190"
+    },
+    {
+      "path": "agents/12-referencias.md",
+      "size": 1438,
+      "sha256": "9d4b0ec14af50b5243325fe1f0b12aec0b75d0537a74e00c3e5d9936edb657c6"
+    },
+    {
+      "path": "agents/13-motion.md",
+      "size": 976,
+      "sha256": "419c210f9014f20b12fbad99e6d7525755232403e32c747f369f9b931ebb70ee"
+    },
+    {
+      "path": "config/brand-guidelines.json",
+      "size": 707,
+      "sha256": "0bec6de15b4e16400dacd6f5a0935508ad41d3c182814eb243057f147173aa76"
+    },
+    {
+      "path": "config/video-style.json",
+      "size": 5079,
+      "sha256": "e5f81e77114b6d1a02012113cf86291102aa86f3d9bfe6aaa468d379eedd8378"
+    },
+    {
+      "path": "content/construccion/LEEME.md",
+      "size": 6465,
+      "sha256": "fc4e7d3210322c66587930264840923f3bfdf3c1cf5bdfa4b3540e5a8e74c874"
+    },
+    {
+      "path": "content/construccion/actualizar_cierre_v9.py",
+      "size": 1157,
+      "sha256": "74faaf624673c56f12dced1433714d3d65c43d2ee1a98ce3c8750fd6a4e7e8be"
+    },
+    {
+      "path": "content/construccion/assets-v10/architecture.png",
+      "size": 2618540,
+      "sha256": "c9109ab198d0505b4232d5bd19a35e770b0d4d7835869f1f4c69bf23edd1bb5a"
+    },
+    {
+      "path": "content/construccion/assets-v10/automation.png",
+      "size": 2267373,
+      "sha256": "5555a86f17e1ebc0285035f378fb90da58e170409724b7b3ed6d9ecd16a91816"
+    },
+    {
+      "path": "content/construccion/assets-v10/bottleneck.png",
+      "size": 2412480,
+      "sha256": "941a621cf0149a147ad51e0b16e7571c8b180d7de0e95b32ec032440a367ee81"
+    },
+    {
+      "path": "content/construccion/assets-v10/community.png",
+      "size": 2470481,
+      "sha256": "c776a23b332578118f17736f6d6942a4bd72069b2356d70af0d0a61eedf9896e"
+    },
+    {
+      "path": "content/construccion/assets-v10/fit.png",
+      "size": 2568472,
+      "sha256": "5677b6e3b111e3e79da1cc0f0e4b350dbb6451edf6cdb64b08eea5c9c39e9ba4"
+    },
+    {
+      "path": "content/construccion/assets-v10/foundation.png",
+      "size": 2520648,
+      "sha256": "34e03f16b60e866d1e9619472c382003219b3766f9633b1344ad2b10687358d1"
+    },
+    {
+      "path": "content/construccion/assets-v10/idea.png",
+      "size": 2264411,
+      "sha256": "d6bba2db276534bc8a87e8423e5270534c7314744fc3193bc739a07c9f3e174c"
+    },
+    {
+      "path": "content/construccion/assets-v10/learning.png",
+      "size": 2258380,
+      "sha256": "3b3b3ca50fdd40d85382f6a06ee744f41950408242cf0c717f09f5ab300ef901"
+    },
+    {
+      "path": "content/construccion/assets-v10/procedencia.json",
+      "size": 17041,
+      "sha256": "1b715206a2c5f648c8ed7fede99d7105c679213efec55c8ce541768378453fdc"
+    },
+    {
+      "path": "content/construccion/assets-v10/production.png",
+      "size": 1994897,
+      "sha256": "9327fbdb41361e3be52c43359fdd44756d2c34a7eb494f3fff236dbd1152f3f9"
+    },
+    {
+      "path": "content/construccion/assets-v10/review.png",
+      "size": 2332655,
+      "sha256": "fd32718a0c14b23b958a8387ce1eec6b3ce50bd62b5e1d126a4b6526d1e7ee96"
+    },
+    {
+      "path": "content/construccion/assets-v10/silos.png",
+      "size": 2284094,
+      "sha256": "46b6f3bfd72e86ba777e73663a744e516b0c6f464b9b9690c916b636720ee816"
+    },
+    {
+      "path": "content/construccion/assets-v10/time.png",
+      "size": 2239230,
+      "sha256": "2b44afa3d551aab2c32ce2044fba10df2805f529244765d0d47b164ebee12bd4"
+    },
+    {
+      "path": "content/construccion/assets-v3/electricidad.png",
+      "size": 2694638,
+      "sha256": "af658f60546479c898d3e5057c043a2d291a51fba615a7b79cbe5dea0513d04a"
+    },
+    {
+      "path": "content/construccion/assets-v3/mesa.png",
+      "size": 2069897,
+      "sha256": "40801f131f33076aa19f72754c0389ae9b896f98f5cb7499bf654152bf0209dc"
+    },
+    {
+      "path": "content/construccion/assets-v3/procedencia.json",
+      "size": 2288,
+      "sha256": "17d6e0a5d5cd746cb94a1ee4b902fc1b79b237f570a9cba5a054f8b81fac6a2b"
+    },
+    {
+      "path": "content/construccion/assets-v4/aprendizaje.png",
+      "size": 2117851,
+      "sha256": "37c9fc072d23c97b3a284572d0d3ee862bd8ab59e1628f21eea03e6bc67c5b7d"
+    },
+    {
+      "path": "content/construccion/assets-v4/base.png",
+      "size": 2196104,
+      "sha256": "df77f713457848073909cb8373d21b42f99a3e2d8a5a1d627a686e14386c927a"
+    },
+    {
+      "path": "content/construccion/assets-v4/comunidad.png",
+      "size": 2436866,
+      "sha256": "afd7a7c868c9d033aa08f145d44d83a4af1a4c6d06201b2886e61667e83d656b"
+    },
+    {
+      "path": "content/construccion/assets-v4/encaje.png",
+      "size": 2177237,
+      "sha256": "496a37112edbc20862261ef2df8e93026d1bc4a5efe89e1597652dbf289f50ef"
+    },
+    {
+      "path": "content/construccion/assets-v4/procedencia.json",
+      "size": 5428,
+      "sha256": "61104e4ac47361f1f320846a2613b6d27976d722c6f0a49d1f36990e985fddc2"
+    },
+    {
+      "path": "content/construccion/assets-v4/tiempo.png",
+      "size": 1870141,
+      "sha256": "140d2f5d8fbac512fd023a9c0280d923df654f0f5e593e6addc860721506b6b2"
+    },
+    {
+      "path": "content/construccion/assets-v5/idea.png",
+      "size": 1850758,
+      "sha256": "ad93007d1f4e97fc2ed9e4110e1e867b40d87695696321acdbebe4fe7412aa7a"
+    },
+    {
+      "path": "content/construccion/assets-v5/procedencia.json",
+      "size": 3891,
+      "sha256": "cfa6f03d2439f4d30bedb0f6ae59b3a63b48d5befd3f659bcded18f4c7b97bff"
+    },
+    {
+      "path": "content/construccion/assets-v5/tiempo.png",
+      "size": 1867270,
+      "sha256": "70174ac68fff4853e5f34b062c4c5cb0390b82dfbdcbca93b3b754114c01c96d"
+    },
+    {
+      "path": "content/construccion/assets-v5/tunel.png",
+      "size": 2030907,
+      "sha256": "f293cc8ea7138d5c5656e0a44f5115acbc6b888ebf8e3de8c594459f662a2278"
+    },
+    {
+      "path": "content/construccion/assets-v6/flujo.png",
+      "size": 1727362,
+      "sha256": "0be6bd77de78f2511d00ee969552aa9d2310d3a5bb100d5cefe65f8493bf3c0c"
+    },
+    {
+      "path": "content/construccion/assets-v6/manual.png",
+      "size": 2884951,
+      "sha256": "10d1ce828a3b98921f3e2ce33f6cb3a0d6c4aae2fba122ae868c0718fc3589a3"
+    },
+    {
+      "path": "content/construccion/assets-v6/procedencia.json",
+      "size": 4099,
+      "sha256": "9d7cebe41ff3b791d0650275fd2a28f429435017cebf813e6cad83d0270f70ec"
+    },
+    {
+      "path": "content/construccion/assets-v7/chip.png",
+      "size": 1796696,
+      "sha256": "d2ae0e54adbf2fb3fff2d822a12d0d307c0c75b0eb273d06553665f3f6b7974c"
+    },
+    {
+      "path": "content/construccion/assets-v7/chip_ref.png",
+      "size": 2131426,
+      "sha256": "99b557974b894fe219164d701ef1ff4f7d029fddb0c2e15f498ff367ddffc486"
+    },
+    {
+      "path": "content/construccion/assets-v7/flow_ref.png",
+      "size": 1770235,
+      "sha256": "d2bd0ad872ce337f245230815a136612ccf277da0b335c325d57c04daea98694"
+    },
+    {
+      "path": "content/construccion/assets-v7/hub_ref.png",
+      "size": 1938156,
+      "sha256": "00f1f7ce090a2886f4c7aa2e9ef2a094df4a20d60b9449b66cc8b468e0107776"
+    },
+    {
+      "path": "content/construccion/assets-v7/launch.png",
+      "size": 1766533,
+      "sha256": "9ae2e44a100fa9e46f17f198bc0387b0f009d6cbef35b11459dda8426c40d517"
+    },
+    {
+      "path": "content/construccion/assets-v7/manual_ref.png",
+      "size": 2073477,
+      "sha256": "30208b1b0bc56392820d8318e1ed5627cd7ce53e9d84581dfa58942d1ae184b6"
+    },
+    {
+      "path": "content/construccion/assets-v7/neural.png",
+      "size": 1826116,
+      "sha256": "7e202ebcb468a4438a7c8b62abc4e94ff6230e4320127096e220962b306486cf"
+    },
+    {
+      "path": "content/construccion/assets-v7/procedencia.json",
+      "size": 17479,
+      "sha256": "538b64fd05be91692efa34094cc35650f20e00bf2eee87354ce4614aa93109fe"
+    },
+    {
+      "path": "content/construccion/assets-v7/studio.png",
+      "size": 1820570,
+      "sha256": "fd8ea560c56ba566a334d98d1a226e8a6969b46c643fa57393ac553e9f4b062b"
+    },
+    {
+      "path": "content/construccion/assets-v7/studio_ref.png",
+      "size": 1913350,
+      "sha256": "bea8ca7a8d86d33b684e953b6db93fcf0e24a9fb1f167c4879972c4e6c7a518d"
+    },
+    {
+      "path": "content/construccion/assets-v7/time.png",
+      "size": 1808812,
+      "sha256": "cfc59d6af5a5f425a1e1a47e2b8207e447631dff69082d00f9be331dd047ae0b"
+    },
+    {
+      "path": "content/construccion/assets-v8/desarrollo.png",
+      "size": 1908115,
+      "sha256": "bb4300de20f2791ceaa302a70e21676f1d5e746445332234f513d7aacaaa26ec"
+    },
+    {
+      "path": "content/construccion/assets-v8/infraestructura.png",
+      "size": 2566912,
+      "sha256": "6a1511dec1d519d9417ecb7f7a55fbf243edb47c9dfcb87e4424a89ecc708075"
+    },
+    {
+      "path": "content/construccion/assets-v8/procedencia.json",
+      "size": 5787,
+      "sha256": "2883643d59cc3de88621ae51b03d1797bf7cbbe948ce2880a572eb43cfc83101"
+    },
+    {
+      "path": "content/construccion/assets-v8/produccion.png",
+      "size": 1809296,
+      "sha256": "47be13ca6c185ba6cc6bfe347180f0fc6a444e1aa128ec5134d5d3cf0a1f3db8"
+    },
+    {
+      "path": "content/construccion/assets-v8/prompts.json",
+      "size": 3176,
+      "sha256": "9b49bbad4acb90738db40d1dfa4c96ed2b02d9d5567030113f19e8f288ce0c56"
+    },
+    {
+      "path": "content/construccion/audio_chicago_sin_bajo.py",
+      "size": 9963,
+      "sha256": "5c90762a8bc4237534fc4abc1468fc59648af7d19e75f9aa0e9966e8eb95eeb9"
+    },
+    {
+      "path": "content/construccion/audio_chicago_sin_bajo_02.py",
+      "size": 12371,
+      "sha256": "e83f92321980ab12a805679ef2485c232834c1e843cb481abe73de5cff1d4595"
+    },
+    {
+      "path": "content/construccion/audio_v10.py",
+      "size": 6815,
+      "sha256": "7f5e456edc40842d92299b4b2f6ef12cc95dfe59de3e6daedf4438f202e4ae87"
+    },
+    {
+      "path": "content/construccion/audio_v5.py",
+      "size": 4265,
+      "sha256": "300fd46c602352544759730bdbf1515dde9f6e1f6b1b3c4c8963c4318c7f4f15"
+    },
+    {
+      "path": "content/construccion/audio_v8.py",
+      "size": 5806,
+      "sha256": "f66c6f426cdb292d21f2d2d8abd3fcd7dfe7d5bc65b43eebdb7db1cc7c4f79b9"
+    },
+    {
+      "path": "content/construccion/audio_v9.py",
+      "size": 5924,
+      "sha256": "cfa4f3ca0e9961d98f3fcfde84df162a4c163df3c9e86baf8ed07bc217dc4a83"
+    },
+    {
+      "path": "content/construccion/camara_v8.py",
+      "size": 1698,
+      "sha256": "bceaca4707079413d0260c2d6047f9a2731fbf532fb2a1f4f93f43975383e5d5"
+    },
+    {
+      "path": "content/construccion/comprobar_visibilidad_v9.py",
+      "size": 1382,
+      "sha256": "ef9a4defd31b7502c76ab102a39e9e1e6167eedc6da070a5468113ca961b9800"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v10.md",
+      "size": 619,
+      "sha256": "97c685e8ef8a162565b56bb3e56a6558c1caa36ba1b289baa958b347d9756040"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v2.md",
+      "size": 948,
+      "sha256": "ae717271ac32922c6e6097ea0372cc26cc27d45a885b11cec61d50b1d7478117"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v3.md",
+      "size": 840,
+      "sha256": "a2b949064d8b8b4d3ef491fb107bbe2b02760a453ba3f37b6a9840284e6159f1"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v4.md",
+      "size": 628,
+      "sha256": "f83734020a72a08788ba354603547d1bd40b4e1fc87f81f209a4b2f031afa30a"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v5.md",
+      "size": 791,
+      "sha256": "706629c2e25ff801d3dd68088040a86b91275198b79241b5e6ebf2c101cfb273"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v6.md",
+      "size": 693,
+      "sha256": "0a308f06481531c17317c0b739f3e4beb7bed3be6ff116cff7dc0dc496c9feec"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v7.md",
+      "size": 713,
+      "sha256": "8c27156f9eeb24bdf89fbf592bafc699798f9034e9ba5d6df618638929ab2a97"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v8.md",
+      "size": 747,
+      "sha256": "4ef6cc1c3b548cc151d7e614ab87b6d396c731fe4fbdadcd8cfcee93ac9f1eff"
+    },
+    {
+      "path": "content/construccion/copy-publicacion-v9.md",
+      "size": 768,
+      "sha256": "de3b0973cf8d73a1cb397cdbaa2a95e4f6caee571030389ded6e86110d108228"
+    },
+    {
+      "path": "content/construccion/copy-publicacion.md",
+      "size": 931,
+      "sha256": "23b178e3618dd6a801d74c8e3c59995a7398391419aef50462fc2e3f2757c228"
+    },
+    {
+      "path": "content/construccion/crear_tema_v10.py",
+      "size": 677,
+      "sha256": "142aa2df97de30be06242a51c307a07dd321cb765c44b284987d0d5d4b82c269"
+    },
+    {
+      "path": "content/construccion/crear_tema_v6.py",
+      "size": 11142,
+      "sha256": "4bf2a9efb02d8ed85321baa201223215ba0a5d0c7ebd9d668adea21dfac162e6"
+    },
+    {
+      "path": "content/construccion/crear_tema_v7.py",
+      "size": 1442,
+      "sha256": "6dff4187da427d9c01b54ef8f0f08a9d4780eb3496fe93ea34f8ab8196e8bc5e"
+    },
+    {
+      "path": "content/construccion/crear_tema_v9.py",
+      "size": 566,
+      "sha256": "68e9182c243244237d576ea48a09cc5176ed6afcbfdf0f5befc8fa490951d240"
+    },
+    {
+      "path": "content/construccion/direccion-v10.md",
+      "size": 5053,
+      "sha256": "02f129307632cdb50570d0d86e1ba79ebaee4cdbfedb098bd27b6a58991580a3"
+    },
+    {
+      "path": "content/construccion/direccion-v2.md",
+      "size": 2897,
+      "sha256": "b23315933e47c917d573df6d5330d1193f93d6eb5fb1fc1e8e8eeae00dbd8813"
+    },
+    {
+      "path": "content/construccion/direccion-v3.md",
+      "size": 2924,
+      "sha256": "5b5c7f3a2d5b852643f15985c9166e6098b3f1e8997b4ef6ce4b0fe9689864c9"
+    },
+    {
+      "path": "content/construccion/direccion-v4.md",
+      "size": 3570,
+      "sha256": "8051a1d013b4bfb858d9acf16e134d345e57875f5da66669d731f4d84e31b992"
+    },
+    {
+      "path": "content/construccion/direccion-v5.md",
+      "size": 4094,
+      "sha256": "3d39b754f61406e1f48ed066be9f3a16ad6343a86b01c281ec37e6878e6f0ead"
+    },
+    {
+      "path": "content/construccion/direccion-v6.md",
+      "size": 3538,
+      "sha256": "a525fbc17b214243ab677f7fd30e0b927223ddaf099ebad99a9111bfc98796b6"
+    },
+    {
+      "path": "content/construccion/direccion-v7.md",
+      "size": 5478,
+      "sha256": "9a00f89faa884e01d5815cab7a31e1edc802545e887dfcf1f8ed07408fca94e3"
+    },
+    {
+      "path": "content/construccion/direccion-v8.md",
+      "size": 5054,
+      "sha256": "b288c7fc6b0d309236eca6600be6dc4016d82ff40043cab8dd791f7bc5001c0d"
+    },
+    {
+      "path": "content/construccion/direccion-v9.md",
+      "size": 4950,
+      "sha256": "05a54d217cfe8c25ca8d40eea87aa648c9d3d6f6f59713f74fe10e13cd8affe0"
+    },
+    {
+      "path": "content/construccion/direccion.md",
+      "size": 2646,
+      "sha256": "6126ffad576d81f8d2f6412864b364f52f6a473c2d9fc3f3054d427c697d7015"
+    },
+    {
+      "path": "content/construccion/escena.html",
+      "size": 21697,
+      "sha256": "ac3a1e137002f1c59b0b83d75f8ee6ca934b0b85c63d840bf074ed5f3fb42cc2"
+    },
+    {
+      "path": "content/construccion/escena_v10.html",
+      "size": 15760,
+      "sha256": "4e4f72cd1142e645e7cd0c625974f4e48e8fd352d7e7b3ce49178d0f10867148"
+    },
+    {
+      "path": "content/construccion/escena_v2.html",
+      "size": 16090,
+      "sha256": "4589c25f9c3332e9cc90e142ad6ebaf8899d5ec98cc68c0207ca96dd42e15d69"
+    },
+    {
+      "path": "content/construccion/escena_v3.html",
+      "size": 15111,
+      "sha256": "0b27683e860ffa7e5153ffd4f69244aa5b8d97ddcc9c6cc5715341cd1f10f0e6"
+    },
+    {
+      "path": "content/construccion/escena_v4.html",
+      "size": 16870,
+      "sha256": "4cfe505180f50847faaeb7c4495a2851161d58917d9cc7c44fbd52b0c985dd75"
+    },
+    {
+      "path": "content/construccion/escena_v5.html",
+      "size": 16444,
+      "sha256": "5e2e44804407cebee2d0af8b5b18c3ad03a3a4eb56c6cccdc2ba6c7a768eba59"
+    },
+    {
+      "path": "content/construccion/escena_v6.html",
+      "size": 19073,
+      "sha256": "fd78cb9665ef342d81b06e1c2d200ec71954e2e9a2a5c48189da31063bbc2e99"
+    },
+    {
+      "path": "content/construccion/escena_v7.html",
+      "size": 31399,
+      "sha256": "cc9aac944d7b1ed9726ad13c686a6fd5f35a84a84117201ed85e8f40f3a192bc"
+    },
+    {
+      "path": "content/construccion/escena_v8.html",
+      "size": 9480,
+      "sha256": "7af1eb12ec8291cf485e3010d4bd9ce2e893037e5d32f276acd13d46aa3ff1f4"
+    },
+    {
+      "path": "content/construccion/escena_v9.html",
+      "size": 15765,
+      "sha256": "bfd639a7c2dea15b766bc4666b51993847a718cb19a14d7f8f9c3458d6345708"
+    },
+    {
+      "path": "content/construccion/finalizar.py",
+      "size": 6554,
+      "sha256": "201f89964dc5137cfcd2efe726c128c3f587798dab46aeb800b8f9033ab0d7c7"
+    },
+    {
+      "path": "content/construccion/finalizar_v10.py",
+      "size": 2973,
+      "sha256": "76e27a2553be0be2e2cdfeedf986a4ace1dd4e7630e3467c834cae8040138614"
+    },
+    {
+      "path": "content/construccion/finalizar_v2.py",
+      "size": 6485,
+      "sha256": "32229e8a307295607952b379db75a3155aeee0eedbb20893600c358792bbd221"
+    },
+    {
+      "path": "content/construccion/finalizar_v3.py",
+      "size": 4849,
+      "sha256": "5dbad0a1df8e25252086010c4783541039b1286f9f7469c155ef425cc6ce9f27"
+    },
+    {
+      "path": "content/construccion/finalizar_v4.py",
+      "size": 3293,
+      "sha256": "816da2f923250d4b7edebc12b62d3b4a75f9c75b70569fd3b128ac3a301b170b"
+    },
+    {
+      "path": "content/construccion/finalizar_v5.py",
+      "size": 2923,
+      "sha256": "cccb6da4e7b240708e8acc973a3c6ec55d157044fcaefcdf1283e7de3b697e92"
+    },
+    {
+      "path": "content/construccion/finalizar_v6.py",
+      "size": 4320,
+      "sha256": "4cb02cbbbaca3f2e9bdab74a0f73e37ba6b7f9587d0639fcbcadd3ec9389ee76"
+    },
+    {
+      "path": "content/construccion/finalizar_v7.py",
+      "size": 4389,
+      "sha256": "9644435ab44d7867d1d9e178d460b3a0e75735d9cc902aa6173047c87fdc1a16"
+    },
+    {
+      "path": "content/construccion/finalizar_v8.py",
+      "size": 2777,
+      "sha256": "626fd787b56a1750c787a16485004d86847e97d0a56295dba2a51c7d2912ad25"
+    },
+    {
+      "path": "content/construccion/finalizar_v9.py",
+      "size": 3071,
+      "sha256": "31586e3a21079299a947af850f6b5e821f6842cb09cafc402d6f45adff358128"
+    },
+    {
+      "path": "content/construccion/guion.txt",
+      "size": 1158,
+      "sha256": "f74d460cf4941347504f66fcd4995876c8d4f2f8ca40c571a5ea1090998fea6c"
+    },
+    {
+      "path": "content/construccion/montar_v2.py",
+      "size": 2261,
+      "sha256": "79d10ab28815db76144dee75f86bb5ffc58ddfc96a24ccd589e30eeb6b5bb745"
+    },
+    {
+      "path": "content/construccion/montar_v3.py",
+      "size": 2289,
+      "sha256": "faf0171fbd8a0febb3836d037e5b1d7669f8d5d5eae24790a5c8390ca1811b63"
+    },
+    {
+      "path": "content/construccion/motion-runtime.js",
+      "size": 3042,
+      "sha256": "a98e16ed7fec1e3fe7d757507ef90119de52f52312293389be6fce4b14f6f9d5"
+    },
+    {
+      "path": "content/construccion/musica_v3.py",
+      "size": 3856,
+      "sha256": "e1864933b545728883d5ac76716f9b1d42c2ce6654f7b65d7060ea8429bdad2a"
+    },
+    {
+      "path": "content/construccion/preparar.py",
+      "size": 1353,
+      "sha256": "8e8e7f2cfe2368ba595e37596b097927d64dbabffe96dbbf5c30854b7bece8a0"
+    },
+    {
+      "path": "content/construccion/preparar_v10.py",
+      "size": 5203,
+      "sha256": "448c03692500deb5f12ee2a1fe71b4e32258aed8aa54f24ff5a2e7a53fb42d41"
+    },
+    {
+      "path": "content/construccion/preparar_v2.py",
+      "size": 5596,
+      "sha256": "abf14e9798fbb82d45dde4a1987dd47458dd3e33ff682816bfc112b3ba00693b"
+    },
+    {
+      "path": "content/construccion/preparar_v3.py",
+      "size": 6294,
+      "sha256": "d1fe652f882679c7bef3add306ea8cd4ddfa3b84f21fa1fa9379475981ac7a64"
+    },
+    {
+      "path": "content/construccion/preparar_v4.py",
+      "size": 2837,
+      "sha256": "a77c3c6baa5143ebe9aad2a47801715624cb5ab27311f40eae30368918417bc2"
+    },
+    {
+      "path": "content/construccion/preparar_v5.py",
+      "size": 3346,
+      "sha256": "7707c789b92ee2ed279b223ddc17fe0bfbb513447254a75992d736ffe1310bbf"
+    },
+    {
+      "path": "content/construccion/preparar_v6.py",
+      "size": 948,
+      "sha256": "dc81dc4f37bf1a09214c4e84ed4e031470301eaa3ed689be32c85c4801b72f2c"
+    },
+    {
+      "path": "content/construccion/preparar_v7.py",
+      "size": 2736,
+      "sha256": "ccf21f088bfb65c077407193c68cfeb57eb67eb674470d41d6134989c2f8c3ac"
+    },
+    {
+      "path": "content/construccion/preparar_v8.py",
+      "size": 3226,
+      "sha256": "4251f733962ffce4e18f9de8373d8d0f5ab0bd57cd792e88324ba3e5a5fa1194"
+    },
+    {
+      "path": "content/construccion/preparar_v9.py",
+      "size": 4195,
+      "sha256": "460d6c3ad2a7c51ae3286e414c9d6e5f3517a181044a4ea5a07d2ccde1a3a3f2"
+    },
+    {
+      "path": "content/construccion/revisar.mjs",
+      "size": 2668,
+      "sha256": "4d6e2961f53b298a55ff549760fd5e044aebf561742873928c5a7b210cc0738f"
+    },
+    {
+      "path": "content/construccion/revisar_exportacion_v10.py",
+      "size": 2748,
+      "sha256": "a97a8e39493caf09eb21898de125bebde9cb9ba4fe0f0ff9b8944c38413d7eaa"
+    },
+    {
+      "path": "content/construccion/revisar_exportacion_v6.py",
+      "size": 1277,
+      "sha256": "abd1765489adf2d0ff9c6b0090e4192bf7e2fdc691b458f56cca492b52ddfba4"
+    },
+    {
+      "path": "content/construccion/revisar_exportacion_v7.py",
+      "size": 1306,
+      "sha256": "6bb75e9c38cfbfe1a2ca567aeabc962671cd80d0ac6e013a7e67ed440e31f1b3"
+    },
+    {
+      "path": "content/construccion/revisar_exportacion_v8.py",
+      "size": 1543,
+      "sha256": "7a56c42182e978fbb93306ef2480383ecf39a2ea2c91bd90e7268113f37cb3b4"
+    },
+    {
+      "path": "content/construccion/revisar_exportacion_v9.py",
+      "size": 2038,
+      "sha256": "cdaaf4b4dc5eacd51a0cc93c5dab55e24461bdd60cd223bc4024e6bc93dd19db"
+    },
+    {
+      "path": "content/construccion/revisar_v10.mjs",
+      "size": 2605,
+      "sha256": "3805741eb3543b1bc9a64cbc74df97e0a1a608f36ad10d758b1103dd960f45c5"
+    },
+    {
+      "path": "content/construccion/revisar_v4.mjs",
+      "size": 2734,
+      "sha256": "898fedc708f80eccef1dc06a6c88fcb1839a59059c3ca16559b5bd1c2e8210e5"
+    },
+    {
+      "path": "content/construccion/revisar_v5.mjs",
+      "size": 2467,
+      "sha256": "4eaae01ce16a2adfad88f94379eceb5d674e73c0296bebc08cd928ed8794d640"
+    },
+    {
+      "path": "content/construccion/revisar_v6.mjs",
+      "size": 2482,
+      "sha256": "669a357385f76536b7e832fecacb99fc8a83bd94e1c9a894be6f22ef610d9eb7"
+    },
+    {
+      "path": "content/construccion/revisar_v7.mjs",
+      "size": 2482,
+      "sha256": "d63b4a32399527c3607859e3c55caf595edb38d75b7b64d0688d40035456b857"
+    },
+    {
+      "path": "content/construccion/revisar_v8.mjs",
+      "size": 2195,
+      "sha256": "9a1a8f4c1cbfcb0d741e618b5650855500ac75dd7135769c9fe48ad13a1d02c6"
+    },
+    {
+      "path": "content/construccion/revisar_v9.mjs",
+      "size": 2586,
+      "sha256": "d212b6e5f3a9a7f0922d74ae4db544a70f41a83e341b815d3ea41560add34c50"
+    },
+    {
+      "path": "content/construccion/secuencia-v4.md",
+      "size": 638,
+      "sha256": "2175a3d07c3067016bdfecff7967b4f14a4c95925705e0d7b55e54875eb797ea"
+    },
+    {
+      "path": "content/construccion/secuencia-v5.md",
+      "size": 875,
+      "sha256": "7d195d7d9384a8bf13cc0e2d36f4b7ba8d09efb6d94346bfe16c9f260f6b9e9b"
+    },
+    {
+      "path": "content/construccion/seleccion-audio.json",
+      "size": 548,
+      "sha256": "0b83ee6bd0cfcd8154d5e356152dfee5fbc4e1ad286f794ae88018e47d186a97"
+    },
+    {
+      "path": "content/construccion/v10-motion.js",
+      "size": 13462,
+      "sha256": "1f3a6fb7c0e945e712e279b14acd3f40b471781441d2892a907d067c7d7db99e"
+    },
+    {
+      "path": "content/construccion/v7-motion.js",
+      "size": 13080,
+      "sha256": "7298913434ee36a4cb155a1dab1ca7685ecae45b7a06ff0df7901717d9675aaa"
+    },
+    {
+      "path": "content/construccion/v9-motion.js",
+      "size": 6186,
+      "sha256": "ca2e18857e7b89ea81f337e9d94e4392257dcbf21662681f30b747af28173b0f"
+    },
+    {
+      "path": "content/dia-1/LEEME.md",
+      "size": 2987,
+      "sha256": "8f237ebabd2749fae0a3bcb59ae74037e5ac9521ca6a3ae128190a13afe75047"
+    },
+    {
+      "path": "content/dia-1/agente-soporte.md",
+      "size": 2769,
+      "sha256": "72c7b51ddf9182ec462c18d1b87680781dbb784f838f3ce93529a7fd265561f8"
+    },
+    {
+      "path": "content/dia-1/copy-publicacion.md",
+      "size": 2208,
+      "sha256": "98215f66e17974a2983052cc9c52c6557727657ebe8348ef43c17364e79d973d"
+    },
+    {
+      "path": "content/dia-1/guia-locucion.md",
+      "size": 1315,
+      "sha256": "e414227465c6a72fe19f319cb1a6a0173d367cc1a337f1ad1c51748a1dabf88b"
+    },
+    {
+      "path": "content/dia-1/guion-aprobado.json",
+      "size": 3715,
+      "sha256": "13122450cbf269bf37c62942936645ebfc783408739a24f768c2f30fc66ef224"
+    },
+    {
+      "path": "content/dia-1/guion-grabacion.txt",
+      "size": 801,
+      "sha256": "c898b2db3130f98d0082e94a4723966da9c3629c8ab93143604c7391c4a5e17b"
+    },
+    {
+      "path": "content/dia-1/manifest.json",
+      "size": 3262,
+      "sha256": "3048a49222859c56c29a238a2b9f263c4aa05244035007dbe9a3427429af535c"
+    },
+    {
+      "path": "content/dia-1/plan-de-tomas.md",
+      "size": 5415,
+      "sha256": "16970043e678686c61cef9173040375cdb7656f6295fc40ea76aea02147c9e6f"
+    },
+    {
+      "path": "content/dia-1/ruleta.json",
+      "size": 1906,
+      "sha256": "ce06dcb718f69c3316b533e57cb4b761984124b2a019d576f70a5b748cbbbec9"
+    },
+    {
+      "path": "content/dia-1/subtitulos-borrador.srt",
+      "size": 1317,
+      "sha256": "7519568db5c3f6956c1e55d5f86afaa430cd7f5f60095724e98fdda892902ed1"
+    },
+    {
+      "path": "content/dia-1/v2/agente-ventas.md",
+      "size": 2628,
+      "sha256": "01808a353ea66c8c3f64612f246c93285f77fc39e89508e1321aec6aec4cae36"
+    },
+    {
+      "path": "content/dia-1/v2/copy-publicacion.md",
+      "size": 741,
+      "sha256": "9812fcef1442487615a7c7511a69cfca3f0a024901f64d9f8f9979ebf4877e44"
+    },
+    {
+      "path": "content/dia-1/v2/direccion.md",
+      "size": 2048,
+      "sha256": "e59362f9e6fe4622ae65db2b8cf921326be9fd2c6e1f141792cb93e5816d43cd"
+    },
+    {
+      "path": "content/dia-1/v3/copy-publicacion.md",
+      "size": 764,
+      "sha256": "d10fd18c001c5785cd1ddc5a97005eb3a77b52c43db89bc34178bd8bc058d2f3"
+    },
+    {
+      "path": "content/dia-1/v3/direccion.md",
+      "size": 2077,
+      "sha256": "6c6e165126911ace01ab36d403a9f4d430272a1359e7887b60a7c403a3d8bc34"
+    },
+    {
+      "path": "content/dia-1/v3/escena.html",
+      "size": 15049,
+      "sha256": "fcaaae9dfd71fc50936b03ae4e9c927cd4d8f2b63444c78edf76a0f0f070dda5"
+    },
+    {
+      "path": "content/dia-1/v3/params.json",
+      "size": 1596,
+      "sha256": "cf1232af8841fc521784f28756e811d98575469df92f030598eaf0d22dbf732b"
+    },
+    {
+      "path": "content/dia-1/v4/copy-publicacion.md",
+      "size": 856,
+      "sha256": "de2c9119c10247968f953d775cd39ad53c3e3d6c5b825af6a9d9215159124fe9"
+    },
+    {
+      "path": "content/dia-1/v4/datos.js",
+      "size": 7313,
+      "sha256": "591f061f879d561b94778965dd6a996dfe8579a7ea108749086aece572f05772"
+    },
+    {
+      "path": "content/dia-1/v4/demo.html",
+      "size": 22726,
+      "sha256": "b89726df9436b8a661388fafee5da444e2a7f59e34151a530d82c0f92ca7b8b1"
+    },
+    {
+      "path": "content/dia-1/v4/direccion.md",
+      "size": 2782,
+      "sha256": "5f0d363310d1e7b00eada586708e2e899ab9e49d49f795677f863448d37855c3"
+    },
+    {
+      "path": "content/idea-a-video/LEEME.md",
+      "size": 6306,
+      "sha256": "37646503f5539c5c889fd21ec33b450383695fceffae76968e1a4f0842e08cf2"
+    },
+    {
+      "path": "content/idea-a-video/assets/audience.png",
+      "size": 2317212,
+      "sha256": "69bca51a9e07b0d10fad4f2efcdc97747013a1b02b1177a6097b829b7296aff3"
+    },
+    {
+      "path": "content/idea-a-video/assets/brief.png",
+      "size": 2058364,
+      "sha256": "987b1ba2616b5e751f0f5a209770524b9383bdb2b551d6eb5fc82288b7d8800f"
+    },
+    {
+      "path": "content/idea-a-video/assets/direction.png",
+      "size": 2056401,
+      "sha256": "458fd6f1187766f7faf28e9d873a1922be895a2763fbf60127210b8e8d06bb72"
+    },
+    {
+      "path": "content/idea-a-video/assets/edit.png",
+      "size": 1796821,
+      "sha256": "bfaf240e28d619f6fe9fa10bde3df91c89dede5519953289838239803b4184c5"
+    },
+    {
+      "path": "content/idea-a-video/assets/export.png",
+      "size": 1768329,
+      "sha256": "1b10ce3884b0716d88245ea8e912605fc6e5b9751d53929a01cc0391936ee594"
+    },
+    {
+      "path": "content/idea-a-video/assets/idea.png",
+      "size": 1815274,
+      "sha256": "21855f82c6b682785f396f29fc975c7a8400349e14a169c52836da21a9ea8024"
+    },
+    {
+      "path": "content/idea-a-video/assets/microphone.png",
+      "size": 2131490,
+      "sha256": "e5c72689dd37a57b460fe521ee6971ed1a70c1e969dd7ed18b7f6548147d8adf"
+    },
+    {
+      "path": "content/idea-a-video/assets/music.png",
+      "size": 1757519,
+      "sha256": "b649984e7f7462162a51906149a060ff14ab3d10ec778ce7292dd9d26493a95a"
+    },
+    {
+      "path": "content/idea-a-video/assets/neural.png",
+      "size": 2259948,
+      "sha256": "f828f00ef52dae4fc036d38073efdda71a91c6a53cd53ea7803977c44c041b3f"
+    },
+    {
+      "path": "content/idea-a-video/assets/procedencia-v2.json",
+      "size": 5107,
+      "sha256": "c425c23fc05342c1fb26fcd891b512ae9376f439164032f7a41d3a175e27065f"
+    },
+    {
+      "path": "content/idea-a-video/assets/procedencia-v3.json",
+      "size": 5081,
+      "sha256": "8f16184ae3b20cd32e717b240332a77128a8078b8f077237ef6fc7ec9c2ebf53"
+    },
+    {
+      "path": "content/idea-a-video/assets/procedencia.json",
+      "size": 985,
+      "sha256": "e17e45117db93cc45309221fc78bfc9310e6610fc205dee4bfa5d24015b7fd14"
+    },
+    {
+      "path": "content/idea-a-video/assets/prompt-v3.json",
+      "size": 1512,
+      "sha256": "ca8266d4fb4d2493e40d198951a5b6ea6d62aacf6f8da2b1b8c44493b4e5ac45"
+    },
+    {
+      "path": "content/idea-a-video/assets/prompts-v2.json",
+      "size": 14085,
+      "sha256": "fb03b88b0c8dea6376402c35b1a42ed821f56614c54ceed4bd2c183cc6df2eca"
+    },
+    {
+      "path": "content/idea-a-video/assets/prompts.json",
+      "size": 3618,
+      "sha256": "7a2f4c3d3e2c5d408caf07aabc40beb8c72c0a5f3f2c12a260cd627dda911069"
+    },
+    {
+      "path": "content/idea-a-video/assets/quality.png",
+      "size": 2016811,
+      "sha256": "41707825999e520430e5a4323bea90300119eebb50ebcfd2c40db56ce1b0fe38"
+    },
+    {
+      "path": "content/idea-a-video/assets/review.png",
+      "size": 1777999,
+      "sha256": "40a68ddd75a4f8dd65a0fd9892f6c66eb6f7bf7800bbfa79cb4dfe1ad1f3041a"
+    },
+    {
+      "path": "content/idea-a-video/assets/script-glass.png",
+      "size": 1731808,
+      "sha256": "23915e2f2f7f01bcf15430646c25943fac5a1334595f2485c4ae1e93fd0fef06"
+    },
+    {
+      "path": "content/idea-a-video/assets/script.png",
+      "size": 2069010,
+      "sha256": "ca9ee141f30573302d16ba122e6d5165b862432d2b207cd638ad59f5590a8c89"
+    },
+    {
+      "path": "content/idea-a-video/assets/storyboard.png",
+      "size": 2087932,
+      "sha256": "deb437cef24a34d4c6178890167311754859b648eb759bcbe7653c2385570998"
+    },
+    {
+      "path": "content/idea-a-video/assets/team.png",
+      "size": 2241481,
+      "sha256": "c2ebfddfadac308dec2bb095f8a6a262b3006fe41928bc155ebcbdbee79fbca3"
+    },
+    {
+      "path": "content/idea-a-video/copy-propuesto.md",
+      "size": 520,
+      "sha256": "38dd55f03568e751e72be886d865c52a634cb5d23828a03a8acbdeaa75bb5754"
+    },
+    {
+      "path": "content/idea-a-video/ensamblar-preview.py",
+      "size": 5475,
+      "sha256": "132f945059d69c62d874e9567f1efbab06d576313420402cd3491a0b75a8609e"
+    },
+    {
+      "path": "content/idea-a-video/escena-v2.html",
+      "size": 18641,
+      "sha256": "592d0379832f94c6fc0f52402a8e3ed351c2f57520d6a2739e4e58c282e8da25"
+    },
+    {
+      "path": "content/idea-a-video/escena.html",
+      "size": 17934,
+      "sha256": "64dbafbfcbd75fee6aee20a13f5320d9d36c6452e09dcc005a6be7520fd0da61"
+    },
+    {
+      "path": "content/idea-a-video/guion-grabacion.txt",
+      "size": 910,
+      "sha256": "9d0540911b210857e3e335590d1095503d568de7ad7f8cede51e8a07a3c250c1"
+    },
+    {
+      "path": "content/idea-a-video/guion-propuesto.md",
+      "size": 2057,
+      "sha256": "d1714bcfa73b9bf59ba188e15eeabb0a66845eaf5214ff21879d62dfb997cf59"
+    },
+    {
+      "path": "content/idea-a-video/musica.py",
+      "size": 12298,
+      "sha256": "35e9e4a00b89ab5cb425ea06e855b981e4f4c54a7ca831a9e2e3f72cdcd3ba4e"
+    },
+    {
+      "path": "content/idea-a-video/params-v2.json",
+      "size": 41717,
+      "sha256": "7adbc796841590966e1b950a3256ae34a032483bc58bf7b2f993bb42c184c5cf"
+    },
+    {
+      "path": "content/idea-a-video/params-v3.json",
+      "size": 41741,
+      "sha256": "367a1fc2392f9d3b39ea856b52a93651d64131a08674f0c3b8ae7066ca7f278a"
+    },
+    {
+      "path": "content/idea-a-video/params.json",
+      "size": 37012,
+      "sha256": "3866e2dba77422fa5309fe2bc70f3d21768674c89f33e7d6a31e39d10b15d27a"
+    },
+    {
+      "path": "content/idea-a-video/preparar.py",
+      "size": 6313,
+      "sha256": "e256ae66422adcc94b5f30f3e4f318e50b51be84f4fd7482ed68ce68424aa1a0"
+    },
+    {
+      "path": "content/idea-a-video/preparar_v2.py",
+      "size": 2968,
+      "sha256": "8a14cb8bb00163663cb172f1a0481e83e7d45cc9bad0a9c1aa3e28fc656eb19f"
+    },
+    {
+      "path": "content/idea-a-video/preparar_v3.py",
+      "size": 2117,
+      "sha256": "364390523e6d2401223e055d69dd5a78130bccb321f96bd86023654ff04954b4"
+    },
+    {
+      "path": "content/idea-a-video/produccion-v2.json",
+      "size": 2646,
+      "sha256": "16f6af7a8a65320bfdbaa8e0017601bedb6995c54f26d05a0fee03d40f68f69c"
+    },
+    {
+      "path": "content/idea-a-video/produccion-v3.json",
+      "size": 2837,
+      "sha256": "45ef4690490bcc54285a19a859dbd503d36e0628b9881844748b81b9b8a9dfde"
+    },
+    {
+      "path": "content/idea-a-video/produccion.json",
+      "size": 1149,
+      "sha256": "c7df12cf97802a55e2bf1c30dc34e7c0ac546208543e86242a507a3816152eae"
+    },
+    {
+      "path": "content/idea-a-video/render.mjs",
+      "size": 4768,
+      "sha256": "af1869be8353ee773b99d05e1f70b6de12047edf46bb86d803c487a7351d6499"
+    },
+    {
+      "path": "content/referencias/diseno-ia/README.md",
+      "size": 7002,
+      "sha256": "bdc0fba164ca9b80ec4f000695632251faff911e01fc37234021f0cf5fb0bcb8"
+    },
+    {
+      "path": "content/referencias/diseno-ia/contacto.jpg",
+      "size": 287420,
+      "sha256": "172c1390f67fd3bc5ba42224a0bd9634776cd10fa0800ecb7076138323cb5761"
+    },
+    {
+      "path": "content/referencias/diseno-ia/descargar_referencias.py",
+      "size": 2597,
+      "sha256": "46e2e3d04ec08463e2169563a49d5c5187da7d40bb0d627754f8ffb6048d95ef"
+    },
+    {
+      "path": "content/referencias/diseno-ia/fuentes.json",
+      "size": 2076,
+      "sha256": "bf95aeb422bcb68f0b543bb095ec3cc546301a5e77e13d522de30693bbb11493"
+    },
+    {
+      "path": "content/referencias/diseno-ia/galeria.html",
+      "size": 16992,
+      "sha256": "d28d27ab6ea8a1e3e3a7da7d920eb850ebde950d6f3b4a064ec319b7ec0412d1"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+      "size": 34605,
+      "sha256": "b1d0cdd5395d1333184c4045064a2e58240c21431e2ba9a415a8119cbbaa42ca"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/pin-1057008975072047609.jpg",
+      "size": 72535,
+      "sha256": "27cf10eb73e29bfb59a66376f72649c2f85ac8e3aa0a978a4cf79172d0f2626b"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/pin-1128433250395037066.jpg",
+      "size": 114811,
+      "sha256": "7de7f0c96b63d1bc59d50f390286b3ff1d0d82083d953c278195f2d7a83210a8"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+      "size": 38456,
+      "sha256": "7af467e438effbe7aa74b835453e4fffb5ee20b93c49f214c32c3671724a8f50"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/rawpixel-17121933-poster.jpg",
+      "size": 253635,
+      "sha256": "6141fbe5fa6fa194a8e15c84419d0701e00d3d967f131a7e4847c16dc6ebe87b"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-01.png",
+      "size": 256734,
+      "sha256": "0818daf0992b86b8880bfe38a6f26c2cc5ed8dded8ca7a21dd6f782b3af905e2"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-02.png",
+      "size": 932357,
+      "sha256": "0261e2ebc76b4e02b403a24a3d45faabbf39682f7095004bd37f9896b907d498"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-03.png",
+      "size": 888039,
+      "sha256": "ba36877dc1a94b7e5021cd81eda71ae01ceaa82bac6b24078b19f4aa9bbe2725"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-04.png",
+      "size": 297874,
+      "sha256": "c8f3cde114143133d2fa671a4ac78f23ae8fe790e3618321ba8176b11229fa4b"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-05.jpg",
+      "size": 129810,
+      "sha256": "a98a3c60801da1b46bfad859ef135619fb3ba2a1050296bdfadfd4e54918b31f"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-06.png",
+      "size": 23217,
+      "sha256": "62d3bdd41affb4bdbdb861232de4fbc4d43e2ab9029cefb4e09da09f6b696f9b"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-07.png",
+      "size": 171764,
+      "sha256": "47ba6e84be8b08bcf04917ce98db0897e6118ec89f7dae5b33833901680acbce"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-08.png",
+      "size": 273254,
+      "sha256": "c411090fad6e542f4c6d4387afb6bf5b8b4b4d17a91ad3724a68f4f22f2999cc"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-09.jpg",
+      "size": 97246,
+      "sha256": "9602715221d6e55c6daa5c5aee8fe418a4ace8055c9e5f94f136ae2fd45d40e5"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-10.png",
+      "size": 5228,
+      "sha256": "1585c3ccb3efc980708a3db258c4cbecf6465bf5b9f04a217f1ecea9176692d6"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-11.png",
+      "size": 713217,
+      "sha256": "721650a528682a7d325ab7f0534f8983fcf54a51e37280e34da33c69b05e3484"
+    },
+    {
+      "path": "content/referencias/diseno-ia/imagenes/search-12.webp",
+      "size": 4448,
+      "sha256": "9de301caffb894dedf4ffd1e85c32e57b0ed2b1173947985b94667a98f3e493b"
+    },
+    {
+      "path": "content/referencias/diseno-ia/manifest.json",
+      "size": 28780,
+      "sha256": "0aaba12a3449256863b5af70c1381104703f919ba974b53a87f89e2f95a28973"
+    },
+    {
+      "path": "content/referencias/diseno-ia/verificacion.json",
+      "size": 1519,
+      "sha256": "8202c1fb6be810ceb3338404038fa46e79aed74dee7d83bc64ac1844fb878714"
+    },
+    {
+      "path": "content/semana-1.md",
+      "size": 3991,
+      "sha256": "8ab0ee5e431e2a0206b61c948725946ab5344434bbf132076424c614f465bd8f"
+    },
+    {
+      "path": "examples/demo.json",
+      "size": 3230,
+      "sha256": "d74385a65d658a2489003246c5562578c5000c86edab2362f03e3a2520468b0c"
+    },
+    {
+      "path": "examples/metrics.json",
+      "size": 180,
+      "sha256": "65e8578c715c70c8d2a4b341f2b7eeb6ea439fcb23e0141c7d01e5849dd60628"
+    },
+    {
+      "path": "iniciar.ps1",
+      "size": 797,
+      "sha256": "1375641561a0215a601f09e42356d0c19fb461a52c095eb2e3a97288b91b9450"
+    },
+    {
+      "path": "marketing/__init__.py",
+      "size": 46,
+      "sha256": "b4520c25ab9a2096d01f3b5391fd9d124106ea30dc3be6d1ad817e32bcea29ca"
+    },
+    {
+      "path": "marketing/__main__.py",
+      "size": 48,
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "path": "marketing/agents.py",
+      "size": 20973,
+      "sha256": "81eec6a93984a2fdb3c1ea999260ce0a91e0f12233a049c56a0a3dbdf0f1d469"
+    },
+    {
+      "path": "marketing/cli.py",
+      "size": 14073,
+      "sha256": "0f242ab55914d836c9074888908395055c2c7e346c18f3d74db42c9e7227c287"
+    },
+    {
+      "path": "marketing/config.py",
+      "size": 2716,
+      "sha256": "987f339c6d43109db25fcc762dd7bb15a0bbd743c977d343c81fba9a4fa389de"
+    },
+    {
+      "path": "marketing/media.py",
+      "size": 16129,
+      "sha256": "b27bce269a06481a3604f32ba652bdbcf02fda8156d60d1b371e28355ba8336e"
+    },
+    {
+      "path": "marketing/net.py",
+      "size": 5304,
+      "sha256": "2c8b6223516653f0036421170eaba3b2ce36200a34f37ad3ff10f2c808b8e777"
+    },
+    {
+      "path": "marketing/publish.py",
+      "size": 20299,
+      "sha256": "a72722c5d9ec8ab9c397e7e71c5a81c3823de72337f9f61a08163c283b0bb0cf"
+    },
+    {
+      "path": "marketing/store.py",
+      "size": 6317,
+      "sha256": "7a0064ce3747f0bee16b1258b9e2329a51ed9155aeccfd722d09e756349b01ad"
+    },
+    {
+      "path": "marketing/style.py",
+      "size": 4900,
+      "sha256": "5805243bd73f0dfa2e7172517c8b5f420c303b527dfc96656190b4d4acd1d9c6"
+    },
+    {
+      "path": "marketing/telegram.py",
+      "size": 4520,
+      "sha256": "d8411296598ea433abfba2fa363e8d530613bf4170264341207ed7b49321a2ad"
+    },
+    {
+      "path": "production/BRIEF-PROXIMO-VIDEO.md",
+      "size": 1248,
+      "sha256": "7d4b26fa1afa2e37f88f83d6035cb929baa4f31e3f83fd1d00e2f99a087388c8"
+    },
+    {
+      "path": "production/ESTILO-Y-FLUJO.md",
+      "size": 13519,
+      "sha256": "c83a65c887197ccdb0883c545d5015666eefcd9eb4b56e48efd3cd7cc04a379d"
+    },
+    {
+      "path": "production/baseline-edl.json",
+      "size": 11896,
+      "sha256": "1b97f215538286e4622e00266a2fec7740540b5dff44c84149691e03a1ff9d30"
+    },
+    {
+      "path": "production/baseline-params.json",
+      "size": 75071,
+      "sha256": "edb40313c5bf98a8556a4ad9047c006013c07d1d18ed6cc78a61b1c65ea86f0f"
+    },
+    {
+      "path": "production/baseline.json",
+      "size": 1579,
+      "sha256": "fa663c371e383e93de986d6e2bf8b7384cca5607ceebaf9ed1dae180ab5a50f7"
+    },
+    {
+      "path": "production/revision-integracion.json",
+      "size": 1315,
+      "sha256": "ad5e7f919f97bfd26bd6360f8b300ce738d1721c5e6463282fa02aa092b2a75a"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 231,
+      "sha256": "4ea60deee4547720726bb3b4c4fa37212ffdf2858cdf062bd582eb8f60a30b40"
+    },
+    {
+      "path": "scripts/activar-herramientas.ps1",
+      "size": 1576,
+      "sha256": "c00ac2ec641e38d4e59fb57fafb704b19f0e9f9f063ccf46d6ca49b9fb662974"
+    },
+    {
+      "path": "scripts/preview-baseline.mjs",
+      "size": 3407,
+      "sha256": "3ad18292de65a8b4c6a815f4fea14cccbd65a829b0e1ea9f8f3d5b690f13fa49"
+    },
+    {
+      "path": "tests/test_editorial.py",
+      "size": 16597,
+      "sha256": "2ed6c090d5d927e1ce39b0c53242b3f4b736f436611c0aa7e60d631edd18f81d"
+    },
+    {
+      "path": "tests/test_workflow.py",
+      "size": 22914,
+      "sha256": "7c0a22e42cdcfc0db79a841d196eb8a9d79508bd44cd2c04de156001c158420d"
+    }
+  ],
+  "media": [],
+  "excluded": [],
+  "sanitized_files": [],
+  "note": "Snapshot of work in progress. Credentials, temporary files, runtime databases and dependencies excluded. Functional tests were not rerun for this backup. Media is stored in a draft GitHub Release named backup-media-20261121."
+}

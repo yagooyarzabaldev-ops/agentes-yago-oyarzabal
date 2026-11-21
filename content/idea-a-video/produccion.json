@@ -1,0 +1,37 @@
+{
+  "status": "preview_exported_waiting_for_new_recording",
+  "execution_mode": "assistant-guided production; no separate API agent calls",
+  "style": "infinite-process-editorial-v2",
+  "duration": 70,
+  "script_words": 148,
+  "scenes": 35,
+  "new_images": 4,
+  "planned_camera_seconds": 34,
+  "planned_camera_fraction": 0.4857142857142857,
+  "preview_camera_seconds": 0,
+  "voice": "new recording chosen by user; not yet supplied",
+  "script_review": "prepared for recording; exact timing pending",
+  "stages": [
+    "brief",
+    "guion",
+    "dirección visual",
+    "motion",
+    "música",
+    "previsualización",
+    "nueva toma",
+    "sincronía y montaje",
+    "revisión final"
+  ],
+  "evidence": [
+    "marketing/agents.py: planning stages and saved state",
+    "production/ESTILO-Y-FLUJO.md: production tools and review"
+  ],
+  "pending": [
+    "new microphone/camera take",
+    "word alignment",
+    "final camera composite",
+    "voice ducking and listening review"
+  ],
+  "publication_authorized": false,
+  "preview_file": "entregas\\idea-a-video-v1\\De_una_idea_a_un_video_PREVISUALIZACION.mp4"
+}

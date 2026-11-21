@@ -1,0 +1,30 @@
+[
+  {
+    "id": "idea",
+    "file": "idea.png",
+    "source": "built-in image_gen",
+    "sha256": "21855f82c6b682785f396f29fc975c7a8400349e14a169c52836da21a9ea8024",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "direction",
+    "file": "direction.png",
+    "source": "built-in image_gen",
+    "sha256": "458fd6f1187766f7faf28e9d873a1922be895a2763fbf60127210b8e8d06bb72",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "edit",
+    "file": "edit.png",
+    "source": "built-in image_gen",
+    "sha256": "bfaf240e28d619f6fe9fa10bde3df91c89dede5519953289838239803b4184c5",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "export",
+    "file": "export.png",
+    "source": "built-in image_gen",
+    "sha256": "1b10ce3884b0716d88245ea8e912605fc6e5b9751d53929a01cc0391936ee594",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  }
+]

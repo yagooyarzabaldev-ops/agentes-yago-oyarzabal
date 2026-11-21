@@ -1,6 +1,6 @@
 {
-  "id": "infinite-process-editorial-v2",
-  "version": 2,
+  "id": "infinite-process-editorial-v3",
+  "version": 3,
   "approved_on": "2026-11-15",
   "approval_scope": "Base de estilo y flujo para todos los próximos videos; no autoriza publicar en redes",
   "reference": "production/baseline.json",
@@ -38,6 +38,8 @@
     "shot_seconds": [1.5, 2.5],
     "max_static_seconds": 3,
     "minimum_unique_visual_fraction": 0.8,
+    "minimum_distinct_images": 10,
+    "image_count_rule": "Mínimo 10 imágenes de origen distintas por video, guiadas por las referencias aportadas. Motion nativo, tipografía, recortes, zoom, reencuadres y variantes de color de la misma imagen no suman imágenes nuevas. Usar image_id estable del origen; contrastar archivos y procedencia en la revisión del export.",
     "minimum_palette_families": 3,
     "minimum_motion_families": 4,
     "minimum_transition_families": 4,

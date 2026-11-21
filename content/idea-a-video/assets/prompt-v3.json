@@ -1,0 +1,9 @@
+{
+  "id": "script_glass",
+  "file": "script-glass.png",
+  "source": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create ONE original full-bleed vertical 9:16 cinematic image for a marketing reel about turning an idea into a video. The attached reference is only for its diagonal macro framing, luminous layered glass detail, selective focus and depth; do not reproduce trading charts. New subject: a tangible script being organized on three large semi-transparent smoked-glass manuscript sheets floating above a brushed graphite creative workbench. One page has fine ivory strokes arranged as short paragraphs; a second has three clearly grouped story beats; the last has small film storyboard cells. No readable text. Main pages dominate the middle 60% of the composition, layered in deep perspective. Refined violet key light, emerald reflections and restrained warm coral edges, premium glass and metal rendering, subtle atmosphere and realistic optical highlights. Keep upper quarter dark and calm for a title overlay. No pen, no fountain pen, no pencil, no hand, no orange background, no paper cards, no flat poster, no bright solid color backdrop, no logos or watermark, no blue dominance. Must look like an elegant cinematic scene integrated with the existing glass-and-light visual system, not an infographic.",
+  "reference": "../../referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+  "replaces": "script.png",
+  "feedback": "la imagen de la pluma con fondo naranja no va"
+}

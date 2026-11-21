@@ -4,7 +4,9 @@
 
 El estándar es voz real y tono natural; cámara cerca de la mitad del tiempo, arriba y visuales abajo; el resto a pantalla completa; imágenes variadas, profundidad, animaciones y transiciones dinámicas; paleta ámbar/violeta/verde/coral, con aclaraciones puntuales en blanco y negro. Música Chicago house minimal a 122 BPM, sin línea de bajo y con la voz al frente.
 
-**Duración base para próximos Reels y Shorts: 60–75 segundos.** El perfil v2 permite que gerencia y guion ajusten según el contenido; fuera de la base registran un motivo concreto. Las ideas puntuales pueden ser más breves y los tutoriales necesitar más desarrollo. No rellenar ni acelerar la voz para alcanzar un número.
+**Duración base para próximos Reels y Shorts: 60–75 segundos.** El perfil v3 conserva el ajuste de gerencia y guion según el contenido; fuera de la base registran un motivo concreto. Las ideas puntuales pueden ser más breves y los tutoriales necesitar más desarrollo. No rellenar ni acelerar la voz para alcanzar un número.
+
+**Mínimo 10 imágenes distintas por video**, siguiendo las referencias aportadas por Yago. Los gráficos nativos y las variantes de recorte, zoom o color de una imagen no aumentan ese conteo. El plan v3 distingue `asset_type` e `image_id`; la revisión del export debe comprobar los archivos originales y su uso real. Los trabajos con perfil anterior conservan su contrato fijado.
 
 - [Reglas para el asistente y futuros chats](AGENTS.md).
 - [Estilo y flujo completo de producción](production/ESTILO-Y-FLUJO.md).
@@ -19,6 +21,18 @@ El video aprobado dura **67.1 segundos**, tiene **35 escenas** y cámara durante
 ## Operación
 
 Python 3.11+; la CLI usa la biblioteca estándar. Montaje: FFmpeg/FFprobe. Síntesis musical: NumPy. Revisión de motion: Node, playwright-core y Chrome/Chromium. Las herramientas no instalan dependencias ni realizan llamadas de pago automáticamente.
+
+En el equipo de Yago, las herramientas están en `D:\Herramientas\marketing`: Python, su lanzador, Node.js, FFmpeg/FFprobe, paquetes globales de npm, cachés de pip/npm y las dos skills audiovisuales. Las rutas anteriores de C: son enlaces de compatibilidad hacia D:, para que los otros proyectos sigan funcionando. El PATH y el registro de Python también apuntan a D:. No reinstalar copias completas en C:.
+
+El registro local del traslado está en `D:\Herramientas\marketing\migracion`. Incluye verificación SHA256, destinos y estado de limpieza. Los binarios antiguos que Windows mantenga en uso se eliminan en el próximo reinicio mediante una operación registrada; no confundirlos con una segunda instalación activa ni borrarlos forzando el cierre del bot.
+
+`iniciar.ps1` aplica la configuración privada `runtime/herramientas-locales.json` para usar las herramientas, temporales y cachés de pip/npm en D:. Para ejecutar directamente los scripts de producción o los comandos de abajo, activá primero el mismo entorno en esa terminal:
+
+```powershell
+. ./scripts/activar-herramientas.ps1
+```
+
+La activación afecta solo a esa terminal y sus procesos hijos; no vuelve a modificar el PATH global configurado durante la migración. En otro equipo, sin ese archivo local, se conserva el entorno existente. Para instalar paquetes, usá `python -m pip`; los lanzadores que conservan rutas antiguas siguen funcionando mediante los enlaces de compatibilidad.
 
 ```powershell
 python -m marketing doctor
