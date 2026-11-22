@@ -96,5 +96,42 @@ class MusicTrackTests(unittest.TestCase):
             selected,metadata=self.module.resolve_track(asset,profile,root)
             self.assertEqual(selected,asset);self.assertEqual(metadata['selection'],'explicit_cli_override')
 
+    def test_phrase_hold_prevents_syllable_gaps_from_pumping_music(self):
+        rate=self.module.SR;t=np.arange(5*rate)/rate
+        music=np.column_stack((.1*np.sin(2*np.pi*293*t),.1*np.sin(2*np.pi*419*t)))
+        phrase=((t>=.4)&(t<3.4));syllable=((t-.4)%.20)<.12
+        source=.24*np.sin(2*np.pi*181*t)*phrase*syllable
+        voice=np.column_stack((source,source))
+        _,_,plain=self.module.sidechain(voice,music,-27,1.8,10,4.5,25,320,0)
+        _,summary,held=self.module.sidechain(voice,music,-27,1.8,10,4.5,25,320,180)
+        inside=slice(80,300)
+        old_variation=np.abs(np.diff(plain['smoothed_reduction_db'][inside])).sum()
+        new_variation=np.abs(np.diff(held['smoothed_reduction_db'][inside])).sum()
+        self.assertLess(new_variation,old_variation*.1)
+        self.assertLess(held['smoothed_reduction_db'][-1],.15,'Long phrase pauses must still recover')
+        self.assertLessEqual(summary['measured_maximum_db'],4.51)
+
+    @unittest.skipUnless(shutil.which('ffmpeg'),'Local FFmpeg unavailable')
+    def test_fixed_peak_master_keeps_alignment_and_stable_nonpeak_gain(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);logs=root/'logs';logs.mkdir()
+            rng=np.random.default_rng(8802)
+            values=np.column_stack([np.convolve(rng.normal(0,.015,3*48000),np.ones(5)/5,mode='same') for _ in range(2)])
+            values[24000]=[.7,-.65]
+            source=root/'raw.wav';destination=root/'master.wav'
+            self.module.save(source,values)
+            metrics,method=self.module.fixed_master(source,destination,logs,target=-25)
+            decoded=self.module.pcm(destination)
+            self.assertEqual(len(decoded),len(values))
+            x=values[:,0];y=decoded[:,0]
+            size=1<<(2*len(x)-1).bit_length()
+            correlation=np.fft.irfft(np.fft.rfft(y,size)*np.conj(np.fft.rfft(x,size)),size)
+            candidates=np.r_[correlation[-480:],correlation[:481]]
+            self.assertEqual(int(np.argmax(candidates))-480,0,'Limiter lookahead must be compensated')
+            stable=slice(48000,120000)
+            gain=float(np.dot(x[stable],y[stable])/np.dot(x[stable],x[stable]))
+            self.assertAlmostEqual(20*np.log10(gain),method['constant_gain_db'],delta=.1)
+            self.assertLess(float(metrics['input_tp']),-2.5)
+
 
 if __name__=='__main__':unittest.main()

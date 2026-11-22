@@ -44,6 +44,12 @@ La música recibe una ganancia constante para alcanzar el nivel previo al duckin
 
 Se mide la reducción real entre la música previa y posterior, separando ventanas con voz y pausas. El fade final predeterminado dura 0,4 segundos (`--fade-out`). El master apunta a −14 LUFS con margen de pico para el AAC; el export se rechaza si supera −2 dBTP o se aparta más de 0,8 LU del objetivo. Se verifica decodificación completa, fuentes intactas y hash de paquetes de video idéntico.
 
+Para estabilizar la música dentro de una frase, `--hold-ms` mantiene durante 0–250 ms el máximo reciente del detector antes de recuperar. Solo modifica la envolvente de volumen: no desplaza muestras del track ni de la voz. El valor predeterminado 0 conserva la receta anterior. Un hold corto evita subir y bajar el fondo entre sílabas; las pausas más largas siguen recuperando. La procedencia registra el hold y la variación real de ganancia, además de la profundidad.
+
+`--mastering fixed-limiter` utiliza una ganancia constante calculada por LUFS y limita únicamente los picos con sobremuestreo a 192 kHz, techo de −2,8 dB, ataque de 5 ms y release de 80 ms. Desactiva el auto-level y compensa la latencia del limitador. El modo histórico `--mastering loudnorm` conserva la receta anterior; aunque solicita normalización lineal, FFmpeg puede pasar a dinámica si no hay margen de pico suficiente. La revisión debe medir también la ganancia master/mezcla y el offset final.
+
+En la corrección musical de V4, la pista anterior ya era continua desde cero; se midieron cambios rápidos de ganancia en el sidechain y en el master. La nueva receta usa `--hold-ms 180 --max-reduction-db 4.5 --threshold-db -27 --ratio 1.8 --knee-db 10 --attack-ms 25 --release-ms 320 --mastering fixed-limiter`, conservando tempo, timbre, imagen y narración. Esto describe una modificación verificable de mezcla, no una escucha ni un diagnóstico perceptual.
+
 Si el track no alcanza o la voz excede el video, termina antes de producir: no crea loops, saltos, cambios de velocidad ni truncamientos de narración. Las mediciones no reemplazan escuchar claridad, recuperación y posibles bombeos.
 
 Pruebas específicas:

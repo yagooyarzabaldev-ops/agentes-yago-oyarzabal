@@ -13,6 +13,7 @@ The measured ducking report is not a claim of perceptual listening or approval.
 """
 from pathlib import Path
 import argparse
+from collections import deque
 import copy
 import math
 import shutil
@@ -82,7 +83,15 @@ def rms_frames(samples):
     return np.sqrt(np.mean(padded.reshape(-1,HOP),axis=1))
 
 
-def sidechain(voice, preduck, threshold_db, ratio, knee_db, maximum_db, attack_ms, release_ms):
+def gain_motion_metrics(reduction):
+    changes=np.abs(np.diff(reduction))
+    return {'total_variation_db':float(changes.sum()),'maximum_change_per10ms_db':float(changes.max()) if len(changes) else 0.,
+            'p95_change_per10ms_db':float(np.percentile(changes,95)) if len(changes) else 0.,
+            'changes_over025db_per10ms':int((changes>.25).sum()),
+            'changes_over1db_per50ms':int((np.abs(reduction[5:]-reduction[:-5])>1).sum())}
+
+
+def sidechain(voice, preduck, threshold_db, ratio, knee_db, maximum_db, attack_ms, release_ms, hold_ms=0):
     detector=rms_frames(voice)
     level_db=20*np.log10(np.maximum(detector,1e-12))
     over=level_db-threshold_db
@@ -91,6 +100,17 @@ def sidechain(voice, preduck, threshold_db, ratio, knee_db, maximum_db, attack_m
     target=np.where(over<=-knee_db/2,0,np.where(over>=knee_db/2,strength*over,
                     strength*(over+knee_db/2)**2/(2*knee_db)))
     target=np.clip(target,0,maximum_db)
+    raw_target=target.copy()
+    # A causal peak hold avoids bringing music up between syllables. It changes
+    # only the detector envelope, never source sample order or playback timing.
+    hold_frames=round(hold_ms/1000*SR/HOP)
+    if hold_frames:
+        candidates=deque()
+        for index,value in enumerate(raw_target):
+            while candidates and candidates[0]<index-hold_frames:candidates.popleft()
+            while candidates and raw_target[candidates[-1]]<=value:candidates.pop()
+            candidates.append(index)
+            target[index]=raw_target[candidates[0]]
     attack=math.exp(-(HOP/SR)/(attack_ms/1000))
     release=math.exp(-(HOP/SR)/(release_ms/1000))
     reduction=np.zeros(len(target))
@@ -119,22 +139,44 @@ def sidechain(voice, preduck, threshold_db, ratio, knee_db, maximum_db, attack_m
             start=None
     summary={'detector':'Stereo voice RMS in10ms blocks; quadratic soft knee; smoothed reduction in dB interpolated at48kHz.',
              'threshold_dbfs':threshold_db,'ratio':ratio,'knee_db':knee_db,'maximum_reduction_db':maximum_db,
-             'attack_ms':attack_ms,'release_ms':release_ms,'speech_measurement_gate_dbfs':-35,
+             'attack_ms':attack_ms,'release_ms':release_ms,'hold_ms':hold_ms,'speech_measurement_gate_dbfs':-35,
              'measurement':'Actual pre/post music RMS ratio per10ms; before final fade and master.',
              'speech_reduction_percentiles_db':dict(zip(['p10','p50','p90'],np.percentile(measured[speech],[10,50,90]).tolist())) if speech.any() else None,
              'quiet_reduction_median_db':float(np.median(measured[quiet])) if quiet.any() else None,
              'measured_maximum_db':float(np.max(measured[measurable])) if measurable.any() else None,
              'speech_seconds':float(speech.sum()*HOP/SR),'quiet_seconds':float(quiet.sum()*HOP/SR),
-             'pauses_at_least150ms':pauses,'perceptual_listening':False}
+             'pauses_at_least150ms':pauses,'gain_motion':gain_motion_metrics(reduction),'perceptual_listening':False}
     envelope={'hop_samples':HOP,'sample_rate':SR,'seconds':(positions/SR).tolist(),
-              'voice_rms_dbfs':level_db.tolist(),'target_reduction_db':target.tolist(),
+              'voice_rms_dbfs':level_db.tolist(),'raw_target_reduction_db':raw_target.tolist(),'target_reduction_db':target.tolist(),
               'smoothed_reduction_db':reduction.tolist(),'measured_music_reduction_db':measured.tolist()}
     return ducked,summary,envelope
+
+
+def fixed_master(source,destination,log_dir,target=-14,peak=-2.8):
+    """Constant loudness-derived gain, then oversampled peak limiting without auto-level."""
+    before=measure(source,log=log_dir/'fixed-master-before.log')
+    gain_db=target-float(before['input_i'])
+    ceiling=10**(peak/20)
+    graph=(f'volume={gain_db}dB,aresample=192000,'
+           f'alimiter=limit={ceiling}:attack=5:release=80:level=false:asc=false:latency=true,aresample={SR}')
+    ffmpeg('-v','error','-n','-i',source,'-af',graph,'-ar',str(SR),'-ac','2','-c:a','pcm_s24le',destination,
+           log=log_dir/'fixed-master-render.log')
+    after=measure(destination,log=log_dir/'fixed-master-after.log')
+    if abs(duration(source)-duration(destination))>1/SR:
+        raise RuntimeError('Master limiter changed duration despite latency compensation')
+    return after,{'mode':'fixed_gain_peak_limiter','constant_gain_db':gain_db,
+                  'peak_limit_dbtp':peak,'oversample_rate':192000,'limiter_attack_ms':5,'limiter_release_ms':80,
+                  'automatic_level':False,'automatic_release':False,'latency_compensation':True,
+                  'raw_metrics':before,'target_lufs':target}
 
 
 def update_plan(source_plan,result,master,video,music_manifest):
     """Keep the proven visual plan and replace every current audio attribution."""
     plan=copy.deepcopy(read(source_plan))
+    # A new review is not a publication receipt. Do not inherit stale destination IDs,
+    # published flags or claims that belonged to the source delivery.
+    for key in list(plan):
+        if key.lower().startswith(('publication','published','instagram')):plan.pop(key)
     previous={'source_plan_sha256':sha(source_plan),'source_plan':str(Path(source_plan).resolve()),
               'scope':'Historical audio only; superseded by current plan.music and plan.audio.',
               'audio':plan.get('audio'),'audio_stage':plan.get('audio_stage'),'revision':plan.get('revision')}
@@ -173,13 +215,16 @@ def main(argv=None):
     parser.add_argument('--max-reduction-db',type=float,default=6)
     parser.add_argument('--attack-ms',type=float,default=20)
     parser.add_argument('--release-ms',type=float,default=280)
+    parser.add_argument('--hold-ms',type=float,default=0,help='Causal detector hold0–250ms; stabilizes music between syllables without delaying audio.')
+    parser.add_argument('--mastering',choices=['loudnorm','fixed-limiter'],default='loudnorm',help='Historical dynamic loudnorm or fixed gain plus latency-compensated peak limiting.')
     parser.add_argument('--fade-out',type=float,default=.4)
     args=parser.parse_args(argv)
-    values=[args.music_lufs,args.threshold_db,args.ratio,args.knee_db,args.max_reduction_db,args.attack_ms,args.release_ms,args.fade_out]
+    values=[args.music_lufs,args.threshold_db,args.ratio,args.knee_db,args.max_reduction_db,args.attack_ms,args.release_ms,args.hold_ms,args.fade_out]
     if not all(math.isfinite(value) for value in values):parser.error('Numerical parameters must be finite')
     if not -40<=args.music_lufs<=-12 or not -50<=args.threshold_db<=-8:parser.error('Invalid music or detector level')
     if not 1<args.ratio<=10 or not 1<=args.knee_db<=20 or not 0<args.max_reduction_db<=12:parser.error('Invalid compressor curve')
     if not 15<=args.attack_ms<=25 or not 220<=args.release_ms<=320:parser.error('Use gentle attack15–25ms and release220–320ms')
+    if not 0<=args.hold_ms<=250:parser.error('Detector hold must be between0 and250ms')
     if not 0<=args.fade_out<=1:parser.error('Fadeout must be between0 and1second')
     if Path(args.video_name).name!=args.video_name or Path(args.video_name).suffix.lower()!='.mp4':parser.error('--video-name must be an MP4 basename')
     try:
@@ -213,7 +258,7 @@ def main(argv=None):
     preduck=track*10**(gain_db/20)
     save(work/'musica_preduck.wav',preduck)
     ducked,duck_metrics,envelope=sidechain(voice,preduck,args.threshold_db,args.ratio,args.knee_db,
-                                         args.max_reduction_db,args.attack_ms,args.release_ms)
+                                         args.max_reduction_db,args.attack_ms,args.release_ms,args.hold_ms)
     save(work/'musica_postduck_sin_fade.wav',ducked)
     write(work/'envolvente-ducking.json',envelope);write(work/'mediciones-ducking.json',duck_metrics)
     fade=np.ones(count)
@@ -226,7 +271,12 @@ def main(argv=None):
     pre_master_gain=min(1.,.95/max(float(np.max(np.abs(mix))),1e-12))
     raw=work/'mezcla_sin_master.wav';save(raw,mix*pre_master_gain)
     master=music_dir/'master.wav'
-    master_metrics=normalize(raw,master,-14,-2.7,logs)
+    if args.mastering=='fixed-limiter':
+        master_metrics,mastering_method=fixed_master(raw,master,logs)
+    else:
+        master_metrics=normalize(raw,master,-14,-2.7,logs)
+        mastering_method={'mode':'two_pass_loudnorm','target_lufs':-14,'peak_ceiling_dbtp':-2.7,
+                          'note':'linear requested; FFmpeg may use dynamic normalization when peak/headroom requires it.'}
     master_mp3=music_dir/'master.mp3'
     ffmpeg('-v','error','-n','-i',master,'-c:a','libmp3lame','-b:a','256k',master_mp3)
     video=out/args.video_name
@@ -253,7 +303,10 @@ def main(argv=None):
                           'constant_gain_db':gain_db,'preduck_lufs_target':args.music_lufs},
             'ducking':duck_metrics,'pre_master_uniform_gain':pre_master_gain,
             'voice_edit':{'speed':1,'cuts':0,'pitch_change':False,'padding_only_at_end_samples':count-round(duration(args.voice)*SR)},
-            'master_metrics':master_metrics,'encoded_metrics':encoded_metrics,
+            'master_metrics':master_metrics,'mastering_method':mastering_method,'encoded_metrics':encoded_metrics,
+            'editing_order':{'supplied_picture_and_voice_treated_as_final':True,'clean_voice_review':'operator_required',
+                             'music_added_over_supplied_timeline':True,
+                             'reused_previous_mixed_audio':False,'track_edl_applied':False},
             'video_packet_hash':source_video_packets,'video_packets_identical':True,
             'master':str(master.resolve()),'master_sha256':sha(master),'video':str(video.resolve()),'video_sha256':sha(video),
             'copied_assets':copied,'script_sha256':sha(Path(__file__)),'perceptual_listening':False,
