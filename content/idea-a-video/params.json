@@ -1,0 +1,2086 @@
+{
+  "duration": 70,
+  "fps": 30,
+  "bpm": 122,
+  "camera_available": false,
+  "preview": true,
+  "shots": [
+    {
+      "start": 0,
+      "end": 2,
+      "view": "idea",
+      "title": [
+        "DE UNA IDEA",
+        "A UN VIDEO."
+      ],
+      "note": "Una idea toma forma",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 0,
+      "mode": "iris"
+    },
+    {
+      "start": 2,
+      "end": 4,
+      "view": "message",
+      "title": [
+        "TODO EMPIEZA",
+        "CON ESTO."
+      ],
+      "note": "Un mensaje concreto",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 1,
+      "mode": "fold"
+    },
+    {
+      "start": 4,
+      "end": 6,
+      "view": "spark",
+      "title": [
+        "LA IDEA",
+        "SE PONE EN MARCHA."
+      ],
+      "note": "Del mensaje al proceso",
+      "palette": "lime",
+      "accent": "#d8ec85",
+      "index": 2,
+      "mode": "slide"
+    },
+    {
+      "start": 6,
+      "end": 8,
+      "view": "audience",
+      "title": [
+        "¿A QUIÉN",
+        "LE HABLAMOS?"
+      ],
+      "note": "Definir la audiencia",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 3,
+      "mode": "match"
+    },
+    {
+      "start": 8,
+      "end": 10,
+      "view": "target",
+      "title": [
+        "¿QUÉ QUERÉS",
+        "QUE SE LLEVEN?"
+      ],
+      "note": "Elegir el objetivo",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 4,
+      "mode": "slit"
+    },
+    {
+      "start": 10,
+      "end": 12,
+      "view": "intent",
+      "title": [
+        "UNA IDEA.",
+        "UNA INTENCIÓN."
+      ],
+      "note": "Claridad antes de producir",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 5,
+      "mode": "trace"
+    },
+    {
+      "start": 12,
+      "end": 14,
+      "view": "brief",
+      "title": [
+        "EL CONTEXTO",
+        "QUEDA CLARO."
+      ],
+      "note": "Brief de la pieza",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 6,
+      "mode": "cut"
+    },
+    {
+      "start": 14,
+      "end": 16,
+      "view": "orchestrator",
+      "title": [
+        "CADA AGENTE",
+        "TIENE SU PARTE."
+      ],
+      "note": "La gerencia coordina",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 7,
+      "mode": "iris"
+    },
+    {
+      "start": 16,
+      "end": 18,
+      "view": "approaches",
+      "title": [
+        "BUSCAR",
+        "EL ENFOQUE."
+      ],
+      "note": "Elegir cómo contarlo",
+      "palette": "lime",
+      "accent": "#d8ec85",
+      "index": 8,
+      "mode": "fold"
+    },
+    {
+      "start": 18,
+      "end": 20,
+      "view": "script",
+      "title": [
+        "LA IDEA",
+        "YA TIENE GUION."
+      ],
+      "note": "Ordenar el relato",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 9,
+      "mode": "slide"
+    },
+    {
+      "start": 20,
+      "end": 22,
+      "view": "hook",
+      "title": [
+        "LOS PRIMEROS",
+        "SEGUNDOS IMPORTAN."
+      ],
+      "note": "Encontrar el gancho",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 10,
+      "mode": "match"
+    },
+    {
+      "start": 22,
+      "end": 24,
+      "view": "review",
+      "title": [
+        "LO LEO.",
+        "LO HAGO MÍO."
+      ],
+      "note": "Revisión de contenido",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 11,
+      "mode": "slit"
+    },
+    {
+      "start": 24,
+      "end": 26,
+      "view": "revision",
+      "title": [
+        "SI NO ENCAJA,",
+        "LO CAMBIAMOS."
+      ],
+      "note": "Volver sobre el guion",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 12,
+      "mode": "trace"
+    },
+    {
+      "start": 26,
+      "end": 28,
+      "view": "approved",
+      "title": [
+        "UNA DIRECCIÓN",
+        "PARA PRODUCIR."
+      ],
+      "note": "Versión revisada",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 13,
+      "mode": "cut"
+    },
+    {
+      "start": 28,
+      "end": 30,
+      "view": "direction",
+      "title": [
+        "DE LAS FRASES",
+        "A LAS ESCENAS."
+      ],
+      "note": "Dirección visual",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 14,
+      "mode": "iris"
+    },
+    {
+      "start": 30,
+      "end": 32,
+      "view": "storyboard",
+      "title": [
+        "CADA IDEA",
+        "TIENE SU PLANO."
+      ],
+      "note": "Armar el storyboard",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 15,
+      "mode": "fold"
+    },
+    {
+      "start": 32,
+      "end": 34,
+      "view": "typography",
+      "title": [
+        "IMÁGENES.",
+        "TEXTO. MOVIMIENTO."
+      ],
+      "note": "Diseñar la atención",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 16,
+      "mode": "slide"
+    },
+    {
+      "start": 34,
+      "end": 36,
+      "view": "motion",
+      "title": [
+        "LOS ELEMENTOS",
+        "SE CONECTAN."
+      ],
+      "note": "Animar el proceso",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 17,
+      "mode": "match"
+    },
+    {
+      "start": 36,
+      "end": 38,
+      "view": "mic",
+      "title": [
+        "MI VOZ.",
+        "MI FORMA DE CONTAR."
+      ],
+      "note": "Grabación real",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 18,
+      "mode": "slit"
+    },
+    {
+      "start": 38,
+      "end": 40,
+      "view": "cut",
+      "title": [
+        "CORTAR EL ERROR.",
+        "CONSERVAR LA IDEA."
+      ],
+      "note": "Limpiar repeticiones",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 19,
+      "mode": "trace"
+    },
+    {
+      "start": 40,
+      "end": 42,
+      "view": "sync",
+      "title": [
+        "VOZ Y CÁMARA,",
+        "EN EL MISMO TIEMPO."
+      ],
+      "note": "Sincronizar las tomas",
+      "palette": "lime",
+      "accent": "#d8ec85",
+      "index": 20,
+      "mode": "cut"
+    },
+    {
+      "start": 42,
+      "end": 44,
+      "view": "edit",
+      "title": [
+        "EL RELATO",
+        "EN LA LÍNEA DE TIEMPO."
+      ],
+      "note": "Montaje de la pieza",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 21,
+      "mode": "iris"
+    },
+    {
+      "start": 44,
+      "end": 46,
+      "view": "wave",
+      "title": [
+        "LA VOZ",
+        "AL FRENTE."
+      ],
+      "note": "Mezclar con espacio",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 22,
+      "mode": "fold"
+    },
+    {
+      "start": 46,
+      "end": 48,
+      "view": "music",
+      "title": [
+        "HOUSE SUTIL.",
+        "SIN LÍNEA DE BAJO."
+      ],
+      "note": "Música que acompaña",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 23,
+      "mode": "slide"
+    },
+    {
+      "start": 48,
+      "end": 50,
+      "view": "clarity",
+      "title": [
+        "¿SE ENTIENDE",
+        "LA IDEA?"
+      ],
+      "note": "Revisar el mensaje",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 24,
+      "mode": "match"
+    },
+    {
+      "start": 50,
+      "end": 52,
+      "view": "text",
+      "title": [
+        "¿SE LEE BIEN",
+        "EN EL CELULAR?"
+      ],
+      "note": "Comprobar los textos",
+      "palette": "lime",
+      "accent": "#d8ec85",
+      "index": 25,
+      "mode": "slit"
+    },
+    {
+      "start": 52,
+      "end": 54,
+      "view": "alignment",
+      "title": [
+        "QUE TODO",
+        "LLEGUE A TIEMPO."
+      ],
+      "note": "Verificar la sincronía",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 26,
+      "mode": "trace"
+    },
+    {
+      "start": 54,
+      "end": 56,
+      "view": "qa",
+      "title": [
+        "VER. ESCUCHAR.",
+        "CORREGIR."
+      ],
+      "note": "Control del resultado",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 27,
+      "mode": "cut"
+    },
+    {
+      "start": 56,
+      "end": 58,
+      "view": "control",
+      "title": [
+        "ACÁ SIGO",
+        "DECIDIENDO YO."
+      ],
+      "note": "El criterio es humano",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 28,
+      "mode": "iris"
+    },
+    {
+      "start": 58,
+      "end": 60,
+      "view": "human",
+      "title": [
+        "QUÉ SIRVE.",
+        "QUÉ SE CAMBIA."
+      ],
+      "note": "Revisión humana",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 29,
+      "mode": "fold"
+    },
+    {
+      "start": 60,
+      "end": 62,
+      "view": "publishgate",
+      "title": [
+        "QUÉ ESTÁ LISTO",
+        "PARA PUBLICAR."
+      ],
+      "note": "Decisión de publicación",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 30,
+      "mode": "slide"
+    },
+    {
+      "start": 62,
+      "end": 64,
+      "view": "path",
+      "title": [
+        "LA IDEA",
+        "YA TIENE RECORRIDO."
+      ],
+      "note": "Una etapa conecta con otra",
+      "palette": "violet",
+      "accent": "#c99bff",
+      "index": 31,
+      "mode": "match"
+    },
+    {
+      "start": 64,
+      "end": 66,
+      "view": "export",
+      "title": [
+        "UN VIDEO",
+        "PARA REVISAR."
+      ],
+      "note": "Export de la pieza",
+      "palette": "amber",
+      "accent": "#ffb35e",
+      "index": 32,
+      "mode": "slit"
+    },
+    {
+      "start": 66,
+      "end": 68,
+      "view": "result",
+      "title": [
+        "ASÍ SE CONSTRUYE",
+        "EL RESULTADO."
+      ],
+      "note": "Guion, producción, revisión",
+      "palette": "coral",
+      "accent": "#ff937e",
+      "index": 33,
+      "mode": "trace"
+    },
+    {
+      "start": 68,
+      "end": 70,
+      "view": "cta",
+      "title": [
+        "¿QUÉ IDEA",
+        "HACEMOS VIDEO?"
+      ],
+      "note": "El próximo puede ser el tuyo",
+      "palette": "emerald",
+      "accent": "#91e2c0",
+      "index": 34,
+      "mode": "cut"
+    }
+  ],
+  "captions": [
+    [
+      {
+        "w": "Este",
+        "start": 0,
+        "end": 0.3934
+      },
+      {
+        "w": "video",
+        "start": 0.3934,
+        "end": 0.8852
+      },
+      {
+        "w": "empezó",
+        "start": 0.8852,
+        "end": 1.4754
+      },
+      {
+        "w": "con",
+        "start": 1.4754,
+        "end": 1.7705
+      },
+      {
+        "w": "una",
+        "start": 1.7705,
+        "end": 2.0656
+      }
+    ],
+    [
+      {
+        "w": "sola",
+        "start": 2.0656,
+        "end": 2.459
+      },
+      {
+        "w": "idea.",
+        "start": 2.459,
+        "end": 3.1475
+      },
+      {
+        "w": "¿Cómo",
+        "start": 3.1475,
+        "end": 3.6393
+      },
+      {
+        "w": "la",
+        "start": 3.6393,
+        "end": 3.8361
+      },
+      {
+        "w": "convertimos",
+        "start": 3.8361,
+        "end": 4.918
+      }
+    ],
+    [
+      {
+        "w": "en",
+        "start": 4.918,
+        "end": 5.1148
+      },
+      {
+        "w": "un",
+        "start": 5.1148,
+        "end": 5.3115
+      },
+      {
+        "w": "reel?",
+        "start": 5.3115,
+        "end": 6.0
+      },
+      {
+        "w": "Primero",
+        "start": 6.0,
+        "end": 6.7671
+      },
+      {
+        "w": "le",
+        "start": 6.7671,
+        "end": 6.9863
+      }
+    ],
+    [
+      {
+        "w": "digo",
+        "start": 6.9863,
+        "end": 7.4247
+      },
+      {
+        "w": "al",
+        "start": 7.4247,
+        "end": 7.6438
+      },
+      {
+        "w": "agente",
+        "start": 7.6438,
+        "end": 8.3014
+      },
+      {
+        "w": "qué",
+        "start": 8.3014,
+        "end": 8.6301
+      },
+      {
+        "w": "quiero",
+        "start": 8.6301,
+        "end": 9.2877
+      }
+    ],
+    [
+      {
+        "w": "contar,",
+        "start": 9.2877,
+        "end": 10.274
+      },
+      {
+        "w": "para",
+        "start": 10.274,
+        "end": 10.7123
+      },
+      {
+        "w": "quién",
+        "start": 10.7123,
+        "end": 11.2603
+      },
+      {
+        "w": "y",
+        "start": 11.2603,
+        "end": 11.4795
+      },
+      {
+        "w": "qué",
+        "start": 11.4795,
+        "end": 11.8082
+      }
+    ],
+    [
+      {
+        "w": "quiero",
+        "start": 11.8082,
+        "end": 12.4658
+      },
+      {
+        "w": "que",
+        "start": 12.4658,
+        "end": 12.7945
+      },
+      {
+        "w": "se",
+        "start": 12.7945,
+        "end": 13.0137
+      },
+      {
+        "w": "lleven.",
+        "start": 13.0137,
+        "end": 14.0
+      },
+      {
+        "w": "La",
+        "start": 14.0,
+        "end": 14.1702
+      }
+    ],
+    [
+      {
+        "w": "gerencia",
+        "start": 14.1702,
+        "end": 14.8511
+      },
+      {
+        "w": "organiza",
+        "start": 14.8511,
+        "end": 15.5319
+      },
+      {
+        "w": "el",
+        "start": 15.5319,
+        "end": 15.7021
+      },
+      {
+        "w": "trabajo.",
+        "start": 15.7021,
+        "end": 16.5532
+      },
+      {
+        "w": "Un",
+        "start": 16.5532,
+        "end": 16.7234
+      }
+    ],
+    [
+      {
+        "w": "agente",
+        "start": 16.7234,
+        "end": 17.234
+      },
+      {
+        "w": "propone",
+        "start": 17.234,
+        "end": 17.8298
+      },
+      {
+        "w": "el",
+        "start": 17.8298,
+        "end": 18.0
+      },
+      {
+        "w": "enfoque;",
+        "start": 18.0,
+        "end": 18.8511
+      },
+      {
+        "w": "otro",
+        "start": 18.8511,
+        "end": 19.1915
+      }
+    ],
+    [
+      {
+        "w": "arma",
+        "start": 19.1915,
+        "end": 19.5319
+      },
+      {
+        "w": "el",
+        "start": 19.5319,
+        "end": 19.7021
+      },
+      {
+        "w": "guion",
+        "start": 19.7021,
+        "end": 20.1277
+      },
+      {
+        "w": "y",
+        "start": 20.1277,
+        "end": 20.2979
+      },
+      {
+        "w": "encuentra",
+        "start": 20.2979,
+        "end": 21.0638
+      }
+    ],
+    [
+      {
+        "w": "el",
+        "start": 21.0638,
+        "end": 21.234
+      },
+      {
+        "w": "gancho.",
+        "start": 21.234,
+        "end": 22.0
+      },
+      {
+        "w": "Yo",
+        "start": 22.0,
+        "end": 22.2
+      },
+      {
+        "w": "lo",
+        "start": 22.2,
+        "end": 22.4
+      },
+      {
+        "w": "reviso.",
+        "start": 22.4,
+        "end": 23.3
+      }
+    ],
+    [
+      {
+        "w": "Si",
+        "start": 23.3,
+        "end": 23.5
+      },
+      {
+        "w": "algo",
+        "start": 23.5,
+        "end": 23.9
+      },
+      {
+        "w": "no",
+        "start": 23.9,
+        "end": 24.1
+      },
+      {
+        "w": "me",
+        "start": 24.1,
+        "end": 24.3
+      },
+      {
+        "w": "representa,",
+        "start": 24.3,
+        "end": 25.6
+      }
+    ],
+    [
+      {
+        "w": "lo",
+        "start": 25.6,
+        "end": 25.8
+      },
+      {
+        "w": "cambiamos.",
+        "start": 25.8,
+        "end": 27.0
+      },
+      {
+        "w": "Después,",
+        "start": 27.0,
+        "end": 27.9091
+      },
+      {
+        "w": "la",
+        "start": 27.9091,
+        "end": 28.0909
+      },
+      {
+        "w": "dirección",
+        "start": 28.0909,
+        "end": 28.9091
+      }
+    ],
+    [
+      {
+        "w": "visual",
+        "start": 28.9091,
+        "end": 29.4545
+      },
+      {
+        "w": "traduce",
+        "start": 29.4545,
+        "end": 30.0909
+      },
+      {
+        "w": "cada",
+        "start": 30.0909,
+        "end": 30.4545
+      },
+      {
+        "w": "frase",
+        "start": 30.4545,
+        "end": 30.9091
+      },
+      {
+        "w": "en",
+        "start": 30.9091,
+        "end": 31.0909
+      }
+    ],
+    [
+      {
+        "w": "una",
+        "start": 31.0909,
+        "end": 31.3636
+      },
+      {
+        "w": "escena:",
+        "start": 31.3636,
+        "end": 32.1818
+      },
+      {
+        "w": "imágenes,",
+        "start": 32.1818,
+        "end": 33.1818
+      },
+      {
+        "w": "texto",
+        "start": 33.1818,
+        "end": 33.6364
+      },
+      {
+        "w": "y",
+        "start": 33.6364,
+        "end": 33.8182
+      }
+    ],
+    [
+      {
+        "w": "movimiento.",
+        "start": 33.8182,
+        "end": 35.0
+      },
+      {
+        "w": "Con",
+        "start": 35.0,
+        "end": 35.25
+      },
+      {
+        "w": "mi",
+        "start": 35.25,
+        "end": 35.4167
+      },
+      {
+        "w": "voz",
+        "start": 35.4167,
+        "end": 35.6667
+      },
+      {
+        "w": "grabada,",
+        "start": 35.6667,
+        "end": 36.5
+      }
+    ],
+    [
+      {
+        "w": "limpiamos",
+        "start": 36.5,
+        "end": 37.25
+      },
+      {
+        "w": "repeticiones,",
+        "start": 37.25,
+        "end": 38.5
+      },
+      {
+        "w": "sincronizamos",
+        "start": 38.5,
+        "end": 39.5833
+      },
+      {
+        "w": "los",
+        "start": 39.5833,
+        "end": 39.8333
+      },
+      {
+        "w": "cortes",
+        "start": 39.8333,
+        "end": 40.3333
+      }
+    ],
+    [
+      {
+        "w": "y",
+        "start": 40.3333,
+        "end": 40.5
+      },
+      {
+        "w": "alternamos",
+        "start": 40.5,
+        "end": 41.3333
+      },
+      {
+        "w": "cámara",
+        "start": 41.3333,
+        "end": 41.8333
+      },
+      {
+        "w": "con",
+        "start": 41.8333,
+        "end": 42.0833
+      },
+      {
+        "w": "visuales.",
+        "start": 42.0833,
+        "end": 43.0
+      }
+    ],
+    [
+      {
+        "w": "La",
+        "start": 43.0,
+        "end": 43.2174
+      },
+      {
+        "w": "música",
+        "start": 43.2174,
+        "end": 43.8696
+      },
+      {
+        "w": "acompaña",
+        "start": 43.8696,
+        "end": 44.7391
+      },
+      {
+        "w": "el",
+        "start": 44.7391,
+        "end": 44.9565
+      },
+      {
+        "w": "ritmo,",
+        "start": 44.9565,
+        "end": 45.8261
+      }
+    ],
+    [
+      {
+        "w": "sin",
+        "start": 45.8261,
+        "end": 46.1522
+      },
+      {
+        "w": "tapar",
+        "start": 46.1522,
+        "end": 46.6957
+      },
+      {
+        "w": "lo",
+        "start": 46.6957,
+        "end": 46.913
+      },
+      {
+        "w": "que",
+        "start": 46.913,
+        "end": 47.2391
+      },
+      {
+        "w": "digo.",
+        "start": 47.2391,
+        "end": 48.0
+      }
+    ],
+    [
+      {
+        "w": "Antes",
+        "start": 48.0,
+        "end": 48.4598
+      },
+      {
+        "w": "de",
+        "start": 48.4598,
+        "end": 48.6437
+      },
+      {
+        "w": "terminar,",
+        "start": 48.6437,
+        "end": 49.6552
+      },
+      {
+        "w": "revisamos",
+        "start": 49.6552,
+        "end": 50.4828
+      },
+      {
+        "w": "si",
+        "start": 50.4828,
+        "end": 50.6667
+      }
+    ],
+    [
+      {
+        "w": "se",
+        "start": 50.6667,
+        "end": 50.8506
+      },
+      {
+        "w": "entiende,",
+        "start": 50.8506,
+        "end": 51.8621
+      },
+      {
+        "w": "si",
+        "start": 51.8621,
+        "end": 52.046
+      },
+      {
+        "w": "los",
+        "start": 52.046,
+        "end": 52.3218
+      },
+      {
+        "w": "textos",
+        "start": 52.3218,
+        "end": 52.8736
+      }
+    ],
+    [
+      {
+        "w": "se",
+        "start": 52.8736,
+        "end": 53.0575
+      },
+      {
+        "w": "leen",
+        "start": 53.0575,
+        "end": 53.4253
+      },
+      {
+        "w": "y",
+        "start": 53.4253,
+        "end": 53.6092
+      },
+      {
+        "w": "si",
+        "start": 53.6092,
+        "end": 53.7931
+      },
+      {
+        "w": "todo",
+        "start": 53.7931,
+        "end": 54.1609
+      }
+    ],
+    [
+      {
+        "w": "queda",
+        "start": 54.1609,
+        "end": 54.6207
+      },
+      {
+        "w": "sincronizado.",
+        "start": 54.6207,
+        "end": 56.0
+      },
+      {
+        "w": "Y",
+        "start": 56.0,
+        "end": 56.1875
+      },
+      {
+        "w": "acá",
+        "start": 56.1875,
+        "end": 56.4688
+      },
+      {
+        "w": "sigo",
+        "start": 56.4688,
+        "end": 56.8438
+      }
+    ],
+    [
+      {
+        "w": "decidiendo",
+        "start": 56.8438,
+        "end": 57.7813
+      },
+      {
+        "w": "yo:",
+        "start": 57.7813,
+        "end": 58.25
+      },
+      {
+        "w": "qué",
+        "start": 58.25,
+        "end": 58.5313
+      },
+      {
+        "w": "sirve,",
+        "start": 58.5313,
+        "end": 59.2813
+      },
+      {
+        "w": "qué",
+        "start": 59.2813,
+        "end": 59.5625
+      }
+    ],
+    [
+      {
+        "w": "se",
+        "start": 59.5625,
+        "end": 59.75
+      },
+      {
+        "w": "corrige",
+        "start": 59.75,
+        "end": 60.4063
+      },
+      {
+        "w": "y",
+        "start": 60.4063,
+        "end": 60.5938
+      },
+      {
+        "w": "qué",
+        "start": 60.5938,
+        "end": 60.875
+      },
+      {
+        "w": "se",
+        "start": 60.875,
+        "end": 61.0625
+      }
+    ],
+    [
+      {
+        "w": "publica.",
+        "start": 61.0625,
+        "end": 62.0
+      },
+      {
+        "w": "Así,",
+        "start": 62.0,
+        "end": 62.3797
+      },
+      {
+        "w": "la",
+        "start": 62.3797,
+        "end": 62.5063
+      },
+      {
+        "w": "idea",
+        "start": 62.5063,
+        "end": 62.7595
+      },
+      {
+        "w": "ya",
+        "start": 62.7595,
+        "end": 62.8861
+      }
+    ],
+    [
+      {
+        "w": "tiene",
+        "start": 62.8861,
+        "end": 63.2025
+      },
+      {
+        "w": "un",
+        "start": 63.2025,
+        "end": 63.3291
+      },
+      {
+        "w": "recorrido:",
+        "start": 63.3291,
+        "end": 64.0886
+      },
+      {
+        "w": "guion,",
+        "start": 64.0886,
+        "end": 64.5949
+      },
+      {
+        "w": "producción",
+        "start": 64.5949,
+        "end": 65.2278
+      }
+    ],
+    [
+      {
+        "w": "y",
+        "start": 65.2278,
+        "end": 65.3544
+      },
+      {
+        "w": "un",
+        "start": 65.3544,
+        "end": 65.481
+      },
+      {
+        "w": "video",
+        "start": 65.481,
+        "end": 65.7975
+      },
+      {
+        "w": "listo",
+        "start": 65.7975,
+        "end": 66.1139
+      },
+      {
+        "w": "para",
+        "start": 66.1139,
+        "end": 66.3671
+      }
+    ],
+    [
+      {
+        "w": "revisar.",
+        "start": 66.3671,
+        "end": 67.0
+      },
+      {
+        "w": "¿Qué",
+        "start": 67.0,
+        "end": 67.3158
+      },
+      {
+        "w": "idea",
+        "start": 67.3158,
+        "end": 67.6316
+      },
+      {
+        "w": "tuya",
+        "start": 67.6316,
+        "end": 67.9474
+      },
+      {
+        "w": "convertirías",
+        "start": 67.9474,
+        "end": 68.8947
+      }
+    ],
+    [
+      {
+        "w": "en",
+        "start": 68.8947,
+        "end": 69.0526
+      },
+      {
+        "w": "el",
+        "start": 69.0526,
+        "end": 69.2105
+      },
+      {
+        "w": "próximo?",
+        "start": 69.2105,
+        "end": 70.0
+      }
+    ]
+  ],
+  "words": [
+    {
+      "w": "Este",
+      "start": 0,
+      "end": 0.3934
+    },
+    {
+      "w": "video",
+      "start": 0.3934,
+      "end": 0.8852
+    },
+    {
+      "w": "empezó",
+      "start": 0.8852,
+      "end": 1.4754
+    },
+    {
+      "w": "con",
+      "start": 1.4754,
+      "end": 1.7705
+    },
+    {
+      "w": "una",
+      "start": 1.7705,
+      "end": 2.0656
+    },
+    {
+      "w": "sola",
+      "start": 2.0656,
+      "end": 2.459
+    },
+    {
+      "w": "idea.",
+      "start": 2.459,
+      "end": 3.1475
+    },
+    {
+      "w": "¿Cómo",
+      "start": 3.1475,
+      "end": 3.6393
+    },
+    {
+      "w": "la",
+      "start": 3.6393,
+      "end": 3.8361
+    },
+    {
+      "w": "convertimos",
+      "start": 3.8361,
+      "end": 4.918
+    },
+    {
+      "w": "en",
+      "start": 4.918,
+      "end": 5.1148
+    },
+    {
+      "w": "un",
+      "start": 5.1148,
+      "end": 5.3115
+    },
+    {
+      "w": "reel?",
+      "start": 5.3115,
+      "end": 6.0
+    },
+    {
+      "w": "Primero",
+      "start": 6.0,
+      "end": 6.7671
+    },
+    {
+      "w": "le",
+      "start": 6.7671,
+      "end": 6.9863
+    },
+    {
+      "w": "digo",
+      "start": 6.9863,
+      "end": 7.4247
+    },
+    {
+      "w": "al",
+      "start": 7.4247,
+      "end": 7.6438
+    },
+    {
+      "w": "agente",
+      "start": 7.6438,
+      "end": 8.3014
+    },
+    {
+      "w": "qué",
+      "start": 8.3014,
+      "end": 8.6301
+    },
+    {
+      "w": "quiero",
+      "start": 8.6301,
+      "end": 9.2877
+    },
+    {
+      "w": "contar,",
+      "start": 9.2877,
+      "end": 10.274
+    },
+    {
+      "w": "para",
+      "start": 10.274,
+      "end": 10.7123
+    },
+    {
+      "w": "quién",
+      "start": 10.7123,
+      "end": 11.2603
+    },
+    {
+      "w": "y",
+      "start": 11.2603,
+      "end": 11.4795
+    },
+    {
+      "w": "qué",
+      "start": 11.4795,
+      "end": 11.8082
+    },
+    {
+      "w": "quiero",
+      "start": 11.8082,
+      "end": 12.4658
+    },
+    {
+      "w": "que",
+      "start": 12.4658,
+      "end": 12.7945
+    },
+    {
+      "w": "se",
+      "start": 12.7945,
+      "end": 13.0137
+    },
+    {
+      "w": "lleven.",
+      "start": 13.0137,
+      "end": 14.0
+    },
+    {
+      "w": "La",
+      "start": 14.0,
+      "end": 14.1702
+    },
+    {
+      "w": "gerencia",
+      "start": 14.1702,
+      "end": 14.8511
+    },
+    {
+      "w": "organiza",
+      "start": 14.8511,
+      "end": 15.5319
+    },
+    {
+      "w": "el",
+      "start": 15.5319,
+      "end": 15.7021
+    },
+    {
+      "w": "trabajo.",
+      "start": 15.7021,
+      "end": 16.5532
+    },
+    {
+      "w": "Un",
+      "start": 16.5532,
+      "end": 16.7234
+    },
+    {
+      "w": "agente",
+      "start": 16.7234,
+      "end": 17.234
+    },
+    {
+      "w": "propone",
+      "start": 17.234,
+      "end": 17.8298
+    },
+    {
+      "w": "el",
+      "start": 17.8298,
+      "end": 18.0
+    },
+    {
+      "w": "enfoque;",
+      "start": 18.0,
+      "end": 18.8511
+    },
+    {
+      "w": "otro",
+      "start": 18.8511,
+      "end": 19.1915
+    },
+    {
+      "w": "arma",
+      "start": 19.1915,
+      "end": 19.5319
+    },
+    {
+      "w": "el",
+      "start": 19.5319,
+      "end": 19.7021
+    },
+    {
+      "w": "guion",
+      "start": 19.7021,
+      "end": 20.1277
+    },
+    {
+      "w": "y",
+      "start": 20.1277,
+      "end": 20.2979
+    },
+    {
+      "w": "encuentra",
+      "start": 20.2979,
+      "end": 21.0638
+    },
+    {
+      "w": "el",
+      "start": 21.0638,
+      "end": 21.234
+    },
+    {
+      "w": "gancho.",
+      "start": 21.234,
+      "end": 22.0
+    },
+    {
+      "w": "Yo",
+      "start": 22.0,
+      "end": 22.2
+    },
+    {
+      "w": "lo",
+      "start": 22.2,
+      "end": 22.4
+    },
+    {
+      "w": "reviso.",
+      "start": 22.4,
+      "end": 23.3
+    },
+    {
+      "w": "Si",
+      "start": 23.3,
+      "end": 23.5
+    },
+    {
+      "w": "algo",
+      "start": 23.5,
+      "end": 23.9
+    },
+    {
+      "w": "no",
+      "start": 23.9,
+      "end": 24.1
+    },
+    {
+      "w": "me",
+      "start": 24.1,
+      "end": 24.3
+    },
+    {
+      "w": "representa,",
+      "start": 24.3,
+      "end": 25.6
+    },
+    {
+      "w": "lo",
+      "start": 25.6,
+      "end": 25.8
+    },
+    {
+      "w": "cambiamos.",
+      "start": 25.8,
+      "end": 27.0
+    },
+    {
+      "w": "Después,",
+      "start": 27.0,
+      "end": 27.9091
+    },
+    {
+      "w": "la",
+      "start": 27.9091,
+      "end": 28.0909
+    },
+    {
+      "w": "dirección",
+      "start": 28.0909,
+      "end": 28.9091
+    },
+    {
+      "w": "visual",
+      "start": 28.9091,
+      "end": 29.4545
+    },
+    {
+      "w": "traduce",
+      "start": 29.4545,
+      "end": 30.0909
+    },
+    {
+      "w": "cada",
+      "start": 30.0909,
+      "end": 30.4545
+    },
+    {
+      "w": "frase",
+      "start": 30.4545,
+      "end": 30.9091
+    },
+    {
+      "w": "en",
+      "start": 30.9091,
+      "end": 31.0909
+    },
+    {
+      "w": "una",
+      "start": 31.0909,
+      "end": 31.3636
+    },
+    {
+      "w": "escena:",
+      "start": 31.3636,
+      "end": 32.1818
+    },
+    {
+      "w": "imágenes,",
+      "start": 32.1818,
+      "end": 33.1818
+    },
+    {
+      "w": "texto",
+      "start": 33.1818,
+      "end": 33.6364
+    },
+    {
+      "w": "y",
+      "start": 33.6364,
+      "end": 33.8182
+    },
+    {
+      "w": "movimiento.",
+      "start": 33.8182,
+      "end": 35.0
+    },
+    {
+      "w": "Con",
+      "start": 35.0,
+      "end": 35.25
+    },
+    {
+      "w": "mi",
+      "start": 35.25,
+      "end": 35.4167
+    },
+    {
+      "w": "voz",
+      "start": 35.4167,
+      "end": 35.6667
+    },
+    {
+      "w": "grabada,",
+      "start": 35.6667,
+      "end": 36.5
+    },
+    {
+      "w": "limpiamos",
+      "start": 36.5,
+      "end": 37.25
+    },
+    {
+      "w": "repeticiones,",
+      "start": 37.25,
+      "end": 38.5
+    },
+    {
+      "w": "sincronizamos",
+      "start": 38.5,
+      "end": 39.5833
+    },
+    {
+      "w": "los",
+      "start": 39.5833,
+      "end": 39.8333
+    },
+    {
+      "w": "cortes",
+      "start": 39.8333,
+      "end": 40.3333
+    },
+    {
+      "w": "y",
+      "start": 40.3333,
+      "end": 40.5
+    },
+    {
+      "w": "alternamos",
+      "start": 40.5,
+      "end": 41.3333
+    },
+    {
+      "w": "cámara",
+      "start": 41.3333,
+      "end": 41.8333
+    },
+    {
+      "w": "con",
+      "start": 41.8333,
+      "end": 42.0833
+    },
+    {
+      "w": "visuales.",
+      "start": 42.0833,
+      "end": 43.0
+    },
+    {
+      "w": "La",
+      "start": 43.0,
+      "end": 43.2174
+    },
+    {
+      "w": "música",
+      "start": 43.2174,
+      "end": 43.8696
+    },
+    {
+      "w": "acompaña",
+      "start": 43.8696,
+      "end": 44.7391
+    },
+    {
+      "w": "el",
+      "start": 44.7391,
+      "end": 44.9565
+    },
+    {
+      "w": "ritmo,",
+      "start": 44.9565,
+      "end": 45.8261
+    },
+    {
+      "w": "sin",
+      "start": 45.8261,
+      "end": 46.1522
+    },
+    {
+      "w": "tapar",
+      "start": 46.1522,
+      "end": 46.6957
+    },
+    {
+      "w": "lo",
+      "start": 46.6957,
+      "end": 46.913
+    },
+    {
+      "w": "que",
+      "start": 46.913,
+      "end": 47.2391
+    },
+    {
+      "w": "digo.",
+      "start": 47.2391,
+      "end": 48.0
+    },
+    {
+      "w": "Antes",
+      "start": 48.0,
+      "end": 48.4598
+    },
+    {
+      "w": "de",
+      "start": 48.4598,
+      "end": 48.6437
+    },
+    {
+      "w": "terminar,",
+      "start": 48.6437,
+      "end": 49.6552
+    },
+    {
+      "w": "revisamos",
+      "start": 49.6552,
+      "end": 50.4828
+    },
+    {
+      "w": "si",
+      "start": 50.4828,
+      "end": 50.6667
+    },
+    {
+      "w": "se",
+      "start": 50.6667,
+      "end": 50.8506
+    },
+    {
+      "w": "entiende,",
+      "start": 50.8506,
+      "end": 51.8621
+    },
+    {
+      "w": "si",
+      "start": 51.8621,
+      "end": 52.046
+    },
+    {
+      "w": "los",
+      "start": 52.046,
+      "end": 52.3218
+    },
+    {
+      "w": "textos",
+      "start": 52.3218,
+      "end": 52.8736
+    },
+    {
+      "w": "se",
+      "start": 52.8736,
+      "end": 53.0575
+    },
+    {
+      "w": "leen",
+      "start": 53.0575,
+      "end": 53.4253
+    },
+    {
+      "w": "y",
+      "start": 53.4253,
+      "end": 53.6092
+    },
+    {
+      "w": "si",
+      "start": 53.6092,
+      "end": 53.7931
+    },
+    {
+      "w": "todo",
+      "start": 53.7931,
+      "end": 54.1609
+    },
+    {
+      "w": "queda",
+      "start": 54.1609,
+      "end": 54.6207
+    },
+    {
+      "w": "sincronizado.",
+      "start": 54.6207,
+      "end": 56.0
+    },
+    {
+      "w": "Y",
+      "start": 56.0,
+      "end": 56.1875
+    },
+    {
+      "w": "acá",
+      "start": 56.1875,
+      "end": 56.4688
+    },
+    {
+      "w": "sigo",
+      "start": 56.4688,
+      "end": 56.8438
+    },
+    {
+      "w": "decidiendo",
+      "start": 56.8438,
+      "end": 57.7813
+    },
+    {
+      "w": "yo:",
+      "start": 57.7813,
+      "end": 58.25
+    },
+    {
+      "w": "qué",
+      "start": 58.25,
+      "end": 58.5313
+    },
+    {
+      "w": "sirve,",
+      "start": 58.5313,
+      "end": 59.2813
+    },
+    {
+      "w": "qué",
+      "start": 59.2813,
+      "end": 59.5625
+    },
+    {
+      "w": "se",
+      "start": 59.5625,
+      "end": 59.75
+    },
+    {
+      "w": "corrige",
+      "start": 59.75,
+      "end": 60.4063
+    },
+    {
+      "w": "y",
+      "start": 60.4063,
+      "end": 60.5938
+    },
+    {
+      "w": "qué",
+      "start": 60.5938,
+      "end": 60.875
+    },
+    {
+      "w": "se",
+      "start": 60.875,
+      "end": 61.0625
+    },
+    {
+      "w": "publica.",
+      "start": 61.0625,
+      "end": 62.0
+    },
+    {
+      "w": "Así,",
+      "start": 62.0,
+      "end": 62.3797
+    },
+    {
+      "w": "la",
+      "start": 62.3797,
+      "end": 62.5063
+    },
+    {
+      "w": "idea",
+      "start": 62.5063,
+      "end": 62.7595
+    },
+    {
+      "w": "ya",
+      "start": 62.7595,
+      "end": 62.8861
+    },
+    {
+      "w": "tiene",
+      "start": 62.8861,
+      "end": 63.2025
+    },
+    {
+      "w": "un",
+      "start": 63.2025,
+      "end": 63.3291
+    },
+    {
+      "w": "recorrido:",
+      "start": 63.3291,
+      "end": 64.0886
+    },
+    {
+      "w": "guion,",
+      "start": 64.0886,
+      "end": 64.5949
+    },
+    {
+      "w": "producción",
+      "start": 64.5949,
+      "end": 65.2278
+    },
+    {
+      "w": "y",
+      "start": 65.2278,
+      "end": 65.3544
+    },
+    {
+      "w": "un",
+      "start": 65.3544,
+      "end": 65.481
+    },
+    {
+      "w": "video",
+      "start": 65.481,
+      "end": 65.7975
+    },
+    {
+      "w": "listo",
+      "start": 65.7975,
+      "end": 66.1139
+    },
+    {
+      "w": "para",
+      "start": 66.1139,
+      "end": 66.3671
+    },
+    {
+      "w": "revisar.",
+      "start": 66.3671,
+      "end": 67.0
+    },
+    {
+      "w": "¿Qué",
+      "start": 67.0,
+      "end": 67.3158
+    },
+    {
+      "w": "idea",
+      "start": 67.3158,
+      "end": 67.6316
+    },
+    {
+      "w": "tuya",
+      "start": 67.6316,
+      "end": 67.9474
+    },
+    {
+      "w": "convertirías",
+      "start": 67.9474,
+      "end": 68.8947
+    },
+    {
+      "w": "en",
+      "start": 68.8947,
+      "end": 69.0526
+    },
+    {
+      "w": "el",
+      "start": 69.0526,
+      "end": 69.2105
+    },
+    {
+      "w": "próximo?",
+      "start": 69.2105,
+      "end": 70.0
+    }
+  ],
+  "camera_ranges": [
+    [
+      0,
+      6
+    ],
+    [
+      10,
+      16
+    ],
+    [
+      22,
+      28
+    ],
+    [
+      36,
+      40
+    ],
+    [
+      48,
+      52
+    ],
+    [
+      56,
+      62
+    ],
+    [
+      68,
+      70
+    ]
+  ],
+  "bw_ranges": [
+    [
+      56,
+      60
+    ]
+  ],
+  "assets": {
+    "idea": "assets/idea.png",
+    "direction": "assets/direction.png",
+    "edit": "assets/edit.png",
+    "export": "assets/export.png"
+  },
+  "timing_source": "estimated_from_proposed_script; replace after real recording"
+}

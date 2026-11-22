@@ -11,6 +11,7 @@ La base identifica un lenguaje audiovisual. Las próximas piezas necesitan ideas
 - Cámara aproximadamente la mitad del tiempo (rango de planificación 40–55%). Cuando aparece: arriba cámara y abajo imágenes/animaciones. En el resto, los visuales desarrollan la idea a pantalla completa.
 - Aclaraciones breves pueden llevar blanco y negro y acercamiento. No es una obligación de insertar tres aclaraciones en todos los videos.
 - Ámbar, violeta, verde, coral y acentos lima; materiales, luz y profundidad de las referencias. Evitar azul dominante y marco blanco.
+- Mínimo 10 imágenes de origen distintas por video (corrección de Yago, perfil v3). Motion nativo, tipografía, crops, zoom, reencuadres y variantes de color no suman originales. Guiar composición y materiales por las referencias aportadas; cada imagen desarrolla una idea del relato.
 - Planos generalmente de 1.5–2.5 segundos, con cambios de escala, objetos y acciones. Combinar animación de elementos, parallax, tipografía y desplazamientos. Cambiar imágenes a menudo no significa cambiar sin relación con la frase.
 - House Chicago minimal a 122 BPM, sin línea de bajo ni subgrave sostenido. Bombo corto, órgano percusivo, madera, rim, clap y hats con swing. Voz protagonista; pausas y acentos vinculados al relato.
 - Formato de partida 1080×1920, 30 fps, **60–75 segundos para Reels y Shorts**. La pieza aprobada dura 67.1 segundos, tiene 35 escenas y cámara en el 48.24% del tiempo.
@@ -25,9 +26,27 @@ Como orientación: 20–35s para un consejo o idea puntual; 40–60s para un pro
 
 Dirección visual y motion ajustan la cantidad de escenas; montaje conserva pausas útiles y palabras completas; música crea un cierre para la duración elegida; calidad comprueba que el motivo y el resultado sean coherentes. Un cambio de duración que altera el guion se revisa como nueva versión del contenido.
 
-El video base y la etiqueta `video-base-v1` conservan su aprobación histórica. Los nuevos trabajos fijan el perfil v2; los existentes mantienen su perfil y duración anteriores.
+El video base y la etiqueta `video-base-v1` conservan su aprobación histórica. El perfil vigente v3 conserva esta política de duración; los trabajos existentes mantienen su perfil y duración anteriores.
+
+## Cantidad de imágenes — perfil v3
+
+Yago corrigió la primera prueba de «idea a video»: cuatro imágenes y numerosos gráficos no alcanzaban. Desde el perfil v3, `minimum_distinct_images` vale 10 por video, además de la variedad de escenas y animaciones. No es un conteo de planos: varios encuadres, colorizaciones o movimientos sobre el mismo original cuentan como una imagen.
+
+Dirección visual distingue `asset_type` (`image` o `native`) e `image_id` del origen, vacío para gráficos nativos. El validador cuenta IDs de imagen distintos y bloquea menos de diez antes de motion/montaje. Su informe registra `planned_distinct_images` e `image_asset_review: pending`: no ha inspeccionado archivos. Referencias y montaje conservan procedencia y timecodes; calidad contrasta archivos/hashes y escenas del export para detectar alias del mismo recurso y asegurar que las imágenes realmente se vean. Ninguna miniatura imperceptible cumple el requisito.
+
+Los trabajos v1/v2 conservan el esquema de escenas anterior y no se migran silenciosamente al cargar el perfil actual. La revisión explícita de una pieza con esta corrección puede adoptar v3 como una nueva versión local, conservando su entrega previa.
 
 ## Equipo bajo la gerencia
+
+### Correcciones incorporadas de la oficina — 21/11/2026
+
+- **Voz y subtítulos:** llamar agente/agentes a los especialistas. Cuando se corrige una toma que dice bot/bots, corregir el audio además del texto, reutilizar material compatible de la propia voz, registrar el origen del empalme y mantener la EDL y la sincronía. Detectar silencios no autoriza cortar respiraciones útiles ni palabras. Retranscribir ayuda a verificar términos; escuchar sigue siendo una comprobación distinta.
+- **Demostración real:** asignar trabajo concreto a especialistas, registrar eventos de ejecución y capturar directamente la oficina mientras trabajan. Relacionar cada escena con tarea, responsable y evidencia de skill. Distinguir captura real, ilustración y recreación; una animación no demuestra que se ejecutó un agente.
+- **Imágenes y movimiento:** crear recursos nuevos para el contenido hablado, con contexto y procedencia. Revisar clip y fotogramas de transiciones; comprobar movimiento de los elementos, lectura móvil, rótulos TAREA/SKILL y subtítulos sin solapes o huecos dentro de las frases. Los cambios de cámara sobre una sola imagen no cumplen el mínimo de originales.
+- **Música alternativa:** conservar la base aprobada y comparar propuestas nuevas usando la misma voz, fragmento y nivel. Variar composición, patrón e instrumentación; no solamente semilla o volumen. Entregar muestras escuchables y versiones del reel, medir formatos codificados y declarar si la escucha está pendiente. La exploración de 118/114/124 BPM no reemplaza el perfil de 122 BPM ni la música ya publicada.
+- **Persistencia:** llevar las reglas a los contratos y rescatar el código reutilizable en `scripts/reel_oficina/` y `scripts/musica_opciones/`. Conservar los archivos personales, EDL de tomas reales, comprobantes de publicación y actividad histórica en carpetas privadas. Versionar fuentes y pruebas; no presentar un script como mejora automática de una skill externa que no se modificó.
+
+Estas reglas corrigen el flujo y no cambian la aprobación histórica de `production/baseline.json`. Las revisiones técnicas, visuales y de escucha se registran por separado. Una demostración breve puede conservar su duración justificada, sin forzarla a la base de una nueva pieza.
 
 | Responsable | Entrega | Recibe de |
 | --- | --- | --- |
@@ -65,7 +84,7 @@ Una frase como «Hagamos un reel sobre cómo cambia la atención de una barberí
 
 `new` crea formato editorial. `draft` ejecuta gerente → investigación → guion y fija una copia del perfil con SHA256. `produce` ejecuta referencias → voz → dirección visual → motion → montaje → música → copy → revisión del plan. Cada etapa guarda su resultado y puede retomarse.
 
-Dirección visual entrega escenas con start/end, visual_id, idea, visual, layout, palette, motion, animation, transition y aside_reason. El validador exige cobertura sin huecos ni solapes, planos de hasta tres segundos, cámara 40–55%, al menos 80% de identificadores visuales diferentes, ningún recurso consecutivo o más de dos veces, tres colores y cuatro familias de movimiento/transición. Un agente no puede ocultar un recurso repetido cambiándole el ID: el revisor debe contrastarlo con los assets.
+Dirección visual entrega escenas con start/end, visual_id, idea, visual, layout, palette, motion, animation, transition y aside_reason; v3 agrega asset_type e image_id. El validador exige cobertura sin huecos ni solapes, planos de hasta tres segundos, cámara 40–55%, al menos 80% de identificadores visuales diferentes, ningún recurso consecutivo o más de dos veces, tres colores y cuatro familias de movimiento/transición. En v3, también al menos 10 image_id de origen distintos. Un agente no puede ocultar un recurso repetido cambiándole el ID: el revisor debe contrastarlo con los assets.
 
 El paquete exportado contiene `estilo.json`, `plan-de-escenas.json`, `revision-del-plan.json`, `handoff-produccion.json`, guion y salidas de especialistas. `production_ready` significa **plan preparado**, no MP4 terminado. El handoff deja render y escucha pendientes. La producción audiovisual sigue requiriendo las herramientas de montaje; `attach-video` incorpora el MP4 final para revisar/publicar.
 

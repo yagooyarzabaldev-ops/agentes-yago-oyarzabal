@@ -5,7 +5,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from marketing.agents import Agents, BRIEF, EDITORIAL_STAGES, SHOTS, Workflow, validate, validate_script, duration_instructions
+from marketing.agents import Agents, BRIEF, EDITORIAL_STAGES, SHOTS, IMAGE_SHOTS, Workflow, validate, validate_script, duration_instructions, shot_schema
 from marketing.config import AppError, Config
 from marketing.media import render, verify_video
 from marketing.store import Store, digest
@@ -18,6 +18,7 @@ def shot_plan():
     return {'summary': 'Cambio de sistema, ejemplo de prueba', 'shots': [
         {'start': i * 2, 'end': (i + 1) * 2, 'visual_id': f'system-{i}',
          'idea': f'Paso {i}', 'visual': f'Módulo de trabajo {i}',
+         'asset_type': 'image' if i < 10 else 'native', 'image_id': f'original-{i}' if i < 10 else '',
          'layout': 'split' if i % 2 else 'full', 'palette': ['amber', 'violet', 'emerald'][i % 3],
          'motion': ['assembly', 'truck', 'particles', 'kinetic-type'][i % 4],
          'animation': 'El módulo se separa y conecta con la siguiente tarea',
@@ -45,8 +46,12 @@ class EditorialAgents:
                                   'screen': 'El sistema', 'seconds': 3} for i in range(20)],
                     'alternative_hooks': ['Uno', 'Dos', 'Tres'], 'claims_to_verify': [],
                     **({'duration_reason': ''} if 'duration_reason' in schema['properties'] else {})}
-        if schema is SHOTS:
-            return shot_plan()
+        if schema is SHOTS or schema is IMAGE_SHOTS:
+            plan = shot_plan()
+            if schema is SHOTS:
+                for shot in plan['shots']:
+                    shot.pop('asset_type'); shot.pop('image_id')
+            return plan
         if role == '06-thumbnail-copy':
             return {'youtube_title': 'Cambiar el sistema', 'youtube_description': 'Un ejemplo',
                     'instagram_caption': 'Un ejemplo', 'hashtags': ['#IA'], 'first_comment': '¿Cómo lo hacés?',
@@ -75,10 +80,12 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(result['video_format'], 'editorial')
         self.assertEqual(self.agents.calls, ['00-orquestador', '01-trend-hunter', '02-guionista'] +
                          [role for role, _ in EDITORIAL_STAGES])
-        self.assertTrue(all(c['style']['id'] == 'infinite-process-editorial-v2' for c in self.agents.contexts))
+        self.assertTrue(all(c['style']['id'] == 'infinite-process-editorial-v3' for c in self.agents.contexts))
         self.assertTrue(all(c['style']['format']['duration_seconds'] == [60, 75] for c in self.agents.contexts))
         self.assertIsNone(result['video'])
         self.assertEqual(result['plan_review']['export_review'], 'pending')
+        self.assertEqual(result['plan_review']['planned_distinct_images'], 10)
+        self.assertEqual(result['plan_review']['image_asset_review'], 'pending')
         handoff = json.loads((self.store.artifact_dir(result) / 'handoff-produccion.json').read_text(encoding='utf-8'))
         self.assertEqual(handoff['status'], 'plan_ready_render_pending')
         self.assertEqual(handoff['style_sha256'], result['style']['sha256'])
@@ -141,6 +148,8 @@ class EditorialTests(unittest.TestCase):
         self.assertFalse(data['style']['music']['bass_line'])
         self.assertIn('60 a 75', http.data['instructions'])
         self.assertIn('duration_reason', http.data['instructions'])
+        self.assertIn('al menos 10 imágenes de origen distintas', http.data['instructions'])
+        self.assertIn('mismo image_id', http.data['instructions'])
         self.assertNotIn('El cierre dice:', http.data['instructions'])
 
     def test_bad_plans_are_blocked_before_motion_and_mix(self):
@@ -153,6 +162,7 @@ class EditorialTests(unittest.TestCase):
             'gap': lambda s: s[4].update(start=8.5),
             'short_timeline': lambda s: s.pop(),
             'unmotivated_bw': lambda s: s[1].update(layout='split_bw'),
+            'nine_images': lambda s: s[9].update(asset_type='native', image_id=''),
         }
         for reason, mutate in mutations.items():
             with self.subTest(reason=reason):
@@ -160,7 +170,7 @@ class EditorialTests(unittest.TestCase):
                 mutate(plan['shots'])
                 with patch.object(self.agents, 'run', wraps=self.agents.run) as run:
                     original = self.agents.run
-                    run.side_effect = lambda role, context, schema: plan if schema is SHOTS else EditorialAgents.run(self.agents, role, context, schema)
+                    run.side_effect = lambda role, context, schema: plan if schema is SHOTS or schema is IMAGE_SHOTS else EditorialAgents.run(self.agents, role, context, schema)
                     job = self.approved()
                     before = len(self.agents.calls)
                     with self.assertRaises(AppError):
@@ -169,10 +179,51 @@ class EditorialTests(unittest.TestCase):
                     self.assertEqual(self.store.get(job['id'])['state'], 'approved')
 
     def test_example_plan_meets_style_contract(self):
-        validate(shot_plan(), SHOTS)
+        validate(shot_plan(), IMAGE_SHOTS)
         report = check_shots(shot_plan(), 60, load_style(ROOT))
         self.assertEqual(report['camera_fraction'], 0.5)
         self.assertEqual(report['unique_visual_fraction'], 1)
+        self.assertEqual(report['planned_distinct_images'], 10)
+
+    def test_nine_images_plus_native_motion_do_not_meet_the_minimum(self):
+        plan = shot_plan()
+        plan['shots'][9].update(asset_type='native', image_id='')
+        validate(plan, IMAGE_SHOTS)
+        with self.assertRaisesRegex(AppError, 'al menos 10.*declara 9'):
+            check_shots(plan, 60, load_style(ROOT))
+
+    def test_crop_zoom_and_color_variants_keep_the_original_image_identity(self):
+        plan = shot_plan()
+        for index, variation in [(9, 'recorte'), (10, 'zoom'), (11, 'cambio de color')]:
+            plan['shots'][index].update(asset_type='image', image_id=' ORIGINAL-0 ',
+                                       visual_id=f'variant-{index}', visual=variation)
+        validate(plan, IMAGE_SHOTS)
+        with self.assertRaisesRegex(AppError, 'declara 9'):
+            check_shots(plan, 60, load_style(ROOT))
+
+    def test_native_animation_cannot_smuggle_an_image_identity(self):
+        plan = shot_plan()
+        plan['shots'][10]['image_id'] = 'native-graph'
+        with self.assertRaisesRegex(AppError, 'motion nativo no cuenta'):
+            check_shots(plan, 60, load_style(ROOT))
+
+    def test_pinned_v2_plan_keeps_its_schema_without_new_image_fields(self):
+        style = load_style(ROOT)
+        style.update(id='infinite-process-editorial-v2', version=2)
+        style['visuals'].pop('minimum_distinct_images')
+        style['visuals'].pop('image_count_rule')
+        job = self.store.create('Plan anterior al mínimo de imágenes')
+        job['style'] = {'profile': style, 'sha256': digest(style)}
+        self.store.save(job)
+        drafted = self.workflow.draft(job['id'])
+        self.workflow.approve(job['id'], digest(drafted['script'])[:16])
+        produced = self.workflow.produce(job['id'])
+        self.assertIs(shot_schema(style), SHOTS)
+        self.assertEqual(produced['style']['sha256'], digest(style))
+        self.assertNotIn('image_id', produced['agents']['04-director-visual']['shots'][0])
+        self.assertIsNone(produced['plan_review']['planned_distinct_images'])
+        resumed = self.workflow.produce(job['id'])
+        self.assertEqual(resumed['style']['profile']['version'], 2)
 
     def timed_script(self, seconds, reason=''):
         count = 12 if seconds <= 75 else 30
@@ -205,7 +256,7 @@ class EditorialTests(unittest.TestCase):
                 def run(role, context, schema):
                     if role == '02-guionista':
                         return self.timed_script(seconds, reason)
-                    if schema is SHOTS:
+                    if schema is SHOTS or schema is IMAGE_SHOTS:
                         plan = shot_plan()
                         plan['shots'] = [dict(copy.deepcopy(plan['shots'][i % 30]),
                                              start=i * 2, end=(i + 1) * 2, visual_id=f'visual-{i}')
@@ -226,6 +277,8 @@ class EditorialTests(unittest.TestCase):
         style.update(id='infinite-process-editorial-v1', version=1)
         style['format']['duration_seconds'] = [60, 90]
         style.pop('duration_policy')
+        style['visuals'].pop('minimum_distinct_images')
+        style['visuals'].pop('image_count_rule')
         script = self.timed_script(85)
         script.pop('duration_reason')
         job = self.store.create('Trabajo iniciado con el perfil anterior')

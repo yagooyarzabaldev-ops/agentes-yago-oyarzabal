@@ -1,0 +1,56 @@
+<!doctype html>
+<!-- Deterministic 1080x1920 alpha callouts. Coordinates MUST be measured on the final crop. -->
+<html data-duration="2.4"><head><meta charset="utf-8"><style>
+html,body{background:transparent;width:1080px;height:1920px;margin:0;overflow:hidden}
+#label{position:absolute;left:95px;top:100px;padding:20px 26px 22px;background:rgba(10,11,16,.91);border-radius:18px;transform-origin:left center;max-width:890px;box-sizing:border-box;color:#fff6ed;font:800 94px/1.08 'Segoe UI',sans-serif;letter-spacing:-2px;white-space:nowrap;box-shadow:0 14px 36px #0006}
+#label i{position:absolute;left:26px;right:26px;bottom:8px;height:7px;border-radius:4px;transform-origin:left}
+svg{position:absolute;inset:0;width:1080px;height:1920px;overflow:hidden}
+.ink{fill:none;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 3px 5px #000b)}
+.main{stroke-width:10}.thin{stroke-width:6}
+#shade{fill:none;stroke:#0a0b10;stroke-width:22;opacity:.8}
+</style></head><body>
+<svg viewBox="0 0 1080 1920" aria-hidden="true"><g id="scene">
+<path id="leader" class="ink thin"/><circle id="shade"/><circle id="ring" class="ink main"/>
+<circle id="echo" class="ink thin"/><circle id="dot" r="13"/><path id="corners" class="ink main"/>
+<g id="pause"><rect width="20" height="72" rx="7"/><rect x="42" width="20" height="72" rx="7"/></g>
+</g></svg><div id="label"><span></span><i></i></div>
+<script src="../../content/construccion/motion-runtime.js"></script><script>
+const texts=['AGENTE','TAREA','SKILL','EN ESPERA'];
+const colors=['#c99bff','#91e2c0','#ffb35e','#ff937e'];
+const q=id=>document.getElementById(id),clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>1-(1-x)**3;
+const mode=Number(MG.get('mode',1));
+if(!Number.isInteger(mode)||mode<0||mode>3)throw Error('mode must be 0..3');
+const cx=Number(MG.get('anchor_x',540)),cy=Number(MG.get('anchor_y',760));
+const labelY=Number(MG.get('label_y',100)),routeX=Number(MG.get('leader_x',960));
+const w=Number(MG.get('focus_width',760))/2,h=Number(MG.get('focus_height',220))/2;
+const label=q('label'),span=label.querySelector('span'),under=label.querySelector('i');
+label.style.top=labelY+'px';
+function attrs(el,obj){for(const[k,v]of Object.entries(obj))el.setAttribute(k,String(v))}
+MG.onFrame(t=>{
+ const enter=ease(clamp(t/.35)),exit=ease(clamp((t-(MG.duration-.35))/.35));
+ const visible=enter*(1-exit),color=colors[mode];
+ span.textContent=MG.get('label',texts[mode]);under.style.background=color;under.style.transform=`scaleX(${enter*(1-exit)})`;
+ label.style.opacity=visible;label.style.transform=`translateX(${(1-enter)*-110+exit*95}px)`;
+ q('scene').style.opacity=visible;
+ ['leader','ring','echo','corners'].forEach(id=>q(id).style.stroke=color);
+ q('dot').style.fill=color;q('pause').style.fill=color;
+ // Corrected route: above the panel, down its outside margin, to the frame edge.
+ // No horizontal sweep over the actual task/skill text.
+ const startX=95+label.offsetWidth-1,fromY=labelY+110;
+ q('leader').style.display=(mode===1||mode===2)&&MG.get('show_leader',true)?'':'none';
+ attrs(q('leader'),{d:`M ${startX} ${fromY} H ${routeX-16} Q ${routeX} ${fromY} ${routeX} ${fromY+16} V ${cy-16} Q ${routeX} ${cy} ${routeX-16} ${cy} H ${cx+w}`,pathLength:1,'stroke-dasharray':1,'stroke-dashoffset':1-ease(clamp((t-.12)/.45))});
+ const radius=mode===0?114:96;
+ attrs(q('shade'),{cx,cy,r:radius});q('shade').style.display=(mode===0||mode===3)?'':'none';
+ attrs(q('ring'),{cx,cy,r:radius,transform:`rotate(-90 ${cx} ${cy})`,pathLength:1,'stroke-dasharray':1,'stroke-dashoffset':1-ease(clamp((t-.1)/.4))});
+ q('ring').style.display=(mode===0||mode===3)?'':'none';
+ const phase=(t*1.1)%1;
+ attrs(q('echo'),{cx,cy,r:radius+12+phase*45,opacity:mode===3?(1-phase)*.75:.28});q('echo').style.display=(mode===0||mode===3)?'':'none';
+ const angle=t*4-1.57;attrs(q('dot'),{cx:cx+Math.cos(angle)*radius,cy:cy+Math.sin(angle)*radius});q('dot').style.display=mode===0?'':'none';
+ const d=20+42*ease(clamp((t-.1)/.45));
+ attrs(q('corners'),{d:`M ${cx-w+d} ${cy-h} H ${cx-w} V ${cy-h+d} M ${cx+w-d} ${cy-h} H ${cx+w} V ${cy-h+d} M ${cx+w} ${cy+h-d} V ${cy+h} H ${cx+w-d} M ${cx-w+d} ${cy+h} H ${cx-w} V ${cy+h-d}`});
+ q('corners').style.display=(mode===1||mode===2)?'':'none';
+ q('pause').style.display=mode===3&&MG.get('show_pause',false)?'':'none';
+ attrs(q('pause'),{transform:`translate(${cx-31},${cy-36})`,opacity:.7+.3*Math.sin(t*3)});
+});
+MG.ready();
+</script></body></html>

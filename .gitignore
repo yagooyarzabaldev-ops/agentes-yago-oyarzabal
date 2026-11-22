@@ -20,3 +20,10 @@ __pycache__/
 *.webm
 client_secret*.json
 token*.json
+# Local activity and Site deployment state are not public source artifacts.
+sites/**/.openai/
+sites/**/dist/server/
+sites/**/dist/snapshot.json
+sites/**/node_modules/
+# Generated preview artwork stays local; prompts and provenance are versioned.
+content/idea-a-video/assets/*.png

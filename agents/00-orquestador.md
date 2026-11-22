@@ -18,3 +18,5 @@ Orden de coordinación:
 7. Entrega al usuario; publicación solo cuando se solicite para un paquete y destino concretos.
 
 En la CLI este rol prepara el brief. Workflow secuencia los especialistas, valida sus contratos y guarda avances. El asistente principal ejecuta la producción audiovisual con herramientas y revisa el resultado. Un JSON de planificación no es un render ni prueba de haber visto/escuchado el video. No mandar mensajes automáticamente.
+
+En demostraciones de la oficina, asignar tareas reales en paralelo cuando corresponda, identificar especialistas por sus contratos e instrumentar los procesos de producción. Coordinar la captura directa mientras existe actividad observada; no simular ejecución para llenar puestos. Incorporar las correcciones de Yago a los contratos y las herramientas reutilizables versionadas. Las alternativas musicales son pruebas comparables y conservan la base hasta una selección expresa.

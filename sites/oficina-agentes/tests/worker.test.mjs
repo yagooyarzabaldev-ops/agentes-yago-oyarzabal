@@ -1,0 +1,15 @@
+import assert from 'node:assert/strict';
+import worker from '../worker/index.mjs';
+let value;
+const env={BUCKET:{async put(key,v){value=v},async get(){return value?{json:async()=>JSON.parse(value)}:null}}};
+const base='https://office.example';
+const snapshot={schema_version:1,source:{},summary:{active_verified:1,active_runs:1},agents:[{id:'13-motion',live_status:'active',live_runs:[]}],jobs:[],skills:[],runs:[{agent_id:'13-motion',status:'active',verified_active:true,secret:'NEVER_EXPORT'}]};
+assert.equal((await worker.fetch(new Request(base+'/api/office'),env)).status,503);
+assert.equal((await worker.fetch(new Request(base+'/api/ingest',{method:'POST',headers:{Origin:'https://evil.example','Content-Type':'application/json'},body:JSON.stringify(snapshot)}),env)).status,403);
+assert.equal((await worker.fetch(new Request(base+'/api/ingest',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(snapshot)}),env)).status,200);
+let res=await (await worker.fetch(new Request(base+'/api/office'),env)).json();
+assert.equal(res.source.remote_connected,true);assert.equal(res.runs[0].secret,undefined);
+const saved=JSON.parse(value);saved.received_at=new Date(Date.now()-30000).toISOString();value=JSON.stringify(saved);
+res=await (await worker.fetch(new Request(base+'/api/office'),env)).json();
+assert.equal(res.source.remote_connected,false);assert.equal(res.agents[0].live_status,'stale');assert.equal(res.summary.active_verified,0);assert.equal(res.runs[0].verified_active,false);
+console.log('Worker: ingest, isolation, expiry and readback passed.');

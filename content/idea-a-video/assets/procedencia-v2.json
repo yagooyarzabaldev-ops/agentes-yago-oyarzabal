@@ -1,0 +1,120 @@
+[
+  {
+    "id": "idea",
+    "file": "idea.png",
+    "source": "built-in image_gen",
+    "sha256": "21855f82c6b682785f396f29fc975c7a8400349e14a169c52836da21a9ea8024",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "direction",
+    "file": "direction.png",
+    "source": "built-in image_gen",
+    "sha256": "458fd6f1187766f7faf28e9d873a1922be895a2763fbf60127210b8e8d06bb72",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "edit",
+    "file": "edit.png",
+    "source": "built-in image_gen",
+    "sha256": "bfaf240e28d619f6fe9fa10bde3df91c89dede5519953289838239803b4184c5",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "export",
+    "file": "export.png",
+    "source": "built-in image_gen",
+    "sha256": "1b10ce3884b0716d88245ea8e912605fc6e5b9751d53929a01cc0391936ee594",
+    "purpose": "original conceptual scene for idea-to-video reel"
+  },
+  {
+    "id": "neural",
+    "file": "neural.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-b62c8c18-f9f5-49aa-8eb5-e6b36cbe9222.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-1128433250395037066.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "f828f00ef52dae4fc036d38073efdda71a91c6a53cd53ea7803977c44c041b3f"
+  },
+  {
+    "id": "audience",
+    "file": "audience.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-fff36b12-e5c3-4435-8ae2-6234ccbd1720.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "69bca51a9e07b0d10fad4f2efcdc97747013a1b02b1177a6097b829b7296aff3"
+  },
+  {
+    "id": "brief",
+    "file": "brief.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-0dbdc85b-904a-4318-8ed1-93b429836ac9.png",
+    "reference": "../../referencias/diseno-ia/imagenes/rawpixel-17121933-poster.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "987b1ba2616b5e751f0f5a209770524b9383bdb2b551d6eb5fc82288b7d8800f"
+  },
+  {
+    "id": "team",
+    "file": "team.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-d8d72670-016b-4744-880c-3142bbf2d11b.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "c2ebfddfadac308dec2bb095f8a6a262b3006fe41928bc155ebcbdbee79fbca3"
+  },
+  {
+    "id": "script",
+    "file": "script.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-174329b7-864f-4926-b310-627ab4faa8f6.png",
+    "reference": "../../referencias/diseno-ia/imagenes/search-05.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "ca9ee141f30573302d16ba122e6d5165b862432d2b207cd638ad59f5590a8c89"
+  },
+  {
+    "id": "review",
+    "file": "review.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-4c01d941-9f13-47b1-a6e9-1f78eff97eb2.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "40a68ddd75a4f8dd65a0fd9892f6c66eb6f7bf7800bbfa79cb4dfe1ad1f3041a"
+  },
+  {
+    "id": "storyboard",
+    "file": "storyboard.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-f115c05c-fd04-4e2c-9b35-42246d1c434f.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-1057008975072047609.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "deb437cef24a34d4c6178890167311754859b648eb759bcbe7653c2385570998"
+  },
+  {
+    "id": "microphone",
+    "file": "microphone.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-1c2cdad1-f10e-490a-9d32-a63de099e32d.png",
+    "reference": "../../referencias/diseno-ia/imagenes/rawpixel-17121933-poster.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "e5c72689dd37a57b460fe521ee6971ed1a70c1e969dd7ed18b7f6548147d8adf"
+  },
+  {
+    "id": "music",
+    "file": "music.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-919a4ebd-83bd-4489-8183-91d85e269cc8.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-944770828097507675.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "b649984e7f7462162a51906149a060ff14ab3d10ec778ce7292dd9d26493a95a"
+  },
+  {
+    "id": "quality",
+    "file": "quality.png",
+    "source": "built-in image_gen",
+    "generated_file": "exec-752a53c6-bcb5-4c57-9098-ec057e09d78c.png",
+    "reference": "../../referencias/diseno-ia/imagenes/pin-1035898351811759640.jpg",
+    "reference_role": "style and composition input, original new subject",
+    "sha256": "41707825999e520430e5a4323bea90300119eebb50ebcfd2c40db56ce1b0fe38"
+  }
+]
