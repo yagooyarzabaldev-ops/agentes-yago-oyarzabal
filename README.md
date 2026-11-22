@@ -1,8 +1,8 @@
 # Agentes de marketing — Infinite Process
 
-**Base aprobada por Yago el 15/11/2026:** reel Sistemas con IA, montaje V10 + Chicago house sin bajo 02. El asistente principal actúa como **gerente general de marketing** y coordina guion, referencias, voz, arte, animación, montaje, música, revisión y entrega.
+**Base audiovisual aprobada por Yago el 15/11/2026:** reel Sistemas con IA, montaje V10. **Música vigente desde el 21/11/2026:** su track «Yago Oyarzabal - chatgpt», desde el inicio hasta la duración del video, con sidechain suave bajo la voz. El asistente principal actúa como **gerente general de marketing** y coordina guion, referencias, voz, arte, animación, montaje, música, revisión y entrega.
 
-El estándar es voz real y tono natural; cámara cerca de la mitad del tiempo, arriba y visuales abajo; el resto a pantalla completa; imágenes variadas, profundidad, animaciones y transiciones dinámicas; paleta ámbar/violeta/verde/coral, con aclaraciones puntuales en blanco y negro. Música Chicago house minimal a 122 BPM, sin línea de bajo y con la voz al frente.
+El estándar es voz real y tono natural; cámara cerca de la mitad del tiempo, arriba y visuales abajo; el resto a pantalla completa; imágenes variadas, profundidad, animaciones y transiciones dinámicas; paleta ámbar/violeta/verde/coral, con aclaraciones puntuales en blanco y negro. El perfil v4 conserva el track seleccionado a velocidad original y baja suavemente la música cuando habla Yago. La selección musical anterior queda como historial.
 
 **Duración base para próximos Reels y Shorts: 60–75 segundos.** El perfil v3 conserva el ajuste de gerencia y guion según el contenido; fuera de la base registran un motivo concreto. Las ideas puntuales pueden ser más breves y los tutoriales necesitar más desarrollo. No rellenar ni acelerar la voz para alcanzar un número.
 
@@ -11,6 +11,7 @@ El estándar es voz real y tono natural; cámara cerca de la mitad del tiempo, a
 - [Reglas para el asistente y futuros chats](AGENTS.md).
 - [Estilo y flujo completo de producción](production/ESTILO-Y-FLUJO.md).
 - [Perfil operativo versionado](config/video-style.json).
+- [Selección y procedencia de la música vigente](production/music-default.json).
 - [Registro de aprobación y huella del video base](production/baseline.json).
 - [Brief para la próxima pieza](production/BRIEF-PROXIMO-VIDEO.md).
 - [Biblioteca de las 17 referencias y enlaces originales](content/referencias/diseno-ia/README.md).
@@ -77,7 +78,7 @@ node scripts/preview-baseline.mjs --help
 python content/construccion/audio_chicago_sin_bajo_02.py --help
 ```
 
-El script musical admite duración, parámetros, fuentes locales y directorios de salida propios. Con `--instrumental-only` genera música sin voz ni video. La base de estilo se reutiliza con nuevos recursos y arreglos; cambiar una semilla no reemplaza la composición de un arreglo nuevo.
+El sintetizador anterior se conserva como herramienta histórica; no genera la música predeterminada v4. Para usar el track seleccionado, consultar `python scripts/musica_opciones/usar_track.py --help`: sin `--track`, toma la fuente privada y su hash del perfil. Siempre empieza en cero, recorta al video y aplica sidechain con la voz. Si el archivo falta o es demasiado corto, se detiene; no lo repite automáticamente. Ver [la receta de mezcla](scripts/musica_opciones/README.md).
 
 ## Material histórico
 

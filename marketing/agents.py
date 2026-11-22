@@ -341,7 +341,7 @@ class Workflow:
                 'duration_seconds': sum(s['seconds'] for s in job['script']['segments']),
                 'duration_reason': job['script'].get('duration_reason', ''),
                 'status': 'plan_ready_render_pending', 'agents': job['agents'],
-                'next': ['montar voz y cámara', 'crear recursos y animaciones', 'componer música y mezcla',
+                'next': ['montar voz y cámara', 'crear recursos y animaciones', 'aplicar la música del perfil y mezclar con la voz',
                          'renderizar', 'ver y escuchar exportación', 'adjuntar MP4 para revisión'],
             })
         if 'script' in job:

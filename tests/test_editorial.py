@@ -80,7 +80,7 @@ class EditorialTests(unittest.TestCase):
         self.assertEqual(result['video_format'], 'editorial')
         self.assertEqual(self.agents.calls, ['00-orquestador', '01-trend-hunter', '02-guionista'] +
                          [role for role, _ in EDITORIAL_STAGES])
-        self.assertTrue(all(c['style']['id'] == 'infinite-process-editorial-v3' for c in self.agents.contexts))
+        self.assertTrue(all(c['style']['id'] == 'infinite-process-editorial-v4' for c in self.agents.contexts))
         self.assertTrue(all(c['style']['format']['duration_seconds'] == [60, 75] for c in self.agents.contexts))
         self.assertIsNone(result['video'])
         self.assertEqual(result['plan_review']['export_review'], 'pending')
@@ -106,10 +106,26 @@ class EditorialTests(unittest.TestCase):
         with patch('marketing.style.load_style', side_effect=AssertionError('No recargar perfil')):
             self.workflow.produce(job['id'])
         job = self.store.get(job['id'])
-        job['style']['profile']['music']['bass_line'] = True
+        job['style']['profile']['music']['source_start_seconds'] = 40
         self.store.save(job)
         with self.assertRaisesRegex(AppError, 'perfil de estilo'):
             self.workflow.produce(job['id'])
+
+    def test_pinned_music_is_preserved_when_the_global_default_changes(self):
+        previous = load_style(ROOT)
+        previous.update(id='infinite-process-editorial-v3', version=3)
+        previous['music'] = {'genre': 'Chicago house minimal', 'bpm': 122, 'bass_line': False}
+        job = self.store.create('Pieza fijada antes de elegir el track propio')
+        job['style'] = {'profile': previous, 'sha256': digest(previous)}
+        self.store.save(job)
+        drafted = self.workflow.draft(job['id'])
+        self.workflow.approve(job['id'], digest(drafted['script'])[:16])
+        produced = self.workflow.produce(job['id'])
+        self.assertEqual(produced['style']['sha256'], digest(previous))
+        music_context = next(context for role, context in zip(self.agents.calls, self.agents.contexts)
+                             if role == '10-musica')
+        self.assertEqual(music_context['style']['music'], previous['music'])
+        self.assertNotIn('asset_path', music_context['style']['music'])
 
     def test_resume_rechecks_a_modified_plan(self):
         job = self.workflow.produce(self.approved()['id'])
@@ -145,7 +161,10 @@ class EditorialTests(unittest.TestCase):
         http = Http()
         Agents(Config(ROOT, env={'OPENAI_API_KEY': 'test-placeholder'}), http).run('00-orquestador', {}, BRIEF)
         data = json.loads(http.data['input'])
-        self.assertFalse(data['style']['music']['bass_line'])
+        self.assertEqual(data['style']['music']['mode'], 'user_track')
+        self.assertEqual(data['style']['music']['source_start_seconds'], 0)
+        self.assertFalse(data['style']['music']['loop'])
+        self.assertTrue(data['style']['music']['sidechain']['enabled'])
         self.assertIn('60 a 75', http.data['instructions'])
         self.assertIn('duration_reason', http.data['instructions'])
         self.assertIn('al menos 10 imágenes de origen distintas', http.data['instructions'])

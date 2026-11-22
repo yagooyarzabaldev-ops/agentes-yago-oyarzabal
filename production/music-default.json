@@ -1,0 +1,16 @@
+{
+  "id": "yago-chatgpt-20261121",
+  "selected_on": "2026-11-21",
+  "selected_by": "Yago Oyarzabal",
+  "scope": "Música predeterminada para próximos videos y revisión V4 de la oficina",
+  "title": "Yago Oyarzabal - chatgpt",
+  "authorship": "Autoría propia declarada por Yago al aportar el archivo; autoriza su uso en estos videos",
+  "instruction": "Usar siempre desde el principio hasta lo que dure el video, con un poco de sidechain cuando habla",
+  "source_sha256": "6e9df0f25874f274f59a3710810d3a6240446fe0aff2e96ec652dedd7b6ca9a3",
+  "source_bytes": 5032227,
+  "container_duration_seconds": 125.805675,
+  "format": "MP3, estéreo, 44100 Hz",
+  "operating_policy": "config/video-style.json#music",
+  "privacy": "Archivo completo y copia local en content/material/ fuera de Git; este registro guarda procedencia y selección",
+  "history": "Reemplaza Chicago sin bajo 02 y las exploraciones electrónicas como música global. production/baseline.json conserva la aprobación audiovisual histórica; las entregas y publicaciones anteriores no se sobrescriben"
+}

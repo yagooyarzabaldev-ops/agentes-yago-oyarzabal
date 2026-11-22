@@ -31,7 +31,7 @@ ROLES = {
     '07-analista': ('Análisis', 'Estrategia', '#b6a2ff', 'Convierte métricas aportadas en mejoras concretas del próximo guion.', ['Métricas aportadas por Yago'], ['Cambios por métrica', 'Nuevo gancho']),
     '08-publicador': ('Publicación', 'Entrega', '#f6a1bb', 'Prepara el envío a la cuenta y visibilidad expresamente autorizadas.', ['MP4 revisado', 'Paquete confirmado', 'Cuenta y visibilidad'], ['Comprobante de subida', 'Estado de publicación']),
     '09-montaje': ('Montaje', 'Producción', '#ffb97b', 'Integra voz, cámara, imágenes, motion y subtítulos.', ['Voz', 'Storyboard', 'Motion'], ['Plan de montaje', 'MP4 y subtítulos', 'Proyecto editable']),
-    '10-musica': ('Música', 'Producción', '#ffb97b', 'Compone Chicago house minimal sin bajo y mezcla con la voz al frente.', ['Duración', 'Narrativa', 'Voz'], ['Arreglo', 'Instrumental y stems', 'Mezcla y mediciones']),
+    '10-musica': ('Música', 'Producción', '#ffb97b', 'Usa el track elegido desde el inicio y aplica sidechain suave bajo la voz según el perfil.', ['Track seleccionado', 'Duración', 'Voz'], ['Música adaptada a la duración', 'Mezcla con sidechain', 'Procedencia y mediciones']),
     '11-control-calidad': ('Calidad', 'Entrega', '#f6a1bb', 'Revisa el plan y exige verificar el export real antes de aprobarlo.', ['Plan', 'Export y evidencias'], ['Observaciones', 'Correcciones con timecode', 'Revisión técnica y perceptual']),
     '12-referencias': ('Referencias', 'Estudio visual', '#71d6b4', 'Investiga el lenguaje visual y registra la procedencia de recursos.', ['Guion', 'Biblioteca de referencias'], ['Mapa idea a recurso', 'Prompts y procedencia']),
     '13-motion': ('Motion', 'Estudio visual', '#71d6b4', 'Diseña animación de objetos y texto con profundidad.', ['Storyboard', 'Recursos'], ['Capas y acciones', 'Timing', 'Transiciones y renders']),
@@ -126,7 +126,7 @@ def production_evidence(root):
         base = {}
     if isinstance(base, dict) and base.get('id') == 'sistemas-ia-v10-chicago-02':
         result.append({'title': 'Base de estilo · V10', 'status': 'Estilo aprobado',
-                       'detail': 'Chicago sin bajo 02. Aprobación de estilo registrada el 15/11/2026; no autoriza publicar nuevas piezas.',
+                       'detail': 'Referencia histórica V10 + Chicago sin bajo 02 aprobada el 15/11/2026. La música vigente se define en el perfil; no autoriza publicar nuevas piezas.',
                        'source': 'production/baseline.json',
                        'artifact_present': (root / 'entregas/chicago-sin-bajo-02/Sistemas_con_IA_Yago_Chicago_sin_bajo_02.mp4').is_file(),
                        'next_step': 'Aplicar el perfil a las próximas piezas.'})

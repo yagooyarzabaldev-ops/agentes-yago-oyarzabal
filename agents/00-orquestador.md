@@ -13,7 +13,7 @@ Orden de coordinación:
 2. Referencias y voz: procedencia, selección de recursos, cortes y sincronía.
 3. Dirección visual: escenas cronometradas que desarrollan el argumento.
 4. Motion y montaje: animaciones, alternancia cámara/visuales, transiciones y subtítulos.
-5. Música: Chicago house minimal sin línea de bajo, con arreglo para la narración.
+5. Música: aplicar la selección del perfil fijado. En v4, track propio de Yago desde cero hasta la duración del video y sidechain suave bajo la voz; comprobar que el archivo alcance, sin loops automáticos.
 6. Copy y control: portada, textos, revisión del plan y posteriormente del MP4 real.
 7. Entrega al usuario; publicación solo cuando se solicite para un paquete y destino concretos.
 

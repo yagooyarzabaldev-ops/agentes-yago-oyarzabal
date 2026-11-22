@@ -2,7 +2,11 @@
 
 El 15 de noviembre de 2026 Yago eligió el reel **Sistemas con IA, montaje V10 + Chicago sin bajo 02** como referencia para todos los próximos videos. La aprobación de la música anterior se conserva en `content/construccion/seleccion-audio.json`; la aprobación más amplia está en `production/baseline.json`. El perfil operativo es `config/video-style.json`.
 
-La base identifica un lenguaje audiovisual. Las próximas piezas necesitan ideas, imágenes, acciones y arreglos propios: no repetir el mismo video con otro título.
+La base identifica un lenguaje audiovisual. Las próximas piezas necesitan ideas, imágenes y acciones propias: no repetir el mismo video con otro título.
+
+**Actualización musical del 21/11/2026 — perfil v4:** Yago seleccionó su track «Yago Oyarzabal - chatgpt» para usarlo siempre desde el principio hasta la duración del video, con sidechain suave mientras habla. Reemplaza las selecciones musicales anteriores como default. La fuente dura aproximadamente 2:05; la copia privada está en `content/material/music/yago-chatgpt.mp3`, con procedencia en `production/music-default.json`. Conservar velocidad, timbre y estructura; no crear otro arreglo, buscar otra entrada ni hacer loop. Si falta o no alcanza, informar el límite antes de mezclar. La autoría y autorización fueron declaradas por Yago. Se conservan la base visual, las duraciones editoriales y las aprobaciones históricas.
+
+Música entrega el fragmento desde cero, el stem con ducking, el master y una envolvente verificable de reducción y recuperación. Montaje copia el video en revisiones exclusivamente musicales y Calidad contrasta fuente, inicio, duración y ganancia, además del AAC final. La escucha y la medición son comprobaciones diferentes. La herramienta `scripts/musica_opciones/usar_track.py` puede usar directamente el track del perfil.
 
 ## Dirección de marca
 
@@ -13,7 +17,7 @@ La base identifica un lenguaje audiovisual. Las próximas piezas necesitan ideas
 - Ámbar, violeta, verde, coral y acentos lima; materiales, luz y profundidad de las referencias. Evitar azul dominante y marco blanco.
 - Mínimo 10 imágenes de origen distintas por video (corrección de Yago, perfil v3). Motion nativo, tipografía, crops, zoom, reencuadres y variantes de color no suman originales. Guiar composición y materiales por las referencias aportadas; cada imagen desarrolla una idea del relato.
 - Planos generalmente de 1.5–2.5 segundos, con cambios de escala, objetos y acciones. Combinar animación de elementos, parallax, tipografía y desplazamientos. Cambiar imágenes a menudo no significa cambiar sin relación con la frase.
-- House Chicago minimal a 122 BPM, sin línea de bajo ni subgrave sostenido. Bombo corto, órgano percusivo, madera, rim, clap y hats con swing. Voz protagonista; pausas y acentos vinculados al relato.
+- Track propio de Yago desde cero, recortado a la duración del video. Voz protagonista, música atenuada suavemente por sidechain durante el habla y recuperación en pausas; conservar el sonido y tempo originales.
 - Formato de partida 1080×1920, 30 fps, **60–75 segundos para Reels y Shorts**. La pieza aprobada dura 67.1 segundos, tiene 35 escenas y cámara en el 48.24% del tiempo.
 
 Los números del perfil son criterios iniciales de producción, no sustituyen las decisiones de Yago ni una revisión perceptual. Cambios explícitos para una pieza se registran con su motivo; no borrar el historial de aprobación.
@@ -26,7 +30,7 @@ Como orientación: 20–35s para un consejo o idea puntual; 40–60s para un pro
 
 Dirección visual y motion ajustan la cantidad de escenas; montaje conserva pausas útiles y palabras completas; música crea un cierre para la duración elegida; calidad comprueba que el motivo y el resultado sean coherentes. Un cambio de duración que altera el guion se revisa como nueva versión del contenido.
 
-El video base y la etiqueta `video-base-v1` conservan su aprobación histórica. El perfil vigente v3 conserva esta política de duración; los trabajos existentes mantienen su perfil y duración anteriores.
+El video base y la etiqueta `video-base-v1` conservan su aprobación histórica. El perfil vigente v4 conserva esta política de duración y el mínimo de imágenes incorporado en v3; los trabajos existentes mantienen su perfil y duración anteriores.
 
 ## Cantidad de imágenes — perfil v3
 
@@ -43,7 +47,7 @@ Los trabajos v1/v2 conservan el esquema de escenas anterior y no se migran silen
 - **Voz y subtítulos:** llamar agente/agentes a los especialistas. Cuando se corrige una toma que dice bot/bots, corregir el audio además del texto, reutilizar material compatible de la propia voz, registrar el origen del empalme y mantener la EDL y la sincronía. Detectar silencios no autoriza cortar respiraciones útiles ni palabras. Retranscribir ayuda a verificar términos; escuchar sigue siendo una comprobación distinta.
 - **Demostración real:** asignar trabajo concreto a especialistas, registrar eventos de ejecución y capturar directamente la oficina mientras trabajan. Relacionar cada escena con tarea, responsable y evidencia de skill. Distinguir captura real, ilustración y recreación; una animación no demuestra que se ejecutó un agente.
 - **Imágenes y movimiento:** crear recursos nuevos para el contenido hablado, con contexto y procedencia. Revisar clip y fotogramas de transiciones; comprobar movimiento de los elementos, lectura móvil, rótulos TAREA/SKILL y subtítulos sin solapes o huecos dentro de las frases. Los cambios de cámara sobre una sola imagen no cumplen el mínimo de originales.
-- **Música alternativa:** conservar la base aprobada y comparar propuestas nuevas usando la misma voz, fragmento y nivel. Variar composición, patrón e instrumentación; no solamente semilla o volumen. Entregar muestras escuchables y versiones del reel, medir formatos codificados y declarar si la escucha está pendiente. La exploración de 118/114/124 BPM no reemplaza el perfil de 122 BPM ni la música ya publicada.
+- **Música alternativa:** conservar la selección vigente y comparar propuestas nuevas usando la misma voz, fragmento y nivel. Variar composición, patrón e instrumentación; no solamente semilla o volumen. Entregar muestras escuchables y versiones del reel, medir formatos codificados y declarar si la escucha está pendiente. Las exploraciones de 118/114/124 BPM y la electrónica de V3 quedan como historial tras la elección expresa del track propio para V4.
 - **Persistencia:** llevar las reglas a los contratos y rescatar el código reutilizable en `scripts/reel_oficina/` y `scripts/musica_opciones/`. Conservar los archivos personales, EDL de tomas reales, comprobantes de publicación y actividad histórica en carpetas privadas. Versionar fuentes y pruebas; no presentar un script como mejora automática de una skill externa que no se modificó.
 
 Estas reglas corrigen el flujo y no cambian la aprobación histórica de `production/baseline.json`. Las revisiones técnicas, visuales y de escucha se registran por separado. Una demostración breve puede conservar su duración justificada, sin forzarla a la base de una nueva pieza.
@@ -80,7 +84,7 @@ Una frase como «Hagamos un reel sobre cómo cambia la atención de una barberí
 4. Limpiar micrófono y aplicar una EDL común a cámara y voz, con offset medido. Generar subtítulos alineados y revisar palabras completas.
 5. Crear storyboard con una acción concreta por escena. Seleccionar o crear recursos distintos, conservar fuente y derechos de uso. Aproximadamente mitad cámara y mitad pantalla completa.
 6. Producir motion y montaje. Revisar fotogramas de cada escena y entradas/medios/salidas de transiciones antes del render largo.
-7. Crear arreglo musical, escuchar con la voz, ajustar ducking y acentos; medir el master.
+7. Aplicar la selección musical del perfil. En v4, tomar el track desde cero hasta el final, ajustar sidechain con la voz y medir el master y el audio codificado; registrar la escucha cuando se realice.
 8. Renderizar y revisar el MP4 completo. Corregir por timecode. Entregar archivo, subtítulos, portada/copy y reporte.
 9. Publicar únicamente ante la instrucción correspondiente; el comando de publicación mantiene la confirmación exacta de archivo/copy/cuenta. Analizar solo métricas reales.
 

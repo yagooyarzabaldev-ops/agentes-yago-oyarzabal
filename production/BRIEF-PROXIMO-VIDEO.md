@@ -11,7 +11,8 @@ Completar con lo disponible; no convertir cada campo vacío en una pregunta a Ya
 - Gancho y cierre:
 - Duración de partida para Reels y Shorts: 60–75 s.
 - Duración elegida y motivo del ajuste según el contenido, si sale de la base:
-- Perfil: infinite-process-editorial-v2.
+- Perfil: infinite-process-editorial-v4.
+- Música: Yago Oyarzabal - chatgpt, desde cero hasta la duración del video, con sidechain suave bajo la voz; comprobar que la fuente alcance.
 - Excepciones explícitas pedidas por Yago:
 - Recursos nuevos y referencias elegidas:
 - Entrega y destino solicitado:
