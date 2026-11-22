@@ -8,6 +8,8 @@ La base identifica un lenguaje audiovisual. Las próximas piezas necesitan ideas
 
 Música entrega el fragmento desde cero, el stem con ducking, el master y una envolvente verificable de reducción y recuperación. Montaje copia el video en revisiones exclusivamente musicales y Calidad contrasta fuente, inicio, duración y ganancia, además del AAC final. La escucha y la medición son comprobaciones diferentes. La herramienta `scripts/musica_opciones/usar_track.py` puede usar directamente el track del perfil.
 
+**Orden de trabajo confirmado el 22/11/2026:** el track de Yago se incorpora al final del proceso, cuando ya están cerrados el montaje temporal, los cortes de voz y silencios, los subtítulos y la duración. Su reproducción empieza en 0 y continúa sin empalmes internos. La EDL de voz/cámara nunca se aplica a la música. Guardar el montaje y la voz limpia sin música como fuentes separadas. Si una revisión posterior cambia cortes, orden, duración o voz, rehacer la mezcla sobre ese montaje desde el archivo musical original y recalcular el sidechain; no cortar el MP4 ya mezclado ni extraer su mezcla para usarla como voz. El único recorte del track es el cierre a la duración final, con el fade breve previsto. Calidad revisa la continuidad de la música alrededor de los cortes antes de dar la entrega por terminada.
+
 ## Dirección de marca
 
 - Voz real del micrófono, acento propio y tono cercano. Quitar muletillas y errores, sin acelerar la voz ni borrar las pausas que permiten entender.
@@ -83,9 +85,9 @@ Una frase como «Hagamos un reel sobre cómo cambia la atención de una barberí
 3. Revisar el contenido de la nueva pieza; la aprobación de estilo ya está resuelta. Registrar la aprobación que exista en la conversación, no volver a pedir lo mismo.
 4. Limpiar micrófono y aplicar una EDL común a cámara y voz, con offset medido. Generar subtítulos alineados y revisar palabras completas.
 5. Crear storyboard con una acción concreta por escena. Seleccionar o crear recursos distintos, conservar fuente y derechos de uso. Aproximadamente mitad cámara y mitad pantalla completa.
-6. Producir motion y montaje. Revisar fotogramas de cada escena y entradas/medios/salidas de transiciones antes del render largo.
-7. Aplicar la selección musical del perfil. En v4, tomar el track desde cero hasta el final, ajustar sidechain con la voz y medir el master y el audio codificado; registrar la escucha cuando se realice.
-8. Renderizar y revisar el MP4 completo. Corregir por timecode. Entregar archivo, subtítulos, portada/copy y reporte.
+6. Producir motion y montaje. Revisar fotogramas de cada escena y entradas/medios/salidas de transiciones; cerrar los cortes, la voz limpia, los subtítulos y la duración. Conservar una versión sin música.
+7. Incorporar la música al final sobre ese montaje cerrado. En v4, usar el track original continuo desde cero, sin aplicarle cortes de voz o imagen; ajustar sidechain con la voz definitiva y medir el master y el audio codificado. Registrar la escucha cuando se realice.
+8. Renderizar y revisar el MP4 completo, incluida la continuidad musical en cada corte. Si una corrección cambia tiempos o voz, volver a la versión sin música y repetir el paso 7 desde el original; no recortar la mezcla terminada. Entregar archivo, subtítulos, portada/copy y reporte.
 9. Publicar únicamente ante la instrucción correspondiente; el comando de publicación mantiene la confirmación exacta de archivo/copy/cuenta. Analizar solo métricas reales.
 
 ## Contrato y controles del programa

@@ -2,6 +2,8 @@
 
 `usar_track.py` aplica el track privado seleccionado por el usuario desde su primera muestra decodificada hasta el final del video, a velocidad 1×. Conserva la voz suministrada y copia los paquetes del video; exporta audio AAC a 192 kb/s. No publica ni usa servicios externos.
 
+Ejecutarlo como última etapa de mezcla, con los cortes de montaje, voz y silencios y la duración ya cerrados. `--voice` debe ser la voz limpia sin fondo musical; conservarla separada del master. Si luego cambia la línea de tiempo o la voz, preparar la nueva versión sin música y ejecutar otra mezcla desde el track original con la nueva voz. No cortar el MP4 final para aplicar esos cambios ni pasar su audio mezclado como `--voice`: eso genera saltos o duplica la música. El script crea el fragmento continuo y el sidechain, pero no puede acreditar por sí solo que el operador haya cerrado la edición ni que la voz aportada esté libre de música; Montaje y Calidad deben comprobarlo.
+
 Activar primero las herramientas del proyecto:
 
 ```powershell

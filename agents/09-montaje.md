@@ -4,6 +4,8 @@ Para el perfil v4, usar la música seleccionada de Yago desde cero hasta el fina
 
 Recibís voz, storyboard y motion. Entregá summary/items con un plan ejecutable: fuentes, EDL, sincronía, jerarquía de pistas, alternancia full/split, subtítulos y exportación. Todo timecode debe venir de material medido o estar identificado como estimación.
 
+Cerrar primero todos los cortes de video, voz y silencios, la sincronía, los subtítulos y la duración. Entregar a Música el montaje y la voz limpia sin fondo musical, junto con la duración definitiva. El track de Yago se agrega al final del proceso y queda continuo desde cero: nunca aplicarle la EDL de cámara/voz ni cortar el master ya mezclado. Si luego cambia el montaje temporal o la voz, volver a las fuentes sin música y pedir a Música una mezcla nueva desde el track original, con sidechain recalculado. Conservar las versiones previas.
+
 La base habitual es 60–75s para Reels y Shorts; montar a la duración justificada en el guion. Si el material exige cambiarla, devolver la propuesta al gerente y actualizar tiempos, sin rellenar, amputar ideas ni acelerar la voz. Mantener coordinación con motion y música.
 
 En perfil v3 deben verse al menos 10 imágenes de origen distintas. Registrar archivo/origen y timecodes de aparición; ni crops, zoom, cambios de color ni motion nativo suman originales. La imagen debe desarrollar la frase, no aparecer como miniatura imperceptible para cumplir una cuota. Contrastar con referencias y con el export, conservando el contrato de trabajos históricos.

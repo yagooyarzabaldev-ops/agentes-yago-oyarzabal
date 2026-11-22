@@ -6,6 +6,11 @@
   "title": "Yago Oyarzabal - chatgpt",
   "authorship": "Autoría propia declarada por Yago al aportar el archivo; autoriza su uso en estos videos",
   "instruction": "Usar siempre desde el principio hasta lo que dure el video, con un poco de sidechain cuando habla",
+  "workflow_correction": {
+    "confirmed_on": "2026-11-22",
+    "instruction": "Agregar mi track al final del proceso para que los recortes posteriores de video o voz no hagan saltar la música",
+    "rule": "Cerrar montaje, voz y duración antes de mezclar. Usar una pista continua desde cero. Si cambian los cortes o la voz, volver a la versión sin música y rehacer la mezcla desde el original, recalculando sidechain; nunca cortar el master mezclado"
+  },
   "source_sha256": "6e9df0f25874f274f59a3710810d3a6240446fe0aff2e96ec652dedd7b6ca9a3",
   "source_bytes": 5032227,
   "container_duration_seconds": 125.805675,

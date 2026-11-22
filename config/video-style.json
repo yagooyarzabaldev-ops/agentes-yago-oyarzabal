@@ -65,6 +65,15 @@
     "loop": false,
     "trim_to_video_duration": true,
     "insufficient_duration": "stop_and_report",
+    "editing_order": {
+      "confirmed_on": "2026-11-22",
+      "apply_after": "Cierre de montaje temporal, cortes de voz y silencios, y duración definitiva",
+      "continuous_from_zero": true,
+      "apply_voice_or_picture_cuts_to_music": false,
+      "keep_clean_voice_separate": true,
+      "after_timeline_or_voice_change": "Rehacer la música continua desde el original sobre el nuevo montaje y recalcular sidechain con la voz final; no recortar ni reutilizar el audio ya mezclado",
+      "final_review": "Comprobar continuidad del track en los puntos de corte de imagen y voz; registrar escucha por separado"
+    },
     "sidechain": {
       "enabled": true,
       "source": "voice",
