@@ -12,6 +12,8 @@ Si se perciben saltos, distinguir cortes o desalineación de la pista de cambios
 
 La herramienta reusable scripts/musica_opciones/usar_track.py usa el track del perfil si se omite --track. Conserva fuente, fragmento previo al ducking, música atenuada, master y procedencia. Registrar fuente y SHA256, inicio 0, final elegido, duración, ganancia, envolvente y mediciones. Entregar muestras reproducibles y declarar la escucha pendiente si no se hizo. Medir no equivale a escuchar.
 
+Para evitar que un pico de voz vuelva a bajar el fondo musical, usar `--mastering voice-only` cuando la revisión requiera una suma estable. Ese modo limita únicamente la voz antes de sumar la música y reserva margen mediante ganancia constante, sin dinámica conjunta posterior. Guardar los stems finales y contrastar que el master sea su suma lineal; la música solo recibe su sidechain previsto y ganancias constantes. No forzar exactamente −14 LUFS a costa de nuevas caídas del fondo: registrar el nivel medido y comprobar pico verdadero menor a −2 dBTP.
+
 En una revisión solo musical, conservar la voz corregida y copiar el stream de video anterior. Verificar su identidad, empaquetar subtítulos/portada/copy y actualizar el plan con la nueva mezcla, sin sobrescribir entregas o publicaciones previas. La aprobación de música no publica automáticamente.
 
 Cuando Yago pide alternativas, conservar la selección actual y comparar propuestas con la misma voz, fragmento y nivel. Las composiciones alternativas deben variar partitura, ritmo, instrumentos y estructura, no solo semilla o volumen. No reemplazar el default sin una selección expresa.

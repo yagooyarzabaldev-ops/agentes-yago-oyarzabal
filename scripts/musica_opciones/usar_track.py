@@ -170,6 +170,42 @@ def fixed_master(source,destination,log_dir,target=-14,peak=-2.8):
                   'raw_metrics':before,'target_lufs':target}
 
 
+def voice_only_master(voice_source,music,destination,work_dir,log_dir,mix_gain_db=2.05,voice_peak_db=-5.2,peak=-2.8):
+    """Limit voice before summing. The final music path contains only constant gain."""
+    limited_voice=work_dir/'voz_limitada_antes_suma.wav'
+    graph=(f'volume={mix_gain_db}dB,aresample=192000,'
+           f'alimiter=limit={10**(voice_peak_db/20)}:attack=5:release=80:level=false:asc=false:latency=true,aresample={SR}')
+    ffmpeg('-v','error','-n','-i',voice_source,'-af',graph,'-ar',str(SR),'-ac','2',
+           '-c:a','pcm_s24le',limited_voice,log=log_dir/'voice-only-limiter.log')
+    voice=pcm(limited_voice).astype(float)
+    if len(voice)!=len(music):raise RuntimeError('Voice-only limiter changed source duration')
+    music_scaled=np.asarray(music,dtype=float)*10**(mix_gain_db/20)
+    summed=voice+music_scaled
+    # Uniform sample headroom permits PCM measurement without touching dynamics.
+    preliminary_gain=min(1.,.95/max(float(np.max(np.abs(summed))),1e-15))
+    before=work_dir/'suma_lineal_pre_ganancia_final.wav'
+    save(before,summed*preliminary_gain)
+    measured=measure(before,log=log_dir/'linear-sum-before.log')
+    extra_gain_db=min(0.,peak-float(measured['input_tp']))
+    total_gain=preliminary_gain*10**(extra_gain_db/20)
+    # No limiter, compressor, loudnorm or EQ on this sum. Both stems share a
+    # single scalar for final headroom, never a time-varying bus envelope.
+    save(work_dir/'voz_final.wav',voice*total_gain)
+    save(work_dir/'musica_final.wav',music_scaled*total_gain)
+    save(destination,summed*total_gain)
+    after=measure(destination,log=log_dir/'voice-only-master-after.log')
+    return after,{'mode':'voice_only_peak_control_linear_sum','mix_gain_db':mix_gain_db,
+                  'voice_peak_limit_dbfs':voice_peak_db,'voice_limiter_attack_ms':5,'voice_limiter_release_ms':80,
+                  'voice_limiter_auto_level':False,'voice_limiter_latency_compensation':True,
+                  'bus_dynamic_processing':False,'final_constant_gain_db':20*math.log10(total_gain),
+                  'constant_gain_after_saved_sum_db':extra_gain_db,
+                  'music_gain_after_sidechain_db':mix_gain_db+20*math.log10(total_gain),
+                  'peak_ceiling_dbtp':peak,'target_lufs':-14,'accepted_encoded_lufs_range':[-18,-13],
+                  'level_priority':'Continuous music and peak headroom take priority over forcing exactly-14LUFS.',
+                  'linear_sum_metrics':measured,
+                  'stems':{name:str((work_dir/name).resolve()) for name in ('voz_limitada_antes_suma.wav','voz_final.wav','musica_final.wav','suma_lineal_pre_ganancia_final.wav')}}
+
+
 def update_plan(source_plan,result,master,video,music_manifest):
     """Keep the proven visual plan and replace every current audio attribution."""
     plan=copy.deepcopy(read(source_plan))
@@ -216,15 +252,18 @@ def main(argv=None):
     parser.add_argument('--attack-ms',type=float,default=20)
     parser.add_argument('--release-ms',type=float,default=280)
     parser.add_argument('--hold-ms',type=float,default=0,help='Causal detector hold0–250ms; stabilizes music between syllables without delaying audio.')
-    parser.add_argument('--mastering',choices=['loudnorm','fixed-limiter'],default='loudnorm',help='Historical dynamic loudnorm or fixed gain plus latency-compensated peak limiting.')
+    parser.add_argument('--mastering',choices=['loudnorm','fixed-limiter','voice-only'],default='loudnorm',help='Historical bus modes or voice-only peak control followed by a strictly linear music sum.')
+    parser.add_argument('--mix-gain-db',type=float,default=2.05,help='Fixed voice/music gain for voice-only mode; no adaptive bus normalization.')
+    parser.add_argument('--voice-peak-db',type=float,default=-5.2,help='Voice-only limiter ceiling before adding music.')
     parser.add_argument('--fade-out',type=float,default=.4)
     args=parser.parse_args(argv)
-    values=[args.music_lufs,args.threshold_db,args.ratio,args.knee_db,args.max_reduction_db,args.attack_ms,args.release_ms,args.hold_ms,args.fade_out]
+    values=[args.music_lufs,args.threshold_db,args.ratio,args.knee_db,args.max_reduction_db,args.attack_ms,args.release_ms,args.hold_ms,args.mix_gain_db,args.voice_peak_db,args.fade_out]
     if not all(math.isfinite(value) for value in values):parser.error('Numerical parameters must be finite')
     if not -40<=args.music_lufs<=-12 or not -50<=args.threshold_db<=-8:parser.error('Invalid music or detector level')
     if not 1<args.ratio<=10 or not 1<=args.knee_db<=20 or not 0<args.max_reduction_db<=12:parser.error('Invalid compressor curve')
     if not 15<=args.attack_ms<=25 or not 220<=args.release_ms<=320:parser.error('Use gentle attack15–25ms and release220–320ms')
     if not 0<=args.hold_ms<=250:parser.error('Detector hold must be between0 and250ms')
+    if not -12<=args.mix_gain_db<=12 or not -12<=args.voice_peak_db<=-3:parser.error('Invalid voice-only gain or limiter ceiling')
     if not 0<=args.fade_out<=1:parser.error('Fadeout must be between0 and1second')
     if Path(args.video_name).name!=args.video_name or Path(args.video_name).suffix.lower()!='.mp4':parser.error('--video-name must be an MP4 basename')
     try:
@@ -271,7 +310,9 @@ def main(argv=None):
     pre_master_gain=min(1.,.95/max(float(np.max(np.abs(mix))),1e-12))
     raw=work/'mezcla_sin_master.wav';save(raw,mix*pre_master_gain)
     master=music_dir/'master.wav'
-    if args.mastering=='fixed-limiter':
+    if args.mastering=='voice-only':
+        master_metrics,mastering_method=voice_only_master(work/'voz_alineada.wav',music,master,work,logs,args.mix_gain_db,args.voice_peak_db)
+    elif args.mastering=='fixed-limiter':
         master_metrics,mastering_method=fixed_master(raw,master,logs)
     else:
         master_metrics=normalize(raw,master,-14,-2.7,logs)
@@ -283,7 +324,8 @@ def main(argv=None):
     ffmpeg('-v','error','-n','-i',args.video,'-i',master,'-map','0:v:0','-map','1:a:0',
            '-c:v','copy','-c:a','aac','-b:a','192k','-t',seconds,'-movflags','+faststart',video,log=logs/'mux-video.log')
     encoded_metrics=measure(video,log=logs/'encoded-video-loudness.log')
-    if abs(float(encoded_metrics['input_i'])+14)>.8 or float(encoded_metrics['input_tp'])>=-2:
+    lower_lufs,upper_lufs=(-18,-13) if args.mastering=='voice-only' else (-14.8,-13.2)
+    if not lower_lufs<=float(encoded_metrics['input_i'])<=upper_lufs or float(encoded_metrics['input_tp'])>=-2:
         raise RuntimeError('Encoded reel misses loudness/peak target')
     if video_hash(video)!=source_video_packets:raise RuntimeError('Copied video packet identity differs')
     for path in (master,master_mp3,video):strict_decode(path,logs/(path.stem+'-strict-decode.log'))
@@ -302,7 +344,8 @@ def main(argv=None):
                           'speed':1,'loops':0,'internal_cuts':0,'equalization':False,'fade_out_seconds':args.fade_out,
                           'constant_gain_db':gain_db,'preduck_lufs_target':args.music_lufs},
             'ducking':duck_metrics,'pre_master_uniform_gain':pre_master_gain,
-            'voice_edit':{'speed':1,'cuts':0,'pitch_change':False,'padding_only_at_end_samples':count-round(duration(args.voice)*SR)},
+            'voice_edit':{'speed':1,'cuts':0,'pitch_change':False,'padding_only_at_end_samples':count-round(duration(args.voice)*SR),
+                          'peak_control_before_music_sum':args.mastering=='voice-only'},
             'master_metrics':master_metrics,'mastering_method':mastering_method,'encoded_metrics':encoded_metrics,
             'editing_order':{'supplied_picture_and_voice_treated_as_final':True,'clean_voice_review':'operator_required',
                              'music_added_over_supplied_timeline':True,
@@ -313,6 +356,7 @@ def main(argv=None):
             'publication_performed':False,'checks':{'full_decode':True,'no_source_edits':False},
             'work_files':{name:str((work/name).resolve()) for name in ('track_desde_cero.wav','voz_alineada.wav','musica_preduck.wav','musica_postduck_sin_fade.wav','musica_postduck.wav','envolvente-ducking.json','mediciones-ducking.json')},
             'limitations':['Gain measurements do not certify audible comfort or absence of perceived pumping.','Mastering and AAC encoding change samples, but no narration timing/content or image packets are edited.']}
+    if args.mastering=='voice-only':result['work_files'].update(mastering_method['stems'])
     result['checks']['no_source_edits']=hashes=={'track':sha(args.track),'voice':sha(args.voice),'video':sha(args.video)}
     if not result['checks']['no_source_edits']:raise RuntimeError('An input changed during rendering')
     write(work/'procedencia-y-mezcla.json',result);write(music_dir/'procedencia-y-mezcla.json',result)

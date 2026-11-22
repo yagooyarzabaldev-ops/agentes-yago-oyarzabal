@@ -133,5 +133,31 @@ class MusicTrackTests(unittest.TestCase):
             self.assertAlmostEqual(20*np.log10(gain),method['constant_gain_db'],delta=.1)
             self.assertLess(float(metrics['input_tp']),-2.5)
 
+    @unittest.skipUnless(shutil.which('ffmpeg'),'Local FFmpeg unavailable')
+    def test_voice_only_peak_control_never_modulates_music_bus(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root=Path(folder);logs=root/'logs';logs.mkdir()
+            rate=self.module.SR;t=np.arange(3*rate)/rate
+            rng=np.random.default_rng(7831)
+            spoken=np.convolve(rng.normal(0,.10,len(t)),np.ones(5)/5,mode='same')
+            spoken[24000:24008]=.75;spoken[91000:91008]=-.72
+            voice=np.column_stack((spoken,spoken*.97))
+            music=np.column_stack((.065*np.sin(2*np.pi*317*t),.055*np.sin(2*np.pi*457*t)))
+            source=root/'voice.wav';master=root/'master.wav';self.module.save(source,voice)
+            _,method=self.module.voice_only_master(source,music,master,root,logs)
+            self.assertFalse(method['bus_dynamic_processing'])
+            rendered_music=self.module.pcm(root/'musica_final.wav')
+            gain=10**(method['music_gain_after_sidechain_db']/20)
+            np.testing.assert_allclose(rendered_music,music*gain,atol=1.3e-7,rtol=0,
+                                       err_msg='Voice peaks must not add gain movement to music')
+            rendered_voice=self.module.pcm(root/'voz_final.wav')
+            rendered_master=self.module.pcm(master)
+            np.testing.assert_allclose(rendered_master,rendered_voice+rendered_music,atol=3e-7,rtol=0,
+                                       err_msg='The final bus must be a linear sum')
+            self.assertEqual(len(rendered_voice),len(voice))
+            size=1<<(2*len(t)-1).bit_length()
+            correlation=np.fft.irfft(np.fft.rfft(rendered_voice[:,0],size)*np.conj(np.fft.rfft(voice[:,0],size)),size)
+            self.assertEqual(int(np.argmax(np.r_[correlation[-480:],correlation[:481]]))-480,0)
+
 
 if __name__=='__main__':unittest.main()

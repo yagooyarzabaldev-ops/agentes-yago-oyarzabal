@@ -50,6 +50,10 @@ Para estabilizar la música dentro de una frase, `--hold-ms` mantiene durante 0�
 
 En la corrección musical de V4, la pista anterior ya era continua desde cero; se midieron cambios rápidos de ganancia en el sidechain y en el master. La nueva receta usa `--hold-ms 180 --max-reduction-db 4.5 --threshold-db -27 --ratio 1.8 --knee-db 10 --attack-ms 25 --release-ms 320 --mastering fixed-limiter`, conservando tempo, timbre, imagen y narración. Esto describe una modificación verificable de mezcla, no una escucha ni un diagnóstico perceptual.
 
+La revisión focal posterior encontró otra caída alrededor de 21,38 s: un pico de voz activaba el limitador del bus y bajaba también el fondo. El modo `--mastering voice-only --mix-gain-db 2.05 --voice-peak-db -5.2` mueve ese control de picos **a la pista de voz antes de sumar la música**. Mantiene compensación de latencia, auto-level desactivado y la misma envolvente suave de sidechain. Después de la suma no hay limitador, compresor ni normalizador dinámico: solo una atenuación constante, si hace falta, para reservar margen de pico.
+
+Ese modo conserva `voz_limitada_antes_suma.wav`, `voz_final.wav`, `musica_final.wav` y `suma_lineal_pre_ganancia_final.wav`. La prueba comprueba que los picos de voz no añadan modulación al stem musical y que el master sea la suma lineal de los stems. −14 LUFS es un objetivo orientativo; se admite −18 a −13 LUFS en el AAC y se exige pico menor a −2 dBTP, sin forzar volumen mediante dinámica conjunta. Registrar el nivel alcanzado. Los modos anteriores permanecen disponibles para reproducir su historial; no constituyen una aprobación de escucha.
+
 Si el track no alcanza o la voz excede el video, termina antes de producir: no crea loops, saltos, cambios de velocidad ni truncamientos de narración. Las mediciones no reemplazan escuchar claridad, recuperación y posibles bombeos.
 
 Pruebas específicas:
