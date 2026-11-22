@@ -30,6 +30,8 @@ Para comandos de producción ejecutados fuera de la CLI, envolver el proceso rea
 
 ## Entrega
 
+**Publicación de Instagram — corrección de Yago del 22/11/2026:** usar Composio mediante API/CLI, sin medios gráficos. La autorización de Instagram ya concedida debe aprovecharse en esa integración. No pasar a navegador, CUA ni clics como fallback automático. Si falta el puente para subir el MP4 local, resolver autenticación y carga del lado de Composio, y explicar el componente pendiente. La entrada local es `scripts/composio.ps1`; consultar `production/COMPOSIO-INSTAGRAM.md`. Una publicación ya verificada no se repite para probar otra vía.
+
 Una pieza terminada incluye MP4 reproducible, subtítulos, portada/copy, procedencia, plan y revisión del archivo exportado. Un plan no es un video ni una aprobación de calidad. Guardar material privado en `content/material/`, `runtime/` o `entregas/`, fuera de Git. Versionar código, perfiles, contratos y referencias con su procedencia. No subir claves, tokens, grabaciones originales ni muestras de voz.
 
 Al cambiar el programa: ejecutar `python -m unittest discover -s tests -v`, comprobar `python -m marketing style` y revisar los archivos preparados para Git. No llamar APIs de pago ni publicar para probar código. Conservar trabajos y publicaciones previas; no reintentar publicaciones inciertas.

@@ -156,6 +156,8 @@ def work_menu(config, store, job_id):
                 output(str(attach(store, job_id, config.path(path), synthetic)))
             elif choice == '9':
                 platform = input('Destino (youtube o instagram): ').strip().lower()
+                if platform == 'instagram':
+                    raise AppError('Instagram usa Composio: python -m marketing.composio_instagram --help. Consultá production/COMPOSIO-INSTAGRAM.md.')
                 privacy = 'public'
                 if platform == 'youtube':
                     privacy = input('Visibilidad (private/unlisted/public; vacío: private): ').strip() or 'private'
@@ -232,6 +234,8 @@ def main(argv=None):
         elif cmd == 'export':
             output(str(workflow.export(store.get(args.job))))
         elif cmd in ('preview', 'publish'):
+            if args.platform == 'instagram':
+                raise AppError('Instagram usa Composio: python -m marketing.composio_instagram --help. Consultá production/COMPOSIO-INSTAGRAM.md; el adaptador directo queda como historial.')
             publisher = Publisher(config, store)
             if cmd == 'preview':
                 output(publisher.preview(args.job, args.platform, args.privacy, args.video_url))

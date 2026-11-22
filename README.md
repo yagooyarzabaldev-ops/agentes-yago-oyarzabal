@@ -12,6 +12,7 @@ El estándar es voz real y tono natural; cámara cerca de la mitad del tiempo, a
 - [Estilo y flujo completo de producción](production/ESTILO-Y-FLUJO.md).
 - [Perfil operativo versionado](config/video-style.json).
 - [Selección y procedencia de la música vigente](production/music-default.json).
+- [Publicación de Instagram por Composio, sin navegador](production/COMPOSIO-INSTAGRAM.md).
 - [Registro de aprobación y huella del video base](production/baseline.json).
 - [Brief para la próxima pieza](production/BRIEF-PROXIMO-VIDEO.md).
 - [Biblioteca de las 17 referencias y enlaces originales](content/referencias/diseno-ia/README.md).
@@ -99,16 +100,17 @@ Para hacerlo público, usá `--privacy public` **en ambos comandos** y revisá l
 
 ## Publicar en Instagram Reels
 
-Subí el MP4 final a un alojamiento bajo tu control que permita una descarga HTTPS directa. El programa compara su SHA-256 con el archivo revisado antes de crear el contenedor. No incluye un alojamiento público de archivos.
+Instagram se opera por **Composio API/CLI, sin navegador ni clics**, según la corrección de Yago del 22/11/2026. El login local ya fue autorizado y la cuenta de creador verificada. La receta, el estado comprobado y sus límites están en [COMPOSIO-INSTAGRAM.md](production/COMPOSIO-INSTAGRAM.md).
 
 ```powershell
-python -m marketing preview ID instagram --video-url "https://tu-dominio.example/reel.mp4"
-python -m marketing publish ID instagram --video-url "https://tu-dominio.example/reel.mp4" --confirm HUELLA_DEL_PAQUETE
+./scripts/composio.ps1 connections list --toolkit instagram
+python -m marketing.composio_files --help
+python -m marketing.composio_instagram --help
 ```
 
-La primera llamada crea un contenedor y devuelve `processing`. Esperá al menos un minuto y repetí **el mismo comando**: consulta ese contenedor y lo publica cuando está listo. Las llamadas anticipadas no crean otros contenedores. Instagram publica en la cuenta profesional confirmada; `--privacy` corresponde solo a YouTube.
+El archivo local y la portada se preparan en Composio con comprobación de SHA-256. El proxy autenticado permite conservar el campo `is_ai_generated`, ausente en el schema de la herramienta tipada consultada. Cuenta, MP4, portada, copy, música y visibilidad pertenecen a una misma huella revisada. No cambiar el paquete ni crear otra publicación ante un resultado incierto.
 
-Este adaptador sigue [Instagram Login y Content Publishing](https://developers.facebook.com/docs/instagram-platform/instagram-api-with-instagram-login/content-publishing). No sirve un token de Facebook Login en esta integración. Si el contenedor vence o la API rechaza el contenido, se informa el fallo.
+Las entradas antiguas `marketing preview/publish … instagram` redirigen al módulo de Composio. El adaptador directo se conserva para el historial y la reconciliación de sus registros previos. La V4 de la oficina ya publicada no se vuelve a publicar para probar esta integración.
 
 ## Conexiones
 
@@ -118,7 +120,7 @@ Este adaptador sigue [Instagram Login y Content Publishing](https://developers.f
 | --- | --- |
 | OpenAI | Guardado seguro de `OPENAI_API_KEY` en `.env.local`. `OPENAI_MODEL` permite elegir un modelo disponible para el proyecto. Probar con `python -m marketing check-openai`. |
 | YouTube | Activar YouTube Data API y obtener un cliente OAuth de tipo Desktop. Guardar el JSON privado en `credentials/youtube-client.json`. Ejecutar `python -m marketing youtube-login`, elegir la cuenta en el navegador y configurar `YOUTUBE_CHANNEL_ID` con el ID mostrado. |
-| Instagram | App de Meta con Instagram Login, cuenta profesional y permisos `instagram_business_basic` / `instagram_business_content_publish`. Configurar `INSTAGRAM_ACCESS_TOKEN`, `INSTAGRAM_USER_ID` e `INSTAGRAM_API_VERSION` según la versión admitida por esa app. |
+| Instagram | Cuenta profesional conectada en Composio y CLI local autenticada en la misma cuenta. Usar `scripts/composio.ps1`, comprobar la conexión y la identidad por API. Autenticación y sesiones en D:, fuera de Git. No necesita copiar un token de Instagram al proyecto. |
 | ElevenLabs, opcional | Configurar `ELEVENLABS_API_KEY` y el `ELEVENLABS_VOICE_ID` de una voz que tengas derecho a usar. El adaptador solicita [audio con tiempos](https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps). |
 | Telegram, opcional | Configurar `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` y `TELEGRAM_USER_ID`. Iniciar una conversación con el bot antes de enviarle aprobaciones. |
 
@@ -148,7 +150,7 @@ El bot envía el guion y botones SI/NO. Solo acepta la respuesta del usuario, ch
 
 ## Recuperación y análisis
 
-Los estados `unknown` o `publishing` después de una interrupción bloquean una nueva publicación de Instagram. Comprobá el resultado en la cuenta y, si existe, vinculá su ID:
+Los estados inciertos después de una interrupción bloquean una nueva publicación de Instagram. Para las operaciones de Composio, usar el estado privado y la consulta del módulo `marketing.composio_instagram`; no repetir una escritura perdida. Los siguientes comandos corresponden a los registros del adaptador histórico y a YouTube:
 
 ```powershell
 python -m marketing reconcile ID instagram --remote-id ID_REAL

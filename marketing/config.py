@@ -54,7 +54,7 @@ class Config:
             'youtube_cliente_oauth': self.path(self.get('YOUTUBE_CLIENT_FILE', 'credentials/youtube-client.json')).is_file(),
             'youtube_token_guardado': (self.runtime / 'youtube-token.json').is_file(),
             'youtube_canal_configurado': bool(self.get('YOUTUBE_CHANNEL_ID')),
-            'instagram_configurada': all(self.get(k) for k in ('INSTAGRAM_ACCESS_TOKEN', 'INSTAGRAM_USER_ID', 'INSTAGRAM_API_VERSION')),
+            'instagram_composio_cli_instalada': Path('D:/Herramientas/marketing/composio/composio-windows-x64/composio.exe').is_file(),
             'telegram_configurado': all(self.get(k) for k in ('TELEGRAM_BOT_TOKEN', 'TELEGRAM_CHAT_ID', 'TELEGRAM_USER_ID')),
             'nota': 'Presencia local; no verifica acceso, permisos ni saldo en las cuentas.',
         }
