@@ -109,6 +109,17 @@ Las coordenadas de la toma V2 no son universales. Medir en el frame final tras c
 
 ## Comprobación pequeña y privacidad
 
+### Imágenes sostenidas con dos acciones — revisión de oficina V3
+
+`image_action.html` mantiene el original completo dentro del cuadro, con fondo extendido desenfocado, cámara suave y una capa SVG contextual independiente. `animate_images.py` recibe un JSON `assets:[{id,file,duration,camera,action,accent}]`; las rutas de imágenes son relativas a ese JSON. Cámara: `push`, `pull`, `truck`, `rise` u `orbit`. Acción: `route` con `points` normalizados (opcional `curve` de tres puntos), `scan`/`select` con `rect:[x0,y0,x1,y1]`, `checks` con `points`, o `pulse` con `center` y `radius`. Las coordenadas son fracciones de la imagen original y acompañan su cámara; el progreso de la acción tiene su propio reloj.
+
+```powershell
+python scripts/reel_oficina/animate_images.py --config runtime/nueva-pieza/imagenes.json --renderer RUTA_RENDER_MG_MJS --output runtime/nueva-pieza/preflight --stills
+python scripts/reel_oficina/animate_images.py --config runtime/nueva-pieza/imagenes.json --renderer RUTA_RENDER_MG_MJS --output runtime/nueva-pieza/inserts
+```
+
+Revisar primero los tres fotogramas por original y el contacto. El render conserva el número exacto de frames, valida decodificación y registra hash, cámara y acción contextual por separado. La regla concreta de esta revisión está en `production/office-reel-v3.json`: diez originales × 48 frames a 30 fps, sin transiciones que descuenten visibilidad. Las coordenadas de la ilustración y el contexto hablado requieren revisión; estas capas explicativas no prueban actividad de agentes. El wrapper no instala Node, navegador, dependencias ni el renderer externo.
+
 ```powershell
 python scripts/reel_oficina/smoke.py --font RUTA_FUENTE --font-name "Segoe UI Black"
 ```

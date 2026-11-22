@@ -48,6 +48,10 @@ Los trabajos v1/v2 conservan el esquema de escenas anterior y no se migran silen
 
 Estas reglas corrigen el flujo y no cambian la aprobación histórica de `production/baseline.json`. Las revisiones técnicas, visuales y de escucha se registran por separado. Una demostración breve puede conservar su duración justificada, sin forzarla a la base de una nueva pieza.
 
+En la siguiente revisión de la oficina, Yago pidió apreciar más las imágenes: cada original pasa de 0,8 a 1,6 s y suma una segunda acción visual independiente. La receta versionada `production/office-reel-v3.json` fija 48 frames visibles por imagen, las ventanas de evidencia real y la nueva dirección musical, basada en el audio oficial de Hey Boy Hey Girl a partir de 0:40. No confundir aumentar la permanencia con alargar una transición que tapa el recurso; más animación ocurre dentro del plano. La base global de estilo y música conserva su aprobación histórica.
+
+El recorte MP3 aportado luego por Yago dura 19 s y reemplaza la URL como material de referencia disponible. Se analiza completo, sin buscar de nuevo 0:40 dentro del recorte. El pedido de un buen sinte con filtro se prueba mediante una composición propia y muestras separadas de sintetizador, instrumental y voz. Una comparación espectral no acredita similitud perceptual ni aprobación musical; conservar ese límite en la entrega.
+
 | Responsable | Entrega | Recibe de |
 | --- | --- | --- |
 | 00 Gerente general | Objetivo, audiencia, idea, evidencia, cierre y asignación | Yago y contexto del proyecto |

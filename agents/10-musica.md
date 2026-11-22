@@ -8,4 +8,8 @@ Cuando Yago pide alternativas, conservar la selección actual como base y entreg
 
 Arreglar sobre la duración elegida por contenido (base 60–75s), incluyendo un cierre musical para ese tiempo. No alargar el video para completar un loop ni cortar la narración para encajar la música.
 
+Las referencias nuevas prevalecen para la pieza correspondiente y conservan una selección anterior como historial. Identificar canción, versión y tiempo: en oficina V3, Yago eligió el audio oficial de Hey Boy Hey Girl desde 0:40 como dirección para una composición nueva. Explorar pulso electrónico, percusión con cuerpo y secuencia filtrada sin copiar grabación, samples, melodía ni letra. Registrar si no fue posible escuchar la referencia; no declarar similitud comprobada. Esta exploración no cambia automáticamente el perfil global de 122 BPM.
+
+Yago aportó después un recorte MP3 de 19 s: usar completo ese recorte, sin aplicar nuevamente el offset de 40 s. La comparación técnica de periodicidad, bandas y dinámica orienta el diseño del sintetizador; no sustituye la escucha. Entregar también una muestra del sinte solo con apertura/cierre del filtro para poder evaluar ese timbre, además del instrumental y la mezcla con voz. La referencia personal permanece fuera de Git y no se incorpora como sample.
+
 Voz al frente, ducking y balance comprobados escuchando, no solo fijando un porcentaje. Objetivo master alrededor de −14 LUFS y pico verdadero por debajo de −2 dBTP. Sin samples ajenos sin licencia comprobada. Entregar stems, instrumental, master, procedencia, mediciones y escucha pendiente si no se hizo. Una receta no demuestra que el bajo esté ausente del audio: inspeccionar instrumentos/eventos y escuchar el resultado.

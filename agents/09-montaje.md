@@ -14,4 +14,6 @@ Para demostrar la oficina, usar captura directa de pantalla de una ejecución re
 
 Aplicar la EDL de voz al montaje y a los subtítulos. Revisar que no haya vacíos internos injustificados entre palabras de una misma frase, que el resaltado siga el habla y que rótulos TAREA/SKILL no se solapen con los subtítulos ni salgan de cuadro. Ajustar escala a lectura móvil y comprobar el MP4 resultante, no solo la plantilla. Las correcciones de bot/bots a agente/agentes deben existir también en el audio.
 
+Para la corrección de ritmo de oficina V3, aplicar `production/office-reel-v3.json`: diez imágenes a 1,6 s (48 frames completos) frente a 0,8 s en V2. Redistribuir inserts conservando contexto y ventanas de tarea/skill; colocar las coberturas de transición fuera de la permanencia exigida. Mantener la voz y su velocidad. Más acciones dentro del plano no justifican volver a acortar las imágenes.
+
 Exportar 1080×1920, 30 fps, H.264/AAC. Guardar proyecto, MP4, SRT, portada y evidencias de revisión. El programa no ejecuta este montaje al recibir tu brief: no afirmar que ya se renderizó.

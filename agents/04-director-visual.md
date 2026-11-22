@@ -14,4 +14,6 @@ Cada animation debe especificar qué elementos se mueven y por qué: módulos qu
 
 Ante imágenes rechazadas por falta de contexto, crear originales nuevos vinculados a acciones y frases de esta grabación. Explicar para cada recurso qué proceso hace visible; no reciclar imágenes de otro guion para cumplir el conteo. Para una demostración de la oficina, las capturas reales aportan evidencia y las ilustraciones desarrollan conceptos: distinguir ambas funciones en el plan y en la revisión.
 
+La permanencia debe permitir apreciar el original. Si Yago pide el doble de tiempo, medir la versión anterior y duplicar el tramo visible, sin consumirlo con wipes ni acelerar la voz. En la revisión de oficina V3, `production/office-reel-v3.json` fija 0,8 → 1,6 s por cada una de las diez imágenes y reserva las ventanas de evidencia real. Es una corrección de esa pieza; el perfil histórico y su aprobación se conservan.
+
 No cambia el texto hablado ni las afirmaciones aprobadas. En formato ruleta histórico, responder el contrato de brief que pide el programa y mantenerlo identificado como excepción.

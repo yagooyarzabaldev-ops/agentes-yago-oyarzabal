@@ -1,0 +1,62 @@
+{
+  "id": "office-reel-readability-v3",
+  "scope": "Revisión de la demostración de oficina; no reemplaza la base audiovisual global",
+  "requested_on": "2026-11-21",
+  "source_revision": "oficina-agentes-v2",
+  "image_readability": {
+    "distinct_originals": 10,
+    "previous_seconds_per_image": 0.8,
+    "seconds_per_image": 1.6,
+    "fps": 30,
+    "unobscured_frames_per_image": 48,
+    "total_image_seconds": 16,
+    "rule": "Duplicar la permanencia visible de cada original. Las transiciones no descuentan ese tiempo. Mantener velocidad natural de voz y captura."
+  },
+  "motion": {
+    "previous_actions_per_image": 1,
+    "minimum_actions_per_image": 2,
+    "actions": [
+      "cámara suave",
+      "acción gráfica contextual independiente"
+    ],
+    "rule": "Más animación dentro del plano, no más cortes ni mayor velocidad. No contar dos zooms equivalentes como dos acciones. Mantener libre el sujeto y la zona de subtítulos."
+  },
+  "evidence": {
+    "preserve_task_skill_capture_window": [
+      11.9,
+      16.1
+    ],
+    "preserve_waiting_capture_window": [
+      21.9,
+      24.4
+    ],
+    "preserve_state_comparison_capture_window": [
+      24.4,
+      27.4
+    ],
+    "rule": "Los gráficos sobre ilustraciones son explicativos; no acreditan ejecución. Conservar captura real identificada y voz corregida."
+  },
+  "music_direction": {
+    "reference_title": "The Chemical Brothers - Hey Boy Hey Girl",
+    "reference_version": "Fragmento MP3 de 19,040 s aportado por Yago; previamente indicó 0:40 de la canción sola",
+    "reference_url": "https://www.thechemicalbrothers.com/music-videos/hey-boy-hey-girl-single",
+    "creative_direction": "Composición original electrónica de pulso marcado, percusión con cuerpo y sintetizador con filtro resonante que se abre y cierra, manteniendo voz clara al frente",
+    "reuse_recording_or_samples": false,
+    "reference_listening_verified": false,
+    "note": "Usar completo el fragmento aportado, sin aplicar de nuevo un offset de 40 s. No copiar muestras, melodía ni letra. Presentar la propuesta para comparación; no acreditar semejanza sonora por mediciones solamente. La base Chicago aprobada se conserva.",
+    "supplied_reference_duration_seconds": 19.04,
+    "use_entire_supplied_excerpt": true,
+    "user_reference_in_full_track_seconds": 40,
+    "local_excerpt_start_seconds": 0,
+    "reference_analysis_scope": "Archivo local aportado por el usuario; comparación técnica de timbre/dinámica. Escucha perceptual no acreditada."
+  },
+  "review": [
+    "duración visible por original",
+    "dos acciones perceptibles por imagen",
+    "legibilidad móvil",
+    "captura real y subtítulos",
+    "identidad de voz antes de mezcla",
+    "métricas del archivo codificado",
+    "escucha pendiente si no se realiza"
+  ]
+}
